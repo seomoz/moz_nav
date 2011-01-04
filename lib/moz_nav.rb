@@ -1,0 +1,3 @@
+module MozNav
+  # Your code goes here...
+end
