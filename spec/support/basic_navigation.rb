@@ -8,4 +8,16 @@ shared_examples_for "basic navigation" do
       ]
     end
   end
+
+  describe 'the header nav bar' do
+    it 'contains the expected top-level items' do
+      header_nav_bar_items.map(&:text).should == [
+        'Features',
+        'Pricing & Plans',
+        'Community',
+        'Learn SEO',
+        'About'
+      ]
+    end
+  end
 end
