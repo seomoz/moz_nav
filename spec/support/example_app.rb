@@ -8,7 +8,7 @@ class ExampleApp < Sinatra::Base
 
   helpers MozNav::RenderHelpers
 
-  get '/' do
+  get '/logged_out' do
     erb :index
   end
 end
