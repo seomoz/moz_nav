@@ -37,6 +37,8 @@ GEM
     linecache (0.43)
     linecache19 (0.5.11)
       ruby_core_source (>= 0.1.4)
+    markup_validity (1.1.0)
+      nokogiri (>= 1.3.1)
     mime-types (1.16)
     mustache (0.12.0)
     nokogiri (1.4.4)
@@ -90,6 +92,7 @@ DEPENDENCIES
   haml
   infinity_test
   launchy
+  markup_validity
   moz_nav!
   mustache
   rspec

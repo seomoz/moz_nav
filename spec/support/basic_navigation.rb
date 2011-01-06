@@ -1,11 +1,17 @@
 shared_examples_for "basic navigation" do
+  it "has valid xhtml" do
+    page.body.should be_xhtml_strict
+  end
+
   describe 'the header nav user box' do
-    it 'contains the expected items' do
-      header_nav_user_box_items.map(&:text).should == [
-        'Log in',
-        'Sign up',
-        'Help'
-      ]
+    {
+      "Log in"  => "#",
+      "Sign up" => '#',
+      "Help"    => '#'
+    }.each do |text, url|
+      it "contains a '#{text}' link" do
+        header_nav_user_box.should have_link(text, url)
+      end
     end
   end
 

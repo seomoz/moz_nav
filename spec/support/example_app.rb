@@ -1,7 +1,7 @@
 require 'sinatra/base'
 require 'erb'
 
-class User < Struct.new(:account_type)
+class User < Struct.new(:id, :account_type)
   def pro?
     account_type == :pro
   end
@@ -24,13 +24,13 @@ class ExampleApp < Sinatra::Base
     erb :index
   end
 
-  get '/free_logged_in' do
-    @current_user = User.new(:free)
+  get '/free_logged_in/:id' do
+    @current_user = User.new(params[:id], :free)
     erb :index
   end
 
-  get '/pro_logged_in' do
-    @current_user = User.new(:pro)
+  get '/pro_logged_in/:id' do
+    @current_user = User.new(params[:id], :pro)
     erb :index
   end
 end

@@ -4,6 +4,7 @@ Bundler.setup
 
 require 'rspec'
 require 'moz_nav'
+require 'markup_validity'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
@@ -20,6 +21,14 @@ RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
 
   config.alias_it_should_behave_like_to :it_presents, "it presents"
+  config.alias_it_should_behave_like_to :it_has,      "it has"
   config.include MozNavSpecSelectors
+  config.include Spec::Matchers # for markup_validity matchers
+end
+
+module Spec
+  module Matchers
+    Matcher = RSpec::Matchers::Matcher
+  end
 end
 
