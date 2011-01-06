@@ -5,6 +5,7 @@ gemspec
 
 group :development do
   gem 'launchy'
+  gem 'autotest'
 
   platform :mri_18 do
     gem 'ruby-debug'

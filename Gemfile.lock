@@ -7,7 +7,10 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
+    ZenTest (4.4.2)
     archive-tar-minitar (0.5.2)
+    autotest (4.4.6)
+      ZenTest (>= 4.4.1)
     capybara (0.4.0)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
@@ -81,6 +84,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autotest
   capybara
   haml
   launchy
