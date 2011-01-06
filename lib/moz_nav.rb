@@ -1,3 +1,3 @@
 module MozNav
-  # Your code goes here...
+  autoload :RenderHelpers, 'moz_nav/render_helpers'
 end
