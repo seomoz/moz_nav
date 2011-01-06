@@ -4,5 +4,11 @@ infinity_test do
   end
 
   use :rubies => %w(1.8.7@moz_nav 1.9.2@moz_nav), :test_framework => :rspec
+
+  heuristics do
+    add('.*') do |file|
+      run :all => :tests
+    end
+  end
 end
 
