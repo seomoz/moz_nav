@@ -5,7 +5,7 @@ gemspec
 
 group :development do
   gem 'launchy'
-  gem 'autotest'
+  gem 'infinity_test'
 
   platform :mri_18 do
     gem 'ruby-debug'
