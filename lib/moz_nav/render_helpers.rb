@@ -1,7 +1,7 @@
 module MozNav
   module RenderHelpers
     def render_nav_header
-      "The header"
+      MozNav::Views::Example.render
     end
 
     def render_nav_footer
