@@ -1,13 +1,8 @@
-require 'spec_helper'
-
-describe "Logged out Navigation" do
-  before(:each) { visit '/logged_out' }
-
+shared_examples_for "advanced navigation" do
   describe 'the header nav user box' do
     it 'contains the expected items' do
       header_nav_user_box_items.map(&:text).should == [
-        'Log in',
-        'Sign up',
+        'My Account',
         'Help'
       ]
     end

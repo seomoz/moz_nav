@@ -7,7 +7,8 @@ module MozNav
   autoload :RenderHelpers, 'moz_nav/render_helpers'
 
   module Views
-    autoload :BasicHeader, 'moz_nav/views/basic_header'
+    autoload :AdvancedHeader, 'moz_nav/views/advanced_header'
+    autoload :BasicHeader,    'moz_nav/views/basic_header'
   end
 end
 

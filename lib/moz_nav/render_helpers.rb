@@ -1,7 +1,11 @@
 module MozNav
   module RenderHelpers
     def render_nav_header
-      MozNav::Views::BasicHeader.render
+      if current_user && current_user.pro?
+        MozNav::Views::AdvancedHeader.render
+      else
+        MozNav::Views::BasicHeader.render
+      end
     end
 
     def render_nav_footer
