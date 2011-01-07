@@ -1,4 +1,5 @@
 require 'pathname'
+require 'moz_nav/railtie' if defined?(Rails)
 
 module MozNav
   extend self
