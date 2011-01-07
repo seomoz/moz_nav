@@ -1,4 +1,8 @@
 shared_examples_for "advanced navigation" do |options|
+  it "has valid xhtml" do
+    page.body.should be_xhtml_strict
+  end
+
   describe 'the header nav user box' do
     {
       "My Account" => "http://www.seomoz.org/users/view/#{options[:user_id]}",
