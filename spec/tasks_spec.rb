@@ -23,6 +23,18 @@ module MozNav
           end
         end
 
+        it 'is idempotent' do
+          described_class.symlink_assets
+          described_class.symlink_assets
+
+          MozNav::AssetRoot.children(:full_path).each do |c|
+            next unless c.directory?
+            base = File.basename(c)
+            host_app_path = File.join(ENV['ASSET_ROOT'], base, 'moz_nav')
+            host_app_path.should be_symlinked_to(c)
+          end
+        end
+
         MozNav::AssetRoot.children(:full_path).each do |c|
           next unless c.directory?
           base = File.basename(c)

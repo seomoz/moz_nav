@@ -12,6 +12,8 @@ module MozNav
       MozNav::AssetRoot.children(:full_path).each do |moz_nav_path|
         host_app_path = File.join(host_app_asset_root, File.basename(moz_nav_path))
         FileUtils.mkdir_p(host_app_path)
+
+        next if File.exist?(File.join(host_app_path, 'moz_nav'))
         File.symlink(moz_nav_path, File.join(host_app_path, 'moz_nav'))
       end
     end
