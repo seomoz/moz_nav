@@ -20,3 +20,27 @@ RSpec::Matchers.define :have_link do |text, url|
   end
 end
 
+RSpec::Matchers.define :be_symlinked_to do |expected_dest|
+  define_method :actual_dest do
+    @actual_dest ||= begin
+      File.readlink(actual) if File.symlink?(actual)
+    end
+  end
+
+  match do |actual|
+    actual_dest.to_s == expected_dest.to_s
+  end
+
+  def failure_reason
+    if actual_dest
+      "was symlinked to #{actual_dest.to_s}"
+    else
+      "was not a symlink"
+    end
+  end
+
+  failure_message_for_should do |actual|
+    "expected #{actual} to be symlinked to #{expected_dest.to_s}, but #{failure_reason}"
+  end
+end
+
