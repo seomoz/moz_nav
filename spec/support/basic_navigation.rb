@@ -9,21 +9,23 @@ shared_examples_for "basic navigation" do
       "Sign up" => '#',
       "Help"    => '#'
     }.each do |text, url|
-      it "contains a '#{text}' link" do
+      it "contains a '#{text}' link to #{url}" do
         header_nav_user_box.should have_link(text, url)
       end
     end
   end
 
   describe 'the header nav bar' do
-    it 'contains the expected top-level items' do
-      header_nav_bar_items.map(&:text).should == [
-        'Features',
-        'Pricing & Plans',
-        'Community',
-        'Learn SEO',
-        'About'
-      ]
+    {
+      'Features'        => 'http://www.seomoz.org/PRO',
+      'Pricing & Plans' => 'http://www.seomoz.org/goPRO',
+      'Community'       => 'http://www.seomoz.org/blog',
+      'Learn SEO'       => 'http://www.seomoz.org/learn-seo',
+      'About'           => 'http://www.seomoz.org/about'
+    }.each do |text, url|
+      it "contains a '#{text}' link to #{url}" do
+        header_nav_bar.should have_link(text, url)
+      end
     end
   end
 end
