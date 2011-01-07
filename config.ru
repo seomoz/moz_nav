@@ -2,8 +2,8 @@ require 'rubygems'
 require 'bundler'
 Bundler.setup
 
-require 'moz_nav'
-require File.expand_path('../spec/support/example_app', __FILE__)
+$LOAD_PATH.unshift File.expand_path('../app', __FILE__)
+require 'app'
 
 use Rack::ShowExceptions
 

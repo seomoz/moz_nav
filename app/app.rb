@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'erb'
+require 'moz_nav'
 
 class User < Struct.new(:id, :account_type)
   def pro?

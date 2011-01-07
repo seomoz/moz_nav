@@ -6,6 +6,9 @@ require 'rspec'
 require 'moz_nav'
 require 'markup_validity'
 
+$LOAD_PATH.unshift File.expand_path('../../app', __FILE__)
+require 'app'
+
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
 Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].each {|f| require File.join("support", File.basename(f))}
