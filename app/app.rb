@@ -21,6 +21,10 @@ class ExampleApp < Sinatra::Base
     end
   end
 
+  get '/' do
+    erb :index
+  end
+
   get '/logged_out' do
     erb :index
   end
