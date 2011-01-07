@@ -1,11 +1,21 @@
 shared_examples_for "advanced navigation" do |options|
+  SEOMOZ_HOST = 'seomoz.local'
+
+  before(:each) do
+    MozNav.configure do |c|
+      c.seomoz_host = SEOMOZ_HOST
+    end
+
+    visit options[:url]
+  end
+
   it "has valid xhtml" do
     page.body.should be_xhtml_strict
   end
 
   describe 'the header nav user box' do
     {
-      "My Account" => "http://www.seomoz.org/users/view/#{options[:user_id]}",
+      "My Account" => "http://#{SEOMOZ_HOST}/users/view/#{options[:user_id]}",
       "Help"       => '#'
     }.each do |text, url|
       it "contains a '#{text}' link to #{url}" do
@@ -16,11 +26,11 @@ shared_examples_for "advanced navigation" do |options|
 
   describe 'the header nav bar' do
     {
-      'PRO Dashboard'  => 'http://www.seomoz.org/users/PRO',
+      'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/PRO",
       'Campaigns'      => '#',
-      'Research Tools' => 'http://www.seomoz.org/tools',
+      'Research Tools' => "http://#{SEOMOZ_HOST}/tools",
       'Community'      => '#',
-      'Learn SEO'      => 'http://www.seomoz.org/learn-seo'
+      'Learn SEO'      => "http://#{SEOMOZ_HOST}/learn-seo"
     }.each do |text, url|
       it "contains a '#{text}' link to #{url}" do
         header_nav_bar.should have_link(text, url)

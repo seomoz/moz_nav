@@ -24,6 +24,10 @@ RSpec.configure do |config|
   config.alias_it_should_behave_like_to :it_has,      "it has"
   config.include MozNavSpecSelectors
   config.include Spec::Matchers # for markup_validity matchers
+
+  config.after(:each) do
+    MozNav::Config.reset!
+  end
 end
 
 module Spec

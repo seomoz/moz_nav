@@ -1,4 +1,14 @@
-shared_examples_for "basic navigation" do
+shared_examples_for "basic navigation" do |options|
+  SEOMOZ_HOST = 'seomoz.local'
+
+  before(:each) do
+    MozNav.configure do |c|
+      c.seomoz_host = SEOMOZ_HOST
+    end
+
+    visit options[:url]
+  end
+
   it "has valid xhtml" do
     page.body.should be_xhtml_strict
   end
@@ -17,11 +27,11 @@ shared_examples_for "basic navigation" do
 
   describe 'the header nav bar' do
     {
-      'Features'        => 'http://www.seomoz.org/PRO',
-      'Pricing & Plans' => 'http://www.seomoz.org/goPRO',
-      'Community'       => 'http://www.seomoz.org/blog',
-      'Learn SEO'       => 'http://www.seomoz.org/learn-seo',
-      'About'           => 'http://www.seomoz.org/about'
+      'Features'        => "http://#{SEOMOZ_HOST}/PRO",
+      'Pricing & Plans' => "http://#{SEOMOZ_HOST}/goPRO",
+      'Community'       => "http://#{SEOMOZ_HOST}/blog",
+      'Learn SEO'       => "http://#{SEOMOZ_HOST}/learn-seo",
+      'About'           => "http://#{SEOMOZ_HOST}/about"
     }.each do |text, url|
       it "contains a '#{text}' link to #{url}" do
         header_nav_bar.should have_link(text, url)
