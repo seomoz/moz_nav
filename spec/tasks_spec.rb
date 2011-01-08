@@ -27,7 +27,7 @@ module MozNav
           described_class.symlink_assets
           described_class.symlink_assets
 
-          MozNav::AssetRoot.children(:full_path).each do |c|
+          MozNav::ASSET_ROOT.children(:full_path).each do |c|
             next unless c.directory?
             base = File.basename(c)
             host_app_path = File.join(ENV['ASSET_ROOT'], base, 'moz_nav')
@@ -35,7 +35,7 @@ module MozNav
           end
         end
 
-        MozNav::AssetRoot.children(:full_path).each do |c|
+        MozNav::ASSET_ROOT.children(:full_path).each do |c|
           next unless c.directory?
           base = File.basename(c)
 

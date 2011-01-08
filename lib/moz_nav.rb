@@ -4,8 +4,8 @@ require 'moz_nav/railtie' if defined?(Rails)
 module MozNav
   extend self
 
-  Root = Pathname.new(File.dirname(__FILE__))
-  AssetRoot = Root + 'moz_nav/assets'
+  ROOT = Pathname.new(File.dirname(__FILE__))
+  ASSET_ROOT = ROOT + 'moz_nav/assets'
 
   def configure
     yield Config
