@@ -2,11 +2,12 @@ PATH
   remote: .
   specs:
     moz_nav (0.0.1)
-      mustache
+      mustache (~> 0.12.0)
 
 GEM
   remote: http://rubygems.org/
   specs:
+    activesupport (3.0.3)
     archive-tar-minitar (0.5.2)
     capybara (0.4.0)
       celerity (>= 0.7.9)
@@ -88,13 +89,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (~> 3.0.3)
   capybara
   haml
   infinity_test
   launchy
   markup_validity
   moz_nav!
-  mustache
+  mustache (~> 0.12.0)
   rspec
   ruby-debug
   ruby-debug19

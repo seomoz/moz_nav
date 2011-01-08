@@ -11,6 +11,13 @@ module MozNav
       # set it directly on the subclass
       subclass.raise_on_context_miss = true
     end
+
+    def render(*args)
+      result = super
+
+      # Handle html safety for rails
+      result.respond_to?(:html_safe) ? result.html_safe : result
+    end
   end
 end
 
