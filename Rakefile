@@ -11,3 +11,5 @@ namespace :example_app do
     sh "bundle exec rackup config.ru"
   end
 end
+
+task :default => :spec
