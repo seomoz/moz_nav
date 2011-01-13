@@ -10,5 +10,13 @@ module MozNav
 
     def render_nav_footer
     end
+
+    def nav_header_includes
+      MozNav::Views::HeaderIncludes.render
+    end
+
+    def nav_footer_includes
+      MozNav::Views::FooterIncludes.render
+    end
   end
 end

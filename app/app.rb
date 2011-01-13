@@ -12,6 +12,7 @@ class ExampleApp < Sinatra::Base
   set :views, File.dirname(__FILE__) + '/views'
   set :raise_errors, true
   set :show_exceptions, false
+  set :public, File.dirname(__FILE__) + '/public'
 
   helpers MozNav::RenderHelpers
 

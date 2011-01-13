@@ -12,4 +12,6 @@ namespace :example_app do
   end
 end
 
+load 'moz_nav/tasks/moz_nav.rake'
+
 task :default => :spec
