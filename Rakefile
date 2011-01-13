@@ -12,6 +12,17 @@ namespace :example_app do
   end
 end
 
+namespace :sass do
+  desc "Starts a process that watches changes to the sass files and compiles them to css."
+  task :watch do
+    sh %w[
+      sass
+      --watch lib/moz_nav/assets/sass:lib/moz_nav/assets/stylesheets
+      --cache-location tmp/sass_cache
+    ].join(' ')
+  end
+end
+
 load 'moz_nav/tasks/moz_nav.rake'
 
 task :default => :spec
