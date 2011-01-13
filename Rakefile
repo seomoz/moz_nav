@@ -19,6 +19,7 @@ namespace :sass do
       sass
       --watch lib/moz_nav/assets/sass:lib/moz_nav/assets/stylesheets
       --cache-location tmp/sass_cache
+      --require lib/moz_nav/extensions/sass.rb
     ].join(' ')
   end
 end
