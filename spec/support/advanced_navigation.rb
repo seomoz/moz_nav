@@ -1,6 +1,4 @@
 shared_examples_for "advanced navigation" do |options|
-  SEOMOZ_HOST = 'seomoz.local'
-
   before(:each) do
     MozNav.configure do |c|
       c.seomoz_host = SEOMOZ_HOST

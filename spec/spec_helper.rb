@@ -35,6 +35,8 @@ RSpec.configure do |config|
   end
 end
 
+SEOMOZ_HOST = 'seomoz.local'
+
 module Spec
   module Matchers
     Matcher = RSpec::Matchers::Matcher
