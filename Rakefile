@@ -8,7 +8,7 @@ RSpec::Core::RakeTask.new(:spec)
 namespace :example_app do
   desc "Serves the example sinatra app used by the specs so you can use it in your browser"
   task :serve do
-    sh "bundle exec rackup config.ru"
+    sh "bundle exec shotgun config.ru -p 3000"
   end
 end
 
