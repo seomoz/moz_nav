@@ -30,6 +30,7 @@ module MozNav
           MozNav::ASSET_ROOT.children(:full_path).each do |c|
             next unless c.directory?
             base = File.basename(c)
+            next if MozNav::Tasks::EXCLUDE_ASSET_DIRS.include?(base)
             host_app_path = File.join(ENV['ASSET_ROOT'], base, 'moz_nav')
             host_app_path.should be_symlinked_to(c)
           end
@@ -39,10 +40,18 @@ module MozNav
           next unless c.directory?
           base = File.basename(c)
 
-          it "symlinks the #{base} directory to the asset root" do
-            described_class.symlink_assets
-            host_app_path = File.join(ENV['ASSET_ROOT'], base, 'moz_nav')
-            host_app_path.should be_symlinked_to(c)
+          if MozNav::Tasks::EXCLUDE_ASSET_DIRS.include?(base)
+            it "does not symlink the #{base} directory to the asset root" do
+              described_class.symlink_assets
+              host_app_path = File.join(ENV['ASSET_ROOT'], base, 'moz_nav')
+              host_app_path.should_not be_symlinked_to(c)
+            end
+          else
+            it "symlinks the #{base} directory to the asset root" do
+              described_class.symlink_assets
+              host_app_path = File.join(ENV['ASSET_ROOT'], base, 'moz_nav')
+              host_app_path.should be_symlinked_to(c)
+            end
           end
         end
       end
