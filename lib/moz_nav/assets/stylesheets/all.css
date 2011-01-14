@@ -519,6 +519,18 @@
 .middle {
   vertical-align: middle !important; }
 
+#moz-nav-header {
+  background: #d8e8f9 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  margin: 0 auto !important;
+  width: 952px !important; }
+
+#moz-nav-footer {
+  background: #d8e8f9 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  margin: 0 auto !important;
+  width: 952px !important; }
+
 #moz-nav-header.advanced {
   position: relative !important;
   padding-top: 90px !important; }
