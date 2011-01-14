@@ -1,3 +1,10 @@
+/*
+ * This is the original stylesheet from the contractor.
+ * Its still here so it's easy to check, but we're not using it.
+ * We're using all.css instead (which is compiled from the sass).
+ *
+ */
+
 body{
 	margin:0;
 	padding:0;
