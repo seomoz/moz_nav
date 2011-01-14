@@ -1,0 +1,496 @@
+#moz-nav-header.advanced
+  position: relative
+  padding-top: 90px
+
+  .multi-header
+    position: relative
+    height: 90px
+
+  .header
+    position: absolute
+    left: 0
+    top: 0
+    width: 952px
+    padding: 17px 0 0
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 11px
+    line-height: 1
+
+  .logo
+    float: left
+    display: block
+    border: 0
+    padding: 0 0 5px
+
+  .user-links
+    margin: 0
+    list-style: none
+    padding: 12px 0 0
+    li
+      float: right
+      margin: 0 7px 0 0
+      position: relative
+      a
+        color: #0b72ba
+        text-decoration: none
+        &:hover
+          color: #000
+      img
+        border: 0
+        vertical-align: middle
+
+  .dropdown
+
+  div.help-menu
+    position: absolute
+    display: none
+    right: 0
+    top: 13px
+    background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x
+    padding: 0 0 4px
+    width: 115px
+
+  .show-menu div.help-menu
+    display: block
+
+  .help-menu ul
+    list-style: none
+    margin: 0
+    padding: 2px 1px 1px
+    background: url(/images/moz_nav/transparent-white.png)
+    border: 1px solid #e7e7e7
+    li
+      float: none
+      margin: 0 0 5px
+      position: relative
+      &.last
+        margin-bottom: 0
+      a
+        line-height: 12px
+        display: block
+        padding: 3px 5px
+        color: #0b72ba
+        text-decoration: none
+        img
+          border: 0
+          vertical-align: middle
+        &:hover
+          background: #bde2ff
+          color: #517c9d
+
+  .user-controls
+    font-size: 12px
+    text-shadow: 0 1px 1px #fff
+    a
+      text-decoration: none
+      color: #676767
+      font-weight: bold
+
+  .pro-dashboard-area
+    float: left
+    width: 147px
+    height: 41px
+    background: url(/images/moz_nav/dashboard-bg.png) no-repeat
+    a
+      display: block
+      padding: 14px 0 14px 42px
+
+  a.pro-dashboard, .pro-dashboard a
+    background: url(/images/moz_nav/dashboard.png) 10px 13px no-repeat
+
+  .nav-wrap
+    float: right
+    width: 800px
+
+  .gray-bar-left
+    float: left
+    width: 6px
+    height: 41px
+    background: url(/images/moz_nav/gray-bar-left.png) no-repeat
+
+  .gray-bar-right
+    float: left
+    width: 6px
+    height: 41px
+    background: url(/images/moz_nav/gray-bar-left.png) no-repeat
+    float: right
+    background: url(/images/moz_nav/gray-bar-right.png) no-repeat
+
+  .gray-bar-center
+    background: url(/images/moz_nav/gray-bar-center.png) repeat-x
+    margin: 0 6px
+    min-height: 41px
+
+  .s_form
+    float: right
+    width: 170px
+    padding: 9px 4px 0 0
+
+  .s_field
+    border: 0
+    width: 138px
+    padding: 3px 5px
+    background: url(/images/moz_nav/search-form.png) no-repeat
+    vertical-align: middle
+
+  .s_field2
+    border: 0
+    width: 138px
+    padding: 0 5px
+    height: 22px
+    line-height: 22px
+    background: url(/images/moz_nav/search-form.png) no-repeat
+    vertical-align: middle
+
+  .s_btn
+    border: 0
+    cursor: pointer
+    background: url(/images/moz_nav/search-form.png) right top no-repeat
+    width: 22px
+    padding: 0
+    height: 22px
+    vertical-align: middle
+
+  .nav
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+      float: left
+      margin: 0
+      background: url(/images/moz_nav/separator.png) 0 4px no-repeat
+      padding: 1px 0 0 2px
+      position: relative
+      &.first
+        background: none
+      &.last
+    a
+      display: block
+      float: left
+      padding: 12px 11px 14px 30px
+
+  .campaigns a
+    background: url(/images/moz_nav/campaigns.png) 10px 11px no-repeat
+
+  a.campaigns
+    background: url(/images/moz_nav/campaigns.png) 10px 13px no-repeat
+
+  .research-tools a
+    background: url(/images/moz_nav/research.png) 10px 9px no-repeat
+
+  a.research-tools
+    background: url(/images/moz_nav/research.png) 10px 11px no-repeat
+
+  .pro-qa a
+    background: url(/images/moz_nav/pro-qa.png) 7px 8px no-repeat
+    padding-left: 35px
+
+  a.pro-qa
+    background: url(/images/moz_nav/pro-qa.png) 3px 11px no-repeat
+
+  .community a
+    background: url(/images/moz_nav/thumb.png) 10px 10px no-repeat
+
+  a.community
+    background: url(/images/moz_nav/thumb.png) 10px 12px no-repeat
+
+  .learn-seo a
+    background: url(/images/moz_nav/learn-seo.png) 10px 11px no-repeat
+
+  a.learn-seo
+    background: url(/images/moz_nav/learn-seo.png) 10px 13px no-repeat
+
+  .nav li:hover > .sub-nav
+    display: block
+
+  .sub-nav
+    display: none
+    position: absolute
+    left: 0
+    top: 37px
+    width: 152px
+    background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x
+    padding: 0 0 4px
+
+  .sub-nav-top
+    background: url(/images/moz_nav/sub-nav-top.png) 50px 0 no-repeat
+    padding: 7px 0 0
+
+  .sub-nav
+    ul
+      margin: 0
+      padding: 1px
+      background: url(/images/moz_nav/transparent-white.png)
+      border-left: 1px solid #e7e7e7
+      border-right: 1px solid #e7e7e7
+      list-style: none
+    li
+      float: none
+      margin: 0
+      background: none
+      padding: 0
+      a
+        float: none
+        font-size: 11px
+        color: #5d95c1
+        width: 130px
+        margin: 0
+        background: none
+        padding: 7px 9px
+        position: relative
+        &:hover
+          background: #bde2ff
+          color: #517c9d
+          text-shadow: 0 1px 1px #fff
+
+  .blue-header
+    background: url(/images/moz_nav/blue-header.png) no-repeat
+    padding: 15px 0 0 8px
+    border-bottom: 1px solid #2887d6
+    height: 65px
+    color: #fff
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 12px
+    line-height: 1
+
+  .main-heading-wrap
+    padding: 0 0 0 40px
+
+  .square-space
+    background: url(/images/moz_nav/square-space-icon.png) no-repeat
+
+  .blue-header h1
+    float: left
+    margin: 0
+    padding: 3px 6px 6px 0
+    font-size: 28px
+    text-shadow: 0 1px #1968a8
+
+  .heading-dropdown
+    float: left
+    position: relative
+    margin: 20px 0 0
+    img
+      cursor: pointer
+    .help-menu
+      right: auto
+      left: 0
+      width: 160px
+    .separation-border
+      border-top: 1px dotted #ada8a8
+      padding-top: 5px
+
+  .blue-header
+    p
+      text-shadow: 0 1px 1px #1968a8
+      margin: 0
+    a
+      color: #fff
+      text-decoration: none
+
+  .campaign-nav
+    background: url(/images/moz_nav/gray-grad.jpg) repeat-x
+    border: 1px solid #c8c8c8
+    border-top: 0
+    font-size: 12px
+    color: #6d6d6d
+    padding: 7px 6px
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+    li
+      float: left
+      padding: 0 0 0 6px
+      margin: 0 8px 0 0
+    a
+      color: #6d6d6d
+      text-decoration: none
+      display: block
+      float: left
+      padding: 3px 9px 4px 3px
+    li
+      &:hover
+        background: url(/images/moz_nav/grey-left.png) no-repeat
+        a
+          background: url(/images/moz_nav/grey-right.png) right top no-repeat
+          color: #393939
+          text-shadow: 0 1px 1px #fff
+      &.active
+        position: relative
+        a
+          font-weight: bold
+
+  .campaign-nav-active
+    position: absolute
+    left: 50%
+    top: 29px
+    margin-left: -8px
+
+  .campaign-nav h3
+    font-size: 18px
+    color: #4f4f4f
+    margin: 0
+    text-shadow: 0 1px 1px #fff
+    font-weight: normal
+
+  .user-name
+    padding-left: 70px
+
+  .campaign-sub-nav
+    background: #fff
+    border-left: 1px solid #c7c7c7
+    border-right: 1px solid #c7c7c7
+    font-size: 11px
+    ul
+      list-style: none
+      margin: 0
+      padding: 7px 0 7px 7px
+    li
+      float: left
+      padding: 0 5px
+      border-left: 1px solid #d3d3d3
+      &.first
+        border-left: 0
+    a
+      float: left
+      display: block
+      color: #0b72ba
+      text-decoration: none
+      padding: 3px 5px
+    li.active a
+      background: #d8e8f9
+
+  .blue-header
+    background: url(/images/moz_nav/blue-header.png) no-repeat
+    padding: 15px 0 0 8px
+    border-bottom: 1px solid #2887d6
+    height: 65px
+    color: #fff
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 12px
+    line-height: 1
+
+  .main-heading-wrap
+    padding: 0 0 0 40px
+
+  .square-space
+    background: url(/images/moz_nav/square-space-icon.png) no-repeat
+
+  .blue-header h1
+    float: left
+    margin: 0
+    padding: 3px 6px 6px 0
+    font-size: 28px
+    text-shadow: 0 1px #1968a8
+
+  .heading-dropdown
+    float: left
+    position: relative
+    margin: 20px 0 0
+    img
+      cursor: pointer
+    .help-menu
+      right: auto
+      left: 0
+      width: 160px
+    .separation-border
+      border-top: 1px dotted #ada8a8
+      padding-top: 5px
+
+  .blue-header
+    p
+      text-shadow: 0 1px 1px #1968a8
+      margin: 0
+    a
+      color: #fff
+      text-decoration: none
+
+  .campaign-nav
+    background: url(/images/moz_nav/gray-grad.jpg) repeat-x
+    border: 1px solid #c8c8c8
+    border-top: 0
+    font-size: 12px
+    color: #6d6d6d
+    padding: 7px 6px
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+    li
+      float: left
+      padding: 0 0 0 6px
+      margin: 0 8px 0 0
+    a
+      color: #6d6d6d
+      text-decoration: none
+      display: block
+      float: left
+      padding: 3px 9px 4px 3px
+    li
+      &:hover
+        background: url(/images/moz_nav/grey-left.png) no-repeat
+        a
+          background: url(/images/moz_nav/grey-right.png) right top no-repeat
+          color: #393939
+          text-shadow: 0 1px 1px #fff
+      &.active
+        position: relative
+        a
+          font-weight: bold
+
+  .campaign-nav-active
+    position: absolute
+    left: 50%
+    top: 29px
+    margin-left: -8px
+
+  .campaign-nav h3
+    font-size: 18px
+    color: #4f4f4f
+    margin: 0
+    text-shadow: 0 1px 1px #fff
+    font-weight: normal
+
+  .user-name
+    padding-left: 70px
+
+  .campaign-sub-nav
+    background: #fff
+    border-left: 1px solid #c7c7c7
+    border-right: 1px solid #c7c7c7
+    font-size: 11px
+    ul
+      list-style: none
+      margin: 0
+      padding: 7px 0 7px 7px
+    li
+      float: left
+      padding: 0 5px
+      border-left: 1px solid #d3d3d3
+      &.first
+        border-left: 0
+    a
+      float: left
+      display: block
+      color: #0b72ba
+      text-decoration: none
+      padding: 3px 5px
+    li.active a
+      background: #d8e8f9
+
+  .main-heading-research-wrap
+    padding: 0 0 0 10px
+
+  .rel
+    position: relative
+
+  .research-robot
+    position: absolute
+    right: 20px
+    bottom: 0px
+
+  .user-thumb
+    position: absolute
+    left: 19px
+    top: -12px
