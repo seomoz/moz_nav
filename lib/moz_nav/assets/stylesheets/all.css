@@ -483,6 +483,42 @@
     -webkit-border-top-left-radius: 0px !important;
     -webkit-border-top-right-radius: 0px !important; }
 
+/* general styles */
+.cl {
+  clear: both !important;
+  font-size: 0 !important;
+  height: 0 !important; }
+
+.clearfix:after {
+  clear: both !important;
+  content: " " !important;
+  display: block !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important; }
+
+.png {
+  /* for png /images/moz_nav to fix for IE6 */ }
+
+/* spacing */
+.mb-10 {
+  margin-bottom: 10px !important; }
+
+/* Alignments */
+.center {
+  text-align: center !important; }
+
+.right {
+  text-align: right !important; }
+
+.top {
+  vertical-align: top !important; }
+
+.middle {
+  vertical-align: middle !important; }
+
 #moz-nav-header.advanced {
   position: relative !important;
   padding-top: 90px !important; }
@@ -912,164 +948,6 @@
     position: absolute !important;
     left: 19px !important;
     top: -12px !important; }
-
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-  background: #d8e8f9 !important;
-  font-family: Arial, Helvetica, sans-serif !important; }
-
-#container {
-  margin: 0 auto !important;
-  width: 952px !important; }
-
-/* Login Page
- *-------------------------------------------------------------------- */
-.login-wrap {
-  width: 630px !important;
-  margin: 135px auto 10px !important;
-  position: relative !important;
-  background: white !important;
-  border: 1px solid white !important;
-  padding: 1px !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 11px !important;
-  color: #666666 !important;
-  line-height: 1 !important; }
-
-.form-content {
-  padding: 15px 35px 15px 310px !important; }
-
-.login-logo {
-  margin: 0 0 25px !important; }
-  .login-logo img {
-    display: block !important; }
-
-.login-wrap p {
-  margin: 0 0 7px !important; }
-  .login-wrap p.space {
-    margin-bottom: 15px !important; }
-  .login-wrap p.space-more {
-    margin-bottom: 30px !important; }
-
-.form-content label {
-  font-weight: bold !important; }
-.form-content input {
-  vertical-align: middle !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 11px !important;
-  color: #757575 !important; }
-
-.login-field {
-  width: 277px !important;
-  padding: 2px 4px !important;
-  border: 1px solid #e3e9ef !important;
-  border-top: 1px solid #abadb3 !important; }
-
-.btn-login {
-  border: 1px solid #adadad !important;
-  cursor: pointer !important;
-  background: url(/images/moz_nav/gray-bar-center.png) 0 -5px repeat-x !important;
-  font-weight: bold !important;
-  text-shadow: 0 1px 1px white !important;
-  width: 100px !important;
-  /* just for IE7 */
-  padding: 2px 0 !important; }
-
-.form-content a {
-  color: #0483cf !important;
-  text-decoration: none !important; }
-
-.forgot {
-  float: right !important;
-  display: inline-block !important;
-  margin-top: 2px !important; }
-
-.form-content a:hover {
-  text-decoration: underline !important; }
-
-.robot-bg {
-  /* blue static background */
-  position: absolute !important;
-  width: 285px !important;
-  left: 1px !important;
-  top: 1px !important;
-  bottom: 1px !important;
-  background: #91c2ea !important; }
-
-.robot {
-  /* robot */
-  position: absolute !important;
-  left: -20px !important;
-  top: -115px !important; }
-
-.plus-shadow {
-  position: absolute !important;
-  left: 5px !important;
-  top: 5px !important;
-  background: url(/images/moz_nav/plus-shadow.png) no-repeat !important;
-  width: 12px !important;
-  height: 13px !important; }
-
-.plus {
-  position: absolute !important;
-  right: 5px !important;
-  top: 5px !important;
-  background: url(/images/moz_nav/plus.png) no-repeat !important;
-  width: 12px !important;
-  height: 12px !important; }
-
-.bottom {
-  top: auto !important;
-  bottom: 5px !important; }
-
-/* login error message */
-.login-error {
-  position: absolute !important;
-  width: 94% !important;
-  padding: 10px 3% !important;
-  border: 1px solid #e4a0b3 !important;
-  left: 0 !important;
-  top: -100px !important;
-  background: #fcdfe3 !important;
-  color: #d76c62 !important;
-  font-size: 12px !important; }
-
-/* general styles */
-.cl {
-  clear: both !important;
-  font-size: 0 !important;
-  height: 0 !important; }
-
-.clearfix:after {
-  clear: both !important;
-  content: " " !important;
-  display: block !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  visibility: hidden !important;
-  width: 0 !important;
-  height: 0 !important; }
-
-.png {
-  /* for png /images/moz_nav to fix for IE6 */ }
-
-/* spacing */
-.mb-10 {
-  margin-bottom: 10px !important; }
-
-/* Alignments */
-.center {
-  text-align: center !important; }
-
-.right {
-  text-align: right !important; }
-
-.top {
-  vertical-align: top !important; }
-
-.middle {
-  vertical-align: middle !important; }
 
 #moz-nav-footer.basic {
   background: #4f96d2 url(/images/moz_nav/footer-top.png) repeat-x !important;
