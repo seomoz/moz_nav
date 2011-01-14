@@ -524,6 +524,74 @@
   font-family: Arial, Helvetica, sans-serif !important;
   margin: 0 auto !important;
   width: 952px !important; }
+  #moz-nav-header.advanced div.help-menu {
+    position: absolute !important;
+    display: none !important;
+    right: 0 !important;
+    top: 13px !important;
+    background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x !important;
+    padding: 0 0 4px !important;
+    width: 115px !important; }
+  #moz-nav-header.advanced .show-menu div.help-menu {
+    display: block !important; }
+  #moz-nav-header.advanced .help-menu ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 2px 1px 1px !important;
+    background: url(/images/moz_nav/transparent-white.png) !important;
+    border: 1px solid #e7e7e7 !important; }
+    #moz-nav-header.advanced .help-menu ul li {
+      float: none !important;
+      margin: 0 0 5px !important;
+      position: relative !important; }
+      #moz-nav-header.advanced .help-menu ul li.last {
+        margin-bottom: 0 !important; }
+      #moz-nav-header.advanced .help-menu ul li a {
+        line-height: 12px !important;
+        display: block !important;
+        padding: 3px 5px !important;
+        color: #0b72ba !important;
+        text-decoration: none !important; }
+        #moz-nav-header.advanced .help-menu ul li a img {
+          border: 0 !important;
+          vertical-align: middle !important; }
+        #moz-nav-header.advanced .help-menu ul li a:hover {
+          background: #bde2ff !important;
+          color: #517c9d !important; }
+  #moz-nav-header.basic div.help-menu {
+    position: absolute !important;
+    display: none !important;
+    right: 0 !important;
+    top: 13px !important;
+    background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x !important;
+    padding: 0 0 4px !important;
+    width: 115px !important; }
+  #moz-nav-header.basic .show-menu div.help-menu {
+    display: block !important; }
+  #moz-nav-header.basic .help-menu ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 2px 1px 1px !important;
+    background: url(/images/moz_nav/transparent-white.png) !important;
+    border: 1px solid #e7e7e7 !important; }
+    #moz-nav-header.basic .help-menu ul li {
+      float: none !important;
+      margin: 0 0 5px !important;
+      position: relative !important; }
+      #moz-nav-header.basic .help-menu ul li.last {
+        margin-bottom: 0 !important; }
+      #moz-nav-header.basic .help-menu ul li a {
+        line-height: 12px !important;
+        display: block !important;
+        padding: 3px 5px !important;
+        color: #0b72ba !important;
+        text-decoration: none !important; }
+        #moz-nav-header.basic .help-menu ul li a img {
+          border: 0 !important;
+          vertical-align: middle !important; }
+        #moz-nav-header.basic .help-menu ul li a:hover {
+          background: #bde2ff !important;
+          color: #517c9d !important; }
 
 #moz-nav-footer {
   background: #d8e8f9 !important;
@@ -567,40 +635,6 @@
       #moz-nav-header.advanced .user-links li img {
         border: 0 !important;
         vertical-align: middle !important; }
-  #moz-nav-header.advanced div.help-menu {
-    position: absolute !important;
-    display: none !important;
-    right: 0 !important;
-    top: 13px !important;
-    background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x !important;
-    padding: 0 0 4px !important;
-    width: 115px !important; }
-  #moz-nav-header.advanced .show-menu div.help-menu {
-    display: block !important; }
-  #moz-nav-header.advanced .help-menu ul {
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 2px 1px 1px !important;
-    background: url(/images/moz_nav/transparent-white.png) !important;
-    border: 1px solid #e7e7e7 !important; }
-    #moz-nav-header.advanced .help-menu ul li {
-      float: none !important;
-      margin: 0 0 5px !important;
-      position: relative !important; }
-      #moz-nav-header.advanced .help-menu ul li.last {
-        margin-bottom: 0 !important; }
-      #moz-nav-header.advanced .help-menu ul li a {
-        line-height: 12px !important;
-        display: block !important;
-        padding: 3px 5px !important;
-        color: #0b72ba !important;
-        text-decoration: none !important; }
-        #moz-nav-header.advanced .help-menu ul li a img {
-          border: 0 !important;
-          vertical-align: middle !important; }
-        #moz-nav-header.advanced .help-menu ul li a:hover {
-          background: #bde2ff !important;
-          color: #517c9d !important; }
   #moz-nav-header.advanced .user-controls {
     font-size: 12px !important;
     text-shadow: 0 1px 1px white !important; }
