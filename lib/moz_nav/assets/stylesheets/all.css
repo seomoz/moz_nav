@@ -996,146 +996,7 @@ a.learn-seo {
   left: 19px !important;
   top: -12px !important; }
 
-/* Yellow Header */
-.header-yellow-wrap {
-  background: #fff4d6 url(/images/moz_nav/header-yellow-wrap.png) left bottom repeat-x !important;
-  min-width: 952px !important; }
-
-.header-yellow {
-  padding: 10px 0 0 !important;
-  line-height: 1 !important; }
-
-.inner-content {
-  width: 952px !important;
-  margin: 0 auto !important; }
-
-.top-links {
-  float: right !important;
-  width: 205px !important;
-  background: url(/images/moz_nav/top-links.png) no-repeat !important;
-  padding: 2px 10px 4px 0 !important;
-  margin: 8px 0 0 !important; }
-  .top-links ul {
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important; }
-  .top-links li {
-    float: right !important;
-    position: relative !important;
-    margin: 0 !important;
-    padding: 0 0 0 13px !important; }
-  .top-links a {
-    color: #955f25 !important;
-    text-shadow: 0 1px 1px white !important;
-    font-size: 11px !important;
-    text-decoration: none !important; }
-    .top-links a img {
-      vertical-align: middle !important;
-      border: 0 !important; }
-  .top-links .help-menu {
-    top: 20px !important; }
-    .top-links .help-menu li {
-      padding: 0 !important; }
-
-/* help dropdown */
-/* yellow main nav area */
-.nav-yellow-wrap {
-  background: #fde7ac url(/images/moz_nav/nav-yellow-wrap.jpg) repeat-x !important;
-  border-top: 1px solid white !important;
-  border-bottom: 1px solid white !important;
-  min-width: 952px !important; }
-
-.nav-yellow {
-  line-height: 1 !important; }
-
-.s_form2 {
-  float: right !important;
-  width: 233px !important;
-  padding: 6px 0 0 !important; }
-
-.s_field_yellow {
-  width: 169px !important;
-  padding: 0 5px !important;
-  height: 22px !important;
-  line-height: 22px !important;
-  background: url(/images/moz_nav/s_field-yellow.jpg) no-repeat !important;
-  border: 0 !important;
-  vertical-align: middle !important; }
-
-.btn-search {
-  border: 0 !important;
-  cursor: pointer !important;
-  width: 54px !important;
-  height: 22px !important;
-  background: url(/images/moz_nav/btn-search.jpg) no-repeat !important;
-  vertical-align: middle !important; }
-
-.nav-yellow ul {
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important; }
-.nav-yellow li {
-  float: left !important;
-  position: relative !important;
-  margin: 0 !important;
-  padding: 1px 0 0 2px !important;
-  background: url(/images/moz_nav/separator-yellow.png) 0 5px no-repeat !important; }
-.nav-yellow a {
-  display: block !important;
-  float: left !important;
-  padding: 11px 17px 9px !important;
-  font-size: 14px !important;
-  color: #96611a !important;
-  text-shadow: 0 1px 1px white !important;
-  text-decoration: none !important; }
-.nav-yellow li.active a {
-  background: #fce8b2 !important; }
-
-.nav-yellow-active {
-  position: absolute !important;
-  left: 50% !important;
-  top: 35px !important;
-  margin-left: -8px !important; }
-
-/* sub menu in yellow header */
-.nav-yellow li:hover > .sub-nav-yellow {
-  display: block !important; }
-
-.sub-nav-yellow {
-  display: none !important;
-  position: absolute !important;
-  left: 0 !important;
-  top: 100% !important;
-  width: 168px !important;
-  border: 1px solid #e5e5e5 !important;
-  border-top-color: white !important; }
-  .sub-nav-yellow ul {
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 1px !important;
-    background: url(/images/moz_nav/transparent-white.png) !important;
-    border-bottom: 2px solid #acacac !important;
-    overflow: hidden !important; }
-  .sub-nav-yellow li {
-    float: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    background: none !important; }
-  .sub-nav-yellow a {
-    display: block !important;
-    width: 150px !important;
-    padding: 8px !important;
-    font-size: 11px !important;
-    color: #5d95c1 !important;
-    text-decoration: none !important; }
-    .sub-nav-yellow a img {
-      vertical-align: middle !important;
-      border: 0 !important; }
-    .sub-nav-yellow a:hover {
-      background: #bde2ff !important;
-      color: #517c9d !important;
-      text-shadow: 0 1px 1px white !important; }
-
+/* general styles */
 .cl {
   clear: both !important;
   font-size: 0 !important;
@@ -1328,3 +1189,127 @@ a.learn-seo {
         background: #f6f6f6 !important; }
     #moz-nav-footer.advanced .nav-secondary .active a {
       background: #f6f6f6 !important; }
+
+#moz-nav-header.basic .logo-bar {
+  background: #fff4d6 url(/images/moz_nav/header-yellow-wrap.png) left bottom repeat-x !important;
+  min-width: 952px !important; }
+#moz-nav-header.basic .header-yellow {
+  padding: 10px 0 0 !important;
+  line-height: 1 !important; }
+#moz-nav-header.basic .inner-content {
+  width: 952px !important;
+  margin: 0 auto !important; }
+#moz-nav-header.basic .top-links {
+  float: right !important;
+  width: 205px !important;
+  background: url(/images/moz_nav/top-links.png) no-repeat !important;
+  padding: 2px 10px 4px 0 !important;
+  margin: 8px 0 0 !important; }
+  #moz-nav-header.basic .top-links ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important; }
+  #moz-nav-header.basic .top-links li {
+    float: right !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 0 0 13px !important; }
+  #moz-nav-header.basic .top-links a {
+    color: #955f25 !important;
+    text-shadow: 0 1px 1px white !important;
+    font-size: 11px !important;
+    text-decoration: none !important; }
+    #moz-nav-header.basic .top-links a img {
+      vertical-align: middle !important;
+      border: 0 !important; }
+  #moz-nav-header.basic .top-links .help-menu {
+    top: 20px !important; }
+    #moz-nav-header.basic .top-links .help-menu li {
+      padding: 0 !important; }
+#moz-nav-header.basic .nav-yellow-wrap {
+  background: #fde7ac url(/images/moz_nav/nav-yellow-wrap.jpg) repeat-x !important;
+  border-top: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+  min-width: 952px !important; }
+#moz-nav-header.basic .nav-yellow {
+  line-height: 1 !important; }
+#moz-nav-header.basic .s_form2 {
+  float: right !important;
+  width: 233px !important;
+  padding: 6px 0 0 !important; }
+#moz-nav-header.basic .s_field_yellow {
+  width: 169px !important;
+  padding: 0 5px !important;
+  height: 22px !important;
+  line-height: 22px !important;
+  background: url(/images/moz_nav/s_field-yellow.jpg) no-repeat !important;
+  border: 0 !important;
+  vertical-align: middle !important; }
+#moz-nav-header.basic .btn-search {
+  border: 0 !important;
+  cursor: pointer !important;
+  width: 54px !important;
+  height: 22px !important;
+  background: url(/images/moz_nav/btn-search.jpg) no-repeat !important;
+  vertical-align: middle !important; }
+#moz-nav-header.basic .nav-yellow ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+#moz-nav-header.basic .nav-yellow li {
+  float: left !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 1px 0 0 2px !important;
+  background: url(/images/moz_nav/separator-yellow.png) 0 5px no-repeat !important; }
+#moz-nav-header.basic .nav-yellow a {
+  display: block !important;
+  float: left !important;
+  padding: 11px 17px 9px !important;
+  font-size: 14px !important;
+  color: #96611a !important;
+  text-shadow: 0 1px 1px white !important;
+  text-decoration: none !important; }
+#moz-nav-header.basic .nav-yellow li.active a {
+  background: #fce8b2 !important; }
+#moz-nav-header.basic .nav-yellow-active {
+  position: absolute !important;
+  left: 50% !important;
+  top: 35px !important;
+  margin-left: -8px !important; }
+#moz-nav-header.basic .nav-yellow li:hover > .sub-nav-yellow {
+  display: block !important; }
+#moz-nav-header.basic .sub-nav-yellow {
+  display: none !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 100% !important;
+  width: 168px !important;
+  border: 1px solid #e5e5e5 !important;
+  border-top-color: white !important; }
+  #moz-nav-header.basic .sub-nav-yellow ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 1px !important;
+    background: url(/images/moz_nav/transparent-white.png) !important;
+    border-bottom: 2px solid #acacac !important;
+    overflow: hidden !important; }
+  #moz-nav-header.basic .sub-nav-yellow li {
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important; }
+  #moz-nav-header.basic .sub-nav-yellow a {
+    display: block !important;
+    width: 150px !important;
+    padding: 8px !important;
+    font-size: 11px !important;
+    color: #5d95c1 !important;
+    text-decoration: none !important; }
+    #moz-nav-header.basic .sub-nav-yellow a img {
+      vertical-align: middle !important;
+      border: 0 !important; }
+    #moz-nav-header.basic .sub-nav-yellow a:hover {
+      background: #bde2ff !important;
+      color: #517c9d !important;
+      text-shadow: 0 1px 1px white !important; }
