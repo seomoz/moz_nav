@@ -10,7 +10,7 @@ module MozNav
 
     def render_nav_footer
       if current_user && current_user.pro?
-        # TODO
+        MozNav::Views::AdvancedFooter.render
       else
         MozNav::Views::BasicFooter.render
       end

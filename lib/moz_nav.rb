@@ -17,6 +17,7 @@ module MozNav
   autoload :Tasks,         'moz_nav/tasks'
 
   module Views
+    autoload :AdvancedFooter, 'moz_nav/views/advanced_footer'
     autoload :AdvancedHeader, 'moz_nav/views/advanced_header'
     autoload :BasicFooter,    'moz_nav/views/basic_footer'
     autoload :BasicHeader,    'moz_nav/views/basic_header'
