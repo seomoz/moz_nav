@@ -1,0 +1,1359 @@
+/*!
+ ** CleanSlate
+ **   github.com/premasagar/cleanslate
+ ** */
+/*     An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+ * 
+ *     by Premasagar Rose
+ *         dharmafly.com
+ * 
+ *     license
+ *         opensource.org/licenses/mit-license.php
+ * 
+ *     **
+ *         
+ *     v0.9.2 */
+/* == BLANKET RESET RULES == */
+/* HTML 4.01 */
+.cleanslate {
+  background-attachment: scroll !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+  background-position: 0 0 !important;
+  background-repeat: repeat !important;
+  border-color: black !important;
+  border-color: currentColor !important;
+  /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+  border-radius: 0 !important;
+  border-style: none !important;
+  border-width: medium !important;
+  bottom: auto !important;
+  clear: none !important;
+  clip: auto !important;
+  color: inherit !important;
+  counter-increment: none !important;
+  counter-reset: none !important;
+  cursor: auto !important;
+  direction: inherit !important;
+  display: inline !important;
+  float: none !important;
+  font-family: inherit !important;
+  /* As with other inherit values, this needs to be set on the root container element */
+  font-size: inherit !important;
+  font-style: inherit !important;
+  font-variant: normal !important;
+  font-weight: inherit !important;
+  height: auto !important;
+  left: auto !important;
+  letter-spacing: normal !important;
+  line-height: inherit !important;
+  list-style-type: inherit !important;
+  /* Could set list-style-type to none */
+  list-style-position: outside !important;
+  list-style-image: none !important;
+  margin: 0 !important;
+  max-height: none !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  opacity: 1 !important;
+  outline: invert none medium !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  position: static !important;
+  quotes: "" "" !important;
+  right: auto !important;
+  table-layout: auto !important;
+  text-align: inherit !important;
+  text-decoration: inherit !important;
+  text-indent: 0 !important;
+  text-transform: none !important;
+  top: auto !important;
+  unicode-bidi: normal !important;
+  vertical-align: baseline !important;
+  visibility: inherit !important;
+  white-space: normal !important;
+  width: auto !important;
+  word-spacing: normal !important;
+  z-index: auto !important;
+  /* Proprietary and draft rules */
+  /* This section needs extending */
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  display: block !important;
+  font-size: medium !important;
+  line-height: 1 !important;
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: "Times New Roman", Times, serif !important;
+  /* Override this with whatever font-family is required */
+  color: black !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  list-style-type: disc !important; }
+  .cleanslate h1, .cleanslate h2, .cleanslate h3, .cleanslate h4, .cleanslate h5, .cleanslate h6, .cleanslate p, .cleanslate td, .cleanslate dl, .cleanslate tr, .cleanslate dt, .cleanslate ol, .cleanslate form, .cleanslate select, .cleanslate option, .cleanslate pre, .cleanslate div, .cleanslate table, .cleanslate th, .cleanslate tbody, .cleanslate tfoot, .cleanslate caption, .cleanslate thead, .cleanslate ul, .cleanslate li, .cleanslate address, .cleanslate blockquote, .cleanslate dd, .cleanslate fieldset, .cleanslate li, .cleanslate iframe, .cleanslate strong, .cleanslate legend, .cleanslate em, .cleanslate s, .cleanslate cite, .cleanslate span, .cleanslate input, .cleanslate sup, .cleanslate label, .cleanslate dfn, .cleanslate object, .cleanslate big, .cleanslate q, .cleanslate font, .cleanslate samp, .cleanslate acronym, .cleanslate small, .cleanslate img, .cleanslate strike, .cleanslate code, .cleanslate sub, .cleanslate ins, .cleanslate textarea, .cleanslate var, .cleanslate a, .cleanslate abbr, .cleanslate applet, .cleanslate del, .cleanslate kbd, .cleanslate tt, .cleanslate b, .cleanslate i, .cleanslate hr, .cleanslate article, .cleanslate aside, .cleanslate dialog, .cleanslate figure, .cleanslate footer, .cleanslate header, .cleanslate hgroup, .cleanslate menu, .cleanslate nav, .cleanslate section, .cleanslate time, .cleanslate mark, .cleanslate audio, .cleanslate video {
+    background-attachment: scroll !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+    background-position: 0 0 !important;
+    background-repeat: repeat !important;
+    border-color: black !important;
+    border-color: currentColor !important;
+    /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+    border-radius: 0 !important;
+    border-style: none !important;
+    border-width: medium !important;
+    bottom: auto !important;
+    clear: none !important;
+    clip: auto !important;
+    color: inherit !important;
+    counter-increment: none !important;
+    counter-reset: none !important;
+    cursor: auto !important;
+    direction: inherit !important;
+    display: inline !important;
+    float: none !important;
+    font-family: inherit !important;
+    /* As with other inherit values, this needs to be set on the root container element */
+    font-size: inherit !important;
+    font-style: inherit !important;
+    font-variant: normal !important;
+    font-weight: inherit !important;
+    height: auto !important;
+    left: auto !important;
+    letter-spacing: normal !important;
+    line-height: inherit !important;
+    list-style-type: inherit !important;
+    /* Could set list-style-type to none */
+    list-style-position: outside !important;
+    list-style-image: none !important;
+    margin: 0 !important;
+    max-height: none !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    opacity: 1 !important;
+    outline: invert none medium !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    position: static !important;
+    quotes: "" "" !important;
+    right: auto !important;
+    table-layout: auto !important;
+    text-align: inherit !important;
+    text-decoration: inherit !important;
+    text-indent: 0 !important;
+    text-transform: none !important;
+    top: auto !important;
+    unicode-bidi: normal !important;
+    vertical-align: baseline !important;
+    visibility: inherit !important;
+    white-space: normal !important;
+    width: auto !important;
+    word-spacing: normal !important;
+    z-index: auto !important;
+    /* Proprietary and draft rules */
+    /* This section needs extending */
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important; }
+  .cleanslate h3, .cleanslate h5, .cleanslate p, .cleanslate h1, .cleanslate dl, .cleanslate dt, .cleanslate h6, .cleanslate ol, .cleanslate form, .cleanslate select, .cleanslate option, .cleanslate pre, .cleanslate div, .cleanslate h2, .cleanslate caption, .cleanslate h4, .cleanslate ul, .cleanslate address, .cleanslate blockquote, .cleanslate dd, .cleanslate fieldset, .cleanslate textarea, .cleanslate hr, .cleanslate article, .cleanslate aside, .cleanslate dialog, .cleanslate figure, .cleanslate footer, .cleanslate header, .cleanslate hgroup, .cleanslate menu, .cleanslate nav, .cleanslate section {
+    display: block !important; }
+  .cleanslate table {
+    display: table !important; }
+  .cleanslate thead {
+    display: table-header-group !important; }
+  .cleanslate tbody {
+    display: table-row-group !important; }
+  .cleanslate tfoot {
+    display: table-footer-group !important; }
+  .cleanslate tr {
+    display: table-row !important; }
+  .cleanslate th, .cleanslate td {
+    display: table-cell !important; }
+  .cleanslate nav ul, .cleanslate nav ol {
+    list-style-type: none !important; }
+  .cleanslate ul, .cleanslate menu {
+    list-style-type: disc !important; }
+  .cleanslate ol {
+    list-style-type: decimal !important; }
+    .cleanslate ol ul {
+      list-style-type: circle !important; }
+  .cleanslate ul ul, .cleanslate menu ul, .cleanslate ol menu, .cleanslate ul menu, .cleanslate menu menu {
+    list-style-type: circle !important; }
+  .cleanslate ol ol ul, .cleanslate ol ul ul, .cleanslate ol menu ul, .cleanslate ol ol menu, .cleanslate ol ul menu, .cleanslate ol menu menu {
+    list-style-type: square !important; }
+  .cleanslate ul ol ul, .cleanslate ul ul ul, .cleanslate ul menu ul, .cleanslate ul ol menu, .cleanslate ul ul menu, .cleanslate ul menu menu {
+    list-style-type: square !important; }
+  .cleanslate menu ol ul, .cleanslate menu ul ul, .cleanslate menu menu ul, .cleanslate menu ol menu, .cleanslate menu ul menu, .cleanslate menu menu menu {
+    list-style-type: square !important; }
+  .cleanslate li {
+    display: list-item !important;
+    /* Fixes IE7 issue with positioning of nested bullets */
+    min-height: auto !important;
+    min-width: auto !important; }
+  .cleanslate strong {
+    font-weight: bold !important; }
+  .cleanslate em {
+    font-style: italic !important; }
+  .cleanslate kbd, .cleanslate samp, .cleanslate code {
+    font-family: monospace !important; }
+  .cleanslate a {
+    cursor: pointer !important; }
+    .cleanslate a * {
+      cursor: pointer !important; }
+  .cleanslate input[type=submit], .cleanslate input[type=radio], .cleanslate input[type=checkbox] {
+    cursor: pointer !important; }
+  .cleanslate select {
+    cursor: pointer !important; }
+  .cleanslate a:hover {
+    text-decoration: underline !important; }
+  .cleanslate button {
+    text-align: center !important; }
+  .cleanslate input[type=submit] {
+    text-align: center !important; }
+  .cleanslate input[type=hidden] {
+    display: none !important; }
+  .cleanslate abbr[title], .cleanslate acronym[title], .cleanslate dfn[title] {
+    cursor: help !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: dotted !important; }
+  .cleanslate ins {
+    background-color: #ffff99 !important;
+    color: black !important; }
+  .cleanslate del {
+    text-decoration: line-through !important; }
+  .cleanslate blockquote, .cleanslate q {
+    quotes: none !important;
+    /* HTML5 */ }
+  .cleanslate blockquote:before, .cleanslate blockquote:after {
+    content: "" !important; }
+  .cleanslate q:before, .cleanslate q:after {
+    content: "" !important; }
+  .cleanslate li:before, .cleanslate li:after {
+    content: "" !important; }
+  .cleanslate input {
+    vertical-align: middle !important; }
+  .cleanslate select {
+    vertical-align: middle !important;
+    border: 1px solid #cccccc !important; }
+  .cleanslate textarea, .cleanslate input {
+    border: 1px solid #cccccc !important; }
+  .cleanslate table {
+    border-collapse: collapse !important;
+    border-spacing: 0 !important; }
+  .cleanslate hr {
+    display: block !important;
+    height: 1px !important;
+    border: 0 !important;
+    border-top: 1px solid #cccccc !important;
+    margin: 1em 0 !important; }
+  .cleanslate *[dir=rtl] {
+    direction: rtl !important; }
+  .cleanslate mark {
+    background-color: #ffff99 !important;
+    color: black !important;
+    font-style: italic !important;
+    font-weight: bold !important; }
+
+/* == BLOCK-LEVEL == */
+/* Actually, some of these should be inline-block and other values, but block works fine (TODO: rigorously verify this) */
+/* HTML 4.01 */
+/* == SPECIFIC ELEMENTS == */
+/* Some of these are browser defaults; some are just useful resets */
+/* == ROOT CONTAINER ELEMENT == */
+/* This contains default values for child elements to inherit */
+/*!
+ ** CleanSlate: proprietary rules
+ **   github.com/premasagar/cleanslate
+ ** */
+/*     An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+ * 
+ *     by Premasagar Rose
+ *         dharmafly.com
+ * 
+ *     license
+ *         opensource.org/licenses/mit-license.php
+ * 
+ *     **
+ *         
+ *     v0.9.1 */
+/* == PROPRIETARY RULES == */
+/* HTML 4.01 */
+.cleanslate {
+  /* already in main stylesheet - repeated here for completeness */
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  /* Mozilla Firefox */
+  -moz-appearance: none !important;
+  -moz-background-clip: border !important;
+  -moz-background-inline-policy: continuous !important;
+  -moz-background-origin: padding !important;
+  -moz-binding: none !important;
+  -moz-border-bottom-colors: none !important;
+  -moz-border-image: none !important;
+  -moz-border-left-colors: none !important;
+  -moz-border-right-colors: none !important;
+  -moz-border-top-colors: none !important;
+  -moz-border-radius-bottomleft: 0px !important;
+  -moz-border-radius-bottomright: 0px !important;
+  -moz-border-radius-topleft: 0px !important;
+  -moz-border-radius-topright: 0px !important;
+  -moz-box-align: stretch !important;
+  -moz-box-direction: normal !important;
+  -moz-box-flex: 0 !important;
+  -moz-box-ordinal-group: 1 !important;
+  -moz-box-orient: horizontal !important;
+  -moz-box-pack: start !important;
+  -moz-box-shadow: none !important;
+  -moz-box-sizing: content-box !important;
+  -moz-column-count: auto !important;
+  -moz-column-width: auto !important;
+  -moz-column-gap: 16px !important;
+  -moz-column-rule-color: black !important;
+  -moz-column-rule-width: 0px !important;
+  -moz-column-rule-style: none !important;
+  -moz-float-edge: content-box !important;
+  -moz-force-broken-image-icon: 0 !important;
+  -moz-image-region: auto !important;
+  -moz-outline-radius-bottomleft: 0px !important;
+  -moz-outline-radius-bottomright: 0px !important;
+  -moz-outline-radius-topleft: 0px !important;
+  -moz-outline-radius-topright: 0px !important;
+  -moz-stack-sizing: stretch-to-fit !important;
+  -moz-transform: none !important;
+  -moz-transform-origin: 50% 50% !important;
+  -moz-user-focus: none !important;
+  -moz-user-input: auto !important;
+  -moz-user-modify: read-only !important;
+  -moz-user-select: auto !important;
+  -moz-window-shadow: default !important;
+  /* Webkit */
+  -webkit-appearance: none !important;
+  -webkit-background-clip: border !important;
+  -webkit-background-composite: source-over !important;
+  -webkit-background-origin: padding !important;
+  -webkit-background-size: auto auto !important;
+  -webkit-border-fit: border !important;
+  -webkit-border-horizontal-spacing: 0px !important;
+  -webkit-border-vertical-spacing: 0px !important;
+  -webkit-box-align: stretch !important;
+  -webkit-box-direction: normal !important;
+  -webkit-box-flex: 0 !important;
+  -webkit-box-flex-group: 1 !important;
+  -webkit-box-lines: single !important;
+  -webkit-box-ordinal-group: 1 !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-pack: start !important;
+  -webkit-box-shadow: none !important;
+  -webkit-box-sizing: content-box !important;
+  -webkit-column-break-after: auto !important;
+  -webkit-column-break-before: auto !important;
+  -webkit-column-break-inside: auto !important;
+  -webkit-column-count: auto !important;
+  -webkit-column-gap: normal !important;
+  -webkit-column-rule-color: black !important;
+  -webkit-column-rule-style: none !important;
+  -webkit-column-rule-width: 0px !important;
+  -webkit-column-width: auto !important;
+  -webkit-highlight: none !important;
+  -webkit-line-break: normal !important;
+  -webkit-line-clamp: none !important;
+  -webkit-margin-bottom-collapse: collapse !important;
+  -webkit-margin-top-collapse: collapse !important;
+  -webkit-marquee-direction: auto !important;
+  -webkit-marquee-increment: 6px !important;
+  -webkit-marquee-repetition: infinite !important;
+  -webkit-marquee-style: scroll !important;
+  -webkit-nbsp-mode: normal !important;
+  -webkit-rtl-ordering: logical !important;
+  -webkit-text-decorations-in-effect: none !important;
+  -webkit-text-fill-color: black !important;
+  -webkit-text-security: none !important;
+  -webkit-text-stroke-color: black !important;
+  -webkit-text-stroke-width: 0 !important;
+  -webkit-user-drag: auto !important;
+  -webkit-user-modify: read-only !important;
+  -webkit-user-select: text !important;
+  -webkit-dashboard-region: null !important;
+  -webkit-border-bottom-left-radius: 0px !important;
+  -webkit-border-bottom-right-radius: 0px !important;
+  -webkit-border-top-left-radius: 0px !important;
+  -webkit-border-top-right-radius: 0px !important; }
+  .cleanslate h1, .cleanslate h2, .cleanslate h3, .cleanslate h4, .cleanslate h5, .cleanslate h6, .cleanslate p, .cleanslate td, .cleanslate dl, .cleanslate tr, .cleanslate dt, .cleanslate ol, .cleanslate form, .cleanslate select, .cleanslate option, .cleanslate pre, .cleanslate div, .cleanslate table, .cleanslate th, .cleanslate tbody, .cleanslate tfoot, .cleanslate caption, .cleanslate thead, .cleanslate ul, .cleanslate li, .cleanslate address, .cleanslate blockquote, .cleanslate dd, .cleanslate fieldset, .cleanslate li, .cleanslate iframe, .cleanslate strong, .cleanslate legend, .cleanslate em, .cleanslate s, .cleanslate cite, .cleanslate span, .cleanslate input, .cleanslate sup, .cleanslate label, .cleanslate dfn, .cleanslate object, .cleanslate big, .cleanslate q, .cleanslate font, .cleanslate samp, .cleanslate acronym, .cleanslate small, .cleanslate img, .cleanslate strike, .cleanslate code, .cleanslate sub, .cleanslate ins, .cleanslate textarea, .cleanslate var, .cleanslate a, .cleanslate abbr, .cleanslate applet, .cleanslate del, .cleanslate kbd, .cleanslate tt, .cleanslate b, .cleanslate i, .cleanslate hr, .cleanslate article, .cleanslate aside, .cleanslate dialog, .cleanslate figure, .cleanslate footer, .cleanslate header, .cleanslate hgroup, .cleanslate menu, .cleanslate nav, .cleanslate section, .cleanslate time, .cleanslate mark, .cleanslate audio, .cleanslate video {
+    /* already in main stylesheet - repeated here for completeness */
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    /* Mozilla Firefox */
+    -moz-appearance: none !important;
+    -moz-background-clip: border !important;
+    -moz-background-inline-policy: continuous !important;
+    -moz-background-origin: padding !important;
+    -moz-binding: none !important;
+    -moz-border-bottom-colors: none !important;
+    -moz-border-image: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    -moz-border-radius-bottomleft: 0px !important;
+    -moz-border-radius-bottomright: 0px !important;
+    -moz-border-radius-topleft: 0px !important;
+    -moz-border-radius-topright: 0px !important;
+    -moz-box-align: stretch !important;
+    -moz-box-direction: normal !important;
+    -moz-box-flex: 0 !important;
+    -moz-box-ordinal-group: 1 !important;
+    -moz-box-orient: horizontal !important;
+    -moz-box-pack: start !important;
+    -moz-box-shadow: none !important;
+    -moz-box-sizing: content-box !important;
+    -moz-column-count: auto !important;
+    -moz-column-width: auto !important;
+    -moz-column-gap: 16px !important;
+    -moz-column-rule-color: black !important;
+    -moz-column-rule-width: 0px !important;
+    -moz-column-rule-style: none !important;
+    -moz-float-edge: content-box !important;
+    -moz-force-broken-image-icon: 0 !important;
+    -moz-image-region: auto !important;
+    -moz-outline-radius-bottomleft: 0px !important;
+    -moz-outline-radius-bottomright: 0px !important;
+    -moz-outline-radius-topleft: 0px !important;
+    -moz-outline-radius-topright: 0px !important;
+    -moz-stack-sizing: stretch-to-fit !important;
+    -moz-transform: none !important;
+    -moz-transform-origin: 50% 50% !important;
+    -moz-user-focus: none !important;
+    -moz-user-input: auto !important;
+    -moz-user-modify: read-only !important;
+    -moz-user-select: auto !important;
+    -moz-window-shadow: default !important;
+    /* Webkit */
+    -webkit-appearance: none !important;
+    -webkit-background-clip: border !important;
+    -webkit-background-composite: source-over !important;
+    -webkit-background-origin: padding !important;
+    -webkit-background-size: auto auto !important;
+    -webkit-border-fit: border !important;
+    -webkit-border-horizontal-spacing: 0px !important;
+    -webkit-border-vertical-spacing: 0px !important;
+    -webkit-box-align: stretch !important;
+    -webkit-box-direction: normal !important;
+    -webkit-box-flex: 0 !important;
+    -webkit-box-flex-group: 1 !important;
+    -webkit-box-lines: single !important;
+    -webkit-box-ordinal-group: 1 !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-pack: start !important;
+    -webkit-box-shadow: none !important;
+    -webkit-box-sizing: content-box !important;
+    -webkit-column-break-after: auto !important;
+    -webkit-column-break-before: auto !important;
+    -webkit-column-break-inside: auto !important;
+    -webkit-column-count: auto !important;
+    -webkit-column-gap: normal !important;
+    -webkit-column-rule-color: black !important;
+    -webkit-column-rule-style: none !important;
+    -webkit-column-rule-width: 0px !important;
+    -webkit-column-width: auto !important;
+    -webkit-highlight: none !important;
+    -webkit-line-break: normal !important;
+    -webkit-line-clamp: none !important;
+    -webkit-margin-bottom-collapse: collapse !important;
+    -webkit-margin-top-collapse: collapse !important;
+    -webkit-marquee-direction: auto !important;
+    -webkit-marquee-increment: 6px !important;
+    -webkit-marquee-repetition: infinite !important;
+    -webkit-marquee-style: scroll !important;
+    -webkit-nbsp-mode: normal !important;
+    -webkit-rtl-ordering: logical !important;
+    -webkit-text-decorations-in-effect: none !important;
+    -webkit-text-fill-color: black !important;
+    -webkit-text-security: none !important;
+    -webkit-text-stroke-color: black !important;
+    -webkit-text-stroke-width: 0 !important;
+    -webkit-user-drag: auto !important;
+    -webkit-user-modify: read-only !important;
+    -webkit-user-select: text !important;
+    -webkit-dashboard-region: null !important;
+    -webkit-border-bottom-left-radius: 0px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 0px !important; }
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #d8e8f9 !important;
+  font-family: Arial, Helvetica, sans-serif !important; }
+
+#container {
+  margin: 0 auto !important;
+  width: 952px !important; }
+
+/* put the header on top by css */
+.basic-header {
+  position: relative !important;
+  padding-top: 90px !important; }
+
+.multi-header {
+  position: relative !important;
+  height: 90px !important; }
+
+/* header
+ *--------------------------------------------------------------------------------------------- */
+.header {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 952px !important;
+  padding: 17px 0 0 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 11px !important;
+  line-height: 1 !important; }
+
+.logo {
+  float: left !important;
+  display: block !important;
+  border: 0 !important;
+  padding: 0 0 5px !important; }
+
+.user-links {
+  margin: 0 !important;
+  list-style: none !important;
+  padding: 12px 0 0 !important; }
+  .user-links li {
+    float: right !important;
+    margin: 0 7px 0 0 !important;
+    position: relative !important; }
+    .user-links li a {
+      color: #0b72ba !important;
+      text-decoration: none !important; }
+      .user-links li a:hover {
+        color: black !important; }
+    .user-links li img {
+      border: 0 !important;
+      vertical-align: middle !important; }
+
+/* sub-menu for right top links
+ *--------------------------------------------------------------------------------------------- */
+div.help-menu {
+  position: absolute !important;
+  display: none !important;
+  right: 0 !important;
+  top: 13px !important;
+  background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x !important;
+  padding: 0 0 4px !important;
+  width: 115px !important; }
+
+.show-menu div.help-menu {
+  display: block !important; }
+
+.help-menu ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 2px 1px 1px !important;
+  background: url(/images/moz_nav/transparent-white.png) !important;
+  border: 1px solid #e7e7e7 !important; }
+  .help-menu ul li {
+    float: none !important;
+    margin: 0 0 5px !important;
+    position: relative !important; }
+    .help-menu ul li.last {
+      margin-bottom: 0 !important; }
+    .help-menu ul li a {
+      line-height: 12px !important;
+      display: block !important;
+      padding: 3px 5px !important;
+      color: #0b72ba !important;
+      text-decoration: none !important; }
+      .help-menu ul li a img {
+        border: 0 !important;
+        vertical-align: middle !important; }
+      .help-menu ul li a:hover {
+        background: #bde2ff !important;
+        color: #517c9d !important; }
+
+/* nav
+ *--------------------------------------------------------------------------------------------- */
+.user-controls {
+  font-size: 12px !important;
+  text-shadow: 0 1px 1px white !important; }
+  .user-controls a {
+    text-decoration: none !important;
+    color: #676767 !important;
+    font-weight: bold !important; }
+
+.pro-dashboard-area {
+  float: left !important;
+  width: 147px !important;
+  height: 41px !important;
+  background: url(/images/moz_nav/dashboard-bg.png) no-repeat !important; }
+  .pro-dashboard-area a {
+    display: block !important;
+    padding: 14px 0 14px 42px !important; }
+
+a.pro-dashboard, .pro-dashboard a {
+  background: url(/images/moz_nav/dashboard.png) 10px 13px no-repeat !important; }
+
+.nav-wrap {
+  float: right !important;
+  width: 800px !important; }
+
+.gray-bar-left {
+  float: left !important;
+  width: 6px !important;
+  height: 41px !important;
+  background: url(/images/moz_nav/gray-bar-left.png) no-repeat !important; }
+
+.gray-bar-right {
+  float: left !important;
+  width: 6px !important;
+  height: 41px !important;
+  background: url(/images/moz_nav/gray-bar-left.png) no-repeat !important;
+  float: right !important;
+  background: url(/images/moz_nav/gray-bar-right.png) no-repeat !important; }
+
+.gray-bar-center {
+  background: url(/images/moz_nav/gray-bar-center.png) repeat-x !important;
+  margin: 0 6px !important;
+  min-height: 41px !important; }
+
+/* search form */
+.s_form {
+  float: right !important;
+  width: 170px !important;
+  padding: 9px 4px 0 0 !important; }
+
+.s_field {
+  border: 0 !important;
+  width: 138px !important;
+  padding: 3px 5px !important;
+  background: url(/images/moz_nav/search-form.png) no-repeat !important;
+  vertical-align: middle !important; }
+
+.s_field2 {
+  border: 0 !important;
+  width: 138px !important;
+  padding: 0 5px !important;
+  height: 22px !important;
+  line-height: 22px !important;
+  background: url(/images/moz_nav/search-form.png) no-repeat !important;
+  vertical-align: middle !important; }
+
+.s_btn {
+  border: 0 !important;
+  cursor: pointer !important;
+  background: url(/images/moz_nav/search-form.png) right top no-repeat !important;
+  width: 22px !important;
+  padding: 0 !important;
+  height: 22px !important;
+  vertical-align: middle !important; }
+
+/* main nav */
+.nav {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important; }
+  .nav li {
+    float: left !important;
+    margin: 0 !important;
+    background: url(/images/moz_nav/separator.png) 0 4px no-repeat !important;
+    padding: 1px 0 0 2px !important;
+    position: relative !important; }
+    .nav li.first {
+      background: none !important; }
+  .nav a {
+    display: block !important;
+    float: left !important;
+    padding: 12px 11px 14px 30px !important; }
+
+.campaigns a {
+  background: url(/images/moz_nav/campaigns.png) 10px 11px no-repeat !important; }
+
+a.campaigns {
+  background: url(/images/moz_nav/campaigns.png) 10px 13px no-repeat !important; }
+
+.research-tools a {
+  background: url(/images/moz_nav/research.png) 10px 9px no-repeat !important; }
+
+a.research-tools {
+  background: url(/images/moz_nav/research.png) 10px 11px no-repeat !important; }
+
+.pro-qa a {
+  background: url(/images/moz_nav/pro-qa.png) 7px 8px no-repeat !important;
+  padding-left: 35px !important; }
+
+a.pro-qa {
+  background: url(/images/moz_nav/pro-qa.png) 3px 11px no-repeat !important; }
+
+.community a {
+  background: url(/images/moz_nav/thumb.png) 10px 10px no-repeat !important; }
+
+a.community {
+  background: url(/images/moz_nav/thumb.png) 10px 12px no-repeat !important; }
+
+.learn-seo a {
+  background: url(/images/moz_nav/learn-seo.png) 10px 11px no-repeat !important; }
+
+a.learn-seo {
+  background: url(/images/moz_nav/learn-seo.png) 10px 13px no-repeat !important; }
+
+/* 2nd level nav */
+.nav li:hover > .sub-nav {
+  display: block !important; }
+
+.sub-nav {
+  display: none !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 37px !important;
+  width: 152px !important;
+  background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x !important;
+  padding: 0 0 4px !important; }
+
+.sub-nav-top {
+  /*			position:absolute;
+   *			display:block;
+   *			left:50px;
+   *			top:-7px; */
+  background: url(/images/moz_nav/sub-nav-top.png) 50px 0 no-repeat !important;
+  padding: 7px 0 0 !important; }
+
+.sub-nav ul {
+  margin: 0 !important;
+  padding: 1px !important;
+  background: url(/images/moz_nav/transparent-white.png) !important;
+  border-left: 1px solid #e7e7e7 !important;
+  border-right: 1px solid #e7e7e7 !important;
+  list-style: none !important; }
+.sub-nav li {
+  float: none !important;
+  margin: 0 !important;
+  background: none !important;
+  padding: 0 !important; }
+  .sub-nav li a {
+    float: none !important;
+    font-size: 11px !important;
+    color: #5d95c1 !important;
+    width: 130px !important;
+    margin: 0 !important;
+    background: none !important;
+    padding: 7px 9px !important;
+    position: relative !important; }
+    .sub-nav li a:hover {
+      background: #bde2ff !important;
+      color: #517c9d !important;
+      text-shadow: 0 1px 1px white !important; }
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 11px !important;
+  color: #737373 !important;
+  text-shadow: 0 1px 1px white !important;
+  line-height: 1 !important; }
+
+/* footer social links
+ *-------------------------------------------------------------------- */
+.social-links {
+  float: right !important;
+  width: 77px !important;
+  padding: 9px 3px !important; }
+  .social-links ul {
+    list-style: none !important;
+    background: url(/images/moz_nav/social-bg.png) no-repeat !important;
+    width: 71px !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 5px 0 5px 6px !important; }
+  .social-links li {
+    float: left !important;
+    margin: 0 3px 0 0 !important; }
+  .social-links a {
+    display: inline-block !important;
+    width: 14px !important;
+    height: 14px !important;
+    background: url(/images/moz_nav/social-icons.png) no-repeat !important; }
+    .social-links a.rss-link {
+      background-position: 0 0 !important; }
+    .social-links a.twitter-link {
+      background-position: -17px 0 !important; }
+    .social-links a.facebook-link {
+      background-position: -34px 0 !important; }
+    .social-links a.linkdin-link {
+      background-position: -51px 0 !important; }
+
+/* footer copyrights
+ *-------------------------------------------------------------------- */
+.copyrights {
+  float: left !important;
+  padding: 12px 5px 9px 30px !important;
+  width: 300px !important;
+  background: url(/images/moz_nav/rights.png) 4px 9px no-repeat !important; }
+  .copyrights p {
+    margin: 0 !important; }
+
+/* footer navigation
+ *-------------------------------------------------------------------- */
+.nav-secondary {
+  float: left !important; }
+  .nav-secondary ul {
+    background: url(/images/moz_nav/separator.png) 0 3px no-repeat !important;
+    margin: 0 !important;
+    padding: 2px 0 0 10px !important;
+    list-style: none !important; }
+  .nav-secondary li {
+    float: left !important;
+    background: url(/images/moz_nav/searator-footer.png) left center no-repeat !important;
+    padding: 0 0 0 1px !important; }
+    .nav-secondary li.first {
+      background: none !important; }
+  .nav-secondary a {
+    display: block !important;
+    float: left !important;
+    padding: 11px 6px 12px !important;
+    color: #0b72ba !important;
+    text-decoration: none !important; }
+    .nav-secondary a:hover {
+      background: #f6f6f6 !important; }
+  .nav-secondary .active a {
+    background: #f6f6f6 !important; }
+
+/* Blue Footer start
+ *-------------------------------------------------------------------- */
+.footer-blue-wrap {
+  background: #4f96d2 url(/images/moz_nav/footer-top.png) repeat-x !important;
+  border-bottom: 1px solid #377bb1 !important;
+  min-width: 950px !important; }
+
+.footer-blue {
+  width: 950px !important;
+  margin: 0 auto !important;
+  padding: 20px 0 15px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #244561 !important;
+  font-size: 11px !important;
+  line-height: 1 !important; }
+
+.try-col {
+  float: left !important;
+  width: 270px !important;
+  padding: 0 20px 0 40px !important; }
+
+.products-col, .company-col, .popular-col, .stay-touch-col {
+  float: left !important;
+  padding: 0 12px 0 25px !important;
+  background: url(/images/moz_nav/footer-separator.png) repeat-y !important;
+  min-height: 155px !important; }
+
+.footer-blue h2 {
+  font-size: 15px !important;
+  color: white !important;
+  text-shadow: 0 1px 1px #6189ab !important;
+  margin: 0 0 3px !important; }
+.footer-blue h3 {
+  font-size: 12px !important;
+  color: white !important;
+  text-shadow: 0 1px 1px #6189ab !important;
+  margin: 0 0 7px !important; }
+
+.try-it-free {
+  display: block !important; }
+
+.footer-blue p {
+  margin: 0 0 7px !important; }
+.footer-blue ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+.footer-blue li {
+  margin: 0 !important; }
+.footer-blue a {
+  text-decoration: underline !important;
+  color: #244561 !important; }
+.footer-blue li a {
+  display: block !important;
+  text-decoration: none !important;
+  color: white !important;
+  line-height: 15px !important;
+  padding: 3px 0 !important; }
+.footer-blue li.active {
+  background: url(/images/moz_nav/footer-active-left.png) no-repeat !important;
+  margin-left: -7px !important;
+  padding-left: 10px !important; }
+  .footer-blue li.active a {
+    background: url(/images/moz_nav/footer-active.png) right top no-repeat !important;
+    color: #244561 !important;
+    text-shadow: 0 1px 1px white !important; }
+
+.products-col, .popular-col {
+  width: 125px !important; }
+
+.try-it-free {
+  margin: 0 0 10px !important;
+  border: 0 !important; }
+
+.company-col {
+  width: 110px !important; }
+
+.stay-touch-col {
+  width: 110px !important; }
+  .stay-touch-col address {
+    line-height: 14px !important;
+    font-style: normal !important;
+    margin-bottom: 2px !important; }
+
+.footer-blue ul.social-links2 {
+  padding: 4px 0 2px !important; }
+
+.social-links2 {
+  list-style: none !important;
+  height: 1% !important;
+  overflow: hidden !important; }
+  .social-links2 li {
+    float: left !important;
+    margin: 0 3px 0 0 !important; }
+  .social-links2 a {
+    display: inline-block !important;
+    width: 15px !important;
+    height: 15px !important;
+    background: url(/images/moz_nav/social-logos.png) no-repeat !important; }
+    .social-links2 a.rss-link {
+      background-position: 0 0 !important; }
+    .social-links2 a.twitter-link {
+      background-position: -16px 0 !important; }
+    .social-links2 a.facebook-link {
+      background-position: -33px 0 !important; }
+    .social-links2 a.linkdin-link {
+      background-position: -50px 0 !important; }
+
+/* Blue Footer End
+ *-------------------------------------------------------------------- */
+/* Login Page
+ *-------------------------------------------------------------------- */
+.login-wrap {
+  width: 630px !important;
+  margin: 135px auto 10px !important;
+  position: relative !important;
+  background: white !important;
+  border: 1px solid white !important;
+  padding: 1px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 11px !important;
+  color: #666666 !important;
+  line-height: 1 !important; }
+
+.form-content {
+  padding: 15px 35px 15px 310px !important; }
+
+.login-logo {
+  margin: 0 0 25px !important; }
+  .login-logo img {
+    display: block !important; }
+
+.login-wrap p {
+  margin: 0 0 7px !important; }
+  .login-wrap p.space {
+    margin-bottom: 15px !important; }
+  .login-wrap p.space-more {
+    margin-bottom: 30px !important; }
+
+.form-content label {
+  font-weight: bold !important; }
+.form-content input {
+  vertical-align: middle !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 11px !important;
+  color: #757575 !important; }
+
+.login-field {
+  width: 277px !important;
+  padding: 2px 4px !important;
+  border: 1px solid #e3e9ef !important;
+  border-top: 1px solid #abadb3 !important; }
+
+.btn-login {
+  border: 1px solid #adadad !important;
+  cursor: pointer !important;
+  background: url(/images/moz_nav/gray-bar-center.png) 0 -5px repeat-x !important;
+  font-weight: bold !important;
+  text-shadow: 0 1px 1px white !important;
+  width: 100px !important;
+  /* just for IE7 */
+  padding: 2px 0 !important; }
+
+.form-content a {
+  color: #0483cf !important;
+  text-decoration: none !important; }
+
+.forgot {
+  float: right !important;
+  display: inline-block !important;
+  margin-top: 2px !important; }
+
+.form-content a:hover {
+  text-decoration: underline !important; }
+
+.robot-bg {
+  /* blue static background */
+  position: absolute !important;
+  width: 285px !important;
+  left: 1px !important;
+  top: 1px !important;
+  bottom: 1px !important;
+  background: #91c2ea !important; }
+
+.robot {
+  /* robot */
+  position: absolute !important;
+  left: -20px !important;
+  top: -115px !important; }
+
+.plus-shadow {
+  position: absolute !important;
+  left: 5px !important;
+  top: 5px !important;
+  background: url(/images/moz_nav/plus-shadow.png) no-repeat !important;
+  width: 12px !important;
+  height: 13px !important; }
+
+.plus {
+  position: absolute !important;
+  right: 5px !important;
+  top: 5px !important;
+  background: url(/images/moz_nav/plus.png) no-repeat !important;
+  width: 12px !important;
+  height: 12px !important; }
+
+.bottom {
+  top: auto !important;
+  bottom: 5px !important; }
+
+/* login error message */
+.login-error {
+  position: absolute !important;
+  width: 94% !important;
+  padding: 10px 3% !important;
+  border: 1px solid #e4a0b3 !important;
+  left: 0 !important;
+  top: -100px !important;
+  background: #fcdfe3 !important;
+  color: #d76c62 !important;
+  font-size: 12px !important; }
+
+/* page 11 Campaign page */
+.blue-header {
+  background: url(/images/moz_nav/blue-header.png) no-repeat !important;
+  padding: 15px 0 0 8px !important;
+  border-bottom: 1px solid #2887d6 !important;
+  height: 65px !important;
+  color: white !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1 !important; }
+
+.main-heading-wrap {
+  padding: 0 0 0 40px !important; }
+
+.square-space {
+  background: url(/images/moz_nav/square-space-icon.png) no-repeat !important; }
+
+.blue-header h1 {
+  float: left !important;
+  margin: 0 !important;
+  padding: 3px 6px 6px 0 !important;
+  font-size: 28px !important;
+  text-shadow: 0 1px #1968a8 !important; }
+
+.heading-dropdown {
+  float: left !important;
+  position: relative !important;
+  margin: 20px 0 0 !important; }
+  .heading-dropdown img {
+    cursor: pointer !important; }
+  .heading-dropdown .help-menu {
+    right: auto !important;
+    left: 0 !important;
+    width: 160px !important; }
+  .heading-dropdown .separation-border {
+    border-top: 1px dotted #ada8a8 !important;
+    padding-top: 5px !important; }
+
+.blue-header p {
+  text-shadow: 0 1px 1px #1968a8 !important;
+  margin: 0 !important; }
+.blue-header a {
+  color: white !important;
+  text-decoration: none !important; }
+
+/* nav in campaign page */
+.campaign-nav {
+  background: url(/images/moz_nav/gray-grad.jpg) repeat-x !important;
+  border: 1px solid #c8c8c8 !important;
+  border-top: 0 !important;
+  font-size: 12px !important;
+  color: #6d6d6d !important;
+  padding: 7px 6px !important; }
+  .campaign-nav ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important; }
+  .campaign-nav li {
+    float: left !important;
+    padding: 0 0 0 6px !important;
+    margin: 0 8px 0 0 !important; }
+  .campaign-nav a {
+    color: #6d6d6d !important;
+    text-decoration: none !important;
+    display: block !important;
+    float: left !important;
+    padding: 3px 9px 4px 3px !important; }
+  .campaign-nav li:hover {
+    background: url(/images/moz_nav/grey-left.png) no-repeat !important; }
+    .campaign-nav li:hover a {
+      background: url(/images/moz_nav/grey-right.png) right top no-repeat !important;
+      color: #393939 !important;
+      text-shadow: 0 1px 1px white !important; }
+  .campaign-nav li.active {
+    position: relative !important; }
+    .campaign-nav li.active a {
+      font-weight: bold !important; }
+
+.campaign-nav-active {
+  position: absolute !important;
+  left: 50% !important;
+  top: 29px !important;
+  margin-left: -8px !important; }
+
+.campaign-nav h3 {
+  font-size: 18px !important;
+  color: #4f4f4f !important;
+  margin: 0 !important;
+  text-shadow: 0 1px 1px white !important;
+  font-weight: normal !important; }
+
+.user-name {
+  padding-left: 70px !important; }
+
+/* sub nav in campaign page */
+.campaign-sub-nav {
+  background: white !important;
+  border-left: 1px solid #c7c7c7 !important;
+  border-right: 1px solid #c7c7c7 !important;
+  font-size: 11px !important; }
+  .campaign-sub-nav ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 7px 0 7px 7px !important; }
+  .campaign-sub-nav li {
+    float: left !important;
+    padding: 0 5px !important;
+    border-left: 1px solid #d3d3d3 !important; }
+    .campaign-sub-nav li.first {
+      border-left: 0 !important; }
+  .campaign-sub-nav a {
+    float: left !important;
+    display: block !important;
+    color: #0b72ba !important;
+    text-decoration: none !important;
+    padding: 3px 5px !important; }
+  .campaign-sub-nav li.active a {
+    background: #d8e8f9 !important; }
+
+/* research tools page */
+.main-heading-research-wrap {
+  padding: 0 0 0 10px !important; }
+
+.rel {
+  position: relative !important; }
+
+.research-robot {
+  position: absolute !important;
+  right: 20px !important;
+  bottom: 0px !important; }
+
+.user-thumb {
+  position: absolute !important;
+  left: 19px !important;
+  top: -12px !important; }
+
+/* Yellow Header */
+.header-yellow-wrap {
+  background: #fff4d6 url(/images/moz_nav/header-yellow-wrap.png) left bottom repeat-x !important;
+  min-width: 952px !important; }
+
+.header-yellow {
+  padding: 10px 0 0 !important;
+  line-height: 1 !important; }
+
+.inner-content {
+  width: 952px !important;
+  margin: 0 auto !important; }
+
+.logo2 {
+  float: left !important;
+  border: 0 !important; }
+
+.top-links {
+  float: right !important;
+  width: 205px !important;
+  background: url(/images/moz_nav/top-links.png) no-repeat !important;
+  padding: 2px 10px 4px 0 !important;
+  margin: 8px 0 0 !important; }
+  .top-links ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important; }
+  .top-links li {
+    float: right !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 0 0 13px !important; }
+  .top-links a {
+    color: #955f25 !important;
+    text-shadow: 0 1px 1px white !important;
+    font-size: 11px !important;
+    text-decoration: none !important; }
+    .top-links a img {
+      vertical-align: middle !important;
+      border: 0 !important; }
+  .top-links .help-menu {
+    top: 20px !important; }
+    .top-links .help-menu li {
+      padding: 0 !important; }
+
+/* help dropdown */
+/* yellow main nav area */
+.nav-yellow-wrap {
+  background: #fde7ac url(/images/moz_nav/nav-yellow-wrap.jpg) repeat-x !important;
+  border-top: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+  min-width: 952px !important; }
+
+.nav-yellow {
+  line-height: 1 !important; }
+
+.s_form2 {
+  float: right !important;
+  width: 233px !important;
+  padding: 6px 0 0 !important; }
+
+.s_field_yellow {
+  width: 169px !important;
+  padding: 0 5px !important;
+  height: 22px !important;
+  line-height: 22px !important;
+  background: url(/images/moz_nav/s_field-yellow.jpg) no-repeat !important;
+  border: 0 !important;
+  vertical-align: middle !important; }
+
+.btn-search {
+  border: 0 !important;
+  cursor: pointer !important;
+  width: 54px !important;
+  height: 22px !important;
+  background: url(/images/moz_nav/btn-search.jpg) no-repeat !important;
+  vertical-align: middle !important; }
+
+.nav-yellow ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+.nav-yellow li {
+  float: left !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 1px 0 0 2px !important;
+  background: url(/images/moz_nav/separator-yellow.png) 0 5px no-repeat !important; }
+.nav-yellow a {
+  display: block !important;
+  float: left !important;
+  padding: 11px 17px 9px !important;
+  font-size: 14px !important;
+  color: #96611a !important;
+  text-shadow: 0 1px 1px white !important;
+  text-decoration: none !important; }
+.nav-yellow li.active a {
+  background: #fce8b2 !important; }
+
+.nav-yellow-active {
+  position: absolute !important;
+  left: 50% !important;
+  top: 35px !important;
+  margin-left: -8px !important; }
+
+/* sub menu in yellow header */
+.nav-yellow li:hover > .sub-nav-yellow {
+  display: block !important; }
+
+.sub-nav-yellow {
+  display: none !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 100% !important;
+  width: 168px !important;
+  border: 1px solid #e5e5e5 !important;
+  border-top-color: white !important; }
+  .sub-nav-yellow ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 1px !important;
+    background: url(/images/moz_nav/transparent-white.png) !important;
+    border-bottom: 2px solid #acacac !important;
+    overflow: hidden !important; }
+  .sub-nav-yellow li {
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important; }
+  .sub-nav-yellow a {
+    display: block !important;
+    width: 150px !important;
+    padding: 8px !important;
+    font-size: 11px !important;
+    color: #5d95c1 !important;
+    text-decoration: none !important; }
+    .sub-nav-yellow a img {
+      vertical-align: middle !important;
+      border: 0 !important; }
+    .sub-nav-yellow a:hover {
+      background: #bde2ff !important;
+      color: #517c9d !important;
+      text-shadow: 0 1px 1px white !important; }
+
+.cl {
+  clear: both !important;
+  font-size: 0 !important;
+  height: 0 !important; }
+
+.clearfix:after {
+  clear: both !important;
+  content: " " !important;
+  display: block !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important; }
+
+.png {
+  /* for png /images/moz_nav to fix for IE6 */ }
+
+/* spacing */
+.mb-10 {
+  margin-bottom: 10px !important; }
+
+/* Alignments */
+.center {
+  text-align: center !important; }
+
+.right {
+  text-align: right !important; }
+
+.top {
+  vertical-align: top !important; }
+
+.middle {
+  vertical-align: middle !important; }
