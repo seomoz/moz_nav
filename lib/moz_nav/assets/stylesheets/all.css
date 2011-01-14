@@ -821,116 +821,6 @@ a.learn-seo {
   .nav-secondary .active a {
     background: #f6f6f6 !important; }
 
-/* Blue Footer start
- *-------------------------------------------------------------------- */
-.footer-blue-wrap {
-  background: #4f96d2 url(/images/moz_nav/footer-top.png) repeat-x !important;
-  border-bottom: 1px solid #377bb1 !important;
-  min-width: 950px !important; }
-
-.footer-blue {
-  width: 950px !important;
-  margin: 0 auto !important;
-  padding: 20px 0 15px !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  color: #244561 !important;
-  font-size: 11px !important;
-  line-height: 1 !important; }
-
-.try-col {
-  float: left !important;
-  width: 270px !important;
-  padding: 0 20px 0 40px !important; }
-
-.products-col, .company-col, .popular-col, .stay-touch-col {
-  float: left !important;
-  padding: 0 12px 0 25px !important;
-  background: url(/images/moz_nav/footer-separator.png) repeat-y !important;
-  min-height: 155px !important; }
-
-.footer-blue h2 {
-  font-size: 15px !important;
-  color: white !important;
-  text-shadow: 0 1px 1px #6189ab !important;
-  margin: 0 0 3px !important; }
-.footer-blue h3 {
-  font-size: 12px !important;
-  color: white !important;
-  text-shadow: 0 1px 1px #6189ab !important;
-  margin: 0 0 7px !important; }
-
-.try-it-free {
-  display: block !important; }
-
-.footer-blue p {
-  margin: 0 0 7px !important; }
-.footer-blue ul {
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important; }
-.footer-blue li {
-  margin: 0 !important; }
-.footer-blue a {
-  text-decoration: underline !important;
-  color: #244561 !important; }
-.footer-blue li a {
-  display: block !important;
-  text-decoration: none !important;
-  color: white !important;
-  line-height: 15px !important;
-  padding: 3px 0 !important; }
-.footer-blue li.active {
-  background: url(/images/moz_nav/footer-active-left.png) no-repeat !important;
-  margin-left: -7px !important;
-  padding-left: 10px !important; }
-  .footer-blue li.active a {
-    background: url(/images/moz_nav/footer-active.png) right top no-repeat !important;
-    color: #244561 !important;
-    text-shadow: 0 1px 1px white !important; }
-
-.products-col, .popular-col {
-  width: 125px !important; }
-
-.try-it-free {
-  margin: 0 0 10px !important;
-  border: 0 !important; }
-
-.company-col {
-  width: 110px !important; }
-
-.stay-touch-col {
-  width: 110px !important; }
-  .stay-touch-col address {
-    line-height: 14px !important;
-    font-style: normal !important;
-    margin-bottom: 2px !important; }
-
-.footer-blue ul.social-links2 {
-  padding: 4px 0 2px !important; }
-
-.social-links2 {
-  list-style: none !important;
-  height: 1% !important;
-  overflow: hidden !important; }
-  .social-links2 li {
-    float: left !important;
-    margin: 0 3px 0 0 !important; }
-  .social-links2 a {
-    display: inline-block !important;
-    width: 15px !important;
-    height: 15px !important;
-    background: url(/images/moz_nav/social-logos.png) no-repeat !important; }
-    .social-links2 a.rss-link {
-      background-position: 0 0 !important; }
-    .social-links2 a.twitter-link {
-      background-position: -16px 0 !important; }
-    .social-links2 a.facebook-link {
-      background-position: -33px 0 !important; }
-    .social-links2 a.linkdin-link {
-      background-position: -50px 0 !important; }
-
-/* Blue Footer End
- *-------------------------------------------------------------------- */
 /* Login Page
  *-------------------------------------------------------------------- */
 .login-wrap {
@@ -1353,3 +1243,97 @@ a.learn-seo {
 
 .middle {
   vertical-align: middle !important; }
+
+#moz-nav-footer.basic {
+  background: #4f96d2 url(/images/moz_nav/footer-top.png) repeat-x !important;
+  border-bottom: 1px solid #377bb1 !important;
+  min-width: 950px !important; }
+  #moz-nav-footer.basic .footer-blue {
+    width: 950px !important;
+    margin: 0 auto !important;
+    padding: 20px 0 15px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #244561 !important;
+    font-size: 11px !important;
+    line-height: 1 !important; }
+  #moz-nav-footer.basic .try-col {
+    float: left !important;
+    width: 270px !important;
+    padding: 0 20px 0 40px !important; }
+  #moz-nav-footer.basic .products-col, #moz-nav-footer.basic .company-col, #moz-nav-footer.basic .popular-col, #moz-nav-footer.basic .stay-touch-col {
+    float: left !important;
+    padding: 0 12px 0 25px !important;
+    background: url(/images/moz_nav/footer-separator.png) repeat-y !important;
+    min-height: 155px !important; }
+  #moz-nav-footer.basic .footer-blue h2 {
+    font-size: 15px !important;
+    color: white !important;
+    text-shadow: 0 1px 1px #6189ab !important;
+    margin: 0 0 3px !important; }
+  #moz-nav-footer.basic .footer-blue h3 {
+    font-size: 12px !important;
+    color: white !important;
+    text-shadow: 0 1px 1px #6189ab !important;
+    margin: 0 0 7px !important; }
+  #moz-nav-footer.basic .try-it-free {
+    display: block !important; }
+  #moz-nav-footer.basic .footer-blue p {
+    margin: 0 0 7px !important; }
+  #moz-nav-footer.basic .footer-blue ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important; }
+  #moz-nav-footer.basic .footer-blue li {
+    margin: 0 !important; }
+  #moz-nav-footer.basic .footer-blue a {
+    text-decoration: underline !important;
+    color: #244561 !important; }
+  #moz-nav-footer.basic .footer-blue li a {
+    display: block !important;
+    text-decoration: none !important;
+    color: white !important;
+    line-height: 15px !important;
+    padding: 3px 0 !important; }
+  #moz-nav-footer.basic .footer-blue li.active {
+    background: url(/images/moz_nav/footer-active-left.png) no-repeat !important;
+    margin-left: -7px !important;
+    padding-left: 10px !important; }
+    #moz-nav-footer.basic .footer-blue li.active a {
+      background: url(/images/moz_nav/footer-active.png) right top no-repeat !important;
+      color: #244561 !important;
+      text-shadow: 0 1px 1px white !important; }
+  #moz-nav-footer.basic .products-col, #moz-nav-footer.basic .popular-col {
+    width: 125px !important; }
+  #moz-nav-footer.basic .try-it-free {
+    margin: 0 0 10px !important;
+    border: 0 !important; }
+  #moz-nav-footer.basic .company-col {
+    width: 110px !important; }
+  #moz-nav-footer.basic .stay-touch-col {
+    width: 110px !important; }
+    #moz-nav-footer.basic .stay-touch-col address {
+      line-height: 14px !important;
+      font-style: normal !important;
+      margin-bottom: 2px !important; }
+  #moz-nav-footer.basic .footer-blue ul.social-links2 {
+    padding: 4px 0 2px !important; }
+  #moz-nav-footer.basic .social-links2 {
+    list-style: none !important;
+    height: 1% !important;
+    overflow: hidden !important; }
+    #moz-nav-footer.basic .social-links2 li {
+      float: left !important;
+      margin: 0 3px 0 0 !important; }
+    #moz-nav-footer.basic .social-links2 a {
+      display: inline-block !important;
+      width: 15px !important;
+      height: 15px !important;
+      background: url(/images/moz_nav/social-logos.png) no-repeat !important; }
+      #moz-nav-footer.basic .social-links2 a.rss-link {
+        background-position: 0 0 !important; }
+      #moz-nav-footer.basic .social-links2 a.twitter-link {
+        background-position: -16px 0 !important; }
+      #moz-nav-footer.basic .social-links2 a.facebook-link {
+        background-position: -33px 0 !important; }
+      #moz-nav-footer.basic .social-links2 a.linkdin-link {
+        background-position: -50px 0 !important; }
