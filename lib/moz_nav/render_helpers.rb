@@ -9,6 +9,11 @@ module MozNav
     end
 
     def render_nav_footer
+      if current_user && current_user.pro?
+        # TODO
+      else
+        MozNav::Views::BasicFooter.render
+      end
     end
 
     def nav_header_includes

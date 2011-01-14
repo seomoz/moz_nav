@@ -18,6 +18,7 @@ module MozNav
 
   module Views
     autoload :AdvancedHeader, 'moz_nav/views/advanced_header'
+    autoload :BasicFooter,    'moz_nav/views/basic_footer'
     autoload :BasicHeader,    'moz_nav/views/basic_header'
     autoload :Common,         'moz_nav/views/common'
     autoload :FooterIncludes, 'moz_nav/views/footer_includes'
