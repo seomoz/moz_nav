@@ -27,3 +27,10 @@ end
 load 'moz_nav/tasks/moz_nav.rake'
 
 task :default => :spec
+
+# Make sure we never push to rubygems.org
+Bundler::GemHelper.class_eval do
+  def rubygems_push
+    puts "skipping rubygems push since this gem isn't meant to be publicly released"
+  end
+end
