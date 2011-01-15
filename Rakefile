@@ -13,14 +13,24 @@ namespace :example_app do
 end
 
 namespace :sass do
-  desc "Starts a process that watches changes to the sass files and compiles them to css."
-  task :watch do
-    sh %w[
+  def sass(*options)
+    command = %w[
       sass
-      --watch lib/moz_nav/assets/sass:lib/moz_nav/assets/stylesheets
       --cache-location tmp/sass_cache
       --require lib/moz_nav/extensions/sass.rb
-    ].join(' ')
+    ] + options
+
+    sh command.join(' ')
+  end
+
+  desc "Starts a process that watches changes to the sass files and compiles them to css."
+  task :watch do
+    sass %w[ --watch lib/moz_nav/assets/sass:lib/moz_nav/assets/stylesheets/development ]
+  end
+
+  desc "Compile the SASS as minified CSS for production"
+  task :compile_for_prod do
+    sass %w[ --update lib/moz_nav/assets/sass:lib/moz_nav/assets/stylesheets/production --style compressed ]
   end
 end
 
@@ -30,7 +40,17 @@ task :default => :spec
 
 # Make sure we never push to rubygems.org
 Bundler::GemHelper.class_eval do
-  def rubygems_push
-    puts "skipping rubygems push since this gem isn't meant to be publicly released"
+  def release_gem
+    guard_clean
+
+    Rake::Task['sass:compile_for_prod'].invoke
+    sh "git add lib/moz_nav/assets/stylesheets/production/*"
+    unless `git status` =~ /nothing to commit/
+      sh "git commit -m 'Updated production stylesheet'"
+    end
+
+    guard_already_tagged
+    tag_version { git_push }
   end
 end
+

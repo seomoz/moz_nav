@@ -6,6 +6,15 @@ module MozNav
         @seomoz_host ||= 'www.seomoz.org'
       end
 
+      attr_writer :environment
+      def environment
+        @environment ||= if defined?(Rails) && %w[production staging].include?(Rails.env)
+          'production'
+        else
+          'development'
+        end
+      end
+
       def reset!
         instance_variables.each do |var|
           remove_instance_variable(var)
