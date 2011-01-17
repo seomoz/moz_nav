@@ -14,6 +14,10 @@ shared_examples_for "advanced navigation" do |options|
   it_behaves_like 'a cache buster'
 
   describe 'the header' do
+    it 'renders an appropriate greeting for the user' do
+      header_user_greeting.text.should include("Aloha John Doe, lookin' good")
+    end
+
     describe 'the blue box' do
       it 'renders the configured page title' do
         header_blue_box_page_title.text.should include("An Example Sinatra App")

@@ -2,9 +2,20 @@ require 'sinatra/base'
 require 'erb'
 require 'moz_nav'
 
-class User < Struct.new(:id, :account_type)
+# This would be a struct but Mustache doesn't play nicely with nested structs
+class User
+  def initialize(id, account_type)
+    @id, @account_type = id, account_type
+  end
+
+  attr_reader :id
+
   def pro?
-    account_type == :pro
+    @account_type == :pro
+  end
+
+  def display_name
+    "John Doe"
   end
 end
 

@@ -1,16 +1,20 @@
 <div class="blue-header-wrap">
   <div class="blue-header">
     <div class="main-heading-research-wrap">
+      {{# page_config }}
       <h1>{{ page_title }}</h1>
       <div class="cl"></div>
       <p>{{ page_subtitle }}</p>
+      {{/ page_config }}
     </div>
   </div>
 </div>
 
 <div>
   <div class="campaign-nav rel">
-    <h3 class="user-name">Aloha Will Critchlow, lookin" good</h3>
+    {{# user}}
+    <h3 class="user-name">Aloha {{ display_name }}, lookin' good</h3>
+    {{/ user}}
     <img alt="" src="/images/moz_nav/user-thumb.png?{{ cache_buster }}" class="user-thumb" />
     <img alt="" src="/images/moz_nav/q-a-robot.png?{{ cache_buster }}" class="research-robot" />
   </div>

@@ -25,4 +25,8 @@ module MozNavSpecSelectors
   def header_blue_box_page_subtitle
     find("##{HEADER_ID} .blue-header p")
   end
+
+  def header_user_greeting
+    find("##{HEADER_ID} .campaign-nav")
+  end
 end
