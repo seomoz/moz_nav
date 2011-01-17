@@ -17,7 +17,7 @@ namespace :sass do
     command = %w[
       sass
       --cache-location tmp/sass_cache
-      --require lib/moz_nav/extensions/sass.rb
+      --require ./lib/moz_nav/extensions/sass.rb
     ] + options
 
     sh command.join(' ')
@@ -53,4 +53,5 @@ Bundler::GemHelper.class_eval do
     tag_version { git_push }
   end
 end
+
 
