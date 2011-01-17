@@ -1,10 +1,6 @@
 RSpec::Matchers.define :have_link do |text, url|
-  define_method :link do
-    begin
-      actual.find_link(text)
-    rescue Capybara::ElementNotFound
-      nil
-    end
+  define_method :possible_links do
+    actual.all('a').select { |a| a.text == text }.map { |a| a['href'] }
   end
 
   def actual_html
@@ -12,7 +8,7 @@ RSpec::Matchers.define :have_link do |text, url|
   end
 
   match do |actual|
-    link && link['href'] == url
+    possible_links.include?(url)
   end
 
   failure_message_for_should do |actual|

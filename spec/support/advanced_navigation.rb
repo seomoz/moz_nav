@@ -39,4 +39,32 @@ shared_examples_for "advanced navigation" do |options|
       end
     end
   end
+
+  describe 'the footer' do
+    {
+      'Campaign Manager'      => '#',
+      'Research Tools'        => "http://#{SEOMOZ_HOST}/tools",
+      'SEOmoz API'            => "http://#{SEOMOZ_HOST}/api",
+      'Contact Us'            => "http://#{SEOMOZ_HOST}/about/contact",
+      'Privacy Policy'        => "http://#{SEOMOZ_HOST}/pages/privacy",
+      'Terms of Use'          => "http://#{SEOMOZ_HOST}/users/terms"
+    }.each do |text, url|
+      it "contains a '#{text}' link to #{url}" do
+        footer.should have_link(text, url)
+      end
+    end
+
+    describe 'social links' do
+      [
+        'http://feeds.feedburner.com/seomoz',
+        'http://twitter.com/seomoz',
+        'http://www.facebook.com/SEOmoz',
+        'http://www.linkedin.com/groups?about=&gid=2976409&trk=anet_ug_grppro',
+      ].each do |url|
+        it "contains a link to #{url}" do
+          footer_social_links.should have_link('', url)
+        end
+      end
+    end
+  end
 end
