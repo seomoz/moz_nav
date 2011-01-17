@@ -625,32 +625,6 @@
     background: url(/images/moz_nav/gray-bar-center.png) repeat-x !important;
     margin: 0 6px !important;
     min-height: 41px !important; }
-  #moz-nav-header.advanced .s_form {
-    float: right !important;
-    width: 170px !important;
-    padding: 9px 4px 0 0 !important; }
-  #moz-nav-header.advanced .s_field {
-    border: 0 !important;
-    width: 138px !important;
-    padding: 3px 5px !important;
-    background: url(/images/moz_nav/search-form.png) no-repeat !important;
-    vertical-align: middle !important; }
-  #moz-nav-header.advanced .s_field2 {
-    border: 0 !important;
-    width: 138px !important;
-    padding: 0 5px !important;
-    height: 22px !important;
-    line-height: 22px !important;
-    background: url(/images/moz_nav/search-form.png) no-repeat !important;
-    vertical-align: middle !important; }
-  #moz-nav-header.advanced .s_btn {
-    border: 0 !important;
-    cursor: pointer !important;
-    background: url(/images/moz_nav/search-form.png) right top no-repeat !important;
-    width: 22px !important;
-    padding: 0 !important;
-    height: 22px !important;
-    vertical-align: middle !important; }
   #moz-nav-header.advanced .nav {
     margin: 0 !important;
     padding: 0 !important;
@@ -667,6 +641,26 @@
       display: block !important;
       float: left !important;
       padding: 12px 11px 14px 30px !important; }
+  #moz-nav-header.advanced form.search {
+    float: right !important;
+    width: 170px !important;
+    padding: 9px 4px 0 0 !important; }
+  #moz-nav-header.advanced input.text {
+    border: 0 !important;
+    width: 138px !important;
+    padding: 0 5px !important;
+    height: 22px !important;
+    line-height: 22px !important;
+    background: url(/images/moz_nav/search-form.png) no-repeat !important;
+    vertical-align: middle !important; }
+  #moz-nav-header.advanced input.button {
+    border: 0 !important;
+    cursor: pointer !important;
+    background: url(/images/moz_nav/search-form.png) right top no-repeat !important;
+    width: 22px !important;
+    padding: 0 !important;
+    height: 22px !important;
+    vertical-align: middle !important; }
   #moz-nav-header.advanced .campaigns a {
     background: url(/images/moz_nav/campaigns.png) 10px 11px no-repeat !important; }
   #moz-nav-header.advanced a.campaigns {
@@ -1040,7 +1034,7 @@
         background-position: -16px 0 !important; }
       #moz-nav-footer.basic .social-links2 a.facebook-link {
         background-position: -33px 0 !important; }
-      #moz-nav-footer.basic .social-links2 a.linkdin-link {
+      #moz-nav-footer.basic .social-links2 a.linkedin-link {
         background-position: -50px 0 !important; }
 
 #moz-nav-footer.advanced {
@@ -1074,7 +1068,7 @@
         background-position: -17px 0 !important; }
       #moz-nav-footer.advanced .social-links a.facebook-link {
         background-position: -34px 0 !important; }
-      #moz-nav-footer.advanced .social-links a.linkdin-link {
+      #moz-nav-footer.advanced .social-links a.linkedin-link {
         background-position: -51px 0 !important; }
   #moz-nav-footer.advanced .copyrights {
     float: left !important;
@@ -1150,25 +1144,25 @@
   min-width: 952px !important; }
 #moz-nav-header.basic .nav-yellow {
   line-height: 1 !important; }
-#moz-nav-header.basic .s_form2 {
+#moz-nav-header.basic form.search {
   float: right !important;
   width: 233px !important;
   padding: 6px 0 0 !important; }
-#moz-nav-header.basic .s_field_yellow {
-  width: 169px !important;
-  padding: 0 5px !important;
-  height: 22px !important;
-  line-height: 22px !important;
-  background: url(/images/moz_nav/s_field-yellow.jpg) no-repeat !important;
-  border: 0 !important;
-  vertical-align: middle !important; }
-#moz-nav-header.basic .btn-search {
-  border: 0 !important;
-  cursor: pointer !important;
-  width: 54px !important;
-  height: 22px !important;
-  background: url(/images/moz_nav/btn-search.jpg) no-repeat !important;
-  vertical-align: middle !important; }
+  #moz-nav-header.basic form.search input.text {
+    width: 169px !important;
+    padding: 0 5px !important;
+    height: 22px !important;
+    line-height: 22px !important;
+    background: url(/images/moz_nav/s_field-yellow.jpg) no-repeat !important;
+    border: 0 !important;
+    vertical-align: middle !important; }
+  #moz-nav-header.basic form.search input.button {
+    border: 0 !important;
+    cursor: pointer !important;
+    width: 54px !important;
+    height: 22px !important;
+    background: url(/images/moz_nav/btn-search.jpg) no-repeat !important;
+    vertical-align: middle !important; }
 #moz-nav-header.basic .nav-yellow ul {
   list-style: none !important;
   margin: 0 !important;

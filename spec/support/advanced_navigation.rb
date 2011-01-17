@@ -12,6 +12,7 @@ shared_examples_for "advanced navigation" do |options|
   end
 
   it_behaves_like 'a cache buster'
+  it_presents "a search form"
 
   describe 'the header' do
     it 'renders an appropriate greeting for the user' do

@@ -29,4 +29,8 @@ module MozNavSpecSelectors
   def header_user_greeting
     find("##{HEADER_ID} .campaign-nav")
   end
+
+  def header_search_form
+    find("##{HEADER_ID} form.search")
+  end
 end
