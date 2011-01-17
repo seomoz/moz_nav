@@ -21,7 +21,7 @@ RSpec::Matchers.define :have_link do |text, url|
 end
 
 RSpec::Matchers.define :be_symlinked_to do |expected_dest|
-  define_method :actual_dest do
+  def actual_dest
     @actual_dest ||= begin
       File.readlink(actual) if File.symlink?(actual)
     end
