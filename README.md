@@ -34,4 +34,4 @@ Run `infinity_test`.  This will continuously run the specs against
 
 There is an example sinatra app in the app folder.  It is used by
 the specs.  You can also run it.  Run `rake example_app:serve`.
-Visit it in your browser at [http://localhost:9292](http://localhost:9292).
+Visit it in your browser at [http://localhost:3000](http://localhost:3000).
