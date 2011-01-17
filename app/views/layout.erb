@@ -6,7 +6,12 @@
     <%= nav_header_includes %>
   </head>
   <body>
-    <%= render_nav_header %>
+    <%=
+      render_nav_header do |h|
+        h.page_title 'An Example Sinatra App'
+        h.page_subtitle 'This demonstrates how the MozNav gem works.'
+      end
+    %>
     <%= yield %>
     <%= render_nav_footer %>
     <%= nav_footer_includes %>

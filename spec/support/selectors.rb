@@ -17,4 +17,12 @@ module MozNavSpecSelectors
   def footer_social_links
     find("##{FOOTER_ID} .social-links")
   end
+
+  def header_blue_box_page_title
+    find("##{HEADER_ID} .blue-header h1")
+  end
+
+  def header_blue_box_page_subtitle
+    find("##{HEADER_ID} .blue-header p")
+  end
 end

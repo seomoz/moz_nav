@@ -13,6 +13,7 @@ module MozNav
 
   autoload :Config,        'moz_nav/config'
   autoload :MustacheBase,  'moz_nav/mustache_base'
+  autoload :PageConfig,    'moz_nav/page_config'
   autoload :RenderHelpers, 'moz_nav/render_helpers'
   autoload :Tasks,         'moz_nav/tasks'
 

@@ -1,8 +1,10 @@
 module MozNav
   module RenderHelpers
     def render_nav_header
+      yield page_config = PageConfig.new
+
       if current_user && current_user.pro?
-        MozNav::Views::AdvancedHeader.new(current_user).render
+        MozNav::Views::AdvancedHeader.new(current_user, page_config).render
       else
         MozNav::Views::BasicHeader.render
       end
