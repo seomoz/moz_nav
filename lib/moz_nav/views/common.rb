@@ -8,6 +8,10 @@ module MozNav
       def environment
         MozNav::Config.environment
       end
+
+      def cache_buster
+        MozNav::VERSION
+      end
     end
   end
 end

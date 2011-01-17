@@ -11,6 +11,8 @@ shared_examples_for "basic navigation" do |options|
     page.body.should be_xhtml_strict
   end
 
+  it_behaves_like 'a cache buster'
+
   describe 'the header nav user box' do
     {
       "Log in"  => "#",
