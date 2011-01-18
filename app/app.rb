@@ -25,7 +25,7 @@ class ExampleApp < Sinatra::Base
   set :show_exceptions, false
   set :public, File.dirname(__FILE__) + '/public'
 
-  helpers MozNav::RenderHelpers
+  helpers MozNav::RenderHelper
 
   helpers do
     def current_user

@@ -1,5 +1,5 @@
 module MozNav
-  module RenderHelpers
+  module RenderHelper
     def render_nav_header
       yield page_config = PageConfig.new
 
