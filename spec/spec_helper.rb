@@ -4,6 +4,7 @@ Bundler.setup
 
 require 'rspec'
 require 'moz_nav'
+require 'moz_nav/rspec'
 require 'markup_validity'
 
 $LOAD_PATH.unshift File.expand_path('../../app', __FILE__)
