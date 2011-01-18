@@ -58,3 +58,63 @@ For SASS (the CSS precompiler), check:
 For Capybara (the browser simulator used by the acceptance specs),
 check the [Github README](https://github.com/jnicklas/capybara).
 
+## Usage from an SEO Moz application
+
+You may want to review [a commit](https://github.com/seomoz/cmoz/commit/25485a1d2935e817f9bcaba4d154299bcc26dc02)
+demonstrating these steps for turbo.
+
+1. Add the MozNav gem to the Gemfile, using a `:git` source.  Run `bundle
+   install` to install the gem.
+2. Symlink in the asset dirs (`rake moz_nav:symlink_assets
+   ASSET_ROOT=./public`).  This rake task will be automatically available
+   to rails 3 applications.  Otherwise, you can add `load 'moz_nav/tasks/moz_nav.rake'`
+   to your Rakefile.  You'll probably want to gitignore the symlinked dirs
+   (using a pattern like `public/**/moz_nav`) since the symlinks use
+   absolute paths.
+3. Configure MozNav.  In rails, you'll probably want to do this in
+   `config/initializers/moz_nav.rb`.  Example code:
+
+   <pre>
+   MozNav.configure do |c|
+     c.seomoz_host = 'www.seomoz.org'
+     c.environment = 'development'
+   end
+   </pre>
+
+   (Note that both of these settings are optional as MozNav uses
+   appropriate defaults for both, but this demonstrates configuration).
+
+4. Use the provided RSpec shared example group to test compliance with
+   the MozNav gem.  Example:
+
+   <pre>
+   require 'spec_helper'
+   require 'moz_nav/rspec'
+
+   describe ApplicationController do
+     it_behaves_like "the MozNav rendering context" do
+       let(:render_context) do
+         described_class.new.tap { |c| c.instance_eval { @current_user = Factory.create(:pro_user) } }
+       end
+     end
+   end
+   </pre>
+
+   Basically, this tests that the rendering context has access to a
+   `current_user` helper method, and that the user object returned by
+   the method conforms to the interface MozNav expects.
+5. Include the `MozNav::RenderHelper` module in the appropriate
+   rendering context.  In rails you'll probably just want to add
+   `include MozNav::RenderHelper` to the `ApplicationHelper` module;
+   in sinatra you can just use `helpers MozNav::RenderHelper`.
+6. Call the appropriate rendering helpers from your application layout.
+    * `nav_header_includes` should be called from the `<head>` of the
+      page.
+    * `render_nav_header` should be called where you want the header
+      to be.  It yields an object that allows you to configure the
+      header.
+    * `render_nav_footer` should be called where you want the footer
+      to be.
+    * `nav_footer_includes` should be called just before the closing
+      `</body>` tag.
+
