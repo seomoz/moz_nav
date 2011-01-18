@@ -1,6 +1,6 @@
 RSpec::Matchers.define :have_link do |text, url|
   define_method :possible_links do
-    actual.all('a').select { |a| a.text == text }.map { |a| a['href'] }
+    actual.all('a').select { |a| a.text.include?(text) }.map { |a| a['href'] }
   end
 
   def actual_html

@@ -3,7 +3,7 @@ module MozNavSpecSelectors
   FOOTER_ID = 'moz-nav-footer'
 
   def header_nav_user_box
-    find("##{HEADER_ID} .user-box")
+    find("##{HEADER_ID} .user-links")
   end
 
   def header_nav_bar

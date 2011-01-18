@@ -35,7 +35,6 @@ shared_examples_for "advanced navigation" do |options|
         "Help"       => '#'
       }.each do |text, url|
         it "contains a '#{text}' link to #{url}" do
-          pending "In the middle of refactoring markup"
           header_nav_user_box.should have_link(text, url)
         end
       end

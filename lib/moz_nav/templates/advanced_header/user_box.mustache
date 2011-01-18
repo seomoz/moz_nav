@@ -21,9 +21,11 @@
     </div>
   </li>
   <li class="dropdown">
-    <a href="#">Account
+    {{# user }}
+    <a href="http://{{ seomoz_host }}/users/view/{{ id }}">My Account
       <img alt="" src="/images/moz_nav/dropdown-arrow.png?{{ cache_buster }}" />
     </a>
+    {{/ user }}
     <div class="help-menu">
       <ul>
         <li>
