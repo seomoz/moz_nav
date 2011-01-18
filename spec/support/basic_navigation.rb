@@ -1,31 +1,10 @@
-shared_examples_for "basic navigation" do |options|
-  before(:each) do
-    MozNav.configure do |c|
-      c.seomoz_host = SEOMOZ_HOST
-    end
-
-    visit options[:url]
-  end
-
+shared_examples_for "basic navigation" do
   it "has valid xhtml" do
     page.body.should be_xhtml_strict
   end
 
   it_behaves_like 'a cache buster'
   it_presents "a search form"
-
-  describe 'the header nav user box' do
-    {
-      "Log in"  => "#",
-      "Sign up" => '#',
-      "Help"    => '#'
-    }.each do |text, url|
-      it "contains a '#{text}' link to #{url}" do
-        pending "In the middle of refactoring markup"
-        header_nav_user_box.should have_link(text, url)
-      end
-    end
-  end
 
   describe 'the header nav bar' do
     {

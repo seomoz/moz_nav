@@ -1,12 +1,4 @@
-shared_examples_for "advanced navigation" do |options|
-  before(:each) do
-    MozNav.configure do |c|
-      c.seomoz_host = SEOMOZ_HOST
-    end
-
-    visit options[:url]
-  end
-
+shared_examples_for "advanced navigation" do |user_id|
   it "has valid xhtml" do
     page.body.should be_xhtml_strict
   end
@@ -29,16 +21,7 @@ shared_examples_for "advanced navigation" do |options|
       end
     end
 
-    describe 'the user box' do
-      {
-        "My Account" => "http://#{SEOMOZ_HOST}/users/view/#{options[:user_id]}",
-        "Help"       => '#'
-      }.each do |text, url|
-        it "contains a '#{text}' link to #{url}" do
-          header_nav_user_box.should have_link(text, url)
-        end
-      end
-    end
+    it_presents "logged in user box", user_id
 
     describe 'the nav bar' do
       {

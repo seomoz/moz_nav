@@ -33,6 +33,14 @@ RSpec.configure do |config|
   config.after(:each) do
     MozNav::Config.reset!
   end
+
+  config.before(:each, :type => :acceptance) do
+    MozNav.configure do |c|
+      c.seomoz_host = SEOMOZ_HOST
+    end
+
+    visit scenario_url
+  end
 end
 
 SEOMOZ_HOST = 'seomoz.local'

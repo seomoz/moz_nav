@@ -2,7 +2,16 @@
   <div class="logo-bar">
     <div class="header-yellow inner-content clearfix">
       {{> shared/logo }}
-      {{> basic_header/user_box }}
+
+      <div class="top-links">
+        {{# logged_in? }}
+          {{> shared/logged_in_user_box }}
+        {{/ logged_in? }}
+
+        {{^ logged_in? }}
+          {{> shared/logged_out_user_box }}
+        {{/ logged_in? }}
+      </div>
     </div>
   </div>
   {{> basic_header/nav_bar }}

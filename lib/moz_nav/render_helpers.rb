@@ -6,7 +6,7 @@ module MozNav
       if current_user && current_user.pro?
         MozNav::Views::AdvancedHeader.new(current_user, page_config).render
       else
-        MozNav::Views::BasicHeader.render
+        MozNav::Views::BasicHeader.new(current_user).render
       end
     end
 
