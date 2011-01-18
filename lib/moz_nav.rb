@@ -16,6 +16,7 @@ module MozNav
   autoload :PageConfig,    'moz_nav/page_config'
   autoload :RenderHelpers, 'moz_nav/render_helpers'
   autoload :Tasks,         'moz_nav/tasks'
+  autoload :Version,       'moz_nav/version'
 
   module Views
     autoload :AdvancedFooter, 'moz_nav/views/advanced_footer'
