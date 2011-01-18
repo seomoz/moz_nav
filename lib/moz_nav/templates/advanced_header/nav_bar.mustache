@@ -9,119 +9,17 @@
       {{> shared/search_form }}
 
       <ul class="nav">
-        <li class="first campaigns">
-          <a href="#">Campaigns</a>
-          <div class="sub-nav">
-            <div class="sub-nav-top">
-              <ul>
-                <li>
-                  <a href="#">Campaign</a>
-                </li>
-                <li>
-                  <a href="#">Rankings</a>
-                </li>
-                <li>
-                  <a href="#">Crawl Diagnostics</a>
-                </li>
-                <li>
-                  <a href="#">On-page</a>
-                </li>
-                <li>
-                  <a href="#">Link Analysis</a>
-                </li>
-                <li>
-                  <a href="#">Traffic Data</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="research-tools">
-          <a href="http://{{ seomoz_host }}/tools">Research Tools</a>
-          <div class="sub-nav">
-            <div class="sub-nav-top">
-              <ul>
-                <li>
-                  <a href="#">Overview</a>
-                </li>
-                <li>
-                  <a href="#">Rankings</a>
-                </li>
-                <li>
-                  <a href="#">Crawl Diagnostics</a>
-                </li>
-                <li>
-                  <a href="#">On-page</a>
-                </li>
-                <li>
-                  <a href="#">Link Analysis</a>
-                </li>
-                <li>
-                  <a href="#">Labs Tools</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
+        {{> advanced_header/sub_navs/campaigns }}
+        {{> advanced_header/sub_navs/research_tools }}
+
         <li class="pro-qa">
           <a href="#">Q &amp; A</a>
         </li>
-        <li class="community">
-          <a href="http://{{ seomoz_host }}/blog">Community</a>
-          <div class="sub-nav">
-            <div class="sub-nav-top">
-              <ul>
-                <li>
-                  <a href="http://{{ seomoz_host }}/blog">SEO Blog</a>
-                </li>
-                <li>
-                  <a href="http://{{ seomoz_host }}/ugc">YOUmoz User Blog</a>
-                </li>
-                <li>
-                  <a href="http://{{ seomoz_host }}/users">Top Users</a>
-                </li>
-                <li>
-                  <a href="http://{{ seomoz_host }}/about/events">Events</a>
-                </li>
-                <li>
-                  <a href="http://{{ seomoz_host }}/marketplace">SEO Industry Jobs</a>
-                </li>
-                <li>
-                  <a href="http://{{ seomoz_host }}/about">About SEOmoz</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="learn-seo">
-          <a href="http://{{ seomoz_host }}/learn-seo">Learn SEO</a>
-          <div class="sub-nav">
-            <div class="sub-nav-top">
-              <ul>
-                <li>
-                  <a href="http://{{ seomoz_host }}/dp/PRO-webinars">PRO Webinars</a>
-                </li>
-                <li>
-                  <a href="http://{{ seomoz_host }}/store/4">PRO Training DVDs</a>
-                </li>
-                <li>
-                  <a href="http://{{ seomoz_host }}/seminar/series">PRO Training Seminars</a>
-                </li>
-                <li>
-                  <a href="http://guides.seomoz.org/beginners-guide-to-search-engine-optimization">Beginner's Guide</a>
-                </li>
-                <li>
-                  <a href="http://{{ seomoz_host }}/learn-seo">Articles &amp; Guides</a>
-                </li>
-                <li>
-                  <a href="http://{{ seomoz_host }}/blog/category/37">Videos</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
+
+        {{> advanced_header/sub_navs/community }}
+        {{> advanced_header/sub_navs/learn_seo }}
       </ul>
     </div>
-  </div><!--nav -->
+  </div>
   <div class="cl"></div>
-</div><!--user-controls -->
+</div>
