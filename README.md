@@ -35,3 +35,26 @@ Run `infinity_test`.  This will continuously run the specs against
 There is an example sinatra app in the app folder.  It is used by
 the specs.  You can also run it.  Run `rake example_app:serve`.
 Visit it in your browser at [http://localhost:3000](http://localhost:3000).
+
+## SASS
+
+We're using SASS for the CSS.  You __should not__ edit the CSS files
+manually.  Instead, edit the SASS files and run `rake sass:watch` to
+have it automatically compile your SASS files to CSS as you save changes
+to the SASS files.
+
+## Reference
+
+For Mustache (logic-less HTML templates), check:
+
+* [Man Page](http://mustache.github.com/mustache.5.html)
+* [Github README](https://github.com/defunkt/mustache)
+
+For SASS (the CSS precompiler), check:
+
+* [SASS Reference](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html)
+* [Indented Syntax Guide](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html)
+
+For Capybara (the browser simulator used by the acceptance specs),
+check the [Github README](https://github.com/jnicklas/capybara).
+
