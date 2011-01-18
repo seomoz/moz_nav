@@ -46,12 +46,42 @@ shared_examples_for "advanced navigation" do |options|
         'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/PRO",
         'Campaigns'      => '#',
         'Research Tools' => "http://#{SEOMOZ_HOST}/tools",
-        'Community'      => '#',
+        'Q & A'          => "#",
+        'Community'      => "http://#{SEOMOZ_HOST}/blog",
         'Learn SEO'      => "http://#{SEOMOZ_HOST}/learn-seo"
       }.each do |text, url|
         it "contains a '#{text}' link to #{url}" do
-          pending "In the middle of refactoring markup"
           header_nav_bar.should have_link(text, url)
+        end
+      end
+
+      describe 'community drop-down' do
+        {
+          'SEO Blog'          => "http://#{SEOMOZ_HOST}/blog",
+          'YOUmoz User Blog'  => "http://#{SEOMOZ_HOST}/ugc",
+          'Top Users'         => "http://#{SEOMOZ_HOST}/users",
+          'Events'            => "http://#{SEOMOZ_HOST}/about/events",
+          'SEO Industry Jobs' => "http://#{SEOMOZ_HOST}/marketplace",
+          'About SEOmoz'      => "http://#{SEOMOZ_HOST}/about",
+        }.each do |text, url|
+          it "contains a '#{text}' link to #{url}" do
+            header_sub_nav_for('community').should have_link(text, url)
+          end
+        end
+      end
+
+      describe 'learn seo drop-down' do
+        {
+          'PRO Webinars'          => "http://#{SEOMOZ_HOST}/dp/PRO-webinars",
+          'PRO Training DVDs'     => "http://#{SEOMOZ_HOST}/store/4",
+          'PRO Training Seminars' => "http://#{SEOMOZ_HOST}/seminar/series",
+          "Beginner's Guide"      => 'http://guides.seomoz.org/beginners-guide-to-search-engine-optimization',
+          'Articles & Guides'     => "http://#{SEOMOZ_HOST}/learn-seo",
+          'Videos'                => "http://#{SEOMOZ_HOST}/blog/category/37",
+        }.each do |text, url|
+          it "contains a '#{text}' link to #{url}" do
+            header_sub_nav_for('learn-seo').should have_link(text, url)
+          end
         end
       end
     end

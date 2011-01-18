@@ -7,7 +7,11 @@ module MozNavSpecSelectors
   end
 
   def header_nav_bar
-    find("##{HEADER_ID} .nav-bar")
+    find("##{HEADER_ID} .user-controls")
+  end
+
+  def header_sub_nav_for(li_class)
+    find("##{HEADER_ID} .user-controls li.#{li_class} .sub-nav")
   end
 
   def footer
