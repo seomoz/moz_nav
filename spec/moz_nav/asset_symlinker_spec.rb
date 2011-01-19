@@ -71,7 +71,7 @@ module MozNav
       end
 
       context 'for a directory that has previously been symlinked to a different location' do
-        before(:each) do
+        around(:each) do |example|
           Dir.mktmpdir do |dir|
             described_class.new(tmpdir).instance_eval do
               MozNav::ASSET_ROOT.children(:full_path).each do |moz_nav_path|
@@ -82,6 +82,8 @@ module MozNav
                 symlink_dir(moz_nav_path)
               end
             end
+
+            example.run
           end
         end
 

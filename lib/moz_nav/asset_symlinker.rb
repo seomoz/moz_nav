@@ -36,9 +36,14 @@ module MozNav
       end
 
       def ensure_symlinked(from, to)
-        unless File.symlink?(from) && File.readlink(from) == to
-          FileUtils.ln_sf to, from
+        if File.symlink?(from)
+          return if File.readlink(from) == to
+
+          # delete the old symlink
+          File.unlink(from)
         end
+
+        FileUtils.ln_s to, from
       end
   end
 end
