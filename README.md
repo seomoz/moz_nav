@@ -65,12 +65,11 @@ demonstrating these steps for turbo.
 
 1. Add the MozNav gem to the Gemfile, using a `:git` source.  Run `bundle
    install` to install the gem.
-2. Symlink in the asset dirs (`rake moz_nav:symlink_assets
-   ASSET_ROOT=./public`).  This rake task will be automatically available
-   to rails 3 applications.  Otherwise, you can add `load 'moz_nav/tasks/moz_nav.rake'`
-   to your Rakefile.  You'll probably want to gitignore the symlinked dirs
-   (using a pattern like `public/**/moz_nav`) since the symlinks use
-   absolute paths.
+2. Ensure the assets can be symlinked properly.  In a rails 3 app, the
+   railtie takes care of this for you.  For other apps, you will need to
+   add code like `MozNav.ensure_assets_symlinked_from(File.expand_path('../public', __FILE__))`
+   to be run during application boot.  You'll probably want to gitignore the symlinked dirs
+   (using a pattern like `public/**/moz_nav`) since the symlinks use absolute paths.
 3. Configure MozNav.  In rails, you'll probably want to do this in
    `config/initializers/moz_nav.rb`.  Example code:
 

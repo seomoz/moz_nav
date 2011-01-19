@@ -2,6 +2,8 @@ require 'sinatra/base'
 require 'erb'
 require 'moz_nav'
 
+MozNav.ensure_assets_symlinked_from(File.expand_path('../public', __FILE__))
+
 # This would be a struct but Mustache doesn't play nicely with nested structs
 class User
   def initialize(id, account_type)

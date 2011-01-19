@@ -26,6 +26,7 @@ RSpec.configure do |config|
 
   config.alias_it_should_behave_like_to :it_presents, "it presents"
   config.alias_it_should_behave_like_to :it_has,      "it has"
+  config.alias_it_should_behave_like_to :it_performs, "it performs"
 
   config.include InSubProcess
   config.include MozNavSpecSelectors

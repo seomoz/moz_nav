@@ -11,12 +11,16 @@ module MozNav
     yield Config
   end
 
-  autoload :Config,        'moz_nav/config'
-  autoload :MustacheBase,  'moz_nav/mustache_base'
-  autoload :PageConfig,    'moz_nav/page_config'
-  autoload :RenderHelper,  'moz_nav/render_helper'
-  autoload :Tasks,         'moz_nav/tasks'
-  autoload :Version,       'moz_nav/version'
+  def ensure_assets_symlinked_from(host_app_dir)
+    AssetSymlinker.new(host_app_dir).symlink_assets
+  end
+
+  autoload :Config,         'moz_nav/config'
+  autoload :MustacheBase,   'moz_nav/mustache_base'
+  autoload :PageConfig,     'moz_nav/page_config'
+  autoload :RenderHelper,   'moz_nav/render_helper'
+  autoload :AssetSymlinker, 'moz_nav/asset_symlinker'
+  autoload :Version,        'moz_nav/version'
 
   module Views
     autoload :AdvancedFooter, 'moz_nav/views/advanced_footer'
