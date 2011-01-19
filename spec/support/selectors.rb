@@ -37,4 +37,8 @@ module MozNavSpecSelectors
   def header_search_form
     find("##{HEADER_ID} form.search")
   end
+
+  def campaign_drop_down
+    find("##{HEADER_ID} .heading-dropdown")
+  end
 end

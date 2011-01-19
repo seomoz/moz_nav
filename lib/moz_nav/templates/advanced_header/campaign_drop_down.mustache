@@ -1,0 +1,18 @@
+<div class="heading-dropdown">
+  <img alt="" src="/images/moz_nav/arrow-blue-down.png?{{ cache_buster }}" />
+  <div class="help-menu">
+    <ul>
+      {{# campaigns }}
+      <li>
+        <a href="{{ url }}">{{ name }}</a>
+      </li>
+      {{/ campaigns }}
+      <li class="separation-border last">
+        <a href="#">
+          <img alt="" src="/images/moz_nav/campain-manager.png?{{ cache_buster }}" />Campaign Manager
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+

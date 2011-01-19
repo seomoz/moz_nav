@@ -1244,7 +1244,8 @@
   #moz-nav-header.advanced .heading-dropdown {
     float: left !important;
     position: relative !important;
-    margin: 20px 0 0 !important; }
+    margin: 20px 0 0 !important;
+    z-index: 9999 !important; }
     #moz-nav-header.advanced .heading-dropdown img {
       cursor: pointer !important; }
     #moz-nav-header.advanced .heading-dropdown .help-menu {

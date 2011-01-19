@@ -1,4 +1,4 @@
-shared_examples_for "advanced navigation" do |user_id|
+shared_examples_for "advanced navigation" do |user_id, campaigns|
   it "has valid xhtml" do
     page.body.should be_xhtml_strict
   end
@@ -18,6 +18,16 @@ shared_examples_for "advanced navigation" do |user_id|
 
       it 'renders the configured page subtitle' do
         header_blue_box_page_subtitle.text.should include("This demonstrates how the MozNav gem works.")
+      end
+
+      describe 'the campaigns drop down' do
+        campaigns += [['Campaign Manager', '#']]
+
+        campaigns.each do |(name, url)|
+          it "contains a '#{name}' link to #{url}" do
+            campaign_drop_down.should have_link(name, url)
+          end
+        end
       end
     end
 

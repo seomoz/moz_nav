@@ -20,6 +20,12 @@ class User
 end
 
 class ExampleApp < Sinatra::Base
+  CAMPAIGNS = [
+    ['Apple Computer', 'http://apple.com'],
+    ['Microsoft',      'http://microsoft.com'],
+    ['SEO Moz',        'http://www.seomoz.org']
+  ]
+
   set :views, File.dirname(__FILE__) + '/views'
   set :raise_errors, true
   set :show_exceptions, false
