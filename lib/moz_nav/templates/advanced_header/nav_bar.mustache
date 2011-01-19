@@ -9,15 +9,21 @@
       {{> shared/search_form }}
 
       <ul class="nav">
-        {{> advanced_header/sub_navs/campaigns }}
-        {{> advanced_header/sub_navs/research_tools }}
-
+        <li class="first campaigns">
+          <a href="#">Campaigns</a>
+        </li>
+        <li class="research-tools">
+          <a href="http://{{ seomoz_host }}/tools">Research Tools</a>
+        </li>
         <li class="pro-qa">
           <a href="#">Q &amp; A</a>
         </li>
-
-        {{> advanced_header/sub_navs/community }}
-        {{> advanced_header/sub_navs/learn_seo }}
+        <li class="community">
+          <a href="http://{{ seomoz_host }}/blog">Community</a>
+        </li>
+        <li class="learn-seo">
+          <a href="http://{{ seomoz_host }}/learn-seo">Learn SEO</a>
+        </li>
       </ul>
     </div>
   </div>
