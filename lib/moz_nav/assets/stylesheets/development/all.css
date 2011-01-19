@@ -1229,16 +1229,18 @@
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 12px !important;
     line-height: 1 !important; }
+    #moz-nav-header.advanced .blue-header h1 {
+      float: left !important;
+      margin: 0 !important;
+      padding: 3px 6px 6px 0 !important;
+      font-size: 28px !important;
+      text-shadow: 0 1px #1968a8 !important; }
+    #moz-nav-header.advanced .blue-header div {
+      padding: 0 0 0 10px !important; }
   #moz-nav-header.advanced .main-heading-wrap {
     padding: 0 0 0 40px !important; }
   #moz-nav-header.advanced .square-space {
     background: url(/images/moz_nav/square-space-icon.png) no-repeat !important; }
-  #moz-nav-header.advanced .blue-header h1 {
-    float: left !important;
-    margin: 0 !important;
-    padding: 3px 6px 6px 0 !important;
-    font-size: 28px !important;
-    text-shadow: 0 1px #1968a8 !important; }
   #moz-nav-header.advanced .heading-dropdown {
     float: left !important;
     position: relative !important;
@@ -1430,8 +1432,6 @@
       padding: 3px 5px !important; }
     #moz-nav-header.advanced .campaign-sub-nav li.active a {
       background: #d8e8f9 !important; }
-  #moz-nav-header.advanced .main-heading-research-wrap {
-    padding: 0 0 0 10px !important; }
   #moz-nav-header.advanced .rel {
     position: relative !important; }
   #moz-nav-header.advanced .research-robot {
