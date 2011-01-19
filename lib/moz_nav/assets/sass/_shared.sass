@@ -1,48 +1,47 @@
-/* general styles
-
-.cl
-  clear: both
-  font-size: 0
-  height: 0
-
-.clearfix:after
-  clear: both
-  content: ' '
-  display: block
-  font-size: 0
-  line-height: 0
-  visibility: hidden
-  width: 0
-  height: 0
-
-.png
-  /* for png /images/moz_nav to fix for IE6
-
-/* spacing
-
-.mb-10
-  margin-bottom: 10px
-
-/* Alignments
-
-.center
-  text-align: center
-
-.right
-  text-align: right
-
-.top
-  vertical-align: top
-
-.middle
-  vertical-align: middle
-
 =common-moz-nav
+  +moz-nav-cleanslate
+  +moz-nav-cleanslate-proprietary
   background: #d8e8f9
   font-family: Arial, Helvetica, sans-serif
   margin: 0 auto
   width: 952px
-  +moz-nav-cleanslate
+
+  .cl
+    clear: both
+    font-size: 0
+    height: 0
+
+  .clearfix:after
+    clear: both
+    content: ' '
+    display: block
+    font-size: 0
+    line-height: 0
+    visibility: hidden
+    width: 0
+    height: 0
+
+  .png
+    /* for png /images/moz_nav to fix for IE6
+
+  /* spacing
+
+  .mb-10
+    margin-bottom: 10px
+
+  /* Alignments
+
+  .center
+    text-align: center
+
+  .right
+    text-align: right
+
+  .top
+    vertical-align: top
+
+  .middle
+    vertical-align: middle
 
 =header
   div.help-menu

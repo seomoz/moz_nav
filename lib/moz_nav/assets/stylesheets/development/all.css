@@ -39,47 +39,84 @@
  *     v0.9.1 */
 /* == PROPRIETARY RULES == */
 /* HTML 4.01 */
-/* general styles */
-.cl {
-  clear: both !important;
-  font-size: 0 !important;
-  height: 0 !important; }
-
-.clearfix:after {
-  clear: both !important;
-  content: " " !important;
-  display: block !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  visibility: hidden !important;
-  width: 0 !important;
-  height: 0 !important; }
-
-.png {
-  /* for png /images/moz_nav to fix for IE6 */ }
-
-/* spacing */
-.mb-10 {
-  margin-bottom: 10px !important; }
-
-/* Alignments */
-.center {
-  text-align: center !important; }
-
-.right {
-  text-align: right !important; }
-
-.top {
-  vertical-align: top !important; }
-
-.middle {
-  vertical-align: middle !important; }
-
 #moz-nav-header {
-  background: #d8e8f9 !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  margin: 0 auto !important;
-  width: 952px !important;
+  background-attachment: scroll !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+  background-position: 0 0 !important;
+  background-repeat: repeat !important;
+  border-color: black !important;
+  border-color: currentColor !important;
+  /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+  border-radius: 0 !important;
+  border-style: none !important;
+  border-width: medium !important;
+  bottom: auto !important;
+  clear: none !important;
+  clip: auto !important;
+  color: inherit !important;
+  counter-increment: none !important;
+  counter-reset: none !important;
+  cursor: auto !important;
+  direction: inherit !important;
+  display: inline !important;
+  float: none !important;
+  font-family: inherit !important;
+  /* As with other inherit values, this needs to be set on the root container element */
+  font-size: inherit !important;
+  font-style: inherit !important;
+  font-variant: normal !important;
+  font-weight: inherit !important;
+  height: auto !important;
+  left: auto !important;
+  letter-spacing: normal !important;
+  line-height: inherit !important;
+  list-style-type: inherit !important;
+  /* Could set list-style-type to none */
+  list-style-position: outside !important;
+  list-style-image: none !important;
+  margin: 0 !important;
+  max-height: none !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  opacity: 1 !important;
+  outline: invert none medium !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  position: static !important;
+  quotes: "" "" !important;
+  right: auto !important;
+  table-layout: auto !important;
+  text-align: inherit !important;
+  text-decoration: inherit !important;
+  text-indent: 0 !important;
+  text-transform: none !important;
+  top: auto !important;
+  unicode-bidi: normal !important;
+  vertical-align: baseline !important;
+  visibility: inherit !important;
+  white-space: normal !important;
+  width: auto !important;
+  word-spacing: normal !important;
+  z-index: auto !important;
+  /* Proprietary and draft rules */
+  /* This section needs extending */
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  display: block !important;
+  font-size: medium !important;
+  line-height: 1 !important;
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: "Times New Roman", Times, serif !important;
+  /* Override this with whatever font-family is required */
+  color: black !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  list-style-type: disc !important;
   /* already in main stylesheet - repeated here for completeness */
   -moz-border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
@@ -178,7 +215,177 @@
   -webkit-border-bottom-left-radius: 0px !important;
   -webkit-border-bottom-right-radius: 0px !important;
   -webkit-border-top-left-radius: 0px !important;
-  -webkit-border-top-right-radius: 0px !important; }
+  -webkit-border-top-right-radius: 0px !important;
+  background: #d8e8f9 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  margin: 0 auto !important;
+  width: 952px !important;
+  /* spacing */
+  /* Alignments */ }
+  #moz-nav-header h1, #moz-nav-header h2, #moz-nav-header h3, #moz-nav-header h4, #moz-nav-header h5, #moz-nav-header h6, #moz-nav-header p, #moz-nav-header td, #moz-nav-header dl, #moz-nav-header tr, #moz-nav-header dt, #moz-nav-header ol, #moz-nav-header form, #moz-nav-header select, #moz-nav-header option, #moz-nav-header pre, #moz-nav-header div, #moz-nav-header table, #moz-nav-header th, #moz-nav-header tbody, #moz-nav-header tfoot, #moz-nav-header caption, #moz-nav-header thead, #moz-nav-header ul, #moz-nav-header li, #moz-nav-header address, #moz-nav-header blockquote, #moz-nav-header dd, #moz-nav-header fieldset, #moz-nav-header li, #moz-nav-header iframe, #moz-nav-header strong, #moz-nav-header legend, #moz-nav-header em, #moz-nav-header s, #moz-nav-header cite, #moz-nav-header span, #moz-nav-header input, #moz-nav-header sup, #moz-nav-header label, #moz-nav-header dfn, #moz-nav-header object, #moz-nav-header big, #moz-nav-header q, #moz-nav-header font, #moz-nav-header samp, #moz-nav-header acronym, #moz-nav-header small, #moz-nav-header img, #moz-nav-header strike, #moz-nav-header code, #moz-nav-header sub, #moz-nav-header ins, #moz-nav-header textarea, #moz-nav-header var, #moz-nav-header a, #moz-nav-header abbr, #moz-nav-header applet, #moz-nav-header del, #moz-nav-header kbd, #moz-nav-header tt, #moz-nav-header b, #moz-nav-header i, #moz-nav-header hr, #moz-nav-header article, #moz-nav-header aside, #moz-nav-header dialog, #moz-nav-header figure, #moz-nav-header footer, #moz-nav-header header, #moz-nav-header hgroup, #moz-nav-header menu, #moz-nav-header nav, #moz-nav-header section, #moz-nav-header time, #moz-nav-header mark, #moz-nav-header audio, #moz-nav-header video {
+    background-attachment: scroll !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+    background-position: 0 0 !important;
+    background-repeat: repeat !important;
+    border-color: black !important;
+    border-color: currentColor !important;
+    /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+    border-radius: 0 !important;
+    border-style: none !important;
+    border-width: medium !important;
+    bottom: auto !important;
+    clear: none !important;
+    clip: auto !important;
+    color: inherit !important;
+    counter-increment: none !important;
+    counter-reset: none !important;
+    cursor: auto !important;
+    direction: inherit !important;
+    display: inline !important;
+    float: none !important;
+    font-family: inherit !important;
+    /* As with other inherit values, this needs to be set on the root container element */
+    font-size: inherit !important;
+    font-style: inherit !important;
+    font-variant: normal !important;
+    font-weight: inherit !important;
+    height: auto !important;
+    left: auto !important;
+    letter-spacing: normal !important;
+    line-height: inherit !important;
+    list-style-type: inherit !important;
+    /* Could set list-style-type to none */
+    list-style-position: outside !important;
+    list-style-image: none !important;
+    margin: 0 !important;
+    max-height: none !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    opacity: 1 !important;
+    outline: invert none medium !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    position: static !important;
+    quotes: "" "" !important;
+    right: auto !important;
+    table-layout: auto !important;
+    text-align: inherit !important;
+    text-decoration: inherit !important;
+    text-indent: 0 !important;
+    text-transform: none !important;
+    top: auto !important;
+    unicode-bidi: normal !important;
+    vertical-align: baseline !important;
+    visibility: inherit !important;
+    white-space: normal !important;
+    width: auto !important;
+    word-spacing: normal !important;
+    z-index: auto !important;
+    /* Proprietary and draft rules */
+    /* This section needs extending */
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important; }
+  #moz-nav-header h3, #moz-nav-header h5, #moz-nav-header p, #moz-nav-header h1, #moz-nav-header dl, #moz-nav-header dt, #moz-nav-header h6, #moz-nav-header ol, #moz-nav-header form, #moz-nav-header select, #moz-nav-header option, #moz-nav-header pre, #moz-nav-header div, #moz-nav-header h2, #moz-nav-header caption, #moz-nav-header h4, #moz-nav-header ul, #moz-nav-header address, #moz-nav-header blockquote, #moz-nav-header dd, #moz-nav-header fieldset, #moz-nav-header textarea, #moz-nav-header hr, #moz-nav-header article, #moz-nav-header aside, #moz-nav-header dialog, #moz-nav-header figure, #moz-nav-header footer, #moz-nav-header header, #moz-nav-header hgroup, #moz-nav-header menu, #moz-nav-header nav, #moz-nav-header section {
+    display: block !important; }
+  #moz-nav-header table {
+    display: table !important; }
+  #moz-nav-header thead {
+    display: table-header-group !important; }
+  #moz-nav-header tbody {
+    display: table-row-group !important; }
+  #moz-nav-header tfoot {
+    display: table-footer-group !important; }
+  #moz-nav-header tr {
+    display: table-row !important; }
+  #moz-nav-header th, #moz-nav-header td {
+    display: table-cell !important; }
+  #moz-nav-header nav ul, #moz-nav-header nav ol {
+    list-style-type: none !important; }
+  #moz-nav-header ul, #moz-nav-header menu {
+    list-style-type: disc !important; }
+  #moz-nav-header ol {
+    list-style-type: decimal !important; }
+    #moz-nav-header ol ul {
+      list-style-type: circle !important; }
+  #moz-nav-header ul ul, #moz-nav-header menu ul, #moz-nav-header ol menu, #moz-nav-header ul menu, #moz-nav-header menu menu {
+    list-style-type: circle !important; }
+  #moz-nav-header ol ol ul, #moz-nav-header ol ul ul, #moz-nav-header ol menu ul, #moz-nav-header ol ol menu, #moz-nav-header ol ul menu, #moz-nav-header ol menu menu {
+    list-style-type: square !important; }
+  #moz-nav-header ul ol ul, #moz-nav-header ul ul ul, #moz-nav-header ul menu ul, #moz-nav-header ul ol menu, #moz-nav-header ul ul menu, #moz-nav-header ul menu menu {
+    list-style-type: square !important; }
+  #moz-nav-header menu ol ul, #moz-nav-header menu ul ul, #moz-nav-header menu menu ul, #moz-nav-header menu ol menu, #moz-nav-header menu ul menu, #moz-nav-header menu menu menu {
+    list-style-type: square !important; }
+  #moz-nav-header li {
+    display: list-item !important;
+    /* Fixes IE7 issue with positioning of nested bullets */
+    min-height: auto !important;
+    min-width: auto !important; }
+  #moz-nav-header strong {
+    font-weight: bold !important; }
+  #moz-nav-header em {
+    font-style: italic !important; }
+  #moz-nav-header kbd, #moz-nav-header samp, #moz-nav-header code {
+    font-family: monospace !important; }
+  #moz-nav-header a {
+    cursor: pointer !important; }
+    #moz-nav-header a * {
+      cursor: pointer !important; }
+  #moz-nav-header input[type=submit], #moz-nav-header input[type=radio], #moz-nav-header input[type=checkbox] {
+    cursor: pointer !important; }
+  #moz-nav-header select {
+    cursor: pointer !important; }
+  #moz-nav-header a:hover {
+    text-decoration: underline !important; }
+  #moz-nav-header button {
+    text-align: center !important; }
+  #moz-nav-header input[type=submit] {
+    text-align: center !important; }
+  #moz-nav-header input[type=hidden] {
+    display: none !important; }
+  #moz-nav-header abbr[title], #moz-nav-header acronym[title], #moz-nav-header dfn[title] {
+    cursor: help !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: dotted !important; }
+  #moz-nav-header ins {
+    background-color: #ffff99 !important;
+    color: black !important; }
+  #moz-nav-header del {
+    text-decoration: line-through !important; }
+  #moz-nav-header blockquote, #moz-nav-header q {
+    quotes: none !important;
+    /* HTML5 */ }
+  #moz-nav-header blockquote:before, #moz-nav-header blockquote:after {
+    content: "" !important; }
+  #moz-nav-header q:before, #moz-nav-header q:after {
+    content: "" !important; }
+  #moz-nav-header li:before, #moz-nav-header li:after {
+    content: "" !important; }
+  #moz-nav-header input {
+    vertical-align: middle !important; }
+  #moz-nav-header select {
+    vertical-align: middle !important;
+    border: 1px solid #cccccc !important; }
+  #moz-nav-header textarea, #moz-nav-header input {
+    border: 1px solid #cccccc !important; }
+  #moz-nav-header table {
+    border-collapse: collapse !important;
+    border-spacing: 0 !important; }
+  #moz-nav-header hr {
+    display: block !important;
+    height: 1px !important;
+    border: 0 !important;
+    border-top: 1px solid #cccccc !important;
+    margin: 1em 0 !important; }
+  #moz-nav-header *[dir=rtl] {
+    direction: rtl !important; }
+  #moz-nav-header mark {
+    background-color: #ffff99 !important;
+    color: black !important;
+    font-style: italic !important;
+    font-weight: bold !important; }
   #moz-nav-header h1, #moz-nav-header h2, #moz-nav-header h3, #moz-nav-header h4, #moz-nav-header h5, #moz-nav-header h6, #moz-nav-header p, #moz-nav-header td, #moz-nav-header dl, #moz-nav-header tr, #moz-nav-header dt, #moz-nav-header ol, #moz-nav-header form, #moz-nav-header select, #moz-nav-header option, #moz-nav-header pre, #moz-nav-header div, #moz-nav-header table, #moz-nav-header th, #moz-nav-header tbody, #moz-nav-header tfoot, #moz-nav-header caption, #moz-nav-header thead, #moz-nav-header ul, #moz-nav-header li, #moz-nav-header address, #moz-nav-header blockquote, #moz-nav-header dd, #moz-nav-header fieldset, #moz-nav-header li, #moz-nav-header iframe, #moz-nav-header strong, #moz-nav-header legend, #moz-nav-header em, #moz-nav-header s, #moz-nav-header cite, #moz-nav-header span, #moz-nav-header input, #moz-nav-header sup, #moz-nav-header label, #moz-nav-header dfn, #moz-nav-header object, #moz-nav-header big, #moz-nav-header q, #moz-nav-header font, #moz-nav-header samp, #moz-nav-header acronym, #moz-nav-header small, #moz-nav-header img, #moz-nav-header strike, #moz-nav-header code, #moz-nav-header sub, #moz-nav-header ins, #moz-nav-header textarea, #moz-nav-header var, #moz-nav-header a, #moz-nav-header abbr, #moz-nav-header applet, #moz-nav-header del, #moz-nav-header kbd, #moz-nav-header tt, #moz-nav-header b, #moz-nav-header i, #moz-nav-header hr, #moz-nav-header article, #moz-nav-header aside, #moz-nav-header dialog, #moz-nav-header figure, #moz-nav-header footer, #moz-nav-header header, #moz-nav-header hgroup, #moz-nav-header menu, #moz-nav-header nav, #moz-nav-header section, #moz-nav-header time, #moz-nav-header mark, #moz-nav-header audio, #moz-nav-header video {
     /* already in main stylesheet - repeated here for completeness */
     -moz-border-radius: 0 !important;
@@ -279,6 +486,31 @@
     -webkit-border-bottom-right-radius: 0px !important;
     -webkit-border-top-left-radius: 0px !important;
     -webkit-border-top-right-radius: 0px !important; }
+  #moz-nav-header .cl {
+    clear: both !important;
+    font-size: 0 !important;
+    height: 0 !important; }
+  #moz-nav-header .clearfix:after {
+    clear: both !important;
+    content: " " !important;
+    display: block !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important; }
+  #moz-nav-header .png {
+    /* for png /images/moz_nav to fix for IE6 */ }
+  #moz-nav-header .mb-10 {
+    margin-bottom: 10px !important; }
+  #moz-nav-header .center {
+    text-align: center !important; }
+  #moz-nav-header .right {
+    text-align: right !important; }
+  #moz-nav-header .top {
+    vertical-align: top !important; }
+  #moz-nav-header .middle {
+    vertical-align: middle !important; }
   #moz-nav-header.advanced div.help-menu {
     position: absolute !important;
     display: none !important;
@@ -349,10 +581,83 @@
           color: #517c9d !important; }
 
 #moz-nav-footer {
-  background: #d8e8f9 !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  margin: 0 auto !important;
-  width: 952px !important;
+  background-attachment: scroll !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+  background-position: 0 0 !important;
+  background-repeat: repeat !important;
+  border-color: black !important;
+  border-color: currentColor !important;
+  /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+  border-radius: 0 !important;
+  border-style: none !important;
+  border-width: medium !important;
+  bottom: auto !important;
+  clear: none !important;
+  clip: auto !important;
+  color: inherit !important;
+  counter-increment: none !important;
+  counter-reset: none !important;
+  cursor: auto !important;
+  direction: inherit !important;
+  display: inline !important;
+  float: none !important;
+  font-family: inherit !important;
+  /* As with other inherit values, this needs to be set on the root container element */
+  font-size: inherit !important;
+  font-style: inherit !important;
+  font-variant: normal !important;
+  font-weight: inherit !important;
+  height: auto !important;
+  left: auto !important;
+  letter-spacing: normal !important;
+  line-height: inherit !important;
+  list-style-type: inherit !important;
+  /* Could set list-style-type to none */
+  list-style-position: outside !important;
+  list-style-image: none !important;
+  margin: 0 !important;
+  max-height: none !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  opacity: 1 !important;
+  outline: invert none medium !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  position: static !important;
+  quotes: "" "" !important;
+  right: auto !important;
+  table-layout: auto !important;
+  text-align: inherit !important;
+  text-decoration: inherit !important;
+  text-indent: 0 !important;
+  text-transform: none !important;
+  top: auto !important;
+  unicode-bidi: normal !important;
+  vertical-align: baseline !important;
+  visibility: inherit !important;
+  white-space: normal !important;
+  width: auto !important;
+  word-spacing: normal !important;
+  z-index: auto !important;
+  /* Proprietary and draft rules */
+  /* This section needs extending */
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  display: block !important;
+  font-size: medium !important;
+  line-height: 1 !important;
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: "Times New Roman", Times, serif !important;
+  /* Override this with whatever font-family is required */
+  color: black !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  list-style-type: disc !important;
   /* already in main stylesheet - repeated here for completeness */
   -moz-border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
@@ -451,7 +756,177 @@
   -webkit-border-bottom-left-radius: 0px !important;
   -webkit-border-bottom-right-radius: 0px !important;
   -webkit-border-top-left-radius: 0px !important;
-  -webkit-border-top-right-radius: 0px !important; }
+  -webkit-border-top-right-radius: 0px !important;
+  background: #d8e8f9 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  margin: 0 auto !important;
+  width: 952px !important;
+  /* spacing */
+  /* Alignments */ }
+  #moz-nav-footer h1, #moz-nav-footer h2, #moz-nav-footer h3, #moz-nav-footer h4, #moz-nav-footer h5, #moz-nav-footer h6, #moz-nav-footer p, #moz-nav-footer td, #moz-nav-footer dl, #moz-nav-footer tr, #moz-nav-footer dt, #moz-nav-footer ol, #moz-nav-footer form, #moz-nav-footer select, #moz-nav-footer option, #moz-nav-footer pre, #moz-nav-footer div, #moz-nav-footer table, #moz-nav-footer th, #moz-nav-footer tbody, #moz-nav-footer tfoot, #moz-nav-footer caption, #moz-nav-footer thead, #moz-nav-footer ul, #moz-nav-footer li, #moz-nav-footer address, #moz-nav-footer blockquote, #moz-nav-footer dd, #moz-nav-footer fieldset, #moz-nav-footer li, #moz-nav-footer iframe, #moz-nav-footer strong, #moz-nav-footer legend, #moz-nav-footer em, #moz-nav-footer s, #moz-nav-footer cite, #moz-nav-footer span, #moz-nav-footer input, #moz-nav-footer sup, #moz-nav-footer label, #moz-nav-footer dfn, #moz-nav-footer object, #moz-nav-footer big, #moz-nav-footer q, #moz-nav-footer font, #moz-nav-footer samp, #moz-nav-footer acronym, #moz-nav-footer small, #moz-nav-footer img, #moz-nav-footer strike, #moz-nav-footer code, #moz-nav-footer sub, #moz-nav-footer ins, #moz-nav-footer textarea, #moz-nav-footer var, #moz-nav-footer a, #moz-nav-footer abbr, #moz-nav-footer applet, #moz-nav-footer del, #moz-nav-footer kbd, #moz-nav-footer tt, #moz-nav-footer b, #moz-nav-footer i, #moz-nav-footer hr, #moz-nav-footer article, #moz-nav-footer aside, #moz-nav-footer dialog, #moz-nav-footer figure, #moz-nav-footer footer, #moz-nav-footer header, #moz-nav-footer hgroup, #moz-nav-footer menu, #moz-nav-footer nav, #moz-nav-footer section, #moz-nav-footer time, #moz-nav-footer mark, #moz-nav-footer audio, #moz-nav-footer video {
+    background-attachment: scroll !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+    background-position: 0 0 !important;
+    background-repeat: repeat !important;
+    border-color: black !important;
+    border-color: currentColor !important;
+    /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+    border-radius: 0 !important;
+    border-style: none !important;
+    border-width: medium !important;
+    bottom: auto !important;
+    clear: none !important;
+    clip: auto !important;
+    color: inherit !important;
+    counter-increment: none !important;
+    counter-reset: none !important;
+    cursor: auto !important;
+    direction: inherit !important;
+    display: inline !important;
+    float: none !important;
+    font-family: inherit !important;
+    /* As with other inherit values, this needs to be set on the root container element */
+    font-size: inherit !important;
+    font-style: inherit !important;
+    font-variant: normal !important;
+    font-weight: inherit !important;
+    height: auto !important;
+    left: auto !important;
+    letter-spacing: normal !important;
+    line-height: inherit !important;
+    list-style-type: inherit !important;
+    /* Could set list-style-type to none */
+    list-style-position: outside !important;
+    list-style-image: none !important;
+    margin: 0 !important;
+    max-height: none !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    opacity: 1 !important;
+    outline: invert none medium !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    position: static !important;
+    quotes: "" "" !important;
+    right: auto !important;
+    table-layout: auto !important;
+    text-align: inherit !important;
+    text-decoration: inherit !important;
+    text-indent: 0 !important;
+    text-transform: none !important;
+    top: auto !important;
+    unicode-bidi: normal !important;
+    vertical-align: baseline !important;
+    visibility: inherit !important;
+    white-space: normal !important;
+    width: auto !important;
+    word-spacing: normal !important;
+    z-index: auto !important;
+    /* Proprietary and draft rules */
+    /* This section needs extending */
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important; }
+  #moz-nav-footer h3, #moz-nav-footer h5, #moz-nav-footer p, #moz-nav-footer h1, #moz-nav-footer dl, #moz-nav-footer dt, #moz-nav-footer h6, #moz-nav-footer ol, #moz-nav-footer form, #moz-nav-footer select, #moz-nav-footer option, #moz-nav-footer pre, #moz-nav-footer div, #moz-nav-footer h2, #moz-nav-footer caption, #moz-nav-footer h4, #moz-nav-footer ul, #moz-nav-footer address, #moz-nav-footer blockquote, #moz-nav-footer dd, #moz-nav-footer fieldset, #moz-nav-footer textarea, #moz-nav-footer hr, #moz-nav-footer article, #moz-nav-footer aside, #moz-nav-footer dialog, #moz-nav-footer figure, #moz-nav-footer footer, #moz-nav-footer header, #moz-nav-footer hgroup, #moz-nav-footer menu, #moz-nav-footer nav, #moz-nav-footer section {
+    display: block !important; }
+  #moz-nav-footer table {
+    display: table !important; }
+  #moz-nav-footer thead {
+    display: table-header-group !important; }
+  #moz-nav-footer tbody {
+    display: table-row-group !important; }
+  #moz-nav-footer tfoot {
+    display: table-footer-group !important; }
+  #moz-nav-footer tr {
+    display: table-row !important; }
+  #moz-nav-footer th, #moz-nav-footer td {
+    display: table-cell !important; }
+  #moz-nav-footer nav ul, #moz-nav-footer nav ol {
+    list-style-type: none !important; }
+  #moz-nav-footer ul, #moz-nav-footer menu {
+    list-style-type: disc !important; }
+  #moz-nav-footer ol {
+    list-style-type: decimal !important; }
+    #moz-nav-footer ol ul {
+      list-style-type: circle !important; }
+  #moz-nav-footer ul ul, #moz-nav-footer menu ul, #moz-nav-footer ol menu, #moz-nav-footer ul menu, #moz-nav-footer menu menu {
+    list-style-type: circle !important; }
+  #moz-nav-footer ol ol ul, #moz-nav-footer ol ul ul, #moz-nav-footer ol menu ul, #moz-nav-footer ol ol menu, #moz-nav-footer ol ul menu, #moz-nav-footer ol menu menu {
+    list-style-type: square !important; }
+  #moz-nav-footer ul ol ul, #moz-nav-footer ul ul ul, #moz-nav-footer ul menu ul, #moz-nav-footer ul ol menu, #moz-nav-footer ul ul menu, #moz-nav-footer ul menu menu {
+    list-style-type: square !important; }
+  #moz-nav-footer menu ol ul, #moz-nav-footer menu ul ul, #moz-nav-footer menu menu ul, #moz-nav-footer menu ol menu, #moz-nav-footer menu ul menu, #moz-nav-footer menu menu menu {
+    list-style-type: square !important; }
+  #moz-nav-footer li {
+    display: list-item !important;
+    /* Fixes IE7 issue with positioning of nested bullets */
+    min-height: auto !important;
+    min-width: auto !important; }
+  #moz-nav-footer strong {
+    font-weight: bold !important; }
+  #moz-nav-footer em {
+    font-style: italic !important; }
+  #moz-nav-footer kbd, #moz-nav-footer samp, #moz-nav-footer code {
+    font-family: monospace !important; }
+  #moz-nav-footer a {
+    cursor: pointer !important; }
+    #moz-nav-footer a * {
+      cursor: pointer !important; }
+  #moz-nav-footer input[type=submit], #moz-nav-footer input[type=radio], #moz-nav-footer input[type=checkbox] {
+    cursor: pointer !important; }
+  #moz-nav-footer select {
+    cursor: pointer !important; }
+  #moz-nav-footer a:hover {
+    text-decoration: underline !important; }
+  #moz-nav-footer button {
+    text-align: center !important; }
+  #moz-nav-footer input[type=submit] {
+    text-align: center !important; }
+  #moz-nav-footer input[type=hidden] {
+    display: none !important; }
+  #moz-nav-footer abbr[title], #moz-nav-footer acronym[title], #moz-nav-footer dfn[title] {
+    cursor: help !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: dotted !important; }
+  #moz-nav-footer ins {
+    background-color: #ffff99 !important;
+    color: black !important; }
+  #moz-nav-footer del {
+    text-decoration: line-through !important; }
+  #moz-nav-footer blockquote, #moz-nav-footer q {
+    quotes: none !important;
+    /* HTML5 */ }
+  #moz-nav-footer blockquote:before, #moz-nav-footer blockquote:after {
+    content: "" !important; }
+  #moz-nav-footer q:before, #moz-nav-footer q:after {
+    content: "" !important; }
+  #moz-nav-footer li:before, #moz-nav-footer li:after {
+    content: "" !important; }
+  #moz-nav-footer input {
+    vertical-align: middle !important; }
+  #moz-nav-footer select {
+    vertical-align: middle !important;
+    border: 1px solid #cccccc !important; }
+  #moz-nav-footer textarea, #moz-nav-footer input {
+    border: 1px solid #cccccc !important; }
+  #moz-nav-footer table {
+    border-collapse: collapse !important;
+    border-spacing: 0 !important; }
+  #moz-nav-footer hr {
+    display: block !important;
+    height: 1px !important;
+    border: 0 !important;
+    border-top: 1px solid #cccccc !important;
+    margin: 1em 0 !important; }
+  #moz-nav-footer *[dir=rtl] {
+    direction: rtl !important; }
+  #moz-nav-footer mark {
+    background-color: #ffff99 !important;
+    color: black !important;
+    font-style: italic !important;
+    font-weight: bold !important; }
   #moz-nav-footer h1, #moz-nav-footer h2, #moz-nav-footer h3, #moz-nav-footer h4, #moz-nav-footer h5, #moz-nav-footer h6, #moz-nav-footer p, #moz-nav-footer td, #moz-nav-footer dl, #moz-nav-footer tr, #moz-nav-footer dt, #moz-nav-footer ol, #moz-nav-footer form, #moz-nav-footer select, #moz-nav-footer option, #moz-nav-footer pre, #moz-nav-footer div, #moz-nav-footer table, #moz-nav-footer th, #moz-nav-footer tbody, #moz-nav-footer tfoot, #moz-nav-footer caption, #moz-nav-footer thead, #moz-nav-footer ul, #moz-nav-footer li, #moz-nav-footer address, #moz-nav-footer blockquote, #moz-nav-footer dd, #moz-nav-footer fieldset, #moz-nav-footer li, #moz-nav-footer iframe, #moz-nav-footer strong, #moz-nav-footer legend, #moz-nav-footer em, #moz-nav-footer s, #moz-nav-footer cite, #moz-nav-footer span, #moz-nav-footer input, #moz-nav-footer sup, #moz-nav-footer label, #moz-nav-footer dfn, #moz-nav-footer object, #moz-nav-footer big, #moz-nav-footer q, #moz-nav-footer font, #moz-nav-footer samp, #moz-nav-footer acronym, #moz-nav-footer small, #moz-nav-footer img, #moz-nav-footer strike, #moz-nav-footer code, #moz-nav-footer sub, #moz-nav-footer ins, #moz-nav-footer textarea, #moz-nav-footer var, #moz-nav-footer a, #moz-nav-footer abbr, #moz-nav-footer applet, #moz-nav-footer del, #moz-nav-footer kbd, #moz-nav-footer tt, #moz-nav-footer b, #moz-nav-footer i, #moz-nav-footer hr, #moz-nav-footer article, #moz-nav-footer aside, #moz-nav-footer dialog, #moz-nav-footer figure, #moz-nav-footer footer, #moz-nav-footer header, #moz-nav-footer hgroup, #moz-nav-footer menu, #moz-nav-footer nav, #moz-nav-footer section, #moz-nav-footer time, #moz-nav-footer mark, #moz-nav-footer audio, #moz-nav-footer video {
     /* already in main stylesheet - repeated here for completeness */
     -moz-border-radius: 0 !important;
@@ -552,6 +1027,31 @@
     -webkit-border-bottom-right-radius: 0px !important;
     -webkit-border-top-left-radius: 0px !important;
     -webkit-border-top-right-radius: 0px !important; }
+  #moz-nav-footer .cl {
+    clear: both !important;
+    font-size: 0 !important;
+    height: 0 !important; }
+  #moz-nav-footer .clearfix:after {
+    clear: both !important;
+    content: " " !important;
+    display: block !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important; }
+  #moz-nav-footer .png {
+    /* for png /images/moz_nav to fix for IE6 */ }
+  #moz-nav-footer .mb-10 {
+    margin-bottom: 10px !important; }
+  #moz-nav-footer .center {
+    text-align: center !important; }
+  #moz-nav-footer .right {
+    text-align: right !important; }
+  #moz-nav-footer .top {
+    vertical-align: top !important; }
+  #moz-nav-footer .middle {
+    vertical-align: middle !important; }
 
 #moz-nav-header.advanced {
   position: relative !important;
