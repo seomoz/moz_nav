@@ -34,8 +34,6 @@ namespace :sass do
   end
 end
 
-load 'moz_nav/tasks/moz_nav.rake'
-
 task :default => :spec
 
 # Make sure we never push to rubygems.org
@@ -53,5 +51,6 @@ Bundler::GemHelper.class_eval do
     tag_version { git_push }
   end
 end
+
 
 
