@@ -11,6 +11,7 @@ module MozNavSpecSelectors
   end
 
   def header_sub_nav_for(li_class)
+    pending "Refactoring markup"
     find("##{HEADER_ID} .user-controls li.#{li_class} .sub-nav")
   end
 
