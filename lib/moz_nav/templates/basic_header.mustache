@@ -1,19 +1,5 @@
 <div id="moz-nav-header" class="basic">
-  <div class="logo-bar">
-    <div class="header-yellow inner-content clearfix">
-      {{> shared/logo }}
-
-      <div class="top-links">
-        {{# logged_in? }}
-          {{> shared/logged_in_user_box }}
-        {{/ logged_in? }}
-
-        {{^ logged_in? }}
-          {{> shared/logged_out_user_box }}
-        {{/ logged_in? }}
-      </div>
-    </div>
-  </div>
+  {{> basic_header/logo_bar }}
   {{> basic_header/nav_bar }}
 </div>
 

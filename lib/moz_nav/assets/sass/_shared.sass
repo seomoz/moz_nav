@@ -1,10 +1,8 @@
 =common-moz-nav
   +moz-nav-cleanslate
   +moz-nav-cleanslate-proprietary
-  background: #d8e8f9
   font-family: Arial, Helvetica, sans-serif
   margin: 0 auto
-  width: 952px
 
   .cl
     clear: both
@@ -49,9 +47,10 @@
     display: none
     right: 0
     top: 13px
-    background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x
-    padding: 0 0 4px
-    width: 115px
+    width: 140px
+    -moz-box-shadow: 2px 2px 3px #CCC
+    -webkit-box-shadow: 2px 2px 3px #CCC
+    box-shadow: 2px 2px 3px #CCC
 
   .show-menu div.help-menu
     display: block
@@ -60,18 +59,16 @@
     list-style: none
     margin: 0
     padding: 2px 1px 1px
-    background: url(/images/moz_nav/transparent-white.png)
-    border: 1px solid #e7e7e7
     li
       float: none
-      margin: 0 0 5px
       position: relative
       &.last
         margin-bottom: 0
       a
-        line-height: 12px
+        font-size: 11px
+        line-height: 11px
         display: block
-        padding: 3px 5px
+        padding: 5px 13px
         color: #0b72ba
         text-decoration: none
         img

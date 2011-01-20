@@ -216,10 +216,8 @@
   -webkit-border-bottom-right-radius: 0px !important;
   -webkit-border-top-left-radius: 0px !important;
   -webkit-border-top-right-radius: 0px !important;
-  background: #d8e8f9 !important;
   font-family: Arial, Helvetica, sans-serif !important;
   margin: 0 auto !important;
-  width: 952px !important;
   /* spacing */
   /* Alignments */ }
   #moz-nav-header h1, #moz-nav-header h2, #moz-nav-header h3, #moz-nav-header h4, #moz-nav-header h5, #moz-nav-header h6, #moz-nav-header p, #moz-nav-header td, #moz-nav-header dl, #moz-nav-header tr, #moz-nav-header dt, #moz-nav-header ol, #moz-nav-header form, #moz-nav-header select, #moz-nav-header option, #moz-nav-header pre, #moz-nav-header div, #moz-nav-header table, #moz-nav-header th, #moz-nav-header tbody, #moz-nav-header tfoot, #moz-nav-header caption, #moz-nav-header thead, #moz-nav-header ul, #moz-nav-header li, #moz-nav-header address, #moz-nav-header blockquote, #moz-nav-header dd, #moz-nav-header fieldset, #moz-nav-header li, #moz-nav-header iframe, #moz-nav-header strong, #moz-nav-header legend, #moz-nav-header em, #moz-nav-header s, #moz-nav-header cite, #moz-nav-header span, #moz-nav-header input, #moz-nav-header sup, #moz-nav-header label, #moz-nav-header dfn, #moz-nav-header object, #moz-nav-header big, #moz-nav-header q, #moz-nav-header font, #moz-nav-header samp, #moz-nav-header acronym, #moz-nav-header small, #moz-nav-header img, #moz-nav-header strike, #moz-nav-header code, #moz-nav-header sub, #moz-nav-header ins, #moz-nav-header textarea, #moz-nav-header var, #moz-nav-header a, #moz-nav-header abbr, #moz-nav-header applet, #moz-nav-header del, #moz-nav-header kbd, #moz-nav-header tt, #moz-nav-header b, #moz-nav-header i, #moz-nav-header hr, #moz-nav-header article, #moz-nav-header aside, #moz-nav-header dialog, #moz-nav-header figure, #moz-nav-header footer, #moz-nav-header header, #moz-nav-header hgroup, #moz-nav-header menu, #moz-nav-header nav, #moz-nav-header section, #moz-nav-header time, #moz-nav-header mark, #moz-nav-header audio, #moz-nav-header video {
@@ -516,27 +514,26 @@
     display: none !important;
     right: 0 !important;
     top: 13px !important;
-    background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x !important;
-    padding: 0 0 4px !important;
-    width: 115px !important; }
+    width: 140px !important;
+    -moz-box-shadow: 2px 2px 3px #cccccc !important;
+    -webkit-box-shadow: 2px 2px 3px #cccccc !important;
+    box-shadow: 2px 2px 3px #cccccc !important; }
   #moz-nav-header.advanced .show-menu div.help-menu {
     display: block !important; }
   #moz-nav-header.advanced .help-menu ul {
     list-style: none !important;
     margin: 0 !important;
-    padding: 2px 1px 1px !important;
-    background: url(/images/moz_nav/transparent-white.png) !important;
-    border: 1px solid #e7e7e7 !important; }
+    padding: 2px 1px 1px !important; }
     #moz-nav-header.advanced .help-menu ul li {
       float: none !important;
-      margin: 0 0 5px !important;
       position: relative !important; }
       #moz-nav-header.advanced .help-menu ul li.last {
         margin-bottom: 0 !important; }
       #moz-nav-header.advanced .help-menu ul li a {
-        line-height: 12px !important;
+        font-size: 11px !important;
+        line-height: 11px !important;
         display: block !important;
-        padding: 3px 5px !important;
+        padding: 5px 13px !important;
         color: #0b72ba !important;
         text-decoration: none !important; }
         #moz-nav-header.advanced .help-menu ul li a img {
@@ -550,27 +547,26 @@
     display: none !important;
     right: 0 !important;
     top: 13px !important;
-    background: url(/images/moz_nav/shadow-w-border.png) left bottom repeat-x !important;
-    padding: 0 0 4px !important;
-    width: 115px !important; }
+    width: 140px !important;
+    -moz-box-shadow: 2px 2px 3px #cccccc !important;
+    -webkit-box-shadow: 2px 2px 3px #cccccc !important;
+    box-shadow: 2px 2px 3px #cccccc !important; }
   #moz-nav-header.basic .show-menu div.help-menu {
     display: block !important; }
   #moz-nav-header.basic .help-menu ul {
     list-style: none !important;
     margin: 0 !important;
-    padding: 2px 1px 1px !important;
-    background: url(/images/moz_nav/transparent-white.png) !important;
-    border: 1px solid #e7e7e7 !important; }
+    padding: 2px 1px 1px !important; }
     #moz-nav-header.basic .help-menu ul li {
       float: none !important;
-      margin: 0 0 5px !important;
       position: relative !important; }
       #moz-nav-header.basic .help-menu ul li.last {
         margin-bottom: 0 !important; }
       #moz-nav-header.basic .help-menu ul li a {
-        line-height: 12px !important;
+        font-size: 11px !important;
+        line-height: 11px !important;
         display: block !important;
-        padding: 3px 5px !important;
+        padding: 5px 13px !important;
         color: #0b72ba !important;
         text-decoration: none !important; }
         #moz-nav-header.basic .help-menu ul li a img {
@@ -757,10 +753,8 @@
   -webkit-border-bottom-right-radius: 0px !important;
   -webkit-border-top-left-radius: 0px !important;
   -webkit-border-top-right-radius: 0px !important;
-  background: #d8e8f9 !important;
   font-family: Arial, Helvetica, sans-serif !important;
   margin: 0 auto !important;
-  width: 952px !important;
   /* spacing */
   /* Alignments */ }
   #moz-nav-footer h1, #moz-nav-footer h2, #moz-nav-footer h3, #moz-nav-footer h4, #moz-nav-footer h5, #moz-nav-footer h6, #moz-nav-footer p, #moz-nav-footer td, #moz-nav-footer dl, #moz-nav-footer tr, #moz-nav-footer dt, #moz-nav-footer ol, #moz-nav-footer form, #moz-nav-footer select, #moz-nav-footer option, #moz-nav-footer pre, #moz-nav-footer div, #moz-nav-footer table, #moz-nav-footer th, #moz-nav-footer tbody, #moz-nav-footer tfoot, #moz-nav-footer caption, #moz-nav-footer thead, #moz-nav-footer ul, #moz-nav-footer li, #moz-nav-footer address, #moz-nav-footer blockquote, #moz-nav-footer dd, #moz-nav-footer fieldset, #moz-nav-footer li, #moz-nav-footer iframe, #moz-nav-footer strong, #moz-nav-footer legend, #moz-nav-footer em, #moz-nav-footer s, #moz-nav-footer cite, #moz-nav-footer span, #moz-nav-footer input, #moz-nav-footer sup, #moz-nav-footer label, #moz-nav-footer dfn, #moz-nav-footer object, #moz-nav-footer big, #moz-nav-footer q, #moz-nav-footer font, #moz-nav-footer samp, #moz-nav-footer acronym, #moz-nav-footer small, #moz-nav-footer img, #moz-nav-footer strike, #moz-nav-footer code, #moz-nav-footer sub, #moz-nav-footer ins, #moz-nav-footer textarea, #moz-nav-footer var, #moz-nav-footer a, #moz-nav-footer abbr, #moz-nav-footer applet, #moz-nav-footer del, #moz-nav-footer kbd, #moz-nav-footer tt, #moz-nav-footer b, #moz-nav-footer i, #moz-nav-footer hr, #moz-nav-footer article, #moz-nav-footer aside, #moz-nav-footer dialog, #moz-nav-footer figure, #moz-nav-footer footer, #moz-nav-footer header, #moz-nav-footer hgroup, #moz-nav-footer menu, #moz-nav-footer nav, #moz-nav-footer section, #moz-nav-footer time, #moz-nav-footer mark, #moz-nav-footer audio, #moz-nav-footer video {
@@ -1602,126 +1596,113 @@
     #moz-nav-footer.advanced .nav-secondary .active a {
       background: #f6f6f6 !important; }
 
-#moz-nav-header.basic .logo-bar {
-  background: #fff4d6 url(/images/moz_nav/header-yellow-wrap.png) left bottom repeat-x !important;
-  min-width: 952px !important; }
-#moz-nav-header.basic .header-yellow {
-  padding: 10px 0 0 !important;
-  line-height: 1 !important; }
-#moz-nav-header.basic .inner-content {
-  width: 952px !important;
-  margin: 0 auto !important; }
-#moz-nav-header.basic .top-links {
-  float: right !important;
-  width: 205px !important;
-  background: url(/images/moz_nav/top-links.png) no-repeat !important;
-  padding: 2px 10px 4px 0 !important;
-  margin: 8px 0 0 !important; }
-  #moz-nav-header.basic .top-links ul {
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important; }
-  #moz-nav-header.basic .top-links li {
+#moz-nav-header.basic {
+  background: #fff4d6 !important; }
+  #moz-nav-header.basic .logo-bar {
+    margin: 0px auto !important;
+    width: 950px !important;
+    padding-top: 10px !important; }
+  #moz-nav-header.basic ul.user-links {
     float: right !important;
-    position: relative !important;
-    margin: 0 !important;
-    padding: 0 0 0 13px !important; }
-  #moz-nav-header.basic .top-links a {
-    color: #955f25 !important;
-    text-shadow: 0 1px 1px white !important;
-    font-size: 11px !important;
-    text-decoration: none !important; }
-    #moz-nav-header.basic .top-links a img {
-      vertical-align: middle !important;
-      border: 0 !important; }
-  #moz-nav-header.basic .top-links .help-menu {
-    top: 20px !important; }
-    #moz-nav-header.basic .top-links .help-menu li {
+    width: 205px !important;
+    background: url(/images/moz_nav/top-links.png) no-repeat !important;
+    padding: 2px 10px 4px 0 !important;
+    margin: 8px 0 0 !important;
+    list-style: none !important; }
+    #moz-nav-header.basic ul.user-links > li {
+      float: right !important;
+      position: relative !important;
+      margin: 0 !important;
+      padding: 0 0 0 13px !important; }
+      #moz-nav-header.basic ul.user-links > li > a {
+        color: #955f25 !important;
+        text-shadow: 0 1px 1px white !important;
+        font-size: 11px !important;
+        text-decoration: none !important; }
+        #moz-nav-header.basic ul.user-links > li > a > img {
+          vertical-align: middle !important;
+          border: 0 !important; }
+      #moz-nav-header.basic ul.user-links > li .help-menu {
+        background-color: white !important;
+        top: 20px !important; }
+        #moz-nav-header.basic ul.user-links > li .help-menu li {
+          padding: 0 !important; }
+  #moz-nav-header.basic .navigation {
+    background: #fde7ac url(/images/moz_nav/nav-yellow-wrap.jpg) repeat-x !important;
+    border-top: 1px solid white !important;
+    border-bottom: 1px solid white !important;
+    min-width: 952px !important;
+    margin: 0px auto !important;
+    width: 950px !important; }
+    #moz-nav-header.basic .navigation form.search {
+      float: right !important;
+      width: 250px !important;
+      padding: 6px 0 0 !important; }
+      #moz-nav-header.basic .navigation form.search input[type=text] {
+        background-color: white !important;
+        border: 1px solid #dabe84 !important;
+        width: 169px !important;
+        padding: 0 5px !important;
+        vertical-align: middle !important; }
+      #moz-nav-header.basic .navigation form.search input[type=image] {
+        border: 0 !important;
+        cursor: pointer !important;
+        width: 54px !important;
+        height: 22px !important;
+        vertical-align: middle !important; }
+    #moz-nav-header.basic .navigation > ul {
+      list-style: none !important;
+      margin: 0 !important;
       padding: 0 !important; }
-#moz-nav-header.basic .nav-yellow-wrap {
-  background: #fde7ac url(/images/moz_nav/nav-yellow-wrap.jpg) repeat-x !important;
-  border-top: 1px solid white !important;
-  border-bottom: 1px solid white !important;
-  min-width: 952px !important; }
-#moz-nav-header.basic .nav-yellow {
-  line-height: 1 !important; }
-#moz-nav-header.basic form.search {
-  float: right !important;
-  width: 233px !important;
-  padding: 6px 0 0 !important; }
-  #moz-nav-header.basic form.search input.text {
-    width: 169px !important;
-    padding: 0 5px !important;
-    height: 22px !important;
-    line-height: 22px !important;
-    background: url(/images/moz_nav/s_field-yellow.jpg) no-repeat !important;
-    border: 0 !important;
-    vertical-align: middle !important; }
-  #moz-nav-header.basic form.search input.button {
-    border: 0 !important;
-    cursor: pointer !important;
-    width: 54px !important;
-    height: 22px !important;
-    background: url(/images/moz_nav/btn-search.jpg) no-repeat !important;
-    vertical-align: middle !important; }
-#moz-nav-header.basic .nav-yellow ul {
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important; }
-#moz-nav-header.basic .nav-yellow li {
-  float: left !important;
-  position: relative !important;
-  margin: 0 !important;
-  padding: 1px 0 0 2px !important;
-  background: url(/images/moz_nav/separator-yellow.png) 0 5px no-repeat !important; }
-#moz-nav-header.basic .nav-yellow a {
-  display: block !important;
-  float: left !important;
-  padding: 11px 17px 9px !important;
-  font-size: 14px !important;
-  color: #96611a !important;
-  text-shadow: 0 1px 1px white !important;
-  text-decoration: none !important; }
-#moz-nav-header.basic .nav-yellow li.active a {
-  background: #fce8b2 !important; }
-#moz-nav-header.basic .nav-yellow-active {
-  position: absolute !important;
-  left: 50% !important;
-  top: 35px !important;
-  margin-left: -8px !important; }
-#moz-nav-header.basic .nav-yellow li:hover > .sub-nav-yellow {
-  display: block !important; }
-#moz-nav-header.basic .sub-nav-yellow {
-  display: none !important;
-  position: absolute !important;
-  left: 0 !important;
-  top: 100% !important;
-  width: 168px !important;
-  border: 1px solid #e5e5e5 !important;
-  border-top-color: white !important; }
-  #moz-nav-header.basic .sub-nav-yellow ul {
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 1px !important;
-    background: url(/images/moz_nav/transparent-white.png) !important;
-    border-bottom: 2px solid #acacac !important;
-    overflow: hidden !important; }
-  #moz-nav-header.basic .sub-nav-yellow li {
-    float: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    background: none !important; }
-  #moz-nav-header.basic .sub-nav-yellow a {
-    display: block !important;
-    width: 150px !important;
-    padding: 8px !important;
-    font-size: 11px !important;
-    color: #5d95c1 !important;
-    text-decoration: none !important; }
-    #moz-nav-header.basic .sub-nav-yellow a img {
-      vertical-align: middle !important;
-      border: 0 !important; }
-    #moz-nav-header.basic .sub-nav-yellow a:hover {
-      background: #bde2ff !important;
-      color: #517c9d !important;
-      text-shadow: 0 1px 1px white !important; }
+      #moz-nav-header.basic .navigation > ul > li {
+        float: left !important;
+        position: relative !important;
+        margin: 0 !important;
+        padding: 1px 0 0 2px !important;
+        background: url(/images/moz_nav/separator-yellow.png) 0 5px no-repeat !important; }
+        #moz-nav-header.basic .navigation > ul > li > a {
+          display: block !important;
+          float: left !important;
+          padding: 11px 17px 9px !important;
+          font-size: 14px !important;
+          color: #96611a !important;
+          text-shadow: 0 1px 1px white !important;
+          text-decoration: none !important; }
+        #moz-nav-header.basic .navigation > ul > li > ul {
+          background: white !important;
+          opacity: 0.9 !important;
+          list-style: none !important;
+          margin: 0 !important;
+          padding: 1px !important;
+          border-bottom: 2px solid #acacac !important;
+          overflow: hidden !important;
+          display: none !important;
+          position: absolute !important;
+          left: 0 !important;
+          top: 100% !important;
+          width: 168px !important;
+          border: 1px solid #e5e5e5 !important;
+          border-top-color: white !important; }
+          #moz-nav-header.basic .navigation > ul > li > ul a {
+            display: block !important;
+            width: 150px !important;
+            padding: 8px !important;
+            font-size: 11px !important;
+            color: #5d95c1 !important;
+            text-decoration: none !important; }
+            #moz-nav-header.basic .navigation > ul > li > ul a img {
+              vertical-align: middle !important;
+              border: 0 !important; }
+            #moz-nav-header.basic .navigation > ul > li > ul a:hover {
+              background: #bde2ff !important;
+              color: #517c9d !important;
+              text-shadow: 0 1px 1px white !important; }
+      #moz-nav-header.basic .navigation > ul > li.active a {
+        background: #fce8b2 !important; }
+      #moz-nav-header.basic .navigation > ul > li.active img {
+        position: absolute !important;
+        left: 50% !important;
+        top: 35px !important;
+        margin-left: -8px !important; }
+      #moz-nav-header.basic .navigation > ul li:hover > ul {
+        display: block !important; }
