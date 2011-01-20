@@ -7,7 +7,10 @@ module MozNavSpecSelectors
   end
 
   def header_nav_bar
+    # TODO: unify these classes so they are the same for basic and advanced nav
     find("##{HEADER_ID} .user-controls")
+  rescue Capybara::ElementNotFound
+    find("##{HEADER_ID} .navigation")
   end
 
   def header_sub_nav_for(li_class)
