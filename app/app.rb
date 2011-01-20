@@ -21,13 +21,42 @@ class User
   end
 end
 
-class ExampleApp < Sinatra::Base
-  CAMPAIGNS = [
-    ['Apple Computer', 'http://apple.com'],
-    ['Microsoft',      'http://microsoft.com'],
-    ['SEO Moz',        'http://www.seomoz.org']
-  ]
+class Campaign
+  attr_reader :name, :domain_host, :id
+  def initialize(id, name = nil, domain_host = nil)
+    @id = id
+    @name = name || "Campaign #{@id}"
+    @domain_host = domain_host || "www.domain-#{@id}.com"
+  end
 
+  class << self
+    def create!(*args)
+      new(*args).tap do |r|
+        records << r
+        record_hash[r.id] = r
+      end
+    end
+
+    def find(id)
+      record_hash[id.to_i]
+    end
+
+    def records
+      @records ||= []
+    end
+    alias all records
+
+    def record_hash
+      @record_hass ||= {}
+    end
+  end
+
+  create! 1, "Apple", "apple.com"
+  create! 2, "Microsoft", "microsoft.com"
+  create! 3, "SEO Moz", "www.seomoz.org"
+end
+
+class ExampleApp < Sinatra::Base
   set :views, File.dirname(__FILE__) + '/views'
   set :raise_errors, true
   set :show_exceptions, false
@@ -38,6 +67,10 @@ class ExampleApp < Sinatra::Base
   helpers do
     def current_user
       @current_user
+    end
+
+    def current_campaign
+      @current_campaign
     end
   end
 
@@ -56,6 +89,12 @@ class ExampleApp < Sinatra::Base
 
   get '/pro_logged_in/:id' do
     @current_user = User.new(params[:id], :pro)
+    erb :index
+  end
+
+  get '/campaigns/:id' do
+    @current_user = User.new(23, :pro)
+    @current_campaign = Campaign.find(params[:id])
     erb :index
   end
 end

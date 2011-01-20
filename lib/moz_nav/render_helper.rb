@@ -4,7 +4,7 @@ module MozNav
       yield page_config = PageConfig.new
 
       if current_user && current_user.pro?
-        MozNav::Views::AdvancedHeader.new(current_user, page_config).render
+        MozNav::Views::AdvancedHeader.new(current_user, current_campaign, page_config).render
       else
         MozNav::Views::BasicHeader.new(current_user).render
       end

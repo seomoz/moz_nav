@@ -31,7 +31,7 @@ module MozNavSpecSelectors
     find("##{HEADER_ID} .blue-header p")
   end
 
-  def header_user_greeting
+  def header_sub_nav_bar
     find("##{HEADER_ID} .campaign-nav")
   end
 

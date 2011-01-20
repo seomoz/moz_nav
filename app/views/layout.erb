@@ -8,11 +8,17 @@
   <body>
     <%=
       render_nav_header do |h|
-        h.page_title 'An Example Sinatra App'
-        h.page_subtitle 'This demonstrates how the MozNav gem works.'
+        if current_campaign
+          h.page_title current_campaign.name
+          h.page_subtitle current_campaign.domain_host
+        else
+          h.page_title 'An Example Sinatra App'
+          h.page_subtitle 'This demonstrates how the MozNav gem works.'
+        end
 
-        ExampleApp::CAMPAIGNS.each do |(name, url)|
-          h.add_campaign name, url
+        h.campaigns Campaign.all
+        h.campaign_routes do |routes|
+          routes.overview { |id| "/campaigns/#{id}" }
         end
       end
     %>

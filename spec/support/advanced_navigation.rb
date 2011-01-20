@@ -1,84 +1,112 @@
-shared_examples_for "advanced navigation" do |user_id, campaigns|
-  it "has valid xhtml" do
-    page.body.should be_xhtml_strict
-  end
+shared_examples_for "advanced main nav bar" do
+  describe 'the nav bar' do
+    {
+      'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/PRO",
+      'Campaigns'      => '#',
+      'Research Tools' => "http://#{SEOMOZ_HOST}/tools",
+      'Q & A'          => "#",
+      'Community'      => "http://#{SEOMOZ_HOST}/blog",
+      'Learn SEO'      => "http://#{SEOMOZ_HOST}/learn-seo"
+    }.each do |text, url|
+      it "contains a '#{text}' link to #{url}" do
+        header_nav_bar.should have_link(text, url)
+      end
+    end
 
-  it_behaves_like 'a cache buster'
-  it_presents "a search form"
+    describe 'community drop-down' do
+      {
+        'SEO Blog'          => "http://#{SEOMOZ_HOST}/blog",
+        'YOUmoz User Blog'  => "http://#{SEOMOZ_HOST}/ugc",
+        'Top Users'         => "http://#{SEOMOZ_HOST}/users",
+        'Events'            => "http://#{SEOMOZ_HOST}/about/events",
+        'SEO Industry Jobs' => "http://#{SEOMOZ_HOST}/marketplace",
+        'About SEOmoz'      => "http://#{SEOMOZ_HOST}/about",
+      }.each do |text, url|
+        it "contains a '#{text}' link to #{url}" do
+          header_sub_nav_for('community').should have_link(text, url)
+        end
+      end
+    end
+
+    describe 'learn seo drop-down' do
+      {
+        'PRO Webinars'          => "http://#{SEOMOZ_HOST}/dp/PRO-webinars",
+        'PRO Training DVDs'     => "http://#{SEOMOZ_HOST}/store/4",
+        'PRO Training Seminars' => "http://#{SEOMOZ_HOST}/seminar/series",
+        "Beginner's Guide"      => 'http://guides.seomoz.org/beginners-guide-to-search-engine-optimization',
+        'Articles & Guides'     => "http://#{SEOMOZ_HOST}/learn-seo",
+        'Videos'                => "http://#{SEOMOZ_HOST}/blog/category/37",
+      }.each do |text, url|
+        it "contains a '#{text}' link to #{url}" do
+          header_sub_nav_for('learn-seo').should have_link(text, url)
+        end
+      end
+    end
+  end
+end
+
+shared_examples_for "the blue box header and sub nav" do |*options|
+  options = options.last || {}
+  campaign = options[:campaign]
 
   describe 'the header' do
-    it 'renders an appropriate greeting for the user' do
-      header_user_greeting.text.should include("Aloha John Doe, lookin' good")
+    describe 'the sub nav bar' do
+      if campaign
+        {
+          'Campaign'          => '#',
+          'Rankings'          => '#',
+          'Crawl Diagnostics' => '#',
+          'On-page'           => '#',
+          'Link Analysis'     => '#',
+          'Traffic Data'      => '#',
+        }.each do |text, url|
+          it "contains a '#{text}' link to #{url}" do
+            header_sub_nav_bar.should have_link(text, url)
+          end
+        end
+      else
+        it 'renders an appropriate greeting for the user' do
+          header_sub_nav_bar.text.should include("Aloha John Doe, lookin' good")
+        end
+      end
     end
 
     describe 'the blue box' do
-      it 'renders the configured page title' do
-        header_blue_box_page_title.text.should include("An Example Sinatra App")
-      end
+      if campaign
+        it "renders the campaign name (#{campaign.name})" do
+          header_blue_box_page_title.text.should == campaign.name
+        end
 
-      it 'renders the configured page subtitle' do
-        header_blue_box_page_subtitle.text.should include("This demonstrates how the MozNav gem works.")
+        it "renders the campaign domain host (#{campaign.domain_host})" do
+          header_blue_box_page_subtitle.text.should == campaign.domain_host
+        end
+      else
+        it 'renders the configured page title' do
+          header_blue_box_page_title.text.should include("An Example Sinatra App")
+        end
+
+        it 'renders the configured page subtitle' do
+          header_blue_box_page_subtitle.text.should include("This demonstrates how the MozNav gem works.")
+        end
       end
 
       describe 'the campaigns drop down' do
-        campaigns += [['Campaign Manager', '#']]
-
-        campaigns.each do |(name, url)|
-          it "contains a '#{name}' link to #{url}" do
-            campaign_drop_down.should have_link(name, url)
-          end
+        it "contains a 'Campaign Manager' link to #" do
+          campaign_drop_down.should have_link("Campaign Manager", "#")
         end
-      end
-    end
 
-    it_presents "logged in user box", user_id
-
-    describe 'the nav bar' do
-      {
-        'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/PRO",
-        'Campaigns'      => '#',
-        'Research Tools' => "http://#{SEOMOZ_HOST}/tools",
-        'Q & A'          => "#",
-        'Community'      => "http://#{SEOMOZ_HOST}/blog",
-        'Learn SEO'      => "http://#{SEOMOZ_HOST}/learn-seo"
-      }.each do |text, url|
-        it "contains a '#{text}' link to #{url}" do
-          header_nav_bar.should have_link(text, url)
-        end
-      end
-
-      describe 'community drop-down' do
-        {
-          'SEO Blog'          => "http://#{SEOMOZ_HOST}/blog",
-          'YOUmoz User Blog'  => "http://#{SEOMOZ_HOST}/ugc",
-          'Top Users'         => "http://#{SEOMOZ_HOST}/users",
-          'Events'            => "http://#{SEOMOZ_HOST}/about/events",
-          'SEO Industry Jobs' => "http://#{SEOMOZ_HOST}/marketplace",
-          'About SEOmoz'      => "http://#{SEOMOZ_HOST}/about",
-        }.each do |text, url|
-          it "contains a '#{text}' link to #{url}" do
-            header_sub_nav_for('community').should have_link(text, url)
-          end
-        end
-      end
-
-      describe 'learn seo drop-down' do
-        {
-          'PRO Webinars'          => "http://#{SEOMOZ_HOST}/dp/PRO-webinars",
-          'PRO Training DVDs'     => "http://#{SEOMOZ_HOST}/store/4",
-          'PRO Training Seminars' => "http://#{SEOMOZ_HOST}/seminar/series",
-          "Beginner's Guide"      => 'http://guides.seomoz.org/beginners-guide-to-search-engine-optimization',
-          'Articles & Guides'     => "http://#{SEOMOZ_HOST}/learn-seo",
-          'Videos'                => "http://#{SEOMOZ_HOST}/blog/category/37",
-        }.each do |text, url|
-          it "contains a '#{text}' link to #{url}" do
-            header_sub_nav_for('learn-seo').should have_link(text, url)
+        Campaign.all.each do |camp|
+          path = "/campaigns/#{camp.id}"
+          it "contains a '#{camp.name}' link to #{path}" do
+            campaign_drop_down.should have_link(camp.name, path)
           end
         end
       end
     end
   end
+end
 
+shared_examples_for "advanced navigation footer" do
   describe 'the footer' do
     {
       'Campaign Manager'      => '#',
@@ -106,4 +134,20 @@ shared_examples_for "advanced navigation" do |user_id, campaigns|
       end
     end
   end
+end
+
+shared_examples_for "campaign navigation" do |campaign|
+  it_presents "the blue box header and sub nav", :campaign => campaign
+end
+
+shared_examples_for "advanced navigation" do |user_id|
+  it "has valid xhtml" do
+    page.body.should be_xhtml_strict
+  end
+
+  it_behaves_like 'a cache buster'
+  it_presents "a search form"
+  it_presents "logged in user box", user_id
+  it_presents "advanced main nav bar"
+  it_presents "advanced navigation footer"
 end
