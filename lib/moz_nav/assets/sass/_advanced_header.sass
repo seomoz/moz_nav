@@ -1,17 +1,14 @@
 #moz-nav-header.advanced
-  position: relative
-  padding-top: 90px
+  width: 950px
+  margin: 0 auto
 
   .multi-header
     position: relative
     height: 90px
 
   .header
-    position: absolute
-    left: 0
-    top: 0
-    width: 952px
-    padding: 17px 0 0
+    width: 950px
+    padding: 17px 0 7px 0
     font-family: Arial, Helvetica, sans-serif
     font-size: 11px
     line-height: 1
@@ -20,7 +17,7 @@
     float: left
     display: block
     border: 0
-    padding: 0 0 5px
+    padding: 0 0 10px
 
   .user-links
     margin: 0
@@ -63,7 +60,7 @@
 
   .nav-wrap
     float: right
-    width: 800px
+    width: 795px
 
   .gray-bar-left
     float: left
@@ -104,25 +101,22 @@
 
   form.search
     float: right
-    width: 170px
+    width: 200px
     padding: 9px 4px 0 0
 
-  input.text
-    border: 0
-    width: 138px
+  input[type=text]
+    background: #FFF
+    border: solid 1px #C8C8C8
+    width: 130px
     padding: 0 5px
-    height: 22px
+    height: 20px
     line-height: 22px
-    background: url(/images/moz_nav/search-form.png) no-repeat
     vertical-align: middle
 
-  input.button
+  input[type=image]
     border: 0
     cursor: pointer
-    background: url(/images/moz_nav/search-form.png) right top no-repeat
-    width: 22px
     padding: 0
-    height: 22px
     vertical-align: middle
 
   .campaigns a
@@ -232,6 +226,7 @@
     img
       cursor: pointer
     .help-menu
+      background: #FFF
       right: auto
       left: 0
       width: 160px

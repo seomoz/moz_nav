@@ -1052,17 +1052,14 @@
     display: none !important; }
 
 #moz-nav-header.advanced {
-  position: relative !important;
-  padding-top: 90px !important; }
+  width: 950px !important;
+  margin: 0 auto !important; }
   #moz-nav-header.advanced .multi-header {
     position: relative !important;
     height: 90px !important; }
   #moz-nav-header.advanced .header {
-    position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
-    width: 952px !important;
-    padding: 17px 0 0 !important;
+    width: 950px !important;
+    padding: 17px 0 7px 0 !important;
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 11px !important;
     line-height: 1 !important; }
@@ -1070,7 +1067,7 @@
     float: left !important;
     display: block !important;
     border: 0 !important;
-    padding: 0 0 5px !important; }
+    padding: 0 0 10px !important; }
   #moz-nav-header.advanced .user-links {
     margin: 0 !important;
     list-style: none !important;
@@ -1106,7 +1103,7 @@
     background: url(/images/moz_nav/dashboard.png) 10px 13px no-repeat !important; }
   #moz-nav-header.advanced .nav-wrap {
     float: right !important;
-    width: 800px !important; }
+    width: 795px !important; }
   #moz-nav-header.advanced .gray-bar-left {
     float: left !important;
     width: 6px !important;
@@ -1141,23 +1138,20 @@
       padding: 12px 11px 14px 30px !important; }
   #moz-nav-header.advanced form.search {
     float: right !important;
-    width: 170px !important;
+    width: 200px !important;
     padding: 9px 4px 0 0 !important; }
-  #moz-nav-header.advanced input.text {
-    border: 0 !important;
-    width: 138px !important;
+  #moz-nav-header.advanced input[type=text] {
+    background: white !important;
+    border: solid 1px #c8c8c8 !important;
+    width: 130px !important;
     padding: 0 5px !important;
-    height: 22px !important;
+    height: 20px !important;
     line-height: 22px !important;
-    background: url(/images/moz_nav/search-form.png) no-repeat !important;
     vertical-align: middle !important; }
-  #moz-nav-header.advanced input.button {
+  #moz-nav-header.advanced input[type=image] {
     border: 0 !important;
     cursor: pointer !important;
-    background: url(/images/moz_nav/search-form.png) right top no-repeat !important;
-    width: 22px !important;
     padding: 0 !important;
-    height: 22px !important;
     vertical-align: middle !important; }
   #moz-nav-header.advanced .campaigns a {
     background: url(/images/moz_nav/campaigns.png) 10px 11px no-repeat !important; }
@@ -1247,6 +1241,7 @@
     #moz-nav-header.advanced .heading-dropdown img {
       cursor: pointer !important; }
     #moz-nav-header.advanced .heading-dropdown .help-menu {
+      background: white !important;
       right: auto !important;
       left: 0 !important;
       width: 160px !important; }
@@ -1541,7 +1536,25 @@
   font-size: 11px !important;
   color: #737373 !important;
   text-shadow: 0 1px 1px white !important;
-  line-height: 1 !important; }
+  line-height: 1 !important;
+  width: 950px !important;
+  margin: 0 auto !important; }
+  #moz-nav-footer.advanced .gray-bar-left {
+    float: left !important;
+    width: 6px !important;
+    height: 41px !important;
+    background: url(/images/moz_nav/gray-bar-left.png) no-repeat !important; }
+  #moz-nav-footer.advanced .gray-bar-right {
+    float: left !important;
+    width: 6px !important;
+    height: 41px !important;
+    background: url(/images/moz_nav/gray-bar-left.png) no-repeat !important;
+    float: right !important;
+    background: url(/images/moz_nav/gray-bar-right.png) no-repeat !important; }
+  #moz-nav-footer.advanced .gray-bar-center {
+    background: url(/images/moz_nav/gray-bar-center.png) repeat-x !important;
+    margin: 0 6px !important;
+    min-height: 41px !important; }
   #moz-nav-footer.advanced .social-links {
     float: right !important;
     width: 77px !important;
