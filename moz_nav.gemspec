@@ -26,4 +26,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'markup_validity'
   s.add_development_dependency 'activesupport', '~> 3.0.3'
   s.add_development_dependency 'shotgun'
+  s.add_development_dependency 'compass'
 end
