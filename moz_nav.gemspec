@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency     'mustache', '~> 0.12.0'
   s.add_development_dependency 'sinatra'
   s.add_development_dependency 'rspec'
+  s.add_development_dependency 'fuubar'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'haml'
   s.add_development_dependency 'markup_validity'

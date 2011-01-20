@@ -27,6 +27,10 @@ GEM
     diff-lcs (1.1.2)
     ffi (0.6.3)
       rake (>= 0.8.7)
+    fuubar (0.0.3)
+      rspec (~> 2.0)
+      rspec-instafail (~> 0.1.4)
+      ruby-progressbar (~> 0.0.9)
     haml (3.0.25)
     infinity_test (1.0.2)
       notifiers (>= 1.1.0)
@@ -55,6 +59,7 @@ GEM
     rspec-core (2.4.0)
     rspec-expectations (2.4.0)
       diff-lcs (~> 1.1.2)
+    rspec-instafail (0.1.5)
     rspec-mocks (2.4.0)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
@@ -69,6 +74,7 @@ GEM
       columnize (>= 0.3.1)
       linecache19 (>= 0.5.11)
       ruby-debug-base19 (>= 0.11.19)
+    ruby-progressbar (0.0.9)
     ruby_core_source (0.1.4)
       archive-tar-minitar (>= 0.5.2)
     rubyzip (0.9.4)
@@ -93,6 +99,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport (~> 3.0.3)
   capybara
+  fuubar
   haml
   infinity_test
   launchy
