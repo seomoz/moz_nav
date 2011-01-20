@@ -1,48 +1,48 @@
 <div class="navigation">
+  <div class="container">
     {{> shared/search_form }}
+    <ul class="clearfix">
+      <li class="active">
+        <a href="http://{{ seomoz_host }}/PRO">Features</a>
+        <!-- TODO: Move to the stylesheet -->
+        <img alt="" src="/images/moz_nav/active-nav.png?{{ cache_buster }}" />
+      </li>
+      <li>
+        <a href="http://{{ seomoz_host }}/goPRO">Pricing &amp; Plans</a>
+      </li>
+      <li>
+        <a href="http://{{ seomoz_host }}/blog">Community</a>
+      </li>
+      <li>
+        <a href="http://{{ seomoz_host }}/learn-seo">Learn SEO</a>
 
-  <ul class="clearfix">
-    <li class="active">
-      <a href="http://{{ seomoz_host }}/PRO">Features</a>
-      <!-- TODO: Move to the stylesheet -->
-      <img alt="" src="/images/moz_nav/active-nav.png?{{ cache_buster }}" />
-    </li>
-    <li>
-      <a href="http://{{ seomoz_host }}/goPRO">Pricing &amp; Plans</a>
-    </li>
-    <li>
-      <a href="http://{{ seomoz_host }}/blog">Community</a>
-    </li>
-    <li>
-      <a href="http://{{ seomoz_host }}/learn-seo">Learn SEO</a>
+          <ul>
+            <li>
+              <a href="#">Campaign</a>
+            </li>
+            <li>
+              <a href="#">Rankings
+                <img alt="" src="/images/moz_nav/new-icon.png?{{ cache_buster }}" />
+              </a>
+            </li>
+            <li>
+              <a href="#">Crawl Diagnostics</a>
+            </li>
+            <li>
+              <a href="#">On-page</a>
+            </li>
+            <li>
+              <a href="#">Link Analysis</a>
+            </li>
+            <li>
+              <a href="#">Traffic Data</a>
+            </li>
+          </ul>
 
-        <ul>
-          <li>
-            <a href="#">Campaign</a>
-          </li>
-          <li>
-            <a href="#">Rankings
-              <img alt="" src="/images/moz_nav/new-icon.png?{{ cache_buster }}" />
-            </a>
-          </li>
-          <li>
-            <a href="#">Crawl Diagnostics</a>
-          </li>
-          <li>
-            <a href="#">On-page</a>
-          </li>
-          <li>
-            <a href="#">Link Analysis</a>
-          </li>
-          <li>
-            <a href="#">Traffic Data</a>
-          </li>
-        </ul>
-
-    </li>
-    <li>
-      <a href="http://{{ seomoz_host }}/about">About</a>
-    </li>
-  </ul>
-
+      </li>
+      <li>
+        <a href="http://{{ seomoz_host }}/about">About</a>
+      </li>
+    </ul>
+  </div>
 </div>
