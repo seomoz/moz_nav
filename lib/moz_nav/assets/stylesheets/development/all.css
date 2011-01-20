@@ -509,6 +509,8 @@
     vertical-align: top !important; }
   #moz-nav-header .middle {
     vertical-align: middle !important; }
+  #moz-nav-header legend {
+    display: none !important; }
   #moz-nav-header.advanced div.help-menu {
     position: absolute !important;
     display: none !important;
@@ -1046,6 +1048,8 @@
     vertical-align: top !important; }
   #moz-nav-footer .middle {
     vertical-align: middle !important; }
+  #moz-nav-footer legend {
+    display: none !important; }
 
 #moz-nav-header.advanced {
   position: relative !important;
