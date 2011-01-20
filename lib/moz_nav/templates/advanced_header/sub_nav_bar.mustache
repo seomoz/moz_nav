@@ -1,25 +1,27 @@
 <div>
   <div class="campaign-nav">
     <ul class="clearfix">
+      {{# page_config }}
       <li class="active">
-        <a href="#">Campaign</a>
+        <a href="{{# campaign_overview_url }}{{ id }}{{/ campaign_overview_url }}">Campaign</a>
         <img alt="" src="/images/moz_nav/campaign-nav-active.png?{{ cache_buster }}" class="campaign-nav-active" />
       </li>
       <li>
-        <a href="#">Rankings</a>
+        <a href="{{# campaign_rankings_url }}{{ id }}{{/ campaign_rankings_url }}">Rankings</a>
       </li>
       <li>
-        <a href="#">Crawl Diagnostics</a>
+        <a href="{{# campaign_issues_url }}{{ id }}{{/ campaign_issues_url }}">Crawl Diagnostics</a>
       </li>
       <li>
-        <a href="#">On-page</a>
+        <a href="{{# campaign_on_page_url }}{{ id }}{{/ campaign_on_page_url }}">On-page</a>
       </li>
       <li>
-        <a href="#">Link Analysis</a>
+        <a href="{{# campaign_linking_url }}{{ id }}{{/ campaign_linking_url }}">Link Analysis</a>
       </li>
       <li>
-        <a href="#">Traffic Data</a>
+        <a href="{{# campaign_traffic_data_url }}{{ id }}{{/ campaign_traffic_data_url }}">Traffic Data</a>
       </li>
+      {{/ page_config }}
     </ul>
   </div>
 </div>

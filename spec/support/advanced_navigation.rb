@@ -53,12 +53,12 @@ shared_examples_for "the blue box header and sub nav" do |*options|
     describe 'the sub nav bar' do
       if campaign
         {
-          'Campaign'          => '#',
-          'Rankings'          => '#',
-          'Crawl Diagnostics' => '#',
-          'On-page'           => '#',
-          'Link Analysis'     => '#',
-          'Traffic Data'      => '#',
+          'Campaign'          => "/campaigns/#{campaign.id}",
+          'Rankings'          => "/campaigns/#{campaign.id}/rankings",
+          'Crawl Diagnostics' => "/campaigns/#{campaign.id}/issues",
+          'On-page'           => "/campaigns/#{campaign.id}/on-page",
+          'Link Analysis'     => "/campaigns/#{campaign.id}/linking",
+          'Traffic Data'      => "/campaigns/#{campaign.id}/traffic_data",
         }.each do |text, url|
           it "contains a '#{text}' link to #{url}" do
             header_sub_nav_bar.should have_link(text, url)

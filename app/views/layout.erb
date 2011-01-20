@@ -18,7 +18,12 @@
 
         h.campaigns Campaign.all
         h.campaign_routes do |routes|
-          routes.overview { |id| "/campaigns/#{id}" }
+          routes.overview     { |id| "/campaigns/#{id}" }
+          routes.rankings     { |id| "/campaigns/#{id}/rankings" }
+          routes.issues       { |id| "/campaigns/#{id}/issues" }
+          routes.on_page      { |id| "/campaigns/#{id}/on-page" }
+          routes.linking      { |id| "/campaigns/#{id}/linking" }
+          routes.traffic_data { |id| "/campaigns/#{id}/traffic_data" }
         end
       end
     %>

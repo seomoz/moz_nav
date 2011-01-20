@@ -1,5 +1,10 @@
 module MozNav
   class PageConfig
+    # on Ruby 1.8.7, Object#id is still defined.
+    # This causes a problem for our mustache context nesting, since
+    # {{ id }} uses PageConfig#id rather than Campaign#id.
+    undef id if method_defined?(:id)
+
     def page_title(val = nil)
       @page_title = val if val
       @page_title
@@ -22,7 +27,12 @@ module MozNav
 
     def campaign_routes
       @campaign_routes ||= MozNav::Routes::Campaign.new
-      yield @campaign_routes if block_given?
+
+      if block_given?
+        yield @campaign_routes
+        @campaign_routes.verify_all_routes!
+      end
+
       @campaign_routes
     end
 
