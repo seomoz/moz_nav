@@ -1,0 +1,6 @@
+<li{{# active? }} class="active"{{/ active? }}>
+  <a href="{{ url }}">{{ name }}</a>
+  {{# active? }}
+  <img alt="" src="/images/moz_nav/campaign-nav-active.png?{{ cache_buster }}" class="campaign-nav-active" />
+  {{/ active? }}
+</li>

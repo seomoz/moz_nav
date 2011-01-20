@@ -16,14 +16,14 @@
           h.page_subtitle 'This demonstrates how the MozNav gem works.'
         end
 
-        h.campaigns Campaign.all
-        h.campaign_routes do |routes|
-          routes.overview     { |id| "/campaigns/#{id}" }
-          routes.rankings     { |id| "/campaigns/#{id}/rankings" }
-          routes.issues       { |id| "/campaigns/#{id}/issues" }
-          routes.on_page      { |id| "/campaigns/#{id}/on-page" }
-          routes.linking      { |id| "/campaigns/#{id}/linking" }
-          routes.traffic_data { |id| "/campaigns/#{id}/traffic_data" }
+        Campaign.all.each do |c|
+          h.add_campaign c.name, "/campaigns/#{c.id}"
+        end
+
+        if current_campaign
+          h.sub_nav_item 'Campaign', "/campaigns/#{current_campaign.id}"
+          h.sub_nav_item 'Rankings', "/campaigns/#{current_campaign.id}/rankings"
+          h.sub_nav_item 'Issues',   "/campaigns/#{current_campaign.id}/issues", :active => true
         end
       end
     %>

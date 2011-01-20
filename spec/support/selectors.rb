@@ -37,6 +37,10 @@ module MozNavSpecSelectors
     find("##{HEADER_ID} .campaign-nav")
   end
 
+  def active_header_sub_nav_item
+    find("##{HEADER_ID} .campaign-nav li.active")
+  end
+
   def header_search_form
     find("##{HEADER_ID} form.search")
   end

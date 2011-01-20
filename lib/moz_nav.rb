@@ -15,11 +15,13 @@ module MozNav
     AssetSymlinker.new(host_app_dir).symlink_assets
   end
 
+  autoload :AssetSymlinker, 'moz_nav/asset_symlinker'
+  autoload :Campaign,       'moz_nav/campaign'
   autoload :Config,         'moz_nav/config'
   autoload :MustacheBase,   'moz_nav/mustache_base'
   autoload :PageConfig,     'moz_nav/page_config'
   autoload :RenderHelper,   'moz_nav/render_helper'
-  autoload :AssetSymlinker, 'moz_nav/asset_symlinker'
+  autoload :SubNavItem,     'moz_nav/sub_nav_item'
   autoload :Version,        'moz_nav/version'
 
   module Routes

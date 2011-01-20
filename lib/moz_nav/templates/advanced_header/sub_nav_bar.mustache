@@ -1,6 +1,12 @@
 <div>
   <div class="campaign-nav">
-    {{> advanced_header/sub_navs/campaigns }}
+    <ul class="clearfix">
+    {{# page_config }}
+    {{# sub_nav_items }}
+      {{> advanced_header/sub_nav_item }}
+    {{/ sub_nav_items }}
+    {{/ page_config }}
+    </ul>
   </div>
 </div>
 <div>
