@@ -3,6 +3,7 @@ Thumbs.db
 pkg/*
 *.gem
 .bundle
+.sass-cache
 
 tmp
 app/public/**/moz_nav
