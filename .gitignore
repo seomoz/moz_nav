@@ -5,3 +5,4 @@ pkg/*
 .bundle
 
 tmp
+app/public/**/moz_nav
