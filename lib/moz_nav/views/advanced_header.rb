@@ -5,10 +5,9 @@ module MozNav
 
       attr_reader :user
       attr_reader :page_config
-      attr_reader :campaign
 
-      def initialize(user, campaign, page_config)
-        @user, @campaign, @page_config = user, campaign, page_config
+      def initialize(user, page_config)
+        @user, @page_config = user, page_config
       end
     end
   end

@@ -29,5 +29,9 @@ module MozNav
     def sub_nav_items
       @sub_nav_items ||= []
     end
+
+    def has_sub_nav_items?
+      !sub_nav_items.empty?
+    end
   end
 end

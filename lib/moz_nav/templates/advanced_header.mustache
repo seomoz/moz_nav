@@ -5,14 +5,16 @@
     <div class="cl"></div>
     {{> advanced_header/nav_bar }}
   </div>
-  
+
   {{> advanced_header/blue_header }}
 
-  {{# campaign }}
-    {{> advanced_header/sub_nav_bar }}
-  {{/ campaign }}
+  {{# page_config }}
+    {{# has_sub_nav_items? }}
+      {{> advanced_header/sub_nav_bar }}
+    {{/ has_sub_nav_items? }}
 
-  {{^ campaign }}
-    {{> advanced_header/user_welcome_bar }}
-  {{/ campaign }}
+    {{^ has_sub_nav_items? }}
+      {{> advanced_header/user_welcome_bar }}
+    {{/ has_sub_nav_items? }}
+  {{/ page_config }}
 </div>
