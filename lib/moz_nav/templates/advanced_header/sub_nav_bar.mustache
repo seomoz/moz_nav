@@ -1,27 +1,25 @@
-<div>
-  <div class="campaign-nav">
-    <ul class="clearfix">
-    {{# page_config }}
-    {{# sub_nav_items }}
-      {{> advanced_header/sub_nav_item }}
-    {{/ sub_nav_items }}
-    {{/ page_config }}
-    </ul>
+{{# page_config }}
+  <div>
+    <div class="campaign-nav">
+      <ul class="clearfix">
+      {{# sub_nav_items }}
+        {{> shared/menu_item }}
+      {{/ sub_nav_items }}
+      </ul>
+    </div>
   </div>
-</div>
-<div>
-  <div class="campaign-sub-nav">
-    <ul class="clearfix">
-      <li class="first">
-        <a href="#">Campaign Overview</a>
-      </li>
-      <li>
-        <a href="#">Manage Keywords</a>
-      </li>
-      <li class="active">
-        <a href="#">Campaign Settings</a>
-      </li>
-    </ul>
-  </div>
-</div>
 
+  {{# active_sub_nav_item }}
+    {{# has_sub_sub_nav_items? }}
+      <div>
+        <div class="campaign-sub-nav">
+          <ul class="clearfix">
+            {{# sub_sub_nav_items }}
+              {{> shared/menu_item }}
+            {{/ sub_sub_nav_items }}
+          </ul>
+        </div>
+      </div>
+    {{/ has_sub_sub_nav_items? }}
+  {{/ active_sub_nav_item }}
+{{/ page_config }}

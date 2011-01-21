@@ -23,7 +23,11 @@
         if current_campaign
           h.sub_nav_item 'Campaign', "/campaigns/#{current_campaign.id}"
           h.sub_nav_item 'Rankings', "/campaigns/#{current_campaign.id}/rankings"
-          h.sub_nav_item 'Issues',   "/campaigns/#{current_campaign.id}/issues", :active => true
+          h.sub_nav_item 'Issues',   "/campaigns/#{current_campaign.id}/issues", :active => true do |i|
+            i.sub_sub_nav_item 'Overview',  "/campaigns/#{current_campaign.id}/issues/overview"
+            i.sub_sub_nav_item 'Summary',   "/campaigns/#{current_campaign.id}/issues/summary", :active => true
+            i.sub_sub_nav_item 'Dashboard', "/campaigns/#{current_campaign.id}/issues/dashboard"
+          end
         end
       end
     %>
