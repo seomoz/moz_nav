@@ -6,6 +6,14 @@ module MozNav
       it 'renders with no errors' do
         described_class.render
       end
+
+      it 'does not include jquery by default' do
+        described_class.render.should_not =~ /jquery/i
+      end
+
+      it 'includes jquery when rendered with :jquery => true' do
+        described_class.new(:jquery => true).render.should =~ /jquery/i
+      end
     end
   end
 end

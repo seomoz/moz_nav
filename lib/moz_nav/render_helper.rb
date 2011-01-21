@@ -22,8 +22,8 @@ module MozNav
       MozNav::Views::HeaderIncludes.render
     end
 
-    def nav_footer_includes
-      MozNav::Views::FooterIncludes.render
+    def nav_footer_includes(*args)
+      MozNav::Views::FooterIncludes.new(*args).render
     end
   end
 end
