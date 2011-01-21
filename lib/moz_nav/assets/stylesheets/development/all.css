@@ -1510,25 +1510,25 @@
       margin-bottom: 2px !important; }
   #moz-nav-footer.basic .container ul.social-links2 {
     padding: 4px 0 2px !important; }
-  #moz-nav-footer.basic .social-links2 {
+  #moz-nav-footer.basic .social-links {
     list-style: none !important;
     height: 1% !important;
     overflow: hidden !important; }
-    #moz-nav-footer.basic .social-links2 li {
+    #moz-nav-footer.basic .social-links li {
       float: left !important;
       margin: 0 3px 0 0 !important; }
-    #moz-nav-footer.basic .social-links2 a {
+    #moz-nav-footer.basic .social-links a {
       display: inline-block !important;
       width: 15px !important;
       height: 15px !important;
       background: url(/images/moz_nav/social-logos.png) no-repeat !important; }
-      #moz-nav-footer.basic .social-links2 a.rss-link {
+      #moz-nav-footer.basic .social-links a.rss-link {
         background-position: 0 0 !important; }
-      #moz-nav-footer.basic .social-links2 a.twitter-link {
+      #moz-nav-footer.basic .social-links a.twitter-link {
         background-position: -16px 0 !important; }
-      #moz-nav-footer.basic .social-links2 a.facebook-link {
+      #moz-nav-footer.basic .social-links a.facebook-link {
         background-position: -33px 0 !important; }
-      #moz-nav-footer.basic .social-links2 a.linkedin-link {
+      #moz-nav-footer.basic .social-links a.linkedin-link {
         background-position: -50px 0 !important; }
 
 #moz-nav-footer.advanced {
