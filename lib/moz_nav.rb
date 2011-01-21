@@ -24,11 +24,6 @@ module MozNav
   autoload :SubNavItem,     'moz_nav/sub_nav_item'
   autoload :Version,        'moz_nav/version'
 
-  module Routes
-    autoload :Base,           'moz_nav/routes/base'
-    autoload :Campaign,       'moz_nav/routes/campaign'
-  end
-
   module Views
     autoload :AdvancedFooter, 'moz_nav/views/advanced_footer'
     autoload :AdvancedHeader, 'moz_nav/views/advanced_header'
