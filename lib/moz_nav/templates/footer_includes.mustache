@@ -1,2 +1,26 @@
 <script type="text/javascript" src="/javascripts/moz_nav/jquery.js"></script>
-<script type="text/javascript" src="/javascripts/moz_nav/scripts.js?{{ cache_buster }}"></script>
+
+<script type="text/javascript"><!--//<![CDATA[
+  // TODO: unify these.
+  $(function(){
+    $('.dropdown').click(function(){
+      $this = $(this);
+      $this.siblings().removeClass('show-menu');
+      if($this.hasClass('show-menu')){
+        $this.removeClass('show-menu');
+      }else{
+        $this.addClass('show-menu');
+      }
+    });
+
+    $('.heading-dropdown').click(function(){
+      $this = $(this);
+      if($this.hasClass('show-menu')){
+        $this.removeClass('show-menu');
+      }else{
+        $this.addClass('show-menu');
+      }
+    });
+  });
+//]]>--></script>
+
