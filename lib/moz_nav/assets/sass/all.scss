@@ -1,0 +1,7 @@
+@import "shared_style";
+
+$mn-gray-color: #E4E4E4;
+
+#moz-nav-header.advanced {
+  @include mn-center-aligned;  
+}

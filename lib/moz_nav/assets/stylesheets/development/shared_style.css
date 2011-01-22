@@ -331,9 +331,3 @@
   display: inline !important;
   float: right !important;
 }
-
-/* line 5, ../../sass/all.scss */
-#moz-nav-header.advanced {
-  width: 950px !important;
-  margin: 0px auto !important;
-}

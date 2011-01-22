@@ -1,0 +1,56 @@
+@import "compass/utilities/general/float";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/lists";
+
+@import "cleanslate";
+
+$mn-nav-width: 950px;
+
+@mixin mn-center-aligned {
+  width: $mn-nav-width;
+  margin: 0px auto;
+}
+
+@mixin mn-two-level-hover-menu {
+  @include horizontal-list-container;
+  > li { @include horizontal-list-item; }
+  > li > ul { display: none; position: absolute;}
+  > li:hover > ul { display: block; }
+}
+
+#moz-nav-header {
+  @include mn-cleanslate;
+  
+  /*Top section of the page includes the logo and user links section*/
+  .oversight {
+    @include clearfix;
+    
+    a.logo { 
+      @include float-left;
+      width: 50%;
+    }
+    
+    ul.user-links { 
+      @include mn-two-level-hover-menu;
+      @include float-right;
+      width: 50%;
+    }
+    
+  }
+  
+  /*Main nabigation section for top tabs and site search*/
+  .navigation {
+    @include clearfix;
+  
+    > ul {
+      @include float-left;
+      @include mn-two-level-hover-menu;
+    }
+    
+    form.search {
+      @include float-right;
+    }
+    
+  }
+  
+}

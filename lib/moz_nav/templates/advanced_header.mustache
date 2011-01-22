@@ -1,18 +1,6 @@
-<div id="moz-nav-header" class="advanced">
-  <div class="header" id="header">
+<div id="moz-nav-header" class="advanced cleanslate">
+  <div class="oversight">
     {{> shared/logo }}
     {{> shared/logged_in_user_box }}
-    <div class="cl"></div>
-    {{> advanced_header/nav_bar }}
   </div>
-  
-  {{> advanced_header/blue_header }}
-
-  {{# campaign }}
-    {{> advanced_header/sub_nav_bar }}
-  {{/ campaign }}
-
-  {{^ campaign }}
-    {{> advanced_header/user_welcome_bar }}
-  {{/ campaign }}
 </div>
