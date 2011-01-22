@@ -13,7 +13,7 @@
  */
 var livecss = {
   // How often to poll for changes to the CSS.
-  pollFrequency: 1000,
+  pollFrequency: 250,
   outstandingRequests: {}, // stylesheet url => boolean
   filesLastModified: {}, // stylesheet url => last modified timestamp
   watchTimers: {}, // stylesheet url => timer ID
