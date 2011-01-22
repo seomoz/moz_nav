@@ -5,6 +5,10 @@ module MozNav
         MozNav::Config.seomoz_host
       end
 
+      def q_and_a_host
+        MozNav::Config.q_and_a_host
+      end
+
       def environment
         MozNav::Config.environment
       end

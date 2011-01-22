@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.name        = "moz_nav"
   s.version     = MozNav::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Myron Marston"]
-  s.email       = ["myron@seomoz.org"]
+  s.authors     = ["Myron Marston", "Jeff Pollard"]
+  s.email       = ["myron@seomoz.org", "jeff@seomoz.org"]
   s.homepage    = "https://github.com/seomoz/moz_nav"
   s.summary     = %q{SEO Moz Navigation}
   s.description = %q{Provides common navigational elements for SEO Moz applications.}

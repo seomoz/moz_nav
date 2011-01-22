@@ -6,6 +6,11 @@ module MozNav
         @seomoz_host ||= 'www.seomoz.org'
       end
 
+      attr_writer :q_and_a_host
+      def q_and_a_host
+        @a_and_a_host ||= 'www.seomoz.org'
+      end
+
       attr_writer :environment
       def environment
         @environment ||= if defined?(Rails) && %w[production staging].include?(Rails.env)

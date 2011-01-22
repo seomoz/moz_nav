@@ -1,7 +1,7 @@
 shared_examples_for "advanced main nav bar" do
   describe 'the nav bar' do
     {
-      'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/PRO",
+      'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/pro",
       'Campaigns'      => '#',
       'Research Tools' => "http://#{SEOMOZ_HOST}/tools",
       'Q & A'          => "#",
@@ -64,6 +64,18 @@ shared_examples_for "the blue box header and sub nav" do |*options|
 
         it 'sets "Issues" to the active sub nav item' do
           active_header_sub_nav_item.text.strip.should == 'Issues'
+        end
+
+        describe 'the "Issues" sub sub nav bar' do
+          {
+            'Overview'  => "/campaigns/#{campaign.id}/issues/overview",
+            'Summary'   => "/campaigns/#{campaign.id}/issues/summary",
+            'Dashboard' => "/campaigns/#{campaign.id}/issues/dashboard"
+          }.each do |text, url|
+            it "contains a '#{text}' link to #{url}" do
+              header_sub_sub_nav_bar.should have_link(text, url)
+            end
+          end
         end
       else
         it 'renders an appropriate greeting for the user' do

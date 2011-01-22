@@ -1,7 +1,7 @@
 shared_examples_for "logged out user box" do
   {
     "Log in"  => "#",
-    "Sign up" => '#',
+    "Sign up" => "https://#{SEOMOZ_HOST}/users/register",
     "Help"    => '#'
   }.each do |text, url|
     it "contains a '#{text}' link to #{url}" do
