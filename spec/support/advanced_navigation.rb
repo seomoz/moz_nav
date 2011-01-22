@@ -1,7 +1,7 @@
 shared_examples_for "advanced main nav bar" do
   describe 'the nav bar' do
     {
-      'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/PRO",
+      'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/pro",
       'Campaigns'      => '#',
       'Research Tools' => "http://#{SEOMOZ_HOST}/tools",
       'Q & A'          => "#",
