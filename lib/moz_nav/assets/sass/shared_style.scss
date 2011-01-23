@@ -26,7 +26,7 @@ $mn-dark-gray: #606060;
   > li { @include horizontal-list-item; }
   > li > a { display: block; }
   > li > ul {
-    @include box-shadow(#BBB, 0, 4px, 6px);
+    @include box-shadow(#BBB, 0, 2px);
     @include min-width(150px);
     @include no-bullets;
     
@@ -60,6 +60,7 @@ body { background-color: $mn-body-bg; margin: 0; }
     
     div.user-links { 
       @include float-right;
+      font-size: 90%;
       width: 50%;
       padding-top: 12px;
       
