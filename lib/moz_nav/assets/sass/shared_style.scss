@@ -3,6 +3,9 @@
 @import "compass/utilities/lists";
 @import "compass/css3/text-shadow";
 @import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/utilities/general/min";
+@import "compass/utilities/lists/bullets";
 
 @import "cleanslate";
 
@@ -22,7 +25,18 @@ $mn-dark-gray: #606060;
   @include horizontal-list-container;
   > li { @include horizontal-list-item; }
   > li > a { display: block; }
-  > li > ul { display: none; position: absolute;}
+  > li > ul {
+    @include box-shadow(#BBB, 0, 4px, 6px);
+    @include min-width(150px);
+    @include no-bullets;
+    
+    display: none;
+    padding: 5px;
+    position: absolute;
+    background: white;
+    
+    a { color: $mn-blue; }
+  }
   > li:hover > ul { display: block; }
 }
 
@@ -53,19 +67,26 @@ body { background-color: $mn-body-bg; margin: 0; }
         @include mn-two-level-hover-menu;
         @include float-right;
         @include clearfix;
+        
+        > li { padding-left: 10px; }        
+        > li.extended {
+          background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right;
+          padding-right: 14px;
+        }
       }
     }
     
   }
   
-  /*Wrapper for all navigation*/
-  .navigation {
+  /*Wrapper for all page-specific items*/
+  .page-specifics {
     @include mn-center-aligned;
   }
   
   /*Main nabigation section for top tabs and site search*/
-  .main-nav {
+  .navigation {
     @include clearfix;
+    margin-bottom: $mn-nav-element-spacing;
   
     > ul {
       @include float-left;
@@ -74,7 +95,6 @@ body { background-color: $mn-body-bg; margin: 0; }
     
     form.search {
       @include float-right;
-      
       legend { display: none; }
     }
     
