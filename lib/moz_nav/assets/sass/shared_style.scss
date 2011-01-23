@@ -8,6 +8,7 @@
 @import "compass/utilities/lists/bullets";
 
 @import "cleanslate";
+@import "cleanslate-proprietary";
 
 $mn-nav-width: 950px;
 $mn-nav-element-spacing: 10px;
@@ -44,6 +45,8 @@ body { background-color: $mn-body-bg; margin: 0; }
 
 #moz-nav-header {
   @include mn-cleanslate;
+  @include mn-cleanslate-proprietary;
+  
   font-family: "Arial", "sans-serif";
   font-size: 12px;
   

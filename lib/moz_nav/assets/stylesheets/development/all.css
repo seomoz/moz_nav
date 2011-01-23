@@ -1,10 +1,27 @@
-/* line 43, ../../sass/shared_style.scss */
+/*!
+ ** CleanSlate: proprietary rules
+ **   github.com/premasagar/cleanslate
+ ** */
+/*     An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+ * 
+ *     by Premasagar Rose
+ *         dharmafly.com
+ * 
+ *     license
+ *         opensource.org/licenses/mit-license.php
+ * 
+ *     **
+ *         
+ *     v0.9.1 */
+/* == PROPRIETARY RULES == */
+/* HTML 4.01 */
+/* line 44, ../../sass/shared_style.scss */
 body {
   background-color: #d5e6f4 !important;
   margin: 0 !important;
 }
 
-/* line 45, ../../sass/shared_style.scss */
+/* line 46, ../../sass/shared_style.scss */
 #moz-nav-header {
   /* == BLANKET RESET RULES == */
   /* HTML 4.01 */
@@ -25,6 +42,105 @@ body {
   font-weight: normal !important;
   text-decoration: none !important;
   list-style-type: disc !important;
+  /* already in main stylesheet - repeated here for completeness */
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  /* Mozilla Firefox */
+  -moz-appearance: none !important;
+  -moz-background-clip: border !important;
+  -moz-background-inline-policy: continuous !important;
+  -moz-background-origin: padding !important;
+  -moz-binding: none !important;
+  -moz-border-bottom-colors: none !important;
+  -moz-border-image: none !important;
+  -moz-border-left-colors: none !important;
+  -moz-border-right-colors: none !important;
+  -moz-border-top-colors: none !important;
+  -moz-border-radius-bottomleft: 0px !important;
+  -moz-border-radius-bottomright: 0px !important;
+  -moz-border-radius-topleft: 0px !important;
+  -moz-border-radius-topright: 0px !important;
+  -moz-box-align: stretch !important;
+  -moz-box-direction: normal !important;
+  -moz-box-flex: 0 !important;
+  -moz-box-ordinal-group: 1 !important;
+  -moz-box-orient: horizontal !important;
+  -moz-box-pack: start !important;
+  -moz-box-shadow: none !important;
+  -moz-box-sizing: content-box !important;
+  -moz-column-count: auto !important;
+  -moz-column-width: auto !important;
+  -moz-column-gap: 16px !important;
+  -moz-column-rule-color: black !important;
+  -moz-column-rule-width: 0px !important;
+  -moz-column-rule-style: none !important;
+  -moz-float-edge: content-box !important;
+  -moz-force-broken-image-icon: 0 !important;
+  -moz-image-region: auto !important;
+  -moz-outline-radius-bottomleft: 0px !important;
+  -moz-outline-radius-bottomright: 0px !important;
+  -moz-outline-radius-topleft: 0px !important;
+  -moz-outline-radius-topright: 0px !important;
+  -moz-stack-sizing: stretch-to-fit !important;
+  -moz-transform: none !important;
+  -moz-transform-origin: 50% 50% !important;
+  -moz-user-focus: none !important;
+  -moz-user-input: auto !important;
+  -moz-user-modify: read-only !important;
+  -moz-user-select: auto !important;
+  -moz-window-shadow: default !important;
+  /* Webkit */
+  -webkit-appearance: none !important;
+  -webkit-background-clip: border !important;
+  -webkit-background-composite: source-over !important;
+  -webkit-background-origin: padding !important;
+  -webkit-background-size: auto auto !important;
+  -webkit-border-fit: border !important;
+  -webkit-border-horizontal-spacing: 0px !important;
+  -webkit-border-vertical-spacing: 0px !important;
+  -webkit-box-align: stretch !important;
+  -webkit-box-direction: normal !important;
+  -webkit-box-flex: 0 !important;
+  -webkit-box-flex-group: 1 !important;
+  -webkit-box-lines: single !important;
+  -webkit-box-ordinal-group: 1 !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-pack: start !important;
+  -webkit-box-shadow: none !important;
+  -webkit-box-sizing: content-box !important;
+  -webkit-column-break-after: auto !important;
+  -webkit-column-break-before: auto !important;
+  -webkit-column-break-inside: auto !important;
+  -webkit-column-count: auto !important;
+  -webkit-column-gap: normal !important;
+  -webkit-column-rule-color: black !important;
+  -webkit-column-rule-style: none !important;
+  -webkit-column-rule-width: 0px !important;
+  -webkit-column-width: auto !important;
+  -webkit-highlight: none !important;
+  -webkit-line-break: normal !important;
+  -webkit-line-clamp: none !important;
+  -webkit-margin-bottom-collapse: collapse !important;
+  -webkit-margin-top-collapse: collapse !important;
+  -webkit-marquee-direction: auto !important;
+  -webkit-marquee-increment: 6px !important;
+  -webkit-marquee-repetition: infinite !important;
+  -webkit-marquee-style: scroll !important;
+  -webkit-nbsp-mode: normal !important;
+  -webkit-rtl-ordering: logical !important;
+  -webkit-text-decorations-in-effect: none !important;
+  -webkit-text-fill-color: black !important;
+  -webkit-text-security: none !important;
+  -webkit-text-stroke-color: black !important;
+  -webkit-text-stroke-width: 0 !important;
+  -webkit-user-drag: auto !important;
+  -webkit-user-modify: read-only !important;
+  -webkit-user-select: text !important;
+  -webkit-dashboard-region: null !important;
+  -webkit-border-bottom-left-radius: 0px !important;
+  -webkit-border-bottom-right-radius: 0px !important;
+  -webkit-border-top-left-radius: 0px !important;
+  -webkit-border-top-right-radius: 0px !important;
   font-family: "Arial", "sans-serif" !important;
   font-size: 12px !important;
   /*Top section of the page includes the logo and user links section*/
@@ -243,20 +359,122 @@ body {
   font-style: italic !important;
   font-weight: bold !important;
 }
-/* line 51, ../../sass/shared_style.scss */
+/* line 123, ../../sass/_cleanslate-proprietary.sass */
+#moz-nav-header h1, #moz-nav-header h2, #moz-nav-header h3, #moz-nav-header h4, #moz-nav-header h5, #moz-nav-header h6, #moz-nav-header p, #moz-nav-header td, #moz-nav-header dl, #moz-nav-header tr, #moz-nav-header dt, #moz-nav-header ol, #moz-nav-header form, #moz-nav-header select, #moz-nav-header option, #moz-nav-header pre, #moz-nav-header div, #moz-nav-header table, #moz-nav-header th, #moz-nav-header tbody, #moz-nav-header tfoot, #moz-nav-header caption, #moz-nav-header thead, #moz-nav-header ul, #moz-nav-header li, #moz-nav-header address, #moz-nav-header blockquote, #moz-nav-header dd, #moz-nav-header fieldset, #moz-nav-header li, #moz-nav-header iframe, #moz-nav-header strong, #moz-nav-header legend, #moz-nav-header em, #moz-nav-header s, #moz-nav-header cite, #moz-nav-header span, #moz-nav-header input, #moz-nav-header sup, #moz-nav-header label, #moz-nav-header dfn, #moz-nav-header object, #moz-nav-header big, #moz-nav-header q, #moz-nav-header font, #moz-nav-header samp, #moz-nav-header acronym, #moz-nav-header small, #moz-nav-header img, #moz-nav-header strike, #moz-nav-header code, #moz-nav-header sub, #moz-nav-header ins, #moz-nav-header textarea, #moz-nav-header var, #moz-nav-header a, #moz-nav-header abbr, #moz-nav-header applet, #moz-nav-header del, #moz-nav-header kbd, #moz-nav-header tt, #moz-nav-header b, #moz-nav-header i, #moz-nav-header hr, #moz-nav-header article, #moz-nav-header aside, #moz-nav-header dialog, #moz-nav-header figure, #moz-nav-header footer, #moz-nav-header header, #moz-nav-header hgroup, #moz-nav-header menu, #moz-nav-header nav, #moz-nav-header section, #moz-nav-header time, #moz-nav-header mark, #moz-nav-header audio, #moz-nav-header video {
+  /* already in main stylesheet - repeated here for completeness */
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  /* Mozilla Firefox */
+  -moz-appearance: none !important;
+  -moz-background-clip: border !important;
+  -moz-background-inline-policy: continuous !important;
+  -moz-background-origin: padding !important;
+  -moz-binding: none !important;
+  -moz-border-bottom-colors: none !important;
+  -moz-border-image: none !important;
+  -moz-border-left-colors: none !important;
+  -moz-border-right-colors: none !important;
+  -moz-border-top-colors: none !important;
+  -moz-border-radius-bottomleft: 0px !important;
+  -moz-border-radius-bottomright: 0px !important;
+  -moz-border-radius-topleft: 0px !important;
+  -moz-border-radius-topright: 0px !important;
+  -moz-box-align: stretch !important;
+  -moz-box-direction: normal !important;
+  -moz-box-flex: 0 !important;
+  -moz-box-ordinal-group: 1 !important;
+  -moz-box-orient: horizontal !important;
+  -moz-box-pack: start !important;
+  -moz-box-shadow: none !important;
+  -moz-box-sizing: content-box !important;
+  -moz-column-count: auto !important;
+  -moz-column-width: auto !important;
+  -moz-column-gap: 16px !important;
+  -moz-column-rule-color: black !important;
+  -moz-column-rule-width: 0px !important;
+  -moz-column-rule-style: none !important;
+  -moz-float-edge: content-box !important;
+  -moz-force-broken-image-icon: 0 !important;
+  -moz-image-region: auto !important;
+  -moz-outline-radius-bottomleft: 0px !important;
+  -moz-outline-radius-bottomright: 0px !important;
+  -moz-outline-radius-topleft: 0px !important;
+  -moz-outline-radius-topright: 0px !important;
+  -moz-stack-sizing: stretch-to-fit !important;
+  -moz-transform: none !important;
+  -moz-transform-origin: 50% 50% !important;
+  -moz-user-focus: none !important;
+  -moz-user-input: auto !important;
+  -moz-user-modify: read-only !important;
+  -moz-user-select: auto !important;
+  -moz-window-shadow: default !important;
+  /* Webkit */
+  -webkit-appearance: none !important;
+  -webkit-background-clip: border !important;
+  -webkit-background-composite: source-over !important;
+  -webkit-background-origin: padding !important;
+  -webkit-background-size: auto auto !important;
+  -webkit-border-fit: border !important;
+  -webkit-border-horizontal-spacing: 0px !important;
+  -webkit-border-vertical-spacing: 0px !important;
+  -webkit-box-align: stretch !important;
+  -webkit-box-direction: normal !important;
+  -webkit-box-flex: 0 !important;
+  -webkit-box-flex-group: 1 !important;
+  -webkit-box-lines: single !important;
+  -webkit-box-ordinal-group: 1 !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-pack: start !important;
+  -webkit-box-shadow: none !important;
+  -webkit-box-sizing: content-box !important;
+  -webkit-column-break-after: auto !important;
+  -webkit-column-break-before: auto !important;
+  -webkit-column-break-inside: auto !important;
+  -webkit-column-count: auto !important;
+  -webkit-column-gap: normal !important;
+  -webkit-column-rule-color: black !important;
+  -webkit-column-rule-style: none !important;
+  -webkit-column-rule-width: 0px !important;
+  -webkit-column-width: auto !important;
+  -webkit-highlight: none !important;
+  -webkit-line-break: normal !important;
+  -webkit-line-clamp: none !important;
+  -webkit-margin-bottom-collapse: collapse !important;
+  -webkit-margin-top-collapse: collapse !important;
+  -webkit-marquee-direction: auto !important;
+  -webkit-marquee-increment: 6px !important;
+  -webkit-marquee-repetition: infinite !important;
+  -webkit-marquee-style: scroll !important;
+  -webkit-nbsp-mode: normal !important;
+  -webkit-rtl-ordering: logical !important;
+  -webkit-text-decorations-in-effect: none !important;
+  -webkit-text-fill-color: black !important;
+  -webkit-text-security: none !important;
+  -webkit-text-stroke-color: black !important;
+  -webkit-text-stroke-width: 0 !important;
+  -webkit-user-drag: auto !important;
+  -webkit-user-modify: read-only !important;
+  -webkit-user-select: text !important;
+  -webkit-dashboard-region: null !important;
+  -webkit-border-bottom-left-radius: 0px !important;
+  -webkit-border-bottom-right-radius: 0px !important;
+  -webkit-border-top-left-radius: 0px !important;
+  -webkit-border-top-right-radius: 0px !important;
+}
+/* line 54, ../../sass/shared_style.scss */
 #moz-nav-header .oversight {
   overflow: hidden !important;
   *zoom: 1 !important;
   height: 30px !important;
   padding-top: 20px !important;
 }
-/* line 56, ../../sass/shared_style.scss */
+/* line 59, ../../sass/shared_style.scss */
 #moz-nav-header .oversight a.logo {
   display: inline !important;
   float: left !important;
   width: 50% !important;
 }
-/* line 61, ../../sass/shared_style.scss */
+/* line 64, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links {
   display: inline !important;
   float: right !important;
@@ -264,7 +482,7 @@ body {
   width: 50% !important;
   padding-top: 12px !important;
 }
-/* line 67, ../../sass/shared_style.scss */
+/* line 70, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul {
   margin: 0 !important;
   padding: 0 !important;
@@ -277,7 +495,7 @@ body {
   overflow: hidden !important;
   *zoom: 1 !important;
 }
-/* line 26, ../../sass/shared_style.scss */
+/* line 27, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -296,11 +514,11 @@ body {
 #moz-nav-header .oversight div.user-links > ul > li:last-child, #moz-nav-header .oversight div.user-links > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 27, ../../sass/shared_style.scss */
+/* line 28, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > a {
   display: block !important;
 }
-/* line 28, ../../sass/shared_style.scss */
+/* line 29, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul {
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -webkit-box-shadow: #bbbbbb 0 2px 5px 0 !important;
@@ -321,35 +539,35 @@ body {
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 38, ../../sass/shared_style.scss */
+/* line 39, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul a {
   color: #378cd4 !important;
 }
-/* line 40, ../../sass/shared_style.scss */
+/* line 41, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li:hover > ul {
   display: block !important;
 }
-/* line 72, ../../sass/shared_style.scss */
+/* line 75, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li {
   padding-left: 10px !important;
 }
-/* line 73, ../../sass/shared_style.scss */
+/* line 76, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended {
   background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right !important;
   padding-right: 14px !important;
 }
-/* line 83, ../../sass/shared_style.scss */
+/* line 86, ../../sass/shared_style.scss */
 #moz-nav-header .page-specifics {
   width: 950px !important;
   margin: 0px auto !important;
 }
-/* line 88, ../../sass/shared_style.scss */
+/* line 91, ../../sass/shared_style.scss */
 #moz-nav-header .navigation {
   overflow: hidden !important;
   *zoom: 1 !important;
   margin-bottom: 10px !important;
 }
-/* line 92, ../../sass/shared_style.scss */
+/* line 95, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul {
   display: inline !important;
   float: left !important;
@@ -360,7 +578,7 @@ body {
   overflow: hidden !important;
   *zoom: 1 !important;
 }
-/* line 26, ../../sass/shared_style.scss */
+/* line 27, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -379,11 +597,11 @@ body {
 #moz-nav-header .navigation > ul > li:last-child, #moz-nav-header .navigation > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 27, ../../sass/shared_style.scss */
+/* line 28, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li > a {
   display: block !important;
 }
-/* line 28, ../../sass/shared_style.scss */
+/* line 29, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li > ul {
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -webkit-box-shadow: #bbbbbb 0 2px 5px 0 !important;
@@ -404,24 +622,24 @@ body {
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 38, ../../sass/shared_style.scss */
+/* line 39, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li > ul a {
   color: #378cd4 !important;
 }
-/* line 40, ../../sass/shared_style.scss */
+/* line 41, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li:hover > ul {
   display: block !important;
 }
-/* line 97, ../../sass/shared_style.scss */
+/* line 100, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search {
   display: inline !important;
   float: right !important;
 }
-/* line 99, ../../sass/shared_style.scss */
+/* line 102, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search legend {
   display: none !important;
 }
-/* line 105, ../../sass/shared_style.scss */
+/* line 108, ../../sass/shared_style.scss */
 #moz-nav-header .page-header {
   text-shadow: #1d5788 1px 1px 1px !important;
   background: #378cd4 url(/images/moz_nav/blue_header_bg.png) repeat-x top !important;
@@ -430,16 +648,16 @@ body {
   color: white !important;
   padding: 20px !important;
 }
-/* line 114, ../../sass/shared_style.scss */
+/* line 117, ../../sass/shared_style.scss */
 #moz-nav-header .page-header h1 {
   font-size: 200% !important;
   margin-bottom: 0.5em !important;
 }
-/* line 115, ../../sass/shared_style.scss */
+/* line 118, ../../sass/shared_style.scss */
 #moz-nav-header .page-header ul {
   display: none !important;
 }
-/* line 119, ../../sass/shared_style.scss */
+/* line 122, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -472,7 +690,7 @@ body {
 #moz-nav-header ul.subnav li:last-child, #moz-nav-header ul.subnav li.last {
   padding-right: 0 !important;
 }
-/* line 128, ../../sass/shared_style.scss */
+/* line 131, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -486,19 +704,19 @@ body {
   color: #606060 !important;
   text-decoration: none !important;
 }
-/* line 136, ../../sass/shared_style.scss */
+/* line 139, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a:hover {
   background: #d7d7d7 !important;
 }
-/* line 137, ../../sass/shared_style.scss */
+/* line 140, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a:first-child a {
   padding-left: 0 !important;
 }
-/* line 140, ../../sass/shared_style.scss */
+/* line 143, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li.active {
   font-weight: bold !important;
 }
-/* line 145, ../../sass/shared_style.scss */
+/* line 148, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -530,23 +748,23 @@ body {
 #moz-nav-header ul.sub-subnav li:last-child, #moz-nav-header ul.sub-subnav li.last {
   padding-right: 0 !important;
 }
-/* line 152, ../../sass/shared_style.scss */
+/* line 155, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li {
   margin: 15px 0 15px 8px !important;
   padding-left: 8px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 157, ../../sass/shared_style.scss */
+/* line 160, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li:first-child {
   padding-left: none !important;
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 158, ../../sass/shared_style.scss */
+/* line 161, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li a {
   color: #378cd4 !important;
 }
-/* line 159, ../../sass/shared_style.scss */
+/* line 162, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li.active a {
   background: #cae0f4 !important;
   padding: 3px !important;
