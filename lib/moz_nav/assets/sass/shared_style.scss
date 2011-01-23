@@ -1,10 +1,17 @@
 @import "compass/utilities/general/float";
 @import "compass/utilities/general/clearfix";
 @import "compass/utilities/lists";
+@import "compass/css3/text-shadow";
+@import "compass/css3/border-radius";
 
 @import "cleanslate";
 
 $mn-nav-width: 950px;
+$mn-nav-element-spacing: 10px;
+$mn-body-bg: #D5E6F4;
+$mn-blue: #378CD4;
+$mn-gray: #E4E4E4;
+$mn-dark-gray: #606060;
 
 @mixin mn-center-aligned {
   width: $mn-nav-width;
@@ -14,32 +21,50 @@ $mn-nav-width: 950px;
 @mixin mn-two-level-hover-menu {
   @include horizontal-list-container;
   > li { @include horizontal-list-item; }
+  > li > a { display: block; }
   > li > ul { display: none; position: absolute;}
   > li:hover > ul { display: block; }
 }
 
+body { background-color: $mn-body-bg; margin: 0; }
+
 #moz-nav-header {
   @include mn-cleanslate;
+  font-family: "Arial", "sans-serif";
+  font-size: 12px;
   
   /*Top section of the page includes the logo and user links section*/
   .oversight {
     @include clearfix;
+    height: 30px;
+    padding-top: $mn-nav-element-spacing*2;
     
     a.logo { 
       @include float-left;
       width: 50%;
     }
     
-    ul.user-links { 
-      @include mn-two-level-hover-menu;
+    div.user-links { 
       @include float-right;
       width: 50%;
+      padding-top: 12px;
+      
+      > ul { 
+        @include mn-two-level-hover-menu;
+        @include float-right;
+        @include clearfix;
+      }
     }
     
   }
   
-  /*Main nabigation section for top tabs and site search*/
+  /*Wrapper for all navigation*/
   .navigation {
+    @include mn-center-aligned;
+  }
+  
+  /*Main nabigation section for top tabs and site search*/
+  .main-nav {
     @include clearfix;
   
     > ul {
@@ -49,8 +74,68 @@ $mn-nav-width: 950px;
     
     form.search {
       @include float-right;
+      
+      legend { display: none; }
     }
     
   }
   
+  /*Section with the page title (blue) and supporting objects*/
+  .page-header {
+    @include text-shadow(darken($mn-blue, 20%));
+    
+    background: $mn-blue url(/images/moz_nav/blue_header_bg.png) repeat-x top;
+    border: 1px solid darken($mn-blue, 15%);
+    border-bottom: none;
+    color: white;
+    padding: 20px;
+    
+    h1 { font-size: 200%; margin-bottom: 0.5em; };
+    ul { display: none; }
+  }
+
+  /*Subnav bubbles*/
+  ul.subnav {
+    @include horizontal-list;
+    background: $mn-gray url(/images/moz_nav/gray-grad.jpg) repeat-x top;
+    border: 1px solid darken($mn-gray, 15%);
+    border-top: none;
+    font-size: 110%;
+    padding-left: 15px;
+    
+    li {
+      a {
+        @include border-radius(5px);
+        margin: 10px 0;
+        padding: 5px;
+        display: block;
+        color: $mn-dark-gray;
+        text-decoration: none;
+        
+        &:hover { background: darken($mn-gray, 5%);}
+        &:first-child a { padding-left: 0; }
+      }
+      
+      &.active { font-weight: bold; }
+    }
+  }
+
+  /*Sub-subnav*/
+  ul.sub-subnav {
+    @include horizontal-list;
+    background: #FFF;
+    border-left: 1px solid darken($mn-gray, 15%);
+    border-right: 1px solid darken($mn-gray, 15%);
+    padding-left: 20px;
+    
+    li { 
+      margin: 15px 0 15px 8px;
+      padding-left: 8px;
+      border-left: 1px solid $mn-gray;
+      
+      &:first-child { padding-left: none; border-left: none; margin-left: 0; }
+      a { color: $mn-blue; }
+      &.active a { background: lighten($mn-blue, 35%); padding: 3px; }
+    }
+  }
 }

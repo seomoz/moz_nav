@@ -1,45 +1,46 @@
-<ul class="user-links">
-  <li class="extended">
-    <a href="#">Help</a>
-    <ul>
-      <li>
-        <a href="#">Support</a>
-      </li>
-      <li>
-        <a href="#">Feedback</a>
-      </li>
-      <li>
-        <a href="#">Request a Feature</a>
-      </li>
-      <li>
-        <a href="#">Contact us</a>
-      </li>
-    </ul>
-  </li>
-  <li class="extended">
-    {{# user }}
-    <a href="http://{{ seomoz_host }}/users/view/{{ id }}">My Account</a>
-    {{/ user }}
-    <ul>
-      <li>
-        <a href="#">View Profile</a>
-      </li>
-      <li>
-        <a href="#">Edit Profile</a>
-      </li>
-      <li>
-        <a href="#">Private Messages(3)</a>
-      </li>
-      <li>
-        <a href="#">Top Users</a>
-      </li>
-      <li>
-        <a href="#">Account Information</a>
-      </li>
-      <li>
-        <a href="#">Logout</a>
-      </li>
-    </ul>
-  </li>
-</ul>
-
+<div  class="user-links">
+  <ul>
+    <li class="extended">
+      <a href="#">Help</a>
+      <ul>
+        <li>
+          <a href="#">Support</a>
+        </li>
+        <li>
+          <a href="#">Feedback</a>
+        </li>
+        <li>
+          <a href="#">Request a Feature</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
+      </ul>
+    </li>
+    <li class="extended">
+      {{# user }}
+      <a href="http://{{ seomoz_host }}/users/view/{{ id }}">My Account</a>
+      {{/ user }}
+      <ul>
+        <li>
+          <a href="#">View Profile</a>
+        </li>
+        <li>
+          <a href="#">Edit Profile</a>
+        </li>
+        <li>
+          <a href="#">Private Messages(3)</a>
+        </li>
+        <li>
+          <a href="#">Top Users</a>
+        </li>
+        <li>
+          <a href="#">Account Information</a>
+        </li>
+        <li>
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

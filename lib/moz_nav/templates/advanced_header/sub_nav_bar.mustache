@@ -1,25 +1,17 @@
 {{# page_config }}
-  <div>
-    <div class="campaign-nav">
-      <ul class="clearfix">
-      {{# sub_nav_items }}
-        {{> shared/menu_item }}
-      {{/ sub_nav_items }}
-      </ul>
-    </div>
-  </div>
+  <ul class="subnav">
+  {{# sub_nav_items }}
+    {{> shared/menu_item }}
+  {{/ sub_nav_items }}
+  </ul>
 
   {{# active_sub_nav_item }}
     {{# has_sub_sub_nav_items? }}
-      <div>
-        <div class="campaign-sub-nav">
-          <ul class="clearfix">
-            {{# sub_sub_nav_items }}
-              {{> shared/menu_item }}
-            {{/ sub_sub_nav_items }}
-          </ul>
-        </div>
-      </div>
+    <ul class="sub-subnav">
+      {{# sub_sub_nav_items }}
+        {{> shared/menu_item }}
+      {{/ sub_sub_nav_items }}
+    </ul>
     {{/ has_sub_sub_nav_items? }}
   {{/ active_sub_nav_item }}
 {{/ page_config }}

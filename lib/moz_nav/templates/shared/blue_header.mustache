@@ -1,0 +1,10 @@
+<div class="page-header">
+  {{# page_config }}
+  <h1>{{ page_title }}</h1>
+  {{# has_campaigns? }}
+    {{> advanced_header/campaign_drop_down }}
+  {{/ has_campaigns? }}
+  <div class="cl"></div>
+  <p>{{ page_subtitle }}</p>
+  {{/ page_config }}
+</div>
