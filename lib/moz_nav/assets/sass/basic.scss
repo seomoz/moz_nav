@@ -1,13 +1,54 @@
+$mn-basic-dark-brown: #96611A;
+$mn-basic-mid-brown: #FDE7AD;
+$mn-basic-light-brown: #FFF4D6;
+$mn-dark-brown-lightened: lighten($mn-basic-dark-brown, 30%);
+
 #moz-nav-header.basic {
-  background-color: #FFF4D6;
+  background-color: $mn-basic-light-brown;
   border-bottom: 1px solid #F2E4C2;
-  
-  .oversight div.user-links > ul > li.extended {
-    background-image: image-url("dropdown-yellow.png");
+
+  .oversight {
+    div.user-links > ul {
+      @include border-top-radius(6px);
+      background-color: $mn-basic-mid-brown;
+      border: 1px solid $mn-dark-brown-lightened;
+      border-bottom: none;
+      
+      > li.extended {
+        background-image: image-url("dropdown-yellow.png");
+      }
+    }
   }
   
+  .navigation {
+    > ul > li {
+      background: transparent image-url("separator-yellow.png") no-repeat center left;
+      padding: 10px 20px;
+      
+      &.active { background-color: #FBEBBD; }
+      
+      > a {
+        @include text-shadow(white);
+        color: $mn-basic-dark-brown;
+        font-size: 120%;
+        text-transform: uppercase;
+      } 
+    }
+    
+    form.search {
+      input { border-color: $mn-dark-brown-lightened; }
+      input[type=submit] { 
+        background-color: $mn-basic-light-brown;
+        color: $mn-basic-dark-brown;
+        font-weight: bold;
+        font-size: 90%;
+      }
+      padding-top: 6px;
+    }
+  }
+
   .wrapper {
-    background: #FDE7AD image-url("nav-yellow-wrap.jpg") repeat-x top;
+    background: $mn-basic-mid-brown image-url("nav-yellow-wrap.jpg") repeat-x top;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
   }

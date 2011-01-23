@@ -7,6 +7,7 @@
 @import "compass/utilities/general/min";
 @import "compass/utilities/lists/bullets";
 @import "compass/utilities/text/replacement";
+@import "compass/css3/text-shadow";
 
 @import "cleanslate";
 @import "cleanslate-proprietary";
@@ -81,12 +82,13 @@ body { background-color: $mn-body-bg; margin: 0; }
       @include float-right;
       font-size: 90%;
       width: 50%;
-      padding-top: 12px;
+      padding-top: 6px;
       
       > ul { 
         @include mn-two-level-hover-menu;
         @include float-right;
         @include clearfix;
+        padding: 7px 10px;
         
         > li { padding-left: 10px; }        
         > li.extended {
@@ -107,7 +109,6 @@ body { background-color: $mn-body-bg; margin: 0; }
   .navigation {
     @include clearfix;
     @include mn-center-aligned;
-    margin-bottom: $mn-nav-element-spacing;
   
     > ul {
       @include float-left;
@@ -117,6 +118,13 @@ body { background-color: $mn-body-bg; margin: 0; }
     form.search {
       @include float-right;
       legend { display: none; }
+      
+      input[type=submit] { padding: 3px; }
+      input[type=text] {
+        background: white;
+        border-right: none;
+        padding: 3px;
+      }
     }
     
   }
@@ -124,6 +132,7 @@ body { background-color: $mn-body-bg; margin: 0; }
   /*Section with the page title (blue) and supporting objects*/
   .page-header {
     @include text-shadow(darken($mn-blue, 20%));
+    margin-top: $mn-nav-element-spacing;
     
     background: $mn-blue url(/images/moz_nav/blue_header_bg.png) repeat-x top;
     border: 1px solid darken($mn-blue, 15%);
