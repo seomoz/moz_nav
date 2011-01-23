@@ -6,6 +6,7 @@
 @import "compass/css3/box-shadow";
 @import "compass/utilities/general/min";
 @import "compass/utilities/lists/bullets";
+@import "compass/utilities/text/replacement";
 
 @import "cleanslate";
 @import "cleanslate-proprietary";
@@ -41,14 +42,28 @@ $mn-dark-gray: #606060;
   > li:hover > ul { display: block; }
 }
 
+@mixin mn-gray-gradient {
+  background: $mn-gray url(/images/moz_nav/gray-grad.jpg) repeat-x top;
+}
+
+@mixin mn-gray-rounded-bar {
+  @include mn-gray-gradient;
+  @include border-radius(5px);
+  @include box-shadow(#BBB, 0, 1px, 1px);
+  border: 1px solid darken($mn-gray, 15%);
+}
+
 body { background-color: $mn-body-bg; margin: 0; }
 
-#moz-nav-header {
+#moz-nav-footer, #moz-nav-header {
   @include mn-cleanslate;
-  @include mn-cleanslate-proprietary;
+/*  @include mn-cleanslate-proprietary; -- Still not sure what this proprietary thing is doing */
   
   font-family: "Arial", "sans-serif";
   font-size: 12px;
+}
+
+#moz-nav-header {
   
   /*Top section of the page includes the logo and user links section*/
   .oversight {
@@ -121,7 +136,8 @@ body { background-color: $mn-body-bg; margin: 0; }
   /*Subnav bubbles*/
   ul.subnav {
     @include horizontal-list;
-    background: $mn-gray url(/images/moz_nav/gray-grad.jpg) repeat-x top;
+    @include mn-gray-gradient;
+
     border: 1px solid darken($mn-gray, 15%);
     border-top: none;
     font-size: 110%;

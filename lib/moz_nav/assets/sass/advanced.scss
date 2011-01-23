@@ -1,3 +1,64 @@
 #moz-nav-header.advanced {
   @include mn-center-aligned;
 }
+
+#moz-nav-footer.advanced {
+  @include mn-center-aligned;
+  @include mn-gray-rounded-bar;
+  @include clearfix;
+  
+  color: $mn-dark-gray;
+  font-size: 70%;
+  
+  ul { 
+    @include horizontal-list;
+    @include float-left;
+    
+    li {
+      margin: 15px 0;
+      a { display: block; }
+    }
+  }
+  
+  ul.links {
+    li {
+      padding-left: 5px;
+      margin-left: 5px;
+      border-left: 1px solid $mn-gray;
+      
+      &:first-child { border-left: none; padding-left: 0; margin-left: 0; }
+    }
+  }
+  
+  ul.social {
+    @include border-radius(5px);
+    
+    border-top: 1px solid darken($mn-gray, 10%);
+    border-left: 1px solid darken($mn-gray, 5%);
+    background: lighten($mn-gray, 10%);
+    margin: 10px 0 10px 10px;
+    padding: 3px 5px;
+    
+    li {
+      margin: 0;
+      padding: 0 0 0 3px;
+      
+      &:first-child { padding-left: 0; }
+      
+      a { display: block; width: 14px; height: 15px; }
+      a.rss { @include replace-text("rss_logo.png"); }
+      a.facebook { @include replace-text("facebook_logo.png"); }
+      a.twitter { @include replace-text("twitter_logo.png"); }
+      a.linkedin { @include replace-text("linkedin_logo.png"); }
+    } 
+  }
+  
+  p.copyrights { 
+    @include float-left;
+    
+    background: transparent url(/images/moz_nav/rights.png) no-repeat center left;
+    border-right: 1px solid darken($mn-gray, 10%);
+    margin: 0 10px;
+    padding: 15px 10px 15px 40px;
+  }
+}
