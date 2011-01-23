@@ -68,6 +68,7 @@ body { background-color: $mn-body-bg; margin: 0; }
   /*Top section of the page includes the logo and user links section*/
   .oversight {
     @include clearfix;
+    @include mn-center-aligned;
     height: 30px;
     padding-top: $mn-nav-element-spacing*2;
     
@@ -105,6 +106,7 @@ body { background-color: $mn-body-bg; margin: 0; }
   /*Main nabigation section for top tabs and site search*/
   .navigation {
     @include clearfix;
+    @include mn-center-aligned;
     margin-bottom: $mn-nav-element-spacing;
   
     > ul {

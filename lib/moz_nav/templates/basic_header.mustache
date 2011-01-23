@@ -1,5 +1,16 @@
 <div id="moz-nav-header" class="basic">
-  {{> basic_header/logo_bar }}
-  {{> basic_header/nav_bar }}
+  <div class="oversight">
+    {{> shared/logo }}
+    
+    {{# logged_in? }}
+      {{> shared/logged_in_user_box }}
+    {{/ logged_in? }}
+
+    {{^ logged_in? }}
+      {{> shared/logged_out_user_box }}
+    {{/ logged_in? }}
+  </div>
+  
+  <div class="wrapper">{{> basic_header/nav_bar }}</div>
 </div>
 

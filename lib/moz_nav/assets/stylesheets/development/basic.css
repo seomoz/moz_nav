@@ -1,0 +1,15 @@
+/* line 1, ../../sass/basic.scss */
+#moz-nav-header.basic {
+  background-color: #FFF4D6 !important;
+  border-bottom: 1px solid #F2E4C2 !important;
+}
+/* line 5, ../../sass/basic.scss */
+#moz-nav-header.basic .oversight div.user-links > ul > li.extended {
+  background-image: url('/images/moz_nav/dropdown-yellow.png') !important;
+}
+/* line 9, ../../sass/basic.scss */
+#moz-nav-header.basic .wrapper {
+  background: #fde7ad url('/images/moz_nav/nav-yellow-wrap.jpg') repeat-x top !important;
+  border-top: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+}

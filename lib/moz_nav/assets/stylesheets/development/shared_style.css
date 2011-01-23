@@ -269,16 +269,18 @@ body {
 #moz-nav-header .oversight {
   overflow: hidden !important;
   *zoom: 1 !important;
+  width: 950px !important;
+  margin: 0px auto !important;
   height: 30px !important;
   padding-top: 20px !important;
 }
-/* line 74, ../../sass/shared_style.scss */
+/* line 75, ../../sass/shared_style.scss */
 #moz-nav-header .oversight a.logo {
   display: inline !important;
   float: left !important;
   width: 50% !important;
 }
-/* line 79, ../../sass/shared_style.scss */
+/* line 80, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links {
   display: inline !important;
   float: right !important;
@@ -286,7 +288,7 @@ body {
   width: 50% !important;
   padding-top: 12px !important;
 }
-/* line 85, ../../sass/shared_style.scss */
+/* line 86, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul {
   margin: 0 !important;
   padding: 0 !important;
@@ -351,27 +353,29 @@ body {
 #moz-nav-header .oversight div.user-links > ul > li:hover > ul {
   display: block !important;
 }
-/* line 90, ../../sass/shared_style.scss */
+/* line 91, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li {
   padding-left: 10px !important;
 }
-/* line 91, ../../sass/shared_style.scss */
+/* line 92, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended {
   background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right !important;
   padding-right: 14px !important;
 }
-/* line 101, ../../sass/shared_style.scss */
+/* line 102, ../../sass/shared_style.scss */
 #moz-nav-header .page-specifics {
   width: 950px !important;
   margin: 0px auto !important;
 }
-/* line 106, ../../sass/shared_style.scss */
+/* line 107, ../../sass/shared_style.scss */
 #moz-nav-header .navigation {
   overflow: hidden !important;
   *zoom: 1 !important;
+  width: 950px !important;
+  margin: 0px auto !important;
   margin-bottom: 10px !important;
 }
-/* line 110, ../../sass/shared_style.scss */
+/* line 112, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul {
   display: inline !important;
   float: left !important;
@@ -434,16 +438,16 @@ body {
 #moz-nav-header .navigation > ul > li:hover > ul {
   display: block !important;
 }
-/* line 115, ../../sass/shared_style.scss */
+/* line 117, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search {
   display: inline !important;
   float: right !important;
 }
-/* line 117, ../../sass/shared_style.scss */
+/* line 119, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search legend {
   display: none !important;
 }
-/* line 123, ../../sass/shared_style.scss */
+/* line 125, ../../sass/shared_style.scss */
 #moz-nav-header .page-header {
   text-shadow: #1d5788 1px 1px 1px !important;
   background: #378cd4 url(/images/moz_nav/blue_header_bg.png) repeat-x top !important;
@@ -452,16 +456,16 @@ body {
   color: white !important;
   padding: 20px !important;
 }
-/* line 132, ../../sass/shared_style.scss */
+/* line 134, ../../sass/shared_style.scss */
 #moz-nav-header .page-header h1 {
   font-size: 200% !important;
   margin-bottom: 0.5em !important;
 }
-/* line 133, ../../sass/shared_style.scss */
+/* line 135, ../../sass/shared_style.scss */
 #moz-nav-header .page-header ul {
   display: none !important;
 }
-/* line 137, ../../sass/shared_style.scss */
+/* line 139, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -494,7 +498,7 @@ body {
 #moz-nav-header ul.subnav li:last-child, #moz-nav-header ul.subnav li.last {
   padding-right: 0 !important;
 }
-/* line 147, ../../sass/shared_style.scss */
+/* line 149, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -508,19 +512,19 @@ body {
   color: #606060 !important;
   text-decoration: none !important;
 }
-/* line 155, ../../sass/shared_style.scss */
+/* line 157, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a:hover {
   background: #d7d7d7 !important;
 }
-/* line 156, ../../sass/shared_style.scss */
+/* line 158, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a:first-child a {
   padding-left: 0 !important;
 }
-/* line 159, ../../sass/shared_style.scss */
+/* line 161, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li.active {
   font-weight: bold !important;
 }
-/* line 164, ../../sass/shared_style.scss */
+/* line 166, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -552,23 +556,23 @@ body {
 #moz-nav-header ul.sub-subnav li:last-child, #moz-nav-header ul.sub-subnav li.last {
   padding-right: 0 !important;
 }
-/* line 171, ../../sass/shared_style.scss */
+/* line 173, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li {
   margin: 15px 0 15px 8px !important;
   padding-left: 8px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 176, ../../sass/shared_style.scss */
+/* line 178, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li:first-child {
   padding-left: none !important;
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 177, ../../sass/shared_style.scss */
+/* line 179, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li a {
   color: #378cd4 !important;
 }
-/* line 178, ../../sass/shared_style.scss */
+/* line 180, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li.active a {
   background: #cae0f4 !important;
   padding: 3px !important;
