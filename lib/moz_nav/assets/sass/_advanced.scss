@@ -9,7 +9,7 @@
       padding: 2px;
       width: 23px;
     }
-    padding: 10px 10px 0 0;
+    padding: 9px 8px 0 0;
   }
   
   .navigation {
@@ -17,6 +17,7 @@
     
     > ul > li {
       background: transparent image-url("separator.png") no-repeat center left;
+      padding: 0px 7px 0px 8px;
       
       &.dashboard > a { background-image: image-url("dashboard.png"); }
       &.campaigns > a { background-image: image-url("campaigns.png"); }
@@ -26,6 +27,7 @@
       &.learn-seo > a { background-image: image-url("learn-seo.png"); }
       
       &:first-child { 
+        background: none;
         padding-left: 0;
         margin-left: 0;
         > a { border-left: none; }
