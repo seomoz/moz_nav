@@ -15,13 +15,13 @@
  *     v0.9.1 */
 /* == PROPRIETARY RULES == */
 /* HTML 4.01 */
-/* line 57, ../../sass/shared_style.scss */
+/* line 58, ../../sass/shared_style.scss */
 body {
   background-color: #d5e6f4 !important;
   margin: 0 !important;
 }
 
-/* line 59, ../../sass/shared_style.scss */
+/* line 60, ../../sass/shared_style.scss */
 #moz-nav-footer, #moz-nav-header {
   /* == BLANKET RESET RULES == */
   /* HTML 4.01 */
@@ -256,7 +256,7 @@ body {
   font-weight: bold !important;
 }
 
-/* line 67, ../../sass/shared_style.scss */
+/* line 68, ../../sass/shared_style.scss */
 #moz-nav-header {
   /*Top section of the page includes the logo and user links section*/
   /*Wrapper for all page-specific items*/
@@ -265,7 +265,7 @@ body {
   /*Subnav bubbles*/
   /*Sub-subnav*/
 }
-/* line 70, ../../sass/shared_style.scss */
+/* line 71, ../../sass/shared_style.scss */
 #moz-nav-header .oversight {
   overflow: hidden !important;
   *zoom: 1 !important;
@@ -274,13 +274,13 @@ body {
   height: 30px !important;
   padding-top: 20px !important;
 }
-/* line 76, ../../sass/shared_style.scss */
+/* line 77, ../../sass/shared_style.scss */
 #moz-nav-header .oversight a.logo {
   display: inline !important;
   float: left !important;
   width: 50% !important;
 }
-/* line 81, ../../sass/shared_style.scss */
+/* line 82, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links {
   display: inline !important;
   float: right !important;
@@ -288,7 +288,7 @@ body {
   width: 50% !important;
   padding-top: 6px !important;
 }
-/* line 87, ../../sass/shared_style.scss */
+/* line 88, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul {
   margin: 0 !important;
   padding: 0 !important;
@@ -302,7 +302,7 @@ body {
   *zoom: 1 !important;
   padding: 7px 10px !important;
 }
-/* line 29, ../../sass/shared_style.scss */
+/* line 30, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -321,11 +321,11 @@ body {
 #moz-nav-header .oversight div.user-links > ul > li:last-child, #moz-nav-header .oversight div.user-links > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 30, ../../sass/shared_style.scss */
+/* line 31, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > a {
   display: block !important;
 }
-/* line 31, ../../sass/shared_style.scss */
+/* line 32, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul {
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -webkit-box-shadow: #bbbbbb 0 2px 5px 0 !important;
@@ -346,36 +346,36 @@ body {
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 41, ../../sass/shared_style.scss */
+/* line 42, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul a {
   color: #378cd4 !important;
 }
-/* line 43, ../../sass/shared_style.scss */
+/* line 44, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li:hover > ul {
   display: block !important;
 }
-/* line 93, ../../sass/shared_style.scss */
+/* line 94, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li {
   padding-left: 10px !important;
 }
-/* line 94, ../../sass/shared_style.scss */
+/* line 95, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended {
   background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right !important;
   padding-right: 14px !important;
 }
-/* line 104, ../../sass/shared_style.scss */
+/* line 105, ../../sass/shared_style.scss */
 #moz-nav-header .page-specifics {
   width: 950px !important;
   margin: 0px auto !important;
 }
-/* line 109, ../../sass/shared_style.scss */
+/* line 110, ../../sass/shared_style.scss */
 #moz-nav-header .navigation {
   overflow: hidden !important;
   *zoom: 1 !important;
   width: 950px !important;
   margin: 0px auto !important;
 }
-/* line 113, ../../sass/shared_style.scss */
+/* line 114, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul {
   display: inline !important;
   float: left !important;
@@ -386,7 +386,7 @@ body {
   overflow: hidden !important;
   *zoom: 1 !important;
 }
-/* line 29, ../../sass/shared_style.scss */
+/* line 30, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -405,11 +405,11 @@ body {
 #moz-nav-header .navigation > ul > li:last-child, #moz-nav-header .navigation > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 30, ../../sass/shared_style.scss */
+/* line 31, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li > a {
   display: block !important;
 }
-/* line 31, ../../sass/shared_style.scss */
+/* line 32, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li > ul {
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -webkit-box-shadow: #bbbbbb 0 2px 5px 0 !important;
@@ -430,34 +430,34 @@ body {
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 41, ../../sass/shared_style.scss */
+/* line 42, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li > ul a {
   color: #378cd4 !important;
 }
-/* line 43, ../../sass/shared_style.scss */
+/* line 44, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li:hover > ul {
   display: block !important;
 }
-/* line 118, ../../sass/shared_style.scss */
+/* line 119, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search {
   display: inline !important;
   float: right !important;
 }
-/* line 120, ../../sass/shared_style.scss */
+/* line 121, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search legend {
   display: none !important;
 }
-/* line 122, ../../sass/shared_style.scss */
+/* line 123, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search input[type=submit] {
   padding: 3px !important;
 }
-/* line 123, ../../sass/shared_style.scss */
+/* line 124, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search input[type=text] {
   background: white !important;
   border-right: none !important;
   padding: 3px !important;
 }
-/* line 133, ../../sass/shared_style.scss */
+/* line 134, ../../sass/shared_style.scss */
 #moz-nav-header .page-header {
   text-shadow: #1d5788 1px 1px 1px !important;
   margin-top: 10px !important;
@@ -467,16 +467,16 @@ body {
   color: white !important;
   padding: 20px !important;
 }
-/* line 143, ../../sass/shared_style.scss */
+/* line 144, ../../sass/shared_style.scss */
 #moz-nav-header .page-header h1 {
   font-size: 200% !important;
   margin-bottom: 0.5em !important;
 }
-/* line 144, ../../sass/shared_style.scss */
+/* line 145, ../../sass/shared_style.scss */
 #moz-nav-header .page-header ul {
   display: none !important;
 }
-/* line 148, ../../sass/shared_style.scss */
+/* line 149, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -509,7 +509,7 @@ body {
 #moz-nav-header ul.subnav li:last-child, #moz-nav-header ul.subnav li.last {
   padding-right: 0 !important;
 }
-/* line 158, ../../sass/shared_style.scss */
+/* line 159, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -523,19 +523,19 @@ body {
   color: #606060 !important;
   text-decoration: none !important;
 }
-/* line 166, ../../sass/shared_style.scss */
+/* line 167, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a:hover {
   background: #d7d7d7 !important;
 }
-/* line 167, ../../sass/shared_style.scss */
+/* line 168, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a:first-child a {
   padding-left: 0 !important;
 }
-/* line 170, ../../sass/shared_style.scss */
+/* line 171, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li.active {
   font-weight: bold !important;
 }
-/* line 175, ../../sass/shared_style.scss */
+/* line 176, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -567,26 +567,106 @@ body {
 #moz-nav-header ul.sub-subnav li:last-child, #moz-nav-header ul.sub-subnav li.last {
   padding-right: 0 !important;
 }
-/* line 182, ../../sass/shared_style.scss */
+/* line 183, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li {
   margin: 15px 0 15px 8px !important;
   padding-left: 8px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 187, ../../sass/shared_style.scss */
+/* line 188, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li:first-child {
   padding-left: none !important;
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 188, ../../sass/shared_style.scss */
+/* line 189, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li a {
   color: #378cd4 !important;
 }
-/* line 189, ../../sass/shared_style.scss */
+/* line 190, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li.active a {
   background: #cae0f4 !important;
   padding: 3px !important;
+}
+
+/* line 196, ../../sass/shared_style.scss */
+#moz-nav-footer ul.social {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  overflow: hidden !important;
+  *zoom: 1 !important;
+}
+/* line 56, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+#moz-nav-footer ul.social li {
+  list-style-image: none !important;
+  list-style-type: none !important;
+  margin-left: 0px !important;
+  white-space: nowrap !important;
+  display: inline !important;
+  float: left !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+/* line 45, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+#moz-nav-footer ul.social li:first-child, #moz-nav-footer ul.social li.first {
+  padding-left: 0 !important;
+}
+/* line 46, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+#moz-nav-footer ul.social li:last-child, #moz-nav-footer ul.social li.last {
+  padding-right: 0 !important;
+}
+/* line 199, ../../sass/shared_style.scss */
+#moz-nav-footer ul.social li {
+  margin: 0 !important;
+  padding: 0 0 0 3px !important;
+}
+/* line 203, ../../sass/shared_style.scss */
+#moz-nav-footer ul.social li:first-child {
+  padding-left: 0 !important;
+}
+/* line 205, ../../sass/shared_style.scss */
+#moz-nav-footer ul.social li a {
+  display: block !important;
+  width: 14px !important;
+  height: 15px !important;
+}
+/* line 206, ../../sass/shared_style.scss */
+#moz-nav-footer ul.social li a.rss {
+  text-indent: -119988px !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  background-image: url('/images/moz_nav/rss_logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+}
+/* line 207, ../../sass/shared_style.scss */
+#moz-nav-footer ul.social li a.facebook {
+  text-indent: -119988px !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  background-image: url('/images/moz_nav/facebook_logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+}
+/* line 208, ../../sass/shared_style.scss */
+#moz-nav-footer ul.social li a.twitter {
+  text-indent: -119988px !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  background-image: url('/images/moz_nav/twitter_logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+}
+/* line 209, ../../sass/shared_style.scss */
+#moz-nav-footer ul.social li a.linkedin {
+  text-indent: -119988px !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  background-image: url('/images/moz_nav/linkedin_logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
 }
 
 /* line 1, ../../sass/advanced.scss */
@@ -618,55 +698,30 @@ body {
 }
 /* line 13, ../../sass/advanced.scss */
 #moz-nav-footer.advanced ul {
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  outline: 0 !important;
-  overflow: hidden !important;
-  *zoom: 1 !important;
   display: inline !important;
   float: left !important;
 }
-/* line 56, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
-#moz-nav-footer.advanced ul li {
-  list-style-image: none !important;
-  list-style-type: none !important;
-  margin-left: 0px !important;
-  white-space: nowrap !important;
-  display: inline !important;
-  float: left !important;
-  padding-left: 4px !important;
-  padding-right: 4px !important;
-}
-/* line 45, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
-#moz-nav-footer.advanced ul li:first-child, #moz-nav-footer.advanced ul li.first {
-  padding-left: 0 !important;
-}
-/* line 46, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
-#moz-nav-footer.advanced ul li:last-child, #moz-nav-footer.advanced ul li.last {
-  padding-right: 0 !important;
-}
-/* line 17, ../../sass/advanced.scss */
+/* line 16, ../../sass/advanced.scss */
 #moz-nav-footer.advanced ul li {
   margin: 15px 0 !important;
 }
-/* line 19, ../../sass/advanced.scss */
+/* line 18, ../../sass/advanced.scss */
 #moz-nav-footer.advanced ul li a {
   display: block !important;
 }
-/* line 24, ../../sass/advanced.scss */
+/* line 23, ../../sass/advanced.scss */
 #moz-nav-footer.advanced ul.links li {
   padding-left: 5px !important;
   margin-left: 5px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 29, ../../sass/advanced.scss */
+/* line 28, ../../sass/advanced.scss */
 #moz-nav-footer.advanced ul.links li:first-child {
   border-left: none !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
-/* line 33, ../../sass/advanced.scss */
+/* line 32, ../../sass/advanced.scss */
 #moz-nav-footer.advanced ul.social {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -681,57 +736,6 @@ body {
   padding: 3px 5px !important;
 }
 /* line 42, ../../sass/advanced.scss */
-#moz-nav-footer.advanced ul.social li {
-  margin: 0 !important;
-  padding: 0 0 0 3px !important;
-}
-/* line 46, ../../sass/advanced.scss */
-#moz-nav-footer.advanced ul.social li:first-child {
-  padding-left: 0 !important;
-}
-/* line 48, ../../sass/advanced.scss */
-#moz-nav-footer.advanced ul.social li a {
-  display: block !important;
-  width: 14px !important;
-  height: 15px !important;
-}
-/* line 49, ../../sass/advanced.scss */
-#moz-nav-footer.advanced ul.social li a.rss {
-  text-indent: -119988px !important;
-  overflow: hidden !important;
-  text-align: left !important;
-  background-image: url('/images/moz_nav/rss_logo.png') !important;
-  background-repeat: no-repeat !important;
-  background-position: 50% 50% !important;
-}
-/* line 50, ../../sass/advanced.scss */
-#moz-nav-footer.advanced ul.social li a.facebook {
-  text-indent: -119988px !important;
-  overflow: hidden !important;
-  text-align: left !important;
-  background-image: url('/images/moz_nav/facebook_logo.png') !important;
-  background-repeat: no-repeat !important;
-  background-position: 50% 50% !important;
-}
-/* line 51, ../../sass/advanced.scss */
-#moz-nav-footer.advanced ul.social li a.twitter {
-  text-indent: -119988px !important;
-  overflow: hidden !important;
-  text-align: left !important;
-  background-image: url('/images/moz_nav/twitter_logo.png') !important;
-  background-repeat: no-repeat !important;
-  background-position: 50% 50% !important;
-}
-/* line 52, ../../sass/advanced.scss */
-#moz-nav-footer.advanced ul.social li a.linkedin {
-  text-indent: -119988px !important;
-  overflow: hidden !important;
-  text-align: left !important;
-  background-image: url('/images/moz_nav/linkedin_logo.png') !important;
-  background-repeat: no-repeat !important;
-  background-position: 50% 50% !important;
-}
-/* line 56, ../../sass/advanced.scss */
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;
@@ -741,12 +745,17 @@ body {
   padding: 15px 10px 15px 40px !important;
 }
 
-/* line 6, ../../sass/basic.scss */
+/* line 7, ../../sass/basic.scss */
 #moz-nav-header.basic {
   background-color: #fff4d6 !important;
   border-bottom: 1px solid #F2E4C2 !important;
 }
 /* line 11, ../../sass/basic.scss */
+#moz-nav-header.basic .oversight {
+  padding-top: 10px !important;
+  margin-top: 0 !important;
+}
+/* line 15, ../../sass/basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul {
   -moz-border-radius-topleft: 6px !important;
   -webkit-border-top-left-radius: 6px !important;
@@ -764,44 +773,121 @@ body {
   border: 1px solid #e4ae65 !important;
   border-bottom: none !important;
 }
-/* line 17, ../../sass/basic.scss */
+/* line 21, ../../sass/basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended {
   background-image: url('/images/moz_nav/dropdown-yellow.png') !important;
 }
-/* line 24, ../../sass/basic.scss */
+/* line 28, ../../sass/basic.scss */
 #moz-nav-header.basic .navigation > ul > li {
   background: transparent url('/images/moz_nav/separator-yellow.png') no-repeat center left !important;
   padding: 10px 20px !important;
 }
-/* line 28, ../../sass/basic.scss */
+/* line 32, ../../sass/basic.scss */
 #moz-nav-header.basic .navigation > ul > li.active {
   background-color: #FBEBBD !important;
 }
-/* line 30, ../../sass/basic.scss */
+/* line 34, ../../sass/basic.scss */
 #moz-nav-header.basic .navigation > ul > li > a {
   text-shadow: white 1px 1px 1px !important;
   color: #96611a !important;
   font-size: 120% !important;
   text-transform: uppercase !important;
 }
-/* line 38, ../../sass/basic.scss */
+/* line 42, ../../sass/basic.scss */
 #moz-nav-header.basic .navigation form.search {
   padding-top: 6px !important;
 }
-/* line 39, ../../sass/basic.scss */
+/* line 43, ../../sass/basic.scss */
 #moz-nav-header.basic .navigation form.search input {
   border-color: #e4ae65 !important;
 }
-/* line 40, ../../sass/basic.scss */
+/* line 44, ../../sass/basic.scss */
 #moz-nav-header.basic .navigation form.search input[type=submit] {
   background-color: #fff4d6 !important;
   color: #96611a !important;
   font-weight: bold !important;
   font-size: 90% !important;
 }
-/* line 50, ../../sass/basic.scss */
+/* line 54, ../../sass/basic.scss */
 #moz-nav-header.basic .wrapper {
   background: #fde7ad url('/images/moz_nav/nav-yellow-wrap.jpg') repeat-x top !important;
   border-top: 1px solid white !important;
   border-bottom: 1px solid white !important;
+}
+
+/* line 61, ../../sass/basic.scss */
+#moz-nav-footer.basic {
+  overflow: hidden !important;
+  *zoom: 1 !important;
+  background: #4f96d2 url('/images/moz_nav/footer-top.png') repeat-x top !important;
+  font-size: 11px !important;
+}
+/* line 67, ../../sass/basic.scss */
+#moz-nav-footer.basic .container {
+  width: 950px !important;
+  margin: 0px auto !important;
+  overflow: hidden !important;
+  *zoom: 1 !important;
+  padding: 20px 0 !important;
+}
+/* line 73, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div {
+  display: inline !important;
+  float: left !important;
+  min-height: 180px !important;
+  height: auto !important;
+  height: 180px !important;
+  border-left: 1px solid #8bbce6 !important;
+  color: #1d5788 !important;
+  margin-left: 20px !important;
+  padding-left: 20px !important;
+}
+/* line 82, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div.try {
+  border-left: 0 !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  width: 200px !important;
+}
+/* line 88, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div.try h2 {
+  font-size: 120% !important;
+}
+/* line 89, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div.try a.free-trial {
+  margin-bottom: 1em !important;
+  display: block !important;
+}
+/* line 90, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div.try p.consulting {
+  margin-bottom: 1em !important;
+}
+/* line 92, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div.try p.consulting a {
+  color: #1d5788 !important;
+  text-decoration: underline !important;
+}
+/* line 96, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div > ul {
+  list-style-image: none !important;
+  list-style-type: none !important;
+  margin-left: 0px !important;
+}
+/* line 98, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div > ul > li {
+  padding: 5px 0 !important;
+}
+/* line 100, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div > ul > li a {
+  color: #d1e4f3 !important;
+}
+/* line 103, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
+  text-shadow: #1d5788 1px 1px 1px !important;
+  font-weight: bold !important;
+  margin-bottom: 1em !important;
+}
+/* line 108, ../../sass/basic.scss */
+#moz-nav-footer.basic .container > div a, #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
+  color: white !important;
 }

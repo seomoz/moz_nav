@@ -10,8 +10,7 @@
   color: $mn-dark-gray;
   font-size: 70%;
   
-  ul { 
-    @include horizontal-list;
+  ul {     
     @include float-left;
     
     li {
@@ -38,19 +37,6 @@
     background: lighten($mn-gray, 10%);
     margin: 10px 0 10px 10px;
     padding: 3px 5px;
-    
-    li {
-      margin: 0;
-      padding: 0 0 0 3px;
-      
-      &:first-child { padding-left: 0; }
-      
-      a { display: block; width: 14px; height: 15px; }
-      a.rss { @include replace-text("rss_logo.png"); }
-      a.facebook { @include replace-text("facebook_logo.png"); }
-      a.twitter { @include replace-text("twitter_logo.png"); }
-      a.linkedin { @include replace-text("linkedin_logo.png"); }
-    } 
   }
   
   p.copyrights { 

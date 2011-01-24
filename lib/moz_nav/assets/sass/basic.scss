@@ -2,12 +2,16 @@ $mn-basic-dark-brown: #96611A;
 $mn-basic-mid-brown: #FDE7AD;
 $mn-basic-light-brown: #FFF4D6;
 $mn-dark-brown-lightened: lighten($mn-basic-dark-brown, 30%);
+$mn-footer-blue: #4F96D2;
 
 #moz-nav-header.basic {
   background-color: $mn-basic-light-brown;
   border-bottom: 1px solid #F2E4C2;
 
   .oversight {
+    padding-top: 10px;
+    margin-top: 0;
+    
     div.user-links > ul {
       @include border-top-radius(6px);
       background-color: $mn-basic-mid-brown;
@@ -51,5 +55,57 @@ $mn-dark-brown-lightened: lighten($mn-basic-dark-brown, 30%);
     background: $mn-basic-mid-brown image-url("nav-yellow-wrap.jpg") repeat-x top;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
+  }
+}
+
+#moz-nav-footer.basic {
+  @include clearfix;
+  
+  background: $mn-footer-blue image-url("footer-top.png") repeat-x top;
+  font-size: 11px;
+  
+  .container {
+    @include mn-center-aligned;
+    @include clearfix;
+    
+    padding: 20px 0;
+
+    > div {
+      @include float-left;
+      @include min-height(180px);
+      
+      border-left: 1px solid lighten($mn-blue, 20%);
+      color: darken($mn-blue, 20%);
+      margin-left: 20px;
+      padding-left: 20px;
+      
+      &.try {
+        border-left: 0;
+        margin-left: 0;
+        padding-left: 0;
+        width: 200px;
+        
+        h2 { font-size: 120%; }
+        a.free-trial { margin-bottom: 1em; display: block; }
+        p.consulting {
+          margin-bottom: 1em;
+          a { color: darken($mn-blue, 20%); text-decoration: underline; }
+        }
+      }
+
+      > ul { 
+        @include no-bullet;
+        > li { 
+          padding: 5px 0;
+          a { color: lighten($mn-footer-blue, 32%); }
+        }
+      }
+      h2, h3 { 
+        @include text-shadow(darken($mn-blue, 20%));
+        font-weight: bold;
+        margin-bottom: 1em;
+      }
+      a, h2, h3 { color: white; }
+    }
   }
 }

@@ -8,6 +8,7 @@
 @import "compass/utilities/lists/bullets";
 @import "compass/utilities/text/replacement";
 @import "compass/css3/text-shadow";
+@import "compass/utilities/links/unstyled-link";
 
 @import "cleanslate";
 @import "cleanslate-proprietary";
@@ -187,6 +188,25 @@ body { background-color: $mn-body-bg; margin: 0; }
       &:first-child { padding-left: none; border-left: none; margin-left: 0; }
       a { color: $mn-blue; }
       &.active a { background: lighten($mn-blue, 35%); padding: 3px; }
+    }
+  }
+}
+
+#moz-nav-footer {
+  ul.social {
+    @include horizontal-list;
+    
+    li {
+      margin: 0;
+      padding: 0 0 0 3px;
+      
+      &:first-child { padding-left: 0; }
+      
+      a { display: block; width: 14px; height: 15px; }
+      a.rss { @include replace-text("rss_logo.png"); }
+      a.facebook { @include replace-text("facebook_logo.png"); }
+      a.twitter { @include replace-text("twitter_logo.png"); }
+      a.linkedin { @include replace-text("linkedin_logo.png"); }
     }
   }
 }

@@ -1,11 +1,15 @@
 <div class="try">
   <h2>Voted Best SEO Tool 2010!</h2>
-  <a href="http://{{ seomoz_host }}/cart/purchase_select">
+  
+  <a href="http://{{ seomoz_host }}/cart/purchase_select" class="free-trial">
     <img alt="" src="/images/moz_nav/try-it-for-free.png?{{ cache_buster }}" class="try-it-free" />
   </a>
+  
   <h3>Looking for SEO consulting?</h3>
-  <p>SEOmoz doesn"t provide consulting, but our friends at
+  
+  <p class="consulting">SEOmoz doesn't provide consulting, but our friends at
     <a href="http://{{ seomoz_host }}/dp/distilled">Distilled</a> still do. Rock on!
   </p>
-  <p>Copyright &copy; 1996-2011 SEOmoz. All Rights Reserved.</p>
+  
+  {{> shared/copyright }}
 </div>

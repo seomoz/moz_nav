@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'border-top-radius'.
-        on line 12 of /Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss, in `border-top-radius'
-        from line 12 of /Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss
+        on line 16 of /Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss, in `border-top-radius'
+        from line 16 of /Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss
 
 Backtrace:
-/Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss:12:in `border-top-radius'
-/Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss:12
+/Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss:16:in `border-top-radius'
+/Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss:16
 /Users/jeff/.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
 /Users/jeff/.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /Users/jeff/.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'border-top-radius'.\A         on line 12 of /Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss, in `border-top-radius'\A         from line 12 of /Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss"; }
+  content: "Syntax error: Undefined mixin 'border-top-radius'.\A         on line 16 of /Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss, in `border-top-radius'\A         from line 16 of /Users/jeff/Workspace/MozNav/lib/moz_nav/assets/sass/basic.scss"; }
