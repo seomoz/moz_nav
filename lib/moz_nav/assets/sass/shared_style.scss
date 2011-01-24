@@ -20,6 +20,8 @@ $mn-blue: #378CD4;
 $mn-gray: #E4E4E4;
 $mn-dark-gray: #606060;
 
+$mn-dropdow-highlight-blue: #B9E1FF;
+
 @mixin mn-center-aligned {
   width: $mn-nav-width;
   margin: 0px auto;
@@ -27,19 +29,31 @@ $mn-dark-gray: #606060;
 
 @mixin mn-two-level-hover-menu {
   @include horizontal-list-container;
-  > li { @include horizontal-list-item; }
+  
+  overflow: visible;
+  
+  > li { @include horizontal-list-item; position: relative; }
   > li > a { display: block; }
   > li > ul {
     @include box-shadow(#BBB, 0, 2px);
-    @include min-width(150px);
+    @include min-width(180px);
     @include no-bullets;
     
     display: none;
-    padding: 5px;
+    padding: 1px;
     position: absolute;
     background: white;
+    left: 0;
+    z-index: 9999;
     
     a { color: $mn-blue; }
+    > li {
+      padding: 7px 8px;
+      &:hover { 
+        background-color: $mn-dropdow-highlight-blue;
+        a { color: darken($mn-blue, 20%); }
+      }
+    }
   }
   > li:hover > ul { display: block; }
 }
@@ -69,7 +83,7 @@ body { background-color: $mn-body-bg; margin: 0; }
   
   /*Top section of the page includes the logo and user links section*/
   .oversight {
-    @include clearfix;
+    @include pie-clearfix;
     @include mn-center-aligned;
     height: 30px;
     padding-top: $mn-nav-element-spacing*2;
@@ -83,15 +97,18 @@ body { background-color: $mn-body-bg; margin: 0; }
       @include float-right;
       font-size: 90%;
       width: 50%;
-      padding-top: 6px;
+      padding-top: 4px;
       
       > ul { 
         @include mn-two-level-hover-menu;
         @include float-right;
-        @include clearfix;
-        padding: 7px 10px;
+        @include pie-clearfix;
         
-        > li { padding-left: 10px; }        
+        > li {
+          padding: 7px 0;
+          margin: 0 10px;
+          > ul { top: 25px; @include min-width(110px); }
+        }        
         > li.extended {
           background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right;
           padding-right: 14px;
@@ -108,7 +125,7 @@ body { background-color: $mn-body-bg; margin: 0; }
   
   /*Main nabigation section for top tabs and site search*/
   .navigation {
-    @include clearfix;
+    @include pie-clearfix;
     @include mn-center-aligned;
   
     > ul {

@@ -29,7 +29,8 @@ $mn-footer-blue: #4F96D2;
       background: transparent image-url("separator-yellow.png") no-repeat center left;
       padding: 10px 20px;
       
-      &.active { background-color: #FBEBBD; }
+      &.active, &:hover { background-color: #FBEBBD; }
+      > ul { top: 35px; }
       
       > a {
         @include text-shadow(white);

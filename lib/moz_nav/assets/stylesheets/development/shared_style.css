@@ -15,13 +15,13 @@
  *     v0.9.1 */
 /* == PROPRIETARY RULES == */
 /* HTML 4.01 */
-/* line 58, ../../sass/shared_style.scss */
+/* line 72, ../../sass/shared_style.scss */
 body {
   background-color: #d5e6f4 !important;
   margin: 0 !important;
 }
 
-/* line 60, ../../sass/shared_style.scss */
+/* line 74, ../../sass/shared_style.scss */
 #moz-nav-footer, #moz-nav-header {
   /* == BLANKET RESET RULES == */
   /* HTML 4.01 */
@@ -256,7 +256,7 @@ body {
   font-weight: bold !important;
 }
 
-/* line 68, ../../sass/shared_style.scss */
+/* line 82, ../../sass/shared_style.scss */
 #moz-nav-header {
   /*Top section of the page includes the logo and user links section*/
   /*Wrapper for all page-specific items*/
@@ -265,30 +265,38 @@ body {
   /*Subnav bubbles*/
   /*Sub-subnav*/
 }
-/* line 71, ../../sass/shared_style.scss */
+/* line 85, ../../sass/shared_style.scss */
 #moz-nav-header .oversight {
-  overflow: hidden !important;
   *zoom: 1 !important;
   width: 950px !important;
   margin: 0px auto !important;
   height: 30px !important;
   padding-top: 20px !important;
 }
-/* line 77, ../../sass/shared_style.scss */
+/* line 22, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#moz-nav-header .oversight:after {
+  content: "\0020" !important;
+  display: block !important;
+  height: 0 !important;
+  clear: both !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+}
+/* line 91, ../../sass/shared_style.scss */
 #moz-nav-header .oversight a.logo {
   display: inline !important;
   float: left !important;
   width: 50% !important;
 }
-/* line 82, ../../sass/shared_style.scss */
+/* line 96, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links {
   display: inline !important;
   float: right !important;
   font-size: 90% !important;
   width: 50% !important;
-  padding-top: 6px !important;
+  padding-top: 4px !important;
 }
-/* line 88, ../../sass/shared_style.scss */
+/* line 102, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul {
   margin: 0 !important;
   padding: 0 !important;
@@ -296,13 +304,12 @@ body {
   outline: 0 !important;
   overflow: hidden !important;
   *zoom: 1 !important;
+  overflow: visible !important;
   display: inline !important;
   float: right !important;
-  overflow: hidden !important;
   *zoom: 1 !important;
-  padding: 7px 10px !important;
 }
-/* line 30, ../../sass/shared_style.scss */
+/* line 35, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -312,6 +319,7 @@ body {
   float: left !important;
   padding-left: 4px !important;
   padding-right: 4px !important;
+  position: relative !important;
 }
 /* line 45, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 #moz-nav-header .oversight div.user-links > ul > li:first-child, #moz-nav-header .oversight div.user-links > ul > li.first {
@@ -321,24 +329,26 @@ body {
 #moz-nav-header .oversight div.user-links > ul > li:last-child, #moz-nav-header .oversight div.user-links > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 31, ../../sass/shared_style.scss */
+/* line 36, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > a {
   display: block !important;
 }
-/* line 32, ../../sass/shared_style.scss */
+/* line 37, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul {
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -webkit-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -o-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   box-shadow: #bbbbbb 0 2px 5px 0 !important;
-  min-width: 150px !important;
+  min-width: 180px !important;
   width: auto !important;
-  width: 150px !important;
+  width: 180px !important;
   list-style: none !important;
   display: none !important;
-  padding: 5px !important;
+  padding: 1px !important;
   position: absolute !important;
   background: white !important;
+  left: 0 !important;
+  z-index: 9999 !important;
 }
 /* line 11, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul li {
@@ -346,36 +356,73 @@ body {
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 42, ../../sass/shared_style.scss */
+/* line 49, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul a {
   color: #378cd4 !important;
 }
-/* line 44, ../../sass/shared_style.scss */
+/* line 50, ../../sass/shared_style.scss */
+#moz-nav-header .oversight div.user-links > ul > li > ul > li {
+  padding: 7px 8px !important;
+}
+/* line 52, ../../sass/shared_style.scss */
+#moz-nav-header .oversight div.user-links > ul > li > ul > li:hover {
+  background-color: #b9e1ff !important;
+}
+/* line 54, ../../sass/shared_style.scss */
+#moz-nav-header .oversight div.user-links > ul > li > ul > li:hover a {
+  color: #1d5788 !important;
+}
+/* line 58, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li:hover > ul {
   display: block !important;
 }
-/* line 94, ../../sass/shared_style.scss */
-#moz-nav-header .oversight div.user-links > ul > li {
-  padding-left: 10px !important;
+/* line 22, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#moz-nav-header .oversight div.user-links > ul:after {
+  content: "\0020" !important;
+  display: block !important;
+  height: 0 !important;
+  clear: both !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
 }
-/* line 95, ../../sass/shared_style.scss */
+/* line 107, ../../sass/shared_style.scss */
+#moz-nav-header .oversight div.user-links > ul > li {
+  padding: 7px 0 !important;
+  margin: 0 10px !important;
+}
+/* line 110, ../../sass/shared_style.scss */
+#moz-nav-header .oversight div.user-links > ul > li > ul {
+  top: 25px !important;
+  min-width: 110px !important;
+  width: auto !important;
+  width: 110px !important;
+}
+/* line 112, ../../sass/shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended {
   background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right !important;
   padding-right: 14px !important;
 }
-/* line 105, ../../sass/shared_style.scss */
+/* line 122, ../../sass/shared_style.scss */
 #moz-nav-header .page-specifics {
   width: 950px !important;
   margin: 0px auto !important;
 }
-/* line 110, ../../sass/shared_style.scss */
+/* line 127, ../../sass/shared_style.scss */
 #moz-nav-header .navigation {
-  overflow: hidden !important;
   *zoom: 1 !important;
   width: 950px !important;
   margin: 0px auto !important;
 }
-/* line 114, ../../sass/shared_style.scss */
+/* line 22, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#moz-nav-header .navigation:after {
+  content: "\0020" !important;
+  display: block !important;
+  height: 0 !important;
+  clear: both !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+}
+/* line 131, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul {
   display: inline !important;
   float: left !important;
@@ -385,8 +432,9 @@ body {
   outline: 0 !important;
   overflow: hidden !important;
   *zoom: 1 !important;
+  overflow: visible !important;
 }
-/* line 30, ../../sass/shared_style.scss */
+/* line 35, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -396,6 +444,7 @@ body {
   float: left !important;
   padding-left: 4px !important;
   padding-right: 4px !important;
+  position: relative !important;
 }
 /* line 45, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 #moz-nav-header .navigation > ul > li:first-child, #moz-nav-header .navigation > ul > li.first {
@@ -405,24 +454,26 @@ body {
 #moz-nav-header .navigation > ul > li:last-child, #moz-nav-header .navigation > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 31, ../../sass/shared_style.scss */
+/* line 36, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li > a {
   display: block !important;
 }
-/* line 32, ../../sass/shared_style.scss */
+/* line 37, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li > ul {
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -webkit-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -o-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   box-shadow: #bbbbbb 0 2px 5px 0 !important;
-  min-width: 150px !important;
+  min-width: 180px !important;
   width: auto !important;
-  width: 150px !important;
+  width: 180px !important;
   list-style: none !important;
   display: none !important;
-  padding: 5px !important;
+  padding: 1px !important;
   position: absolute !important;
   background: white !important;
+  left: 0 !important;
+  z-index: 9999 !important;
 }
 /* line 11, ../../../../../../../.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
 #moz-nav-header .navigation > ul > li > ul li {
@@ -430,34 +481,46 @@ body {
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 42, ../../sass/shared_style.scss */
+/* line 49, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li > ul a {
   color: #378cd4 !important;
 }
-/* line 44, ../../sass/shared_style.scss */
+/* line 50, ../../sass/shared_style.scss */
+#moz-nav-header .navigation > ul > li > ul > li {
+  padding: 7px 8px !important;
+}
+/* line 52, ../../sass/shared_style.scss */
+#moz-nav-header .navigation > ul > li > ul > li:hover {
+  background-color: #b9e1ff !important;
+}
+/* line 54, ../../sass/shared_style.scss */
+#moz-nav-header .navigation > ul > li > ul > li:hover a {
+  color: #1d5788 !important;
+}
+/* line 58, ../../sass/shared_style.scss */
 #moz-nav-header .navigation > ul > li:hover > ul {
   display: block !important;
 }
-/* line 119, ../../sass/shared_style.scss */
+/* line 136, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search {
   display: inline !important;
   float: right !important;
 }
-/* line 121, ../../sass/shared_style.scss */
+/* line 138, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search legend {
   display: none !important;
 }
-/* line 123, ../../sass/shared_style.scss */
+/* line 140, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search input[type=submit] {
   padding: 3px !important;
 }
-/* line 124, ../../sass/shared_style.scss */
+/* line 141, ../../sass/shared_style.scss */
 #moz-nav-header .navigation form.search input[type=text] {
   background: white !important;
   border-right: none !important;
   padding: 3px !important;
 }
-/* line 134, ../../sass/shared_style.scss */
+/* line 151, ../../sass/shared_style.scss */
 #moz-nav-header .page-header {
   text-shadow: #1d5788 1px 1px 1px !important;
   margin-top: 10px !important;
@@ -467,16 +530,16 @@ body {
   color: white !important;
   padding: 20px !important;
 }
-/* line 144, ../../sass/shared_style.scss */
+/* line 161, ../../sass/shared_style.scss */
 #moz-nav-header .page-header h1 {
   font-size: 200% !important;
   margin-bottom: 0.5em !important;
 }
-/* line 145, ../../sass/shared_style.scss */
+/* line 162, ../../sass/shared_style.scss */
 #moz-nav-header .page-header ul {
   display: none !important;
 }
-/* line 149, ../../sass/shared_style.scss */
+/* line 166, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -509,7 +572,7 @@ body {
 #moz-nav-header ul.subnav li:last-child, #moz-nav-header ul.subnav li.last {
   padding-right: 0 !important;
 }
-/* line 159, ../../sass/shared_style.scss */
+/* line 176, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -523,19 +586,19 @@ body {
   color: #606060 !important;
   text-decoration: none !important;
 }
-/* line 167, ../../sass/shared_style.scss */
+/* line 184, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a:hover {
   background: #d7d7d7 !important;
 }
-/* line 168, ../../sass/shared_style.scss */
+/* line 185, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li a:first-child a {
   padding-left: 0 !important;
 }
-/* line 171, ../../sass/shared_style.scss */
+/* line 188, ../../sass/shared_style.scss */
 #moz-nav-header ul.subnav li.active {
   font-weight: bold !important;
 }
-/* line 176, ../../sass/shared_style.scss */
+/* line 193, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -567,29 +630,29 @@ body {
 #moz-nav-header ul.sub-subnav li:last-child, #moz-nav-header ul.sub-subnav li.last {
   padding-right: 0 !important;
 }
-/* line 183, ../../sass/shared_style.scss */
+/* line 200, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li {
   margin: 15px 0 15px 8px !important;
   padding-left: 8px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 188, ../../sass/shared_style.scss */
+/* line 205, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li:first-child {
   padding-left: none !important;
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 189, ../../sass/shared_style.scss */
+/* line 206, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li a {
   color: #378cd4 !important;
 }
-/* line 190, ../../sass/shared_style.scss */
+/* line 207, ../../sass/shared_style.scss */
 #moz-nav-header ul.sub-subnav li.active a {
   background: #cae0f4 !important;
   padding: 3px !important;
 }
 
-/* line 196, ../../sass/shared_style.scss */
+/* line 213, ../../sass/shared_style.scss */
 #moz-nav-footer ul.social {
   margin: 0 !important;
   padding: 0 !important;
@@ -617,22 +680,22 @@ body {
 #moz-nav-footer ul.social li:last-child, #moz-nav-footer ul.social li.last {
   padding-right: 0 !important;
 }
-/* line 199, ../../sass/shared_style.scss */
+/* line 216, ../../sass/shared_style.scss */
 #moz-nav-footer ul.social li {
   margin: 0 !important;
   padding: 0 0 0 3px !important;
 }
-/* line 203, ../../sass/shared_style.scss */
+/* line 220, ../../sass/shared_style.scss */
 #moz-nav-footer ul.social li:first-child {
   padding-left: 0 !important;
 }
-/* line 205, ../../sass/shared_style.scss */
+/* line 222, ../../sass/shared_style.scss */
 #moz-nav-footer ul.social li a {
   display: block !important;
   width: 14px !important;
   height: 15px !important;
 }
-/* line 206, ../../sass/shared_style.scss */
+/* line 223, ../../sass/shared_style.scss */
 #moz-nav-footer ul.social li a.rss {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -641,7 +704,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 207, ../../sass/shared_style.scss */
+/* line 224, ../../sass/shared_style.scss */
 #moz-nav-footer ul.social li a.facebook {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -650,7 +713,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 208, ../../sass/shared_style.scss */
+/* line 225, ../../sass/shared_style.scss */
 #moz-nav-footer ul.social li a.twitter {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -659,7 +722,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 209, ../../sass/shared_style.scss */
+/* line 226, ../../sass/shared_style.scss */
 #moz-nav-footer ul.social li a.linkedin {
   text-indent: -119988px !important;
   overflow: hidden !important;
