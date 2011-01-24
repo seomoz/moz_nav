@@ -12,35 +12,41 @@ $mn-dropdow-highlight-blue: #B9E1FF;
   margin: 0px auto;
 }
 
-@mixin mn-two-level-hover-menu {
-  @include horizontal-list-container;
+@mixin mn-hover-menu {
+  @include box-shadow(#BBB, 0, 2px);
+  @include min-width(180px);
+  @include no-bullets;
   
-  overflow: visible;
+  display: none;
+  padding: 1px;
+  position: absolute;
+  background: white;
+  left: 0;
+  z-index: 9999;
   
-  > li { @include horizontal-list-item; position: relative; }
-  > li > a { display: block; }
-  > li > ul {
-    @include box-shadow(#BBB, 0, 2px);
-    @include min-width(180px);
-    @include no-bullets;
-    
-    display: none;
-    padding: 1px;
-    position: absolute;
-    background: white;
-    left: 0;
-    z-index: 9999;
-    
-    a { color: $mn-blue; }
-    > li {
-      padding: 7px 8px;
-      &:hover { 
-        background-color: $mn-dropdow-highlight-blue;
-        a { color: darken($mn-blue, 20%); }
-      }
+  a { 
+    color: $mn-blue;
+    display: block;
+    padding: 7px 8px;
+  }
+  > li {
+    &:hover { 
+      background-color: $mn-dropdow-highlight-blue;
+      a { color: darken($mn-blue, 20%);  }
     }
   }
-  > li:hover > ul { display: block; }
+}
+
+@mixin mn-two-level-hover-menu {
+  @include horizontal-list-container;
+  overflow: visible;
+  
+  > li { 
+    @include horizontal-list-item; position: relative;
+    > a { display: block; }
+    > ul { @include mn-hover-menu }
+    &:hover > ul { display: block; }
+  }
 }
 
 @mixin mn-gray-gradient {

@@ -78,7 +78,6 @@ body { background-color: $mn-body-bg; margin: 0; }
   
   /*Section with the page title (blue) and supporting objects*/
   .page-header {
-    @include text-shadow(darken($mn-blue, 20%));
     margin-top: $mn-nav-element-spacing;
     
     background: $mn-blue url(/images/moz_nav/blue_header_bg.png) repeat-x top;
@@ -87,8 +86,35 @@ body { background-color: $mn-body-bg; margin: 0; }
     color: white;
     padding: 20px;
     
-    h1 { font-size: 200%; margin-bottom: 0.5em; };
-    ul { display: none; }
+    h1, p { @include text-shadow(darken($mn-blue, 20%)); }
+    
+    ul { 
+      @include mn-hover-menu;
+      display: none;
+      
+      li.campaign-manager {
+        background-image: image-url("campain-manager.png");
+        background-position: 7px center;
+        background-repeat: no-repeat;
+        border-top: 1px dotted #C4C4C4; 
+        padding-left: 22px;
+      }
+    }
+    
+    h1 {
+      font-size: 200%;
+      margin-bottom: 0.5em;
+      display: inline-block;      
+    }
+    .campaign {
+      h1 {
+        background: transparent image-url("arrow-blue-down.png") no-repeat center right;
+        padding-right: 17px;
+      }
+      
+      position: relative;
+      &:hover ul { display: block; }
+    }
   }
 
   /*Subnav bubbles*/

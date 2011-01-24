@@ -1,17 +1,12 @@
-<div class="heading-dropdown">
-  <div class="help-menu">
-    <ul>
-      {{# campaigns }}
-      <li>
-        <a href="{{ url }}">{{ name }}</a>
-      </li>
-      {{/ campaigns }}
-      <li class="separation-border last">
-        <a href="#">
-          Campaign Manager
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
+<ul class="campaigns">
+  {{# campaigns }}
+  <li>
+    <a href="{{ url }}">{{ name }}</a>
+  </li>
+  {{/ campaigns }}
+  <li class="campaign-manager">
+    <a href="#">
+      Campaign Manager
+    </a>
+  </li>
+</ul>
