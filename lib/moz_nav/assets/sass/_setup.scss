@@ -1,0 +1,55 @@
+$mn-nav-width: 950px;
+$mn-nav-element-spacing: 10px;
+$mn-body-bg: #D5E6F4;
+$mn-blue: #378CD4;
+$mn-gray: #E4E4E4;
+$mn-dark-gray: #606060;
+
+$mn-dropdow-highlight-blue: #B9E1FF;
+
+@mixin mn-center-aligned {
+  width: $mn-nav-width;
+  margin: 0px auto;
+}
+
+@mixin mn-two-level-hover-menu {
+  @include horizontal-list-container;
+  
+  overflow: visible;
+  
+  > li { @include horizontal-list-item; position: relative; }
+  > li > a { display: block; }
+  > li > ul {
+    @include box-shadow(#BBB, 0, 2px);
+    @include min-width(180px);
+    @include no-bullets;
+    
+    display: none;
+    padding: 1px;
+    position: absolute;
+    background: white;
+    left: 0;
+    z-index: 9999;
+    
+    a { color: $mn-blue; }
+    > li {
+      padding: 7px 8px;
+      &:hover { 
+        background-color: $mn-dropdow-highlight-blue;
+        a { color: darken($mn-blue, 20%); }
+      }
+    }
+  }
+  > li:hover > ul { display: block; }
+}
+
+@mixin mn-gray-gradient {
+  background: $mn-gray url(/images/moz_nav/gray-grad.jpg) repeat-x top;
+}
+
+@mixin mn-gray-rounded-bar {
+  @include mn-gray-gradient;
+  @include border-radius(5px);
+  @include box-shadow(#BBB, 0, 1px, 1px);
+  border: 1px solid darken($mn-gray, 15%);
+}
