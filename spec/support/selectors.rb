@@ -7,14 +7,11 @@ module MozNavSpecSelectors
   end
 
   def header_nav_bar
-    # TODO: unify these classes so they are the same for basic and advanced nav
-    find("##{HEADER_ID} .user-controls")
-  rescue Capybara::ElementNotFound
-    find("##{HEADER_ID} .navigation")
+    find("##{HEADER_ID} .navigation ul")
   end
 
   def header_sub_nav_for(li_class)
-    find("##{HEADER_ID} .user-controls li.#{li_class} .sub-nav")
+    find("##{HEADER_ID} .navigation li.#{li_class} ul")
   end
 
   def footer
@@ -22,27 +19,31 @@ module MozNavSpecSelectors
   end
 
   def footer_social_links
-    find("##{FOOTER_ID} .social-links")
+    find("##{FOOTER_ID} .social")
   end
 
   def header_blue_box_page_title
-    find("##{HEADER_ID} .blue-header h1")
+    find("##{HEADER_ID} .page-header h1")
   end
 
   def header_blue_box_page_subtitle
-    find("##{HEADER_ID} .blue-header p")
+    find("##{HEADER_ID} .page-header p")
   end
 
   def header_sub_nav_bar
-    find("##{HEADER_ID} .campaign-nav")
+    find("##{HEADER_ID} .subnav")
+  end
+  
+  def header_user_welcome_bar
+    find("##{HEADER_ID} .user-welcome")
   end
 
   def header_sub_sub_nav_bar
-    find("##{HEADER_ID} .campaign-sub-nav")
+    find("##{HEADER_ID} ul.sub-subnav")
   end
 
   def active_header_sub_nav_item
-    find("##{HEADER_ID} .campaign-nav li.active")
+    find("##{HEADER_ID} ul.subnav li.active")
   end
 
   def header_search_form
@@ -50,6 +51,6 @@ module MozNavSpecSelectors
   end
 
   def campaign_drop_down
-    find("##{HEADER_ID} .heading-dropdown")
+    find("##{HEADER_ID} ul.campaigns")
   end
 end

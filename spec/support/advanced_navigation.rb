@@ -4,7 +4,7 @@ shared_examples_for "advanced main nav bar" do
       'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/pro",
       'Campaigns'      => '#',
       'Research Tools' => "http://#{SEOMOZ_HOST}/tools",
-      'Q & A'          => "#",
+      'Q&A'          => "#",
       'Community'      => "http://#{SEOMOZ_HOST}/blog",
       'Learn SEO'      => "http://#{SEOMOZ_HOST}/learn-seo"
     }.each do |text, url|
@@ -79,7 +79,7 @@ shared_examples_for "the blue box header and sub nav" do |*options|
         end
       else
         it 'renders an appropriate greeting for the user' do
-          header_sub_nav_bar.text.should include("Aloha John Doe, lookin' good")
+          header_user_welcome_bar.text.should include("Aloha John Doe, lookin' good")
         end
       end
     end
