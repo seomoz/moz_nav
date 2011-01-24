@@ -30,6 +30,9 @@ $mn-dropdow-highlight-blue: #B9E1FF;
     padding: 7px 8px;
   }
   > li {
+    &.new {
+      background: transparent image-url("new-icon.png") no-repeat 93% center;
+    }
     &:hover { 
       background-color: $mn-dropdow-highlight-blue;
       a { color: darken($mn-blue, 20%);  }

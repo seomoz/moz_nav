@@ -309,7 +309,7 @@ body {
   float: right !important;
   *zoom: 1 !important;
 }
-/* line 44, ../../sass/_setup.scss */
+/* line 47, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -329,11 +329,11 @@ body {
 #moz-nav-header .oversight div.user-links > ul > li:last-child, #moz-nav-header .oversight div.user-links > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 46, ../../sass/_setup.scss */
+/* line 49, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > a {
   display: block !important;
 }
-/* line 47, ../../sass/_setup.scss */
+/* line 50, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul {
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -webkit-box-shadow: #bbbbbb 0 2px 5px 0 !important;
@@ -363,14 +363,18 @@ body {
   padding: 7px 8px !important;
 }
 /* line 33, ../../sass/_setup.scss */
+#moz-nav-header .oversight div.user-links > ul > li > ul > li.new {
+  background: transparent url('/images/moz_nav/new-icon.png') no-repeat 93% center !important;
+}
+/* line 36, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul > li:hover {
   background-color: #b9e1ff !important;
 }
-/* line 35, ../../sass/_setup.scss */
+/* line 38, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul > li:hover a {
   color: #1d5788 !important;
 }
-/* line 48, ../../sass/_setup.scss */
+/* line 51, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li:hover > ul {
   display: block !important;
 }
@@ -432,7 +436,7 @@ body {
   *zoom: 1 !important;
   overflow: visible !important;
 }
-/* line 44, ../../sass/_setup.scss */
+/* line 47, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -452,11 +456,11 @@ body {
 #moz-nav-header .navigation > ul > li:last-child, #moz-nav-header .navigation > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 46, ../../sass/_setup.scss */
+/* line 49, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > a {
   display: block !important;
 }
-/* line 47, ../../sass/_setup.scss */
+/* line 50, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul {
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -webkit-box-shadow: #bbbbbb 0 2px 5px 0 !important;
@@ -486,14 +490,18 @@ body {
   padding: 7px 8px !important;
 }
 /* line 33, ../../sass/_setup.scss */
+#moz-nav-header .navigation > ul > li > ul > li.new {
+  background: transparent url('/images/moz_nav/new-icon.png') no-repeat 93% center !important;
+}
+/* line 36, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul > li:hover {
   background-color: #b9e1ff !important;
 }
-/* line 35, ../../sass/_setup.scss */
+/* line 38, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul > li:hover a {
   color: #1d5788 !important;
 }
-/* line 48, ../../sass/_setup.scss */
+/* line 51, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li:hover > ul {
   display: block !important;
 }
@@ -560,10 +568,14 @@ body {
   padding: 7px 8px !important;
 }
 /* line 33, ../../sass/_setup.scss */
+#moz-nav-header .page-header ul > li.new {
+  background: transparent url('/images/moz_nav/new-icon.png') no-repeat 93% center !important;
+}
+/* line 36, ../../sass/_setup.scss */
 #moz-nav-header .page-header ul > li:hover {
   background-color: #b9e1ff !important;
 }
-/* line 35, ../../sass/_setup.scss */
+/* line 38, ../../sass/_setup.scss */
 #moz-nav-header .page-header ul > li:hover a {
   color: #1d5788 !important;
 }
