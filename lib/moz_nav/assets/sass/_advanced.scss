@@ -1,5 +1,47 @@
 #moz-nav-header.advanced {
   @include mn-center-aligned;
+  
+  .page-header { @include border-top-radius(5px); }
+  form.search { 
+    input[type=submit] {
+      @include border-right-radius(5px);
+      @include replace-text("advanced_search_button.png");
+      padding: 2px;
+      width: 23px;
+    }
+    padding: 10px 10px 0 0;
+  }
+  
+  .navigation {
+    @include mn-gray-rounded-bar;
+    
+    > ul > li {
+      background: transparent image-url("separator.png") no-repeat center left;
+      
+      &.dashboard > a { background-image: image-url("dashboard.png"); }
+      &.campaigns > a { background-image: image-url("campaigns.png"); }
+      &.research > a { background-image: image-url("research.png"); }
+      &.pro-qa > a { background-image: image-url("pro-qa.png"); }
+      &.community > a { background-image: image-url("community.png"); }
+      &.learn-seo > a { background-image: image-url("learn-seo.png"); }
+      
+      &:first-child { 
+        padding-left: 0;
+        margin-left: 0;
+        > a { border-left: none; }
+      }
+      
+      > a {
+        background-position: 8px center;
+        background-repeat: no-repeat;
+        padding: 13px 13px 13px 30px;
+        color: $mn-dark-gray;
+        display: block;
+        font-weight: bold;
+      }
+    }
+
+  }
 }
 
 #moz-nav-footer.advanced {

@@ -943,8 +943,111 @@ body {
   width: 950px !important;
   margin: 0px auto !important;
 }
-
+/* line 4, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .page-header {
+  -moz-border-radius-topleft: 5px !important;
+  -webkit-border-top-left-radius: 5px !important;
+  -o-border-top-left-radius: 5px !important;
+  -ms-border-top-left-radius: 5px !important;
+  -khtml-border-top-left-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  -moz-border-radius-topright: 5px !important;
+  -webkit-border-top-right-radius: 5px !important;
+  -o-border-top-right-radius: 5px !important;
+  -ms-border-top-right-radius: 5px !important;
+  -khtml-border-top-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
 /* line 5, ../../sass/_advanced.scss */
+#moz-nav-header.advanced form.search {
+  padding: 10px 10px 0 0 !important;
+}
+/* line 6, ../../sass/_advanced.scss */
+#moz-nav-header.advanced form.search input[type=submit] {
+  -moz-border-radius-topright: 5px !important;
+  -webkit-border-top-right-radius: 5px !important;
+  -o-border-top-right-radius: 5px !important;
+  -ms-border-top-right-radius: 5px !important;
+  -khtml-border-top-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  -moz-border-radius-bottomright: 5px !important;
+  -webkit-border-bottom-right-radius: 5px !important;
+  -o-border-bottom-right-radius: 5px !important;
+  -ms-border-bottom-right-radius: 5px !important;
+  -khtml-border-bottom-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  text-indent: -119988px !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  background-image: url('/images/moz_nav/advanced_search_button.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  padding: 2px !important;
+  width: 23px !important;
+}
+/* line 15, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation {
+  background: #e4e4e4 url(/images/moz_nav/gray-grad.jpg) repeat-x top !important;
+  -moz-border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -o-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  -khtml-border-radius: 5px !important;
+  border-radius: 5px !important;
+  -moz-box-shadow: #bbbbbb 0 1px 1px 0 !important;
+  -webkit-box-shadow: #bbbbbb 0 1px 1px 0 !important;
+  -o-box-shadow: #bbbbbb 0 1px 1px 0 !important;
+  box-shadow: #bbbbbb 0 1px 1px 0 !important;
+  border: 1px solid #bebebe !important;
+}
+/* line 18, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li {
+  background: transparent url('/images/moz_nav/separator.png') no-repeat center left !important;
+}
+/* line 21, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li.dashboard > a {
+  background-image: url('/images/moz_nav/dashboard.png') !important;
+}
+/* line 22, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li.campaigns > a {
+  background-image: url('/images/moz_nav/campaigns.png') !important;
+}
+/* line 23, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li.research > a {
+  background-image: url('/images/moz_nav/research.png') !important;
+}
+/* line 24, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li.pro-qa > a {
+  background-image: url('/images/moz_nav/pro-qa.png') !important;
+}
+/* line 25, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li.community > a {
+  background-image: url('/images/moz_nav/community.png') !important;
+}
+/* line 26, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li.learn-seo > a {
+  background-image: url('/images/moz_nav/learn-seo.png') !important;
+}
+/* line 28, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li:first-child {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+/* line 31, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li:first-child > a {
+  border-left: none !important;
+}
+/* line 34, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li > a {
+  background-position: 8px center !important;
+  background-repeat: no-repeat !important;
+  padding: 13px 13px 13px 30px !important;
+  color: #606060 !important;
+  display: block !important;
+  font-weight: bold !important;
+}
+
+/* line 47, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced {
   width: 950px !important;
   margin: 0px auto !important;
@@ -966,7 +1069,7 @@ body {
   font-size: 70% !important;
   margin-bottom: 10px !important;
 }
-/* line 14, ../../sass/_advanced.scss */
+/* line 56, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul {
   display: inline !important;
   float: left !important;
@@ -986,23 +1089,23 @@ body {
   display: inline !important;
   float: left !important;
 }
-/* line 19, ../../sass/_advanced.scss */
+/* line 61, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul li a {
   display: block !important;
 }
-/* line 24, ../../sass/_advanced.scss */
+/* line 66, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li {
   padding-left: 5px !important;
   margin: 15px 0 15px 5px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 29, ../../sass/_advanced.scss */
+/* line 71, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:first-child {
   border-left: none !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
-/* line 33, ../../sass/_advanced.scss */
+/* line 75, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.social {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1016,7 +1119,7 @@ body {
   margin: 10px 0 10px 10px !important;
   padding: 3px 5px !important;
 }
-/* line 43, ../../sass/_advanced.scss */
+/* line 85, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;
