@@ -66,7 +66,9 @@ body { background-color: $mn-body-bg; margin: 0; }
       @include float-right;
       legend { display: none; }
       
-      input[type=submit] { padding: 3px; }
+      input[type=submit] { 
+        height: 22px;
+      }
       input[type=text] {
         background: white;
         border-right: none;
