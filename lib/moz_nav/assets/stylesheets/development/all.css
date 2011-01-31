@@ -948,7 +948,7 @@ body {
 }
 /* line 22, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended {
-  background-image: url('/images/moz_nav/dropdown-yellow.png?1295052575') !important;
+  background-image: url('/images/moz_nav/dropdown-yellow.png?1296512562') !important;
 }
 /* line 29, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li {
@@ -984,23 +984,24 @@ body {
   color: #96611a !important;
   font-weight: bold !important;
   font-size: 90% !important;
-  padding: 0 3px !important;
+  height: 14px !important;
+  padding: 3px 5px !important;
 }
-/* line 57, ../../sass/_basic.scss */
+/* line 58, ../../sass/_basic.scss */
 #moz-nav-header.basic .wrapper {
   background: #fde7ad url('/images/moz_nav/nav-yellow-wrap.jpg?1295052575') repeat-x top !important;
   border-top: 1px solid white !important;
   border-bottom: 1px solid white !important;
 }
 
-/* line 64, ../../sass/_basic.scss */
+/* line 65, ../../sass/_basic.scss */
 #moz-nav-footer.basic {
   overflow: hidden !important;
   *zoom: 1 !important;
   background: #4f96d2 url('/images/moz_nav/footer-top.png?1295052575') repeat-x top !important;
   font-size: 11px !important;
 }
-/* line 70, ../../sass/_basic.scss */
+/* line 71, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1008,7 +1009,7 @@ body {
   *zoom: 1 !important;
   padding: 20px 0 !important;
 }
-/* line 76, ../../sass/_basic.scss */
+/* line 77, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div {
   display: inline !important;
   float: left !important;
@@ -1020,53 +1021,53 @@ body {
   margin-left: 20px !important;
   padding-left: 20px !important;
 }
-/* line 85, ../../sass/_basic.scss */
+/* line 86, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try {
   border-left: 0 !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
   width: 200px !important;
 }
-/* line 91, ../../sass/_basic.scss */
+/* line 92, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try h2 {
   font-size: 120% !important;
 }
-/* line 92, ../../sass/_basic.scss */
+/* line 93, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try a.free-trial {
   margin-bottom: 1em !important;
   display: block !important;
 }
-/* line 93, ../../sass/_basic.scss */
+/* line 94, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting {
   margin-bottom: 1em !important;
 }
-/* line 95, ../../sass/_basic.scss */
+/* line 96, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting a {
   color: #1d5788 !important;
   text-decoration: underline !important;
 }
-/* line 99, ../../sass/_basic.scss */
+/* line 100, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul {
   list-style-image: none !important;
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 101, ../../sass/_basic.scss */
+/* line 102, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li {
   padding: 5px 0 !important;
 }
-/* line 103, ../../sass/_basic.scss */
+/* line 104, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li a {
   color: #d1e4f3 !important;
   display: block !important;
 }
-/* line 106, ../../sass/_basic.scss */
+/* line 107, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   text-shadow: #1d5788 1px 1px 1px !important;
   font-weight: bold !important;
   margin-bottom: 1em !important;
 }
-/* line 111, ../../sass/_basic.scss */
+/* line 112, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div a, #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   color: white !important;
 }
