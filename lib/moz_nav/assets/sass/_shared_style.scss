@@ -26,7 +26,7 @@ body { background-color: $mn-body-bg; margin: 0; }
       @include float-right;
       font-size: 90%;
       width: 50%;
-      padding-top: 4px;
+      padding-top: 8px;
       
       a { color: darken($mn-blue, 15%); }
       > ul { 
@@ -35,9 +35,9 @@ body { background-color: $mn-body-bg; margin: 0; }
         @include pie-clearfix;
         
         > li {
-          padding: 7px 0;
+          padding: 5px 0;
           margin: 0 10px;
-          > ul { top: 25px; @include min-width(110px); }
+          > ul { top: 21px; @include min-width(110px); }
         }        
         > li.extended {
           background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right;
