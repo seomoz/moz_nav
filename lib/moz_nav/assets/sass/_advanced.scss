@@ -41,6 +41,22 @@
     }
 
   }
+
+  h3.user-welcome {
+    @include mn-gray-gradient;
+    
+    color: $mn-dark-gray;
+    font-size: 170%;
+    font-weight: bold;
+    padding: 10px 0 10px 70px;
+    position: relative;
+    
+    img.user-thumb { 
+      bottom: 10px;
+      left: 20px;
+      position: absolute;
+    }
+  }
 }
 
 #moz-nav-footer.advanced {

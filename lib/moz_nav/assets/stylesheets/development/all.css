@@ -642,7 +642,7 @@ body {
   border: 1px solid #378cd4 !important;
   border-bottom: none !important;
   color: white !important;
-  padding: 20px !important;
+  padding: 20px 20px 30px 20px !important;
 }
 /* line 93, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header h1 {
@@ -1191,8 +1191,23 @@ body {
   display: block !important;
   font-weight: bold !important;
 }
+/* line 45, ../../sass/_advanced.scss */
+#moz-nav-header.advanced h3.user-welcome {
+  background: #e4e4e4 url(/images/moz_nav/gray-grad.jpg) repeat-x top !important;
+  color: #606060 !important;
+  font-size: 170% !important;
+  font-weight: bold !important;
+  padding: 10px 0 10px 70px !important;
+  position: relative !important;
+}
+/* line 54, ../../sass/_advanced.scss */
+#moz-nav-header.advanced h3.user-welcome img.user-thumb {
+  bottom: 10px !important;
+  left: 20px !important;
+  position: absolute !important;
+}
 
-/* line 46, ../../sass/_advanced.scss */
+/* line 62, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1214,7 +1229,7 @@ body {
   font-size: 70% !important;
   margin-bottom: 10px !important;
 }
-/* line 55, ../../sass/_advanced.scss */
+/* line 71, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul {
   display: inline !important;
   float: left !important;
@@ -1234,23 +1249,23 @@ body {
   display: inline !important;
   float: left !important;
 }
-/* line 60, ../../sass/_advanced.scss */
+/* line 76, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul li a {
   display: block !important;
 }
-/* line 65, ../../sass/_advanced.scss */
+/* line 81, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li {
   padding-left: 5px !important;
   margin: 15px 0 15px 5px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 70, ../../sass/_advanced.scss */
+/* line 86, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:first-child {
   border-left: none !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
-/* line 74, ../../sass/_advanced.scss */
+/* line 90, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.social {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1264,7 +1279,7 @@ body {
   margin: 10px 0 10px 10px !important;
   padding: 3px 5px !important;
 }
-/* line 84, ../../sass/_advanced.scss */
+/* line 100, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;

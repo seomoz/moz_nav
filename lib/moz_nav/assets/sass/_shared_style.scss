@@ -88,7 +88,7 @@ body { background-color: $mn-body-bg; margin: 0; }
     border: 1px solid $mn-blue;
     border-bottom: none;
     color: white;
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
     
     h1 { font-weight: bold; }
     h1, p { @include text-shadow(darken($mn-blue, 20%)); }
