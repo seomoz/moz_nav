@@ -17,7 +17,6 @@ $mn-dropdow-highlight-blue: #B9E1FF;
   @include min-width(180px);
   @include no-bullets;
   
-  display: none;
   padding: 1px;
   position: absolute;
   background: white;
@@ -47,7 +46,10 @@ $mn-dropdow-highlight-blue: #B9E1FF;
   > li { 
     @include horizontal-list-item; position: relative;
     > a { display: block; }
-    > ul { @include mn-hover-menu }
+    > ul { 
+      display: none;
+      @include mn-hover-menu 
+    }
     &:hover > ul { display: block; }
   }
 }

@@ -208,7 +208,10 @@
     -webkit-nbsp-mode: normal !important
     -webkit-rtl-ordering: logical !important
     -webkit-text-decorations-in-effect: none !important
-    -webkit-text-fill-color: rgb(0, 0, 0) !important
+    // This causes us to have to specify the color with both the color: selector and this
+    // selector every single time.  Since it's very unlikely we'll encounter this in the
+    // wild, we can turn it off
+    // -webkit-text-fill-color: rgb(0, 0, 0) !important
     -webkit-text-security: none !important
     -webkit-text-stroke-color: rgb(0, 0, 0) !important
     -webkit-text-stroke-width: 0 !important

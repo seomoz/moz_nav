@@ -2,7 +2,7 @@ body { background-color: $mn-body-bg; margin: 0; }
 
 #moz-nav-footer, #moz-nav-header {
   @include mn-cleanslate;
-/*  @include mn-cleanslate-proprietary; -- Still not sure what this proprietary thing is doing */
+  @include mn-cleanslate-proprietary;
   
   font-family: "Arial", "sans-serif";
   font-size: 12px;
