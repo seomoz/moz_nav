@@ -85,11 +85,12 @@ body { background-color: $mn-body-bg; margin: 0; }
     margin-top: $mn-nav-element-spacing;
     
     background: $mn-blue url(/images/moz_nav/blue_header_bg.png) repeat-x top;
-    border: 1px solid darken($mn-blue, 15%);
+    border: 1px solid $mn-blue;
     border-bottom: none;
     color: white;
     padding: 20px;
     
+    h1 { font-weight: bold; }
     h1, p { @include text-shadow(darken($mn-blue, 20%)); }
     
     ul { 
