@@ -1,20 +1,23 @@
 /*!
- ** CleanSlate: proprietary rules
- **   github.com/premasagar/cleanslate
- ** */
-/*     An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
- * 
- *     by Premasagar Rose
- *         dharmafly.com
- * 
- *     license
- *         opensource.org/licenses/mit-license.php
- * 
- *     **
- *         
- *     v0.9.1 */
+* CleanSlate: proprietary rules
+*   github.com/premasagar/cleanslate
+*
+*/
+  /*
+    An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+
+    by Premasagar Rose
+        dharmafly.com
+
+    license
+        opensource.org/licenses/mit-license.php
+
+    **
+        
+    v0.9.1
+        
+*/
 /* == PROPRIETARY RULES == */
-/* HTML 4.01 */
 /* line 1, ../../sass/_shared_style.scss */
 body {
   background-color: #d5e6f4 !important;
@@ -42,105 +45,7 @@ body {
   font-weight: normal !important;
   text-decoration: none !important;
   list-style-type: disc !important;
-  /* already in main stylesheet - repeated here for completeness */
-  -moz-border-radius: 0 !important;
-  -webkit-border-radius: 0 !important;
-  /* Mozilla Firefox */
-  -moz-appearance: none !important;
-  -moz-background-clip: border !important;
-  -moz-background-inline-policy: continuous !important;
-  -moz-background-origin: padding !important;
-  -moz-binding: none !important;
-  -moz-border-bottom-colors: none !important;
-  -moz-border-image: none !important;
-  -moz-border-left-colors: none !important;
-  -moz-border-right-colors: none !important;
-  -moz-border-top-colors: none !important;
-  -moz-border-radius-bottomleft: 0px !important;
-  -moz-border-radius-bottomright: 0px !important;
-  -moz-border-radius-topleft: 0px !important;
-  -moz-border-radius-topright: 0px !important;
-  -moz-box-align: stretch !important;
-  -moz-box-direction: normal !important;
-  -moz-box-flex: 0 !important;
-  -moz-box-ordinal-group: 1 !important;
-  -moz-box-orient: horizontal !important;
-  -moz-box-pack: start !important;
-  -moz-box-shadow: none !important;
-  -moz-box-sizing: content-box !important;
-  -moz-column-count: auto !important;
-  -moz-column-width: auto !important;
-  -moz-column-gap: 16px !important;
-  -moz-column-rule-color: black !important;
-  -moz-column-rule-width: 0px !important;
-  -moz-column-rule-style: none !important;
-  -moz-float-edge: content-box !important;
-  -moz-force-broken-image-icon: 0 !important;
-  -moz-image-region: auto !important;
-  -moz-outline-radius-bottomleft: 0px !important;
-  -moz-outline-radius-bottomright: 0px !important;
-  -moz-outline-radius-topleft: 0px !important;
-  -moz-outline-radius-topright: 0px !important;
-  -moz-stack-sizing: stretch-to-fit !important;
-  -moz-transform: none !important;
-  -moz-transform-origin: 50% 50% !important;
-  -moz-user-focus: none !important;
-  -moz-user-input: auto !important;
-  -moz-user-modify: read-only !important;
-  -moz-user-select: auto !important;
-  -moz-window-shadow: default !important;
-  /* Webkit */
-  -webkit-appearance: none !important;
-  -webkit-background-clip: border !important;
-  -webkit-background-composite: source-over !important;
-  -webkit-background-origin: padding !important;
-  -webkit-background-size: auto auto !important;
-  -webkit-border-fit: border !important;
-  -webkit-border-horizontal-spacing: 0px !important;
-  -webkit-border-vertical-spacing: 0px !important;
-  -webkit-box-align: stretch !important;
-  -webkit-box-direction: normal !important;
-  -webkit-box-flex: 0 !important;
-  -webkit-box-flex-group: 1 !important;
-  -webkit-box-lines: single !important;
-  -webkit-box-ordinal-group: 1 !important;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-pack: start !important;
-  -webkit-box-shadow: none !important;
-  -webkit-box-sizing: content-box !important;
-  -webkit-column-break-after: auto !important;
-  -webkit-column-break-before: auto !important;
-  -webkit-column-break-inside: auto !important;
-  -webkit-column-count: auto !important;
-  -webkit-column-gap: normal !important;
-  -webkit-column-rule-color: black !important;
-  -webkit-column-rule-style: none !important;
-  -webkit-column-rule-width: 0px !important;
-  -webkit-column-width: auto !important;
-  -webkit-highlight: none !important;
-  -webkit-line-break: normal !important;
-  -webkit-line-clamp: none !important;
-  -webkit-margin-bottom-collapse: collapse !important;
-  -webkit-margin-top-collapse: collapse !important;
-  -webkit-marquee-direction: auto !important;
-  -webkit-marquee-increment: 6px !important;
-  -webkit-marquee-repetition: infinite !important;
-  -webkit-marquee-style: scroll !important;
-  -webkit-nbsp-mode: normal !important;
-  -webkit-rtl-ordering: logical !important;
-  -webkit-text-decorations-in-effect: none !important;
-  -webkit-text-fill-color: black !important;
-  -webkit-text-security: none !important;
-  -webkit-text-stroke-color: black !important;
-  -webkit-text-stroke-width: 0 !important;
-  -webkit-user-drag: auto !important;
-  -webkit-user-modify: read-only !important;
-  -webkit-user-select: text !important;
-  -webkit-dashboard-region: null !important;
-  -webkit-border-bottom-left-radius: 0px !important;
-  -webkit-border-bottom-right-radius: 0px !important;
-  -webkit-border-top-left-radius: 0px !important;
-  -webkit-border-top-right-radius: 0px !important;
+  /* HTML 4.01 */
   font-family: "Arial", "sans-serif" !important;
   font-size: 12px !important;
 }
@@ -353,8 +258,9 @@ body {
   font-style: italic !important;
   font-weight: bold !important;
 }
-/* line 123, ../../sass/_cleanslate-proprietary.sass */
-#moz-nav-footer h1, #moz-nav-footer h2, #moz-nav-footer h3, #moz-nav-footer h4, #moz-nav-footer h5, #moz-nav-footer h6, #moz-nav-footer p, #moz-nav-footer td, #moz-nav-footer dl, #moz-nav-footer tr, #moz-nav-footer dt, #moz-nav-footer ol, #moz-nav-footer form, #moz-nav-footer select, #moz-nav-footer option, #moz-nav-footer pre, #moz-nav-footer div, #moz-nav-footer table, #moz-nav-footer th, #moz-nav-footer tbody, #moz-nav-footer tfoot, #moz-nav-footer caption, #moz-nav-footer thead, #moz-nav-footer ul, #moz-nav-footer li, #moz-nav-footer address, #moz-nav-footer blockquote, #moz-nav-footer dd, #moz-nav-footer fieldset, #moz-nav-footer li, #moz-nav-footer iframe, #moz-nav-footer strong, #moz-nav-footer legend, #moz-nav-footer em, #moz-nav-footer s, #moz-nav-footer cite, #moz-nav-footer span, #moz-nav-footer input, #moz-nav-footer sup, #moz-nav-footer label, #moz-nav-footer dfn, #moz-nav-footer object, #moz-nav-footer big, #moz-nav-footer q, #moz-nav-footer font, #moz-nav-footer samp, #moz-nav-footer acronym, #moz-nav-footer small, #moz-nav-footer img, #moz-nav-footer strike, #moz-nav-footer code, #moz-nav-footer sub, #moz-nav-footer ins, #moz-nav-footer textarea, #moz-nav-footer var, #moz-nav-footer a, #moz-nav-footer abbr, #moz-nav-footer applet, #moz-nav-footer del, #moz-nav-footer kbd, #moz-nav-footer tt, #moz-nav-footer b, #moz-nav-footer i, #moz-nav-footer hr, #moz-nav-footer article, #moz-nav-footer aside, #moz-nav-footer dialog, #moz-nav-footer figure, #moz-nav-footer footer, #moz-nav-footer header, #moz-nav-footer hgroup, #moz-nav-footer menu, #moz-nav-footer nav, #moz-nav-footer section, #moz-nav-footer time, #moz-nav-footer mark, #moz-nav-footer audio, #moz-nav-footer video, #moz-nav-header h1, #moz-nav-header h2, #moz-nav-header h3, #moz-nav-header h4, #moz-nav-header h5, #moz-nav-header h6, #moz-nav-header p, #moz-nav-header td, #moz-nav-header dl, #moz-nav-header tr, #moz-nav-header dt, #moz-nav-header ol, #moz-nav-header form, #moz-nav-header select, #moz-nav-header option, #moz-nav-header pre, #moz-nav-header div, #moz-nav-header table, #moz-nav-header th, #moz-nav-header tbody, #moz-nav-header tfoot, #moz-nav-header caption, #moz-nav-header thead, #moz-nav-header ul, #moz-nav-header li, #moz-nav-header address, #moz-nav-header blockquote, #moz-nav-header dd, #moz-nav-header fieldset, #moz-nav-header li, #moz-nav-header iframe, #moz-nav-header strong, #moz-nav-header legend, #moz-nav-header em, #moz-nav-header s, #moz-nav-header cite, #moz-nav-header span, #moz-nav-header input, #moz-nav-header sup, #moz-nav-header label, #moz-nav-header dfn, #moz-nav-header object, #moz-nav-header big, #moz-nav-header q, #moz-nav-header font, #moz-nav-header samp, #moz-nav-header acronym, #moz-nav-header small, #moz-nav-header img, #moz-nav-header strike, #moz-nav-header code, #moz-nav-header sub, #moz-nav-header ins, #moz-nav-header textarea, #moz-nav-header var, #moz-nav-header a, #moz-nav-header abbr, #moz-nav-header applet, #moz-nav-header del, #moz-nav-header kbd, #moz-nav-header tt, #moz-nav-header b, #moz-nav-header i, #moz-nav-header hr, #moz-nav-header article, #moz-nav-header aside, #moz-nav-header dialog, #moz-nav-header figure, #moz-nav-header footer, #moz-nav-header header, #moz-nav-header hgroup, #moz-nav-header menu, #moz-nav-header nav, #moz-nav-header section, #moz-nav-header time, #moz-nav-header mark, #moz-nav-header audio, #moz-nav-header video {
+/* line 28, ../../sass/_cleanslate-proprietary.scss */
+#moz-nav-footer h1, #moz-nav-footer h2, #moz-nav-footer h3, #moz-nav-footer h4, #moz-nav-footer h5, #moz-nav-footer h6, #moz-nav-footer p, #moz-nav-footer td, #moz-nav-footer dl, #moz-nav-footer tr, #moz-nav-footer dt, #moz-nav-footer ol, #moz-nav-footer form, #moz-nav-footer select, #moz-nav-footer option, #moz-nav-footer pre, #moz-nav-footer div, #moz-nav-footer table, #moz-nav-footer th, #moz-nav-footer tbody, #moz-nav-footer tfoot, #moz-nav-footer caption, #moz-nav-footer thead, #moz-nav-footer ul, #moz-nav-footer li, #moz-nav-footer address, #moz-nav-footer blockquote, #moz-nav-footer dd, #moz-nav-footer fieldset, #moz-nav-footer li, #moz-nav-footer iframe, #moz-nav-footer strong, #moz-nav-footer legend, #moz-nav-footer em, #moz-nav-footer s, #moz-nav-footer cite, #moz-nav-footer span, #moz-nav-footer input, #moz-nav-footer sup, #moz-nav-footer label, #moz-nav-footer dfn, #moz-nav-footer object, #moz-nav-footer big, #moz-nav-footer q, #moz-nav-footer font, #moz-nav-footer samp, #moz-nav-footer acronym, #moz-nav-footer small, #moz-nav-footer img, #moz-nav-footer strike, #moz-nav-footer code, #moz-nav-footer sub, #moz-nav-footer ins, #moz-nav-footer textarea, #moz-nav-footer var, #moz-nav-footer a, #moz-nav-footer abbr, #moz-nav-footer applet, #moz-nav-footer del, #moz-nav-footer kbd, #moz-nav-footer tt, #moz-nav-footer b, #moz-nav-footer i, #moz-nav-footer hr,
+#moz-nav-footer article, #moz-nav-footer aside, #moz-nav-footer dialog, #moz-nav-footer figure, #moz-nav-footer footer, #moz-nav-footer header, #moz-nav-footer hgroup, #moz-nav-footer menu, #moz-nav-footer nav, #moz-nav-footer section, #moz-nav-footer time, #moz-nav-footer mark, #moz-nav-footer audio, #moz-nav-footer video, #moz-nav-header h1, #moz-nav-header h2, #moz-nav-header h3, #moz-nav-header h4, #moz-nav-header h5, #moz-nav-header h6, #moz-nav-header p, #moz-nav-header td, #moz-nav-header dl, #moz-nav-header tr, #moz-nav-header dt, #moz-nav-header ol, #moz-nav-header form, #moz-nav-header select, #moz-nav-header option, #moz-nav-header pre, #moz-nav-header div, #moz-nav-header table, #moz-nav-header th, #moz-nav-header tbody, #moz-nav-header tfoot, #moz-nav-header caption, #moz-nav-header thead, #moz-nav-header ul, #moz-nav-header li, #moz-nav-header address, #moz-nav-header blockquote, #moz-nav-header dd, #moz-nav-header fieldset, #moz-nav-header li, #moz-nav-header iframe, #moz-nav-header strong, #moz-nav-header legend, #moz-nav-header em, #moz-nav-header s, #moz-nav-header cite, #moz-nav-header span, #moz-nav-header input, #moz-nav-header sup, #moz-nav-header label, #moz-nav-header dfn, #moz-nav-header object, #moz-nav-header big, #moz-nav-header q, #moz-nav-header font, #moz-nav-header samp, #moz-nav-header acronym, #moz-nav-header small, #moz-nav-header img, #moz-nav-header strike, #moz-nav-header code, #moz-nav-header sub, #moz-nav-header ins, #moz-nav-header textarea, #moz-nav-header var, #moz-nav-header a, #moz-nav-header abbr, #moz-nav-header applet, #moz-nav-header del, #moz-nav-header kbd, #moz-nav-header tt, #moz-nav-header b, #moz-nav-header i, #moz-nav-header hr, #moz-nav-header article, #moz-nav-header aside, #moz-nav-header dialog, #moz-nav-header figure, #moz-nav-header footer, #moz-nav-header header, #moz-nav-header hgroup, #moz-nav-header menu, #moz-nav-header nav, #moz-nav-header section, #moz-nav-header time, #moz-nav-header mark, #moz-nav-header audio, #moz-nav-header video {
   /* already in main stylesheet - repeated here for completeness */
   -moz-border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
@@ -442,6 +348,7 @@ body {
   -webkit-nbsp-mode: normal !important;
   -webkit-rtl-ordering: logical !important;
   -webkit-text-decorations-in-effect: none !important;
+  /*    -webkit-text-fill-color: rgb(0, 0, 0) !important;*/
   -webkit-text-security: none !important;
   -webkit-text-stroke-color: black !important;
   -webkit-text-stroke-width: 0 !important;
