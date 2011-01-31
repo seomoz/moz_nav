@@ -28,6 +28,7 @@ body { background-color: $mn-body-bg; margin: 0; }
       width: 50%;
       padding-top: 4px;
       
+      a { color: darken($mn-blue, 15%); }
       > ul { 
         @include mn-two-level-hover-menu;
         @include float-right;

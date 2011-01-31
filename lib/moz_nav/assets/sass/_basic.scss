@@ -18,6 +18,7 @@ $mn-footer-blue: #4F96D2;
       border: 1px solid $mn-dark-brown-lightened;
       border-bottom: none;
       
+      a { color: $mn-basic-dark-brown };
       > li.extended {
         background-image: image-url("dropdown-yellow.png");
       }
