@@ -67,6 +67,7 @@ body { background-color: $mn-body-bg; margin: 0; }
       legend { display: none; }
       
       input[type=submit] { 
+        padding: 0 3px;
         height: 22px;
       }
       input[type=text] {
