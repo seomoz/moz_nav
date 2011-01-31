@@ -6,7 +6,6 @@
     input[type=submit] {
       @include border-right-radius(5px);
       @include replace-text("advanced_search_button.png");
-      padding: 2px;
       width: 23px;
     }
     padding: 9px 8px 0 0;
