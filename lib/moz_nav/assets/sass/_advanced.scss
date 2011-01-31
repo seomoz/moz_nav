@@ -17,7 +17,7 @@
     
     > ul > li {
       background: transparent image-url("separator.png") no-repeat center left;
-      padding: 0px 7px 0px 8px;
+      padding: 0 10px;
       
       &.dashboard > a { background-image: image-url("dashboard.png"); }
       &.campaigns > a { background-image: image-url("campaigns.png"); }
@@ -28,15 +28,13 @@
       
       &:first-child { 
         background: none;
-        padding-left: 0;
-        margin-left: 0;
         > a { border-left: none; }
       }
       
       > a {
-        background-position: 8px center;
+        background-position: left center;
         background-repeat: no-repeat;
-        padding: 13px 13px 13px 30px;
+        padding: 13px 0 13px 30px;
         color: $mn-dark-gray;
         display: block;
         font-weight: bold;
