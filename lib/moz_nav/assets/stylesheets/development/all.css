@@ -1309,14 +1309,16 @@ body {
 }
 /* line 81, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li {
-  padding-left: 7px !important;
-  margin: 15px 0 15px 7px !important;
+  padding: 15px 7px !important;
   border-left: 1px solid #e4e4e4 !important;
+}
+/* line 85, ../../sass/_advanced.scss */
+#moz-nav-footer.advanced ul.links li:hover {
+  background-color: #fefefe !important;
 }
 /* line 86, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:first-child {
   border-left: none !important;
-  padding-left: 0 !important;
   margin-left: 0 !important;
 }
 /* line 90, ../../sass/_advanced.scss */
@@ -1339,6 +1341,6 @@ body {
   float: left !important;
   background: transparent url(/images/moz_nav/rights.png) no-repeat center left !important;
   border-right: 1px solid #cbcbcb !important;
-  margin: 0 10px !important;
+  margin-left: 10px !important;
   padding: 15px 10px 15px 40px !important;
 }
