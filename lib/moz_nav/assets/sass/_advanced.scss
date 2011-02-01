@@ -15,6 +15,7 @@
     @include mn-gray-rounded-bar;
     
     > ul > li {
+      
       background: transparent image-url("separator.png") no-repeat center left;
       padding: 0 10px;
       
@@ -26,6 +27,8 @@
       &.learn-seo > a { background-image: image-url("learn-seo.png"); }
       
       &:first-child { 
+        @include border-left-radius($mn-border-radius);
+        
         background: none;
         > a { border-left: none; }
       }
