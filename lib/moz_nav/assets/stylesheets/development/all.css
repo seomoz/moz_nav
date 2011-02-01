@@ -405,6 +405,7 @@ body {
 /* line 31, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links a {
   color: #22649d !important;
+  text-shadow: white 1px 1px 1px !important;
 }
 /* line 32, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul {
