@@ -32,7 +32,7 @@ $mn-border-radius: 5px;
   }
   > li {
     &.new {
-      background: transparent image-url("new-icon.png") no-repeat 93% center;
+      background: transparent image-url("new-icon.gif") no-repeat 93% center;
     }
     &:hover { 
       background-color: $mn-dropdow-highlight-blue;
@@ -46,7 +46,9 @@ $mn-border-radius: 5px;
   overflow: visible;
   
   > li { 
-    @include horizontal-list-item; position: relative;
+    @include horizontal-list-item;
+    
+    position: relative;
     > a { display: block; }
     > ul { 
       display: none;
@@ -57,7 +59,7 @@ $mn-border-radius: 5px;
 }
 
 @mixin mn-gray-gradient {
-  background: $mn-gray url(/images/moz_nav/gray-grad.jpg) repeat-x top;
+  background: $mn-gray url(/images/moz_nav/gray-grad.gif) repeat-x top;
 }
 
 @mixin mn-gray-rounded-bar {

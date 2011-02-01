@@ -441,11 +441,11 @@ body {
 #moz-nav-header .oversight div.user-links > ul > li:last-child, #moz-nav-header .oversight div.user-links > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 50, ../../sass/_setup.scss */
+/* line 52, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > a {
   display: block !important;
 }
-/* line 51, ../../sass/_setup.scss */
+/* line 53, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul {
   display: none !important;
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
@@ -476,7 +476,7 @@ body {
 }
 /* line 34, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul > li.new {
-  background: transparent url('/images/moz_nav/new-icon.png?1295052575') no-repeat 93% center !important;
+  background: transparent url('/images/moz_nav/new-icon.gif?1296594139') no-repeat 93% center !important;
 }
 /* line 37, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul > li:hover {
@@ -486,7 +486,7 @@ body {
 #moz-nav-header .oversight div.user-links > ul > li > ul > li:hover a {
   color: #1d5788 !important;
 }
-/* line 55, ../../sass/_setup.scss */
+/* line 57, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li:hover > ul {
   display: block !important;
 }
@@ -523,12 +523,12 @@ body {
 }
 /* line 56, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended {
-  background: transparent url('/images/moz_nav/dropdown-arrow.png?1296513498') no-repeat center right !important;
+  background: transparent url('/images/moz_nav/dropdown-arrow.gif?1296595599') no-repeat center right !important;
   padding-right: 14px !important;
 }
 /* line 60, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended:hover {
-  background-image: url('/images/moz_nav/dropdown-arrow-hover.png?1296589828') !important;
+  background-image: url('/images/moz_nav/dropdown-arrow-hover.gif?1296595557') !important;
 }
 /* line 68, ../../sass/_shared_style.scss */
 #moz-nav-header .page-specifics {
@@ -582,11 +582,11 @@ body {
 #moz-nav-header .navigation > ul > li:last-child, #moz-nav-header .navigation > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 50, ../../sass/_setup.scss */
+/* line 52, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > a {
   display: block !important;
 }
-/* line 51, ../../sass/_setup.scss */
+/* line 53, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul {
   display: none !important;
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
@@ -617,7 +617,7 @@ body {
 }
 /* line 34, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul > li.new {
-  background: transparent url('/images/moz_nav/new-icon.png?1295052575') no-repeat 93% center !important;
+  background: transparent url('/images/moz_nav/new-icon.gif?1296594139') no-repeat 93% center !important;
 }
 /* line 37, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul > li:hover {
@@ -627,7 +627,7 @@ body {
 #moz-nav-header .navigation > ul > li > ul > li:hover a {
   color: #1d5788 !important;
 }
-/* line 55, ../../sass/_setup.scss */
+/* line 57, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li:hover > ul {
   display: block !important;
 }
@@ -654,7 +654,7 @@ body {
 /* line 100, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header {
   margin-top: 10px !important;
-  background: #378cd4 url(/images/moz_nav/blue_header_bg.png) repeat-x top !important;
+  background: #378cd4 url(/images/moz_nav/blue_header_bg.gif) repeat-x top !important;
   border: 1px solid #378cd4 !important;
   border-bottom: none !important;
   color: white !important;
@@ -701,7 +701,7 @@ body {
 }
 /* line 34, ../../sass/_setup.scss */
 #moz-nav-header .page-header ul > li.new {
-  background: transparent url('/images/moz_nav/new-icon.png?1295052575') no-repeat 93% center !important;
+  background: transparent url('/images/moz_nav/new-icon.gif?1296594139') no-repeat 93% center !important;
 }
 /* line 37, ../../sass/_setup.scss */
 #moz-nav-header .page-header ul > li:hover {
@@ -731,7 +731,7 @@ body {
 }
 /* line 134, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header .campaign h1 {
-  background: transparent url('/images/moz_nav/arrow-blue-down.png?1295052575') no-repeat center right !important;
+  background: transparent url('/images/moz_nav/arrow-blue-down.png') no-repeat center right !important;
   padding-right: 17px !important;
 }
 /* line 140, ../../sass/_shared_style.scss */
@@ -746,7 +746,7 @@ body {
   outline: 0 !important;
   overflow: hidden !important;
   *zoom: 1 !important;
-  background: #e4e4e4 url(/images/moz_nav/gray-grad.jpg) repeat-x top !important;
+  background: #e4e4e4 url(/images/moz_nav/gray-grad.gif) repeat-x top !important;
   border: 1px solid #bebebe !important;
   border-top: none !important;
   font-size: 110% !important;
@@ -904,7 +904,7 @@ body {
   text-indent: -119988px !important;
   overflow: hidden !important;
   text-align: left !important;
-  background-image: url('/images/moz_nav/rss_logo.png?1295851465') !important;
+  background-image: url('/images/moz_nav/rss_logo.png?1296593251') !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
@@ -913,7 +913,7 @@ body {
   text-indent: -119988px !important;
   overflow: hidden !important;
   text-align: left !important;
-  background-image: url('/images/moz_nav/facebook_logo.png?1295851465') !important;
+  background-image: url('/images/moz_nav/facebook_logo.png?1296593251') !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
@@ -922,7 +922,7 @@ body {
   text-indent: -119988px !important;
   overflow: hidden !important;
   text-align: left !important;
-  background-image: url('/images/moz_nav/twitter_logo.png?1295851465') !important;
+  background-image: url('/images/moz_nav/twitter_logo.png?1296593251') !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
@@ -931,7 +931,7 @@ body {
   text-indent: -119988px !important;
   overflow: hidden !important;
   text-align: left !important;
-  background-image: url('/images/moz_nav/linkedin_logo.png?1295851465') !important;
+  background-image: url('/images/moz_nav/linkedin_logo.png?1296593251') !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
@@ -978,11 +978,11 @@ body {
 }
 /* line 27, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended {
-  background-image: url('/images/moz_nav/dropdown-yellow.png?1296513477') !important;
+  background-image: url('/images/moz_nav/dropdown-yellow.gif?1296595884') !important;
 }
 /* line 30, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended:hover {
-  background-image: url('/images/moz_nav/dropdown-brown-hover.png?1296589824') !important;
+  background-image: url('/images/moz_nav/dropdown-brown-hover.gif?1296595903') !important;
 }
 /* line 32, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended ul li:hover {
@@ -1051,7 +1051,7 @@ body {
   -webkit-box-shadow: #ffe9ad 0 -2px 3px 0 !important;
   -o-box-shadow: #ffe9ad 0 -2px 3px 0 !important;
   box-shadow: #ffe9ad 0 -2px 3px 0 !important;
-  background: #fde7ad url('/images/moz_nav/nav-yellow-wrap.jpg?1295052575') repeat-x top !important;
+  background: #fde7ad url('/images/moz_nav/nav-yellow-wrap.gif?1296594092') repeat-x top !important;
   border-top: 1px solid white !important;
   border-bottom: 1px solid white !important;
 }
@@ -1189,14 +1189,14 @@ body {
   text-indent: -119988px !important;
   overflow: hidden !important;
   text-align: left !important;
-  background-image: url('/images/moz_nav/magnifier.png?1296589784') !important;
+  background-image: url('/images/moz_nav/magnifier.png?1296593251') !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
   width: 23px !important;
 }
 /* line 14, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation {
-  background: #e4e4e4 url(/images/moz_nav/gray-grad.jpg) repeat-x top !important;
+  background: #e4e4e4 url(/images/moz_nav/gray-grad.gif) repeat-x top !important;
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
   -o-border-radius: 5px !important;
@@ -1216,15 +1216,15 @@ body {
 }
 /* line 22, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.dashboard > a {
-  background-image: url('/images/moz_nav/dashboard.png?1296504871') !important;
+  background-image: url('/images/moz_nav/dashboard.png?1296593251') !important;
 }
 /* line 23, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.campaigns > a {
-  background-image: url('/images/moz_nav/campaigns.png?1296504849') !important;
+  background-image: url('/images/moz_nav/campaigns.png?1296593251') !important;
 }
 /* line 24, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.research > a {
-  background-image: url('/images/moz_nav/research.png?1296504856') !important;
+  background-image: url('/images/moz_nav/research.png?1296593251') !important;
 }
 /* line 25, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.pro-qa > a {
@@ -1232,11 +1232,11 @@ body {
 }
 /* line 26, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.community > a {
-  background-image: url('/images/moz_nav/community.png?1296504840') !important;
+  background-image: url('/images/moz_nav/community.png?1296593251') !important;
 }
 /* line 27, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.learn-seo > a {
-  background-image: url('/images/moz_nav/learn-seo.png?1296504865') !important;
+  background-image: url('/images/moz_nav/learn-seo.png?1296593251') !important;
 }
 /* line 29, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li:first-child {
@@ -1278,7 +1278,7 @@ body {
 }
 /* line 53, ../../sass/_advanced.scss */
 #moz-nav-header.advanced h3.user-welcome {
-  background: #e4e4e4 url(/images/moz_nav/gray-grad.jpg) repeat-x top !important;
+  background: #e4e4e4 url(/images/moz_nav/gray-grad.gif) repeat-x top !important;
   color: #606060 !important;
   font-size: 170% !important;
   font-weight: bold !important;
@@ -1296,7 +1296,7 @@ body {
 #moz-nav-footer.advanced {
   width: 950px !important;
   margin: 0px auto !important;
-  background: #e4e4e4 url(/images/moz_nav/gray-grad.jpg) repeat-x top !important;
+  background: #e4e4e4 url(/images/moz_nav/gray-grad.gif) repeat-x top !important;
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
   -o-border-radius: 5px !important;
