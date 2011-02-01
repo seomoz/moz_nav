@@ -57,6 +57,8 @@ $mn-footer-blue: #4F96D2;
     form.search {
       input { border-color: $mn-dark-brown-lightened; }
       input[type=submit] { 
+        @include text-shadow(white);
+        
         background-color: $mn-basic-light-brown;
         color: $mn-basic-dark-brown;
         font-weight: bold;
