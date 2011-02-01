@@ -654,7 +654,7 @@ body {
 /* line 100, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header {
   margin-top: 10px !important;
-  background: #378cd4 url(/images/moz_nav/blue_header_bg.gif) repeat-x top !important;
+  background: #378cd4 url('/images/moz_nav/blue_header_bg.gif?1296594029') repeat-x top !important;
   border: 1px solid #378cd4 !important;
   border-bottom: none !important;
   color: white !important;
@@ -746,7 +746,7 @@ body {
   outline: 0 !important;
   overflow: hidden !important;
   *zoom: 1 !important;
-  background: #e4e4e4 url(/images/moz_nav/gray-grad.gif) repeat-x top !important;
+  background: #e4e4e4 url('/images/moz_nav/gray-grad.gif?1296596036') repeat-x top !important;
   border: 1px solid #bebebe !important;
   border-top: none !important;
   font-size: 110% !important;
@@ -1196,7 +1196,7 @@ body {
 }
 /* line 14, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation {
-  background: #e4e4e4 url(/images/moz_nav/gray-grad.gif) repeat-x top !important;
+  background: #e4e4e4 url('/images/moz_nav/gray-grad.gif?1296596036') repeat-x top !important;
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
   -o-border-radius: 5px !important;
@@ -1278,7 +1278,7 @@ body {
 }
 /* line 53, ../../sass/_advanced.scss */
 #moz-nav-header.advanced h3.user-welcome {
-  background: #e4e4e4 url(/images/moz_nav/gray-grad.gif) repeat-x top !important;
+  background: #e4e4e4 url('/images/moz_nav/gray-grad.gif?1296596036') repeat-x top !important;
   color: #606060 !important;
   font-size: 170% !important;
   font-weight: bold !important;
@@ -1296,7 +1296,7 @@ body {
 #moz-nav-footer.advanced {
   width: 950px !important;
   margin: 0px auto !important;
-  background: #e4e4e4 url(/images/moz_nav/gray-grad.gif) repeat-x top !important;
+  background: #e4e4e4 url('/images/moz_nav/gray-grad.gif?1296596036') repeat-x top !important;
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
   -o-border-radius: 5px !important;
@@ -1370,7 +1370,7 @@ body {
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;
-  background: transparent url(/images/moz_nav/rights.png) no-repeat center left !important;
+  background: transparent url('/images/moz_nav/rights.png?1295052575') no-repeat center left !important;
   border-right: 1px solid #cbcbcb !important;
   margin-left: 10px !important;
   padding: 15px 10px 15px 40px !important;

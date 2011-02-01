@@ -59,7 +59,7 @@ $mn-border-radius: 5px;
 }
 
 @mixin mn-gray-gradient {
-  background: $mn-gray url(/images/moz_nav/gray-grad.gif) repeat-x top;
+  background: $mn-gray image-url("gray-grad.gif") repeat-x top;
 }
 
 @mixin mn-gray-rounded-bar {

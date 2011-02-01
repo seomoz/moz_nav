@@ -100,7 +100,7 @@ body { background-color: $mn-body-bg; margin: 0; }
   .page-header {
     margin-top: $mn-nav-element-spacing;
     
-    background: $mn-blue url(/images/moz_nav/blue_header_bg.gif) repeat-x top;
+    background: $mn-blue image-url("blue_header_bg.gif") repeat-x top;
     border: 1px solid $mn-blue;
     border-bottom: none;
     color: white;
