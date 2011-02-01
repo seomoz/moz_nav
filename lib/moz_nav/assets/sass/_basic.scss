@@ -48,6 +48,8 @@ $mn-footer-blue: #4F96D2;
       
       > a {
         @include text-shadow(white);
+        @include unstyled-link;
+        
         color: $mn-basic-dark-brown;
         font-size: 120%;
         text-transform: uppercase;
