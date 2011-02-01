@@ -5,18 +5,5 @@
   </div>
   
   {{> advanced_header/nav_bar }}
-
-  <div class="page-specifics">
-    {{> shared/blue_header }}
-
-    {{# page_config }}
-      {{# has_sub_nav_items? }}
-        {{> advanced_header/sub_nav_bar }}
-      {{/ has_sub_nav_items? }}
-
-      {{^ has_sub_nav_items? }}
-        {{> advanced_header/user_welcome_bar }}
-      {{/ has_sub_nav_items? }}
-    {{/ page_config }}
-  </div>
+  {{> shared/page_specifics }}
 </div>
