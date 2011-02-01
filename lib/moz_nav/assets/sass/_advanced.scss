@@ -79,8 +79,8 @@
   
   ul.links {
     li {
-      padding-left: 5px;
-      margin: 15px 0 15px 5px;
+      padding-left: 7px;
+      margin: 15px 0 15px 7px;
       border-left: 1px solid $mn-gray;
       
       &:first-child { border-left: none; padding-left: 0; margin-left: 0; }
@@ -93,7 +93,7 @@
     border-top: 1px solid darken($mn-gray, 10%);
     border-left: 1px solid darken($mn-gray, 5%);
     background: lighten($mn-gray, 10%);
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 10px 24px;
     padding: 3px 5px;
     }
   
