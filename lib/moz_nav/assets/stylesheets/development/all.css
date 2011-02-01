@@ -1238,6 +1238,7 @@ body {
 }
 /* line 33, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li > a {
+  text-shadow: white 1px 1px 1px !important;
   background-position: left center !important;
   background-repeat: no-repeat !important;
   padding: 13px 0 13px 30px !important;
@@ -1245,7 +1246,7 @@ body {
   display: block !important;
   font-weight: bold !important;
 }
-/* line 45, ../../sass/_advanced.scss */
+/* line 47, ../../sass/_advanced.scss */
 #moz-nav-header.advanced h3.user-welcome {
   background: #e4e4e4 url(/images/moz_nav/gray-grad.jpg) repeat-x top !important;
   color: #606060 !important;
@@ -1254,14 +1255,14 @@ body {
   padding: 10px 0 10px 70px !important;
   position: relative !important;
 }
-/* line 54, ../../sass/_advanced.scss */
+/* line 56, ../../sass/_advanced.scss */
 #moz-nav-header.advanced h3.user-welcome img.user-thumb {
   bottom: 10px !important;
   left: 20px !important;
   position: absolute !important;
 }
 
-/* line 62, ../../sass/_advanced.scss */
+/* line 64, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1283,7 +1284,7 @@ body {
   font-size: 70% !important;
   margin-bottom: 10px !important;
 }
-/* line 71, ../../sass/_advanced.scss */
+/* line 73, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul {
   display: inline !important;
   float: left !important;
@@ -1303,25 +1304,25 @@ body {
   display: inline !important;
   float: left !important;
 }
-/* line 76, ../../sass/_advanced.scss */
+/* line 78, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul li a {
   display: block !important;
 }
-/* line 81, ../../sass/_advanced.scss */
+/* line 83, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li {
   padding: 15px 7px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 85, ../../sass/_advanced.scss */
+/* line 87, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:hover {
   background-color: #fefefe !important;
 }
-/* line 86, ../../sass/_advanced.scss */
+/* line 88, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:first-child {
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 90, ../../sass/_advanced.scss */
+/* line 92, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.social {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1335,7 +1336,7 @@ body {
   margin: 10px 0 10px 24px !important;
   padding: 3px 5px !important;
 }
-/* line 100, ../../sass/_advanced.scss */
+/* line 102, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;

@@ -31,6 +31,8 @@
       }
       
       > a {
+        @include text-shadow(white);
+        
         background-position: left center;
         background-repeat: no-repeat;
         padding: 13px 0 13px 30px;
