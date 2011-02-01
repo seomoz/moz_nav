@@ -1,7 +1,7 @@
 #moz-nav-header.advanced {
   @include mn-center-aligned;
   
-  .page-header { @include border-top-radius(5px); }
+  .page-header { @include border-top-radius($mn-border-radius); }
   form.search { 
     input[type=submit] {
       @include border-right-radius(5px);
@@ -29,6 +29,7 @@
         background: none;
         > a { border-left: none; }
       }
+      &:hover { background-color: lighten($mn-gray, 10%); }
       
       > a {
         @include text-shadow(white);
@@ -90,7 +91,7 @@
   }
   
   ul.social {
-    @include border-radius(5px);
+    @include border-radius($mn-border-radius);
     
     border-top: 1px solid darken($mn-gray, 10%);
     border-left: 1px solid darken($mn-gray, 5%);

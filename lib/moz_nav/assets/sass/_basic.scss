@@ -13,7 +13,7 @@ $mn-footer-blue: #4F96D2;
     margin-top: 0;
     
     div.user-links > ul {
-      @include border-top-radius(6px);
+      @include border-top-radius($mn-border-radius);
       @include box-shadow(darken($mn-basic-mid-brown, 10%), 0, -2px, 3px, inset);
       
       background-color: $mn-basic-mid-brown;
@@ -120,7 +120,7 @@ $mn-footer-blue: #4F96D2;
       > ul { 
         @include no-bullet;
         > li { 
-          @include border-radius(6px);
+          @include border-radius($mn-border-radius);
           padding: 5px 10px;
           &:hover { background-color: lighten($mn-footer-blue, 10%); }
           a { color: lighten($mn-footer-blue, 32%); display: block; }

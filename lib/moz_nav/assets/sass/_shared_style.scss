@@ -148,7 +148,7 @@ body { background-color: $mn-body-bg; margin: 0; }
     
     li {
       a {
-        @include border-radius(5px);
+        @include border-radius($mn-border-radius);
         border-bottom: 1px solid transparent;
         border-right: 1px solid transparent;
         margin: 7px 0;
