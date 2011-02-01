@@ -54,8 +54,10 @@ body { background-color: $mn-body-bg; margin: 0; }
           }
         }
         > li.extended {
-          background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right;
+          background: transparent image-url("dropdown-arrow.png") no-repeat center right;
           padding-right: 14px;
+          
+          &:hover { background-image: image-url("dropdown-arrow-hover.png") }
         }
       }
     }
