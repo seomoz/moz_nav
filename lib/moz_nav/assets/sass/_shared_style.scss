@@ -35,9 +35,13 @@ body { background-color: $mn-body-bg; margin: 0; }
         @include pie-clearfix;
         
         > li {
-          padding: 5px 0;
-          margin: 0 10px;
-          > ul { top: 21px; @include min-width(110px); }
+          margin: 5px 10px;
+          > ul {
+            @include min-width(110px);
+
+            top: 16px;
+            left: -10px;
+          }
         }        
         > li.extended {
           background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right;

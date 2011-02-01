@@ -457,7 +457,7 @@ body {
   padding: 1px !important;
   position: absolute !important;
   background: white !important;
-  left: 0 !important;
+  left: 2px !important;
   z-index: 9999 !important;
 }
 /* line 11, /Users/jeff/.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
@@ -499,27 +499,27 @@ body {
 }
 /* line 37, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li {
-  padding: 5px 0 !important;
-  margin: 0 10px !important;
+  margin: 5px 10px !important;
 }
-/* line 40, ../../sass/_shared_style.scss */
+/* line 39, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul {
-  top: 21px !important;
   min-width: 110px !important;
   width: auto !important;
   width: 110px !important;
+  top: 16px !important;
+  left: -10px !important;
 }
-/* line 42, ../../sass/_shared_style.scss */
+/* line 46, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended {
   background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right !important;
   padding-right: 14px !important;
 }
-/* line 52, ../../sass/_shared_style.scss */
+/* line 56, ../../sass/_shared_style.scss */
 #moz-nav-header .page-specifics {
   width: 950px !important;
   margin: 0px auto !important;
 }
-/* line 57, ../../sass/_shared_style.scss */
+/* line 61, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation {
   *zoom: 1 !important;
   width: 950px !important;
@@ -534,7 +534,7 @@ body {
   overflow: hidden !important;
   visibility: hidden !important;
 }
-/* line 61, ../../sass/_shared_style.scss */
+/* line 65, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation > ul {
   display: inline !important;
   float: left !important;
@@ -584,7 +584,7 @@ body {
   padding: 1px !important;
   position: absolute !important;
   background: white !important;
-  left: 0 !important;
+  left: 2px !important;
   z-index: 9999 !important;
 }
 /* line 11, /Users/jeff/.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
@@ -615,27 +615,27 @@ body {
 #moz-nav-header .navigation > ul > li:hover > ul {
   display: block !important;
 }
-/* line 66, ../../sass/_shared_style.scss */
+/* line 70, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation form.search {
   display: inline !important;
   float: right !important;
 }
-/* line 68, ../../sass/_shared_style.scss */
+/* line 72, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation form.search legend {
   display: none !important;
 }
-/* line 70, ../../sass/_shared_style.scss */
+/* line 74, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation form.search input[type=submit] {
   height: 20px !important;
 }
-/* line 73, ../../sass/_shared_style.scss */
+/* line 77, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation form.search input[type=text] {
   background: white !important;
   border-right: none !important;
   padding: 3px !important;
   width: 150px !important;
 }
-/* line 84, ../../sass/_shared_style.scss */
+/* line 88, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header {
   margin-top: 10px !important;
   background: #378cd4 url(/images/moz_nav/blue_header_bg.png) repeat-x top !important;
@@ -644,15 +644,15 @@ body {
   color: white !important;
   padding: 20px 20px 30px 20px !important;
 }
-/* line 93, ../../sass/_shared_style.scss */
+/* line 97, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header h1 {
   font-weight: bold !important;
 }
-/* line 94, ../../sass/_shared_style.scss */
+/* line 98, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header h1, #moz-nav-header .page-header p {
   text-shadow: #1d5788 1px 1px 1px !important;
 }
-/* line 96, ../../sass/_shared_style.scss */
+/* line 100, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header ul {
   -moz-box-shadow: #bbbbbb 0 2px 5px 0 !important;
   -webkit-box-shadow: #bbbbbb 0 2px 5px 0 !important;
@@ -665,7 +665,7 @@ body {
   padding: 1px !important;
   position: absolute !important;
   background: white !important;
-  left: 0 !important;
+  left: 2px !important;
   z-index: 9999 !important;
   display: none !important;
 }
@@ -693,7 +693,7 @@ body {
 #moz-nav-header .page-header ul > li:hover a {
   color: #1d5788 !important;
 }
-/* line 100, ../../sass/_shared_style.scss */
+/* line 104, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header ul li.campaign-manager {
   background-image: url('/images/moz_nav/campain-manager.png?1295052575') !important;
   background-position: 7px center !important;
@@ -701,26 +701,26 @@ body {
   border-top: 1px dotted #C4C4C4 !important;
   padding-left: 22px !important;
 }
-/* line 109, ../../sass/_shared_style.scss */
+/* line 113, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header h1 {
   font-size: 200% !important;
   margin-bottom: 0.5em !important;
   display: inline-block !important;
 }
-/* line 114, ../../sass/_shared_style.scss */
+/* line 118, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header .campaign {
   position: relative !important;
 }
-/* line 115, ../../sass/_shared_style.scss */
+/* line 119, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header .campaign h1 {
   background: transparent url('/images/moz_nav/arrow-blue-down.png?1295052575') no-repeat center right !important;
   padding-right: 17px !important;
 }
-/* line 121, ../../sass/_shared_style.scss */
+/* line 125, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header .campaign:hover ul {
   display: block !important;
 }
-/* line 126, ../../sass/_shared_style.scss */
+/* line 130, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -753,7 +753,7 @@ body {
 #moz-nav-header ul.subnav li:last-child, #moz-nav-header ul.subnav li.last {
   padding-right: 0 !important;
 }
-/* line 136, ../../sass/_shared_style.scss */
+/* line 140, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav li a {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -769,21 +769,21 @@ body {
   color: #606060 !important;
   text-decoration: none !important;
 }
-/* line 146, ../../sass/_shared_style.scss */
+/* line 150, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav li a:hover {
   background: #d7d7d7 !important;
   border-bottom: 1px solid white !important;
   border-right: 1px solid white !important;
 }
-/* line 151, ../../sass/_shared_style.scss */
+/* line 155, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav li a:first-child a {
   padding-left: 0 !important;
 }
-/* line 154, ../../sass/_shared_style.scss */
+/* line 158, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav li.active {
   font-weight: bold !important;
 }
-/* line 159, ../../sass/_shared_style.scss */
+/* line 163, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -816,29 +816,29 @@ body {
 #moz-nav-header ul.sub-subnav li:last-child, #moz-nav-header ul.sub-subnav li.last {
   padding-right: 0 !important;
 }
-/* line 167, ../../sass/_shared_style.scss */
+/* line 171, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav li {
   margin: 15px 0 15px 8px !important;
   padding-left: 8px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 172, ../../sass/_shared_style.scss */
+/* line 176, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav li:first-child {
   padding-left: none !important;
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 173, ../../sass/_shared_style.scss */
+/* line 177, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav li a {
   color: #378cd4 !important;
 }
-/* line 174, ../../sass/_shared_style.scss */
+/* line 178, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav li.active a {
   background: #dfedf8 !important;
   padding: 3px !important;
 }
 
-/* line 180, ../../sass/_shared_style.scss */
+/* line 184, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social {
   margin: 0 !important;
   padding: 0 !important;
@@ -866,22 +866,22 @@ body {
 #moz-nav-footer ul.social li:last-child, #moz-nav-footer ul.social li.last {
   padding-right: 0 !important;
 }
-/* line 183, ../../sass/_shared_style.scss */
+/* line 187, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li {
   margin: 0 !important;
   padding: 0 0 0 3px !important;
 }
-/* line 187, ../../sass/_shared_style.scss */
+/* line 191, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li:first-child {
   padding-left: 0 !important;
 }
-/* line 189, ../../sass/_shared_style.scss */
+/* line 193, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a {
   display: block !important;
   width: 14px !important;
   height: 15px !important;
 }
-/* line 190, ../../sass/_shared_style.scss */
+/* line 194, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.rss {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -890,7 +890,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 191, ../../sass/_shared_style.scss */
+/* line 195, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.facebook {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -899,7 +899,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 192, ../../sass/_shared_style.scss */
+/* line 196, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.twitter {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -908,7 +908,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 193, ../../sass/_shared_style.scss */
+/* line 197, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.linkedin {
   text-indent: -119988px !important;
   overflow: hidden !important;
