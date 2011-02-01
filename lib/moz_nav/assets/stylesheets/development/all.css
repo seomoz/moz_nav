@@ -1060,58 +1060,72 @@ body {
   min-height: 180px !important;
   height: auto !important;
   height: 180px !important;
-  border-left: 1px solid #8bbce6 !important;
+  border-left: 1px solid #61a4dd !important;
   color: #1d5788 !important;
-  margin-left: 20px !important;
-  padding-left: 20px !important;
+  margin-left: 15px !important;
+  padding-left: 15px !important;
 }
 /* line 103, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try {
   border-left: 0 !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
-  width: 200px !important;
+  width: 210px !important;
 }
 /* line 109, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try h2 {
   font-size: 120% !important;
 }
 /* line 110, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div.try h2, #moz-nav-footer.basic .container > div.try h3 {
+  margin-left: 0 !important;
+}
+/* line 111, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try a.free-trial {
   margin-bottom: 1em !important;
   display: block !important;
 }
-/* line 111, ../../sass/_basic.scss */
+/* line 112, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting {
   margin-bottom: 1em !important;
 }
-/* line 113, ../../sass/_basic.scss */
+/* line 114, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting a {
   color: #1d5788 !important;
   text-decoration: underline !important;
 }
-/* line 117, ../../sass/_basic.scss */
+/* line 118, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul {
   list-style-image: none !important;
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 119, ../../sass/_basic.scss */
+/* line 120, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li {
-  padding: 5px 0 !important;
+  -moz-border-radius: 6px !important;
+  -webkit-border-radius: 6px !important;
+  -o-border-radius: 6px !important;
+  -ms-border-radius: 6px !important;
+  -khtml-border-radius: 6px !important;
+  border-radius: 6px !important;
+  padding: 5px 10px !important;
 }
-/* line 121, ../../sass/_basic.scss */
+/* line 123, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > ul > li:hover {
+  background-color: #78aedc !important;
+}
+/* line 124, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li a {
   color: #d1e4f3 !important;
   display: block !important;
 }
-/* line 124, ../../sass/_basic.scss */
+/* line 127, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   text-shadow: #1d5788 1px 1px 1px !important;
   font-weight: bold !important;
-  margin-bottom: 1em !important;
+  margin: 0 0 1em 10px !important;
 }
-/* line 129, ../../sass/_basic.scss */
+/* line 132, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div a, #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   color: white !important;
 }
@@ -1157,7 +1171,7 @@ body {
   text-indent: -119988px !important;
   overflow: hidden !important;
   text-align: left !important;
-  background-image: url('/images/moz_nav/magnifier.png') !important;
+  background-image: url('/images/moz_nav/magnifier.png?1296589784') !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
   width: 23px !important;
