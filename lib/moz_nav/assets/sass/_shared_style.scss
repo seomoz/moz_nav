@@ -110,6 +110,8 @@ body { background-color: $mn-body-bg; margin: 0; }
     ul { 
       @include mn-hover-menu;
       display: none;
+      left: auto;
+      right: -180px;
       
       li.campaign-manager {
         background-image: image-url("campain-manager.png");
@@ -123,9 +125,10 @@ body { background-color: $mn-body-bg; margin: 0; }
     h1 {
       font-size: 200%;
       margin-bottom: 0.5em;
-      display: inline-block;      
     }
     .campaign {
+      display: inline-block;
+      
       h1 {
         background: transparent image-url("arrow-blue-down.png") no-repeat center right;
         padding-right: 17px;
