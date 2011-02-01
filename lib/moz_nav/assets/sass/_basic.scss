@@ -20,9 +20,13 @@ $mn-footer-blue: #4F96D2;
       border: 1px solid $mn-dark-brown-lightened;
       border-bottom: none;
       
-      a { color: $mn-basic-dark-brown };
+      a { 
+        color: $mn-basic-dark-brown;
+        &:hover { color: darken($mn-basic-dark-brown, 20%); }
+      };
       > li.extended {
         background-image: image-url("dropdown-yellow.png");
+        ul li:hover { background-color: $mn-basic-light-brown;}
       }
     }
   }
@@ -33,7 +37,14 @@ $mn-footer-blue: #4F96D2;
       padding: 10px 20px;
       
       &.active, &:hover { background-color: #FBEBBD; }
-      > ul { top: 34px; }
+      > ul {    
+        top: 34px;
+        a {
+          color: $mn-basic-dark-brown;
+          &:hover { color: darken($mn-basic-dark-brown, 20%); }
+        }
+        li:hover { background-color: $mn-basic-light-brown;}
+      }
       
       > a {
         @include text-shadow(white);

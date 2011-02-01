@@ -954,39 +954,59 @@ body {
 #moz-nav-header.basic .oversight div.user-links > ul a {
   color: #96611a !important;
 }
-/* line 24, ../../sass/_basic.scss */
+/* line 25, ../../sass/_basic.scss */
+#moz-nav-header.basic .oversight div.user-links > ul a:hover {
+  color: #3f290b !important;
+}
+/* line 27, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended {
   background-image: url('/images/moz_nav/dropdown-yellow.png?1296513477') !important;
 }
-/* line 31, ../../sass/_basic.scss */
+/* line 29, ../../sass/_basic.scss */
+#moz-nav-header.basic .oversight div.user-links > ul > li.extended ul li:hover {
+  background-color: #fff4d6 !important;
+}
+/* line 35, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li {
   background: transparent url('/images/moz_nav/separator-yellow.png?1295052575') no-repeat center left !important;
   padding: 10px 20px !important;
 }
-/* line 35, ../../sass/_basic.scss */
+/* line 39, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li.active, #moz-nav-header.basic .navigation > ul > li:hover {
   background-color: #FBEBBD !important;
 }
-/* line 36, ../../sass/_basic.scss */
+/* line 40, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li > ul {
   top: 34px !important;
 }
-/* line 38, ../../sass/_basic.scss */
+/* line 42, ../../sass/_basic.scss */
+#moz-nav-header.basic .navigation > ul > li > ul a {
+  color: #96611a !important;
+}
+/* line 44, ../../sass/_basic.scss */
+#moz-nav-header.basic .navigation > ul > li > ul a:hover {
+  color: #3f290b !important;
+}
+/* line 46, ../../sass/_basic.scss */
+#moz-nav-header.basic .navigation > ul > li > ul li:hover {
+  background-color: #fff4d6 !important;
+}
+/* line 49, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li > a {
   text-shadow: white 1px 1px 1px !important;
   color: #96611a !important;
   font-size: 120% !important;
   text-transform: uppercase !important;
 }
-/* line 46, ../../sass/_basic.scss */
+/* line 57, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation form.search {
   padding-top: 6px !important;
 }
-/* line 47, ../../sass/_basic.scss */
+/* line 58, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation form.search input {
   border-color: #ecc590 !important;
 }
-/* line 48, ../../sass/_basic.scss */
+/* line 59, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation form.search input[type=submit] {
   background-color: #fff4d6 !important;
   color: #96611a !important;
@@ -995,7 +1015,7 @@ body {
   height: 14px !important;
   padding: 3px 5px !important;
 }
-/* line 60, ../../sass/_basic.scss */
+/* line 71, ../../sass/_basic.scss */
 #moz-nav-header.basic .wrapper {
   -moz-box-shadow: #ffe9ad 0 -2px 3px 0 !important;
   -webkit-box-shadow: #ffe9ad 0 -2px 3px 0 !important;
@@ -1006,14 +1026,14 @@ body {
   border-bottom: 1px solid white !important;
 }
 
-/* line 69, ../../sass/_basic.scss */
+/* line 80, ../../sass/_basic.scss */
 #moz-nav-footer.basic {
   overflow: hidden !important;
   *zoom: 1 !important;
   background: #4f96d2 url('/images/moz_nav/footer-top.png?1295052575') repeat-x top !important;
   font-size: 11px !important;
 }
-/* line 75, ../../sass/_basic.scss */
+/* line 86, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1021,7 +1041,7 @@ body {
   *zoom: 1 !important;
   padding: 20px 0 !important;
 }
-/* line 81, ../../sass/_basic.scss */
+/* line 92, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div {
   display: inline !important;
   float: left !important;
@@ -1033,53 +1053,53 @@ body {
   margin-left: 20px !important;
   padding-left: 20px !important;
 }
-/* line 90, ../../sass/_basic.scss */
+/* line 101, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try {
   border-left: 0 !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
   width: 200px !important;
 }
-/* line 96, ../../sass/_basic.scss */
+/* line 107, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try h2 {
   font-size: 120% !important;
 }
-/* line 97, ../../sass/_basic.scss */
+/* line 108, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try a.free-trial {
   margin-bottom: 1em !important;
   display: block !important;
 }
-/* line 98, ../../sass/_basic.scss */
+/* line 109, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting {
   margin-bottom: 1em !important;
 }
-/* line 100, ../../sass/_basic.scss */
+/* line 111, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting a {
   color: #1d5788 !important;
   text-decoration: underline !important;
 }
-/* line 104, ../../sass/_basic.scss */
+/* line 115, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul {
   list-style-image: none !important;
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 106, ../../sass/_basic.scss */
+/* line 117, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li {
   padding: 5px 0 !important;
 }
-/* line 108, ../../sass/_basic.scss */
+/* line 119, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li a {
   color: #d1e4f3 !important;
   display: block !important;
 }
-/* line 111, ../../sass/_basic.scss */
+/* line 122, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   text-shadow: #1d5788 1px 1px 1px !important;
   font-weight: bold !important;
   margin-bottom: 1em !important;
 }
-/* line 116, ../../sass/_basic.scss */
+/* line 127, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div a, #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   color: white !important;
 }
