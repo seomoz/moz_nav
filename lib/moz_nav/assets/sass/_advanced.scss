@@ -40,9 +40,11 @@
         background-position: left center;
         background-repeat: no-repeat;
         padding: 13px 0 13px 30px;
-        color: $mn-dark-gray;
+        color: lighten($mn-dark-gray, 12%);
         display: block;
         font-weight: bold;
+        
+        &:hover { color: $mn-dark-gray }
       }
     }
 
