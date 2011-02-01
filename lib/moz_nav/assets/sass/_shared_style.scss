@@ -37,7 +37,7 @@ body { background-color: $mn-body-bg; margin: 0; }
         > li {
           margin: 5px 10px;
           > ul {
-            @include min-width(110px);
+            @include min-width(130px);
 
             top: 16px;
             left: -10px;

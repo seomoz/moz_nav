@@ -503,9 +503,9 @@ body {
 }
 /* line 39, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul {
-  min-width: 110px !important;
+  min-width: 130px !important;
   width: auto !important;
-  width: 110px !important;
+  width: 130px !important;
   top: 16px !important;
   left: -10px !important;
 }
