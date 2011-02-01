@@ -42,7 +42,11 @@ body { background-color: $mn-body-bg; margin: 0; }
             top: 16px;
             left: -10px;
           }
-        }        
+          &#my-account > ul { 
+            left: auto;
+            right: -10px;
+          }
+        }
         > li.extended {
           background: transparent url(/images/moz_nav/dropdown-arrow.png) no-repeat center right;
           padding-right: 14px;
