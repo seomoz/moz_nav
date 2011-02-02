@@ -67,6 +67,7 @@ body { background-color: $mn-body-bg; margin: 0; }
   /*Wrapper for all page-specific items*/
   .page-specifics {
     @include mn-center-aligned;
+    margin-top: $mn-nav-element-spacing;
   }
   
   /*Main nabigation section for top tabs and site search*/
@@ -98,8 +99,6 @@ body { background-color: $mn-body-bg; margin: 0; }
   
   /*Section with the page title (blue) and supporting objects*/
   .page-header {
-    margin-top: $mn-nav-element-spacing;
-    
     background: $mn-blue image-url("blue_header_bg.gif") repeat-x top;
     border: 1px solid $mn-blue;
     border-bottom: none;

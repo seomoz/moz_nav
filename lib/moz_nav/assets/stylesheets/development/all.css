@@ -534,8 +534,9 @@ body {
 #moz-nav-header .page-specifics {
   width: 950px !important;
   margin: 0px auto !important;
+  margin-top: 10px !important;
 }
-/* line 73, ../../sass/_shared_style.scss */
+/* line 74, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation {
   *zoom: 1 !important;
   width: 950px !important;
@@ -550,7 +551,7 @@ body {
   overflow: hidden !important;
   visibility: hidden !important;
 }
-/* line 77, ../../sass/_shared_style.scss */
+/* line 78, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation > ul {
   display: inline !important;
   float: left !important;
@@ -631,44 +632,43 @@ body {
 #moz-nav-header .navigation > ul > li:hover > ul {
   display: block !important;
 }
-/* line 82, ../../sass/_shared_style.scss */
+/* line 83, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation form.search {
   display: inline !important;
   float: right !important;
 }
-/* line 84, ../../sass/_shared_style.scss */
+/* line 85, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation form.search legend {
   display: none !important;
 }
-/* line 86, ../../sass/_shared_style.scss */
+/* line 87, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation form.search input[type=submit] {
   height: 20px !important;
 }
-/* line 89, ../../sass/_shared_style.scss */
+/* line 90, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation form.search input[type=text] {
   background: white !important;
   border-right: none !important;
   padding: 3px !important;
   width: 150px !important;
 }
-/* line 100, ../../sass/_shared_style.scss */
+/* line 101, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header {
-  margin-top: 10px !important;
   background: #378cd4 url('/images/moz_nav/blue_header_bg.gif?1296594029') repeat-x top !important;
   border: 1px solid #378cd4 !important;
   border-bottom: none !important;
   color: white !important;
   padding: 20px 20px 30px 20px !important;
 }
-/* line 109, ../../sass/_shared_style.scss */
+/* line 108, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header h1 {
   font-weight: bold !important;
 }
-/* line 110, ../../sass/_shared_style.scss */
+/* line 109, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header h1, #moz-nav-header .page-header p {
   text-shadow: #1d5788 1px 1px 1px !important;
 }
-/* line 112, ../../sass/_shared_style.scss */
+/* line 111, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header ul {
   -moz-box-shadow: #c1daef 0px 3px 2px 0 !important;
   -webkit-box-shadow: #c1daef 0px 3px 2px 0 !important;
@@ -711,7 +711,7 @@ body {
 #moz-nav-header .page-header ul > li:hover a {
   color: #1d5788 !important;
 }
-/* line 118, ../../sass/_shared_style.scss */
+/* line 117, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header ul li.campaign-manager {
   background-image: url('/images/moz_nav/campain-manager.png?1295052575') !important;
   background-position: 7px center !important;
@@ -719,26 +719,26 @@ body {
   border-top: 1px dotted #C4C4C4 !important;
   padding-left: 16px !important;
 }
-/* line 127, ../../sass/_shared_style.scss */
+/* line 126, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header h1 {
   font-size: 200% !important;
   margin-bottom: 0.5em !important;
 }
-/* line 131, ../../sass/_shared_style.scss */
+/* line 130, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header .campaign {
   display: inline-block !important;
   position: relative !important;
 }
-/* line 134, ../../sass/_shared_style.scss */
+/* line 133, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header .campaign h1 {
   background: transparent url('/images/moz_nav/arrow-blue-down.png?1296608229') no-repeat center right !important;
   padding-right: 17px !important;
 }
-/* line 140, ../../sass/_shared_style.scss */
+/* line 139, ../../sass/_shared_style.scss */
 #moz-nav-header .page-header .campaign:hover ul {
   display: block !important;
 }
-/* line 145, ../../sass/_shared_style.scss */
+/* line 144, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -771,7 +771,7 @@ body {
 #moz-nav-header ul.subnav li:last-child, #moz-nav-header ul.subnav li.last {
   padding-right: 0 !important;
 }
-/* line 155, ../../sass/_shared_style.scss */
+/* line 154, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav li a {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -787,21 +787,21 @@ body {
   color: #606060 !important;
   text-decoration: none !important;
 }
-/* line 165, ../../sass/_shared_style.scss */
+/* line 164, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav li a:hover {
   background: #d7d7d7 !important;
   border-bottom: 1px solid white !important;
   border-right: 1px solid white !important;
 }
-/* line 170, ../../sass/_shared_style.scss */
+/* line 169, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav li a:first-child a {
   padding-left: 0 !important;
 }
-/* line 173, ../../sass/_shared_style.scss */
+/* line 172, ../../sass/_shared_style.scss */
 #moz-nav-header ul.subnav li.active {
   font-weight: bold !important;
 }
-/* line 178, ../../sass/_shared_style.scss */
+/* line 177, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -834,29 +834,29 @@ body {
 #moz-nav-header ul.sub-subnav li:last-child, #moz-nav-header ul.sub-subnav li.last {
   padding-right: 0 !important;
 }
-/* line 186, ../../sass/_shared_style.scss */
+/* line 185, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav li {
   margin: 15px 0 15px 8px !important;
   padding-left: 8px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 191, ../../sass/_shared_style.scss */
+/* line 190, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav li:first-child {
   padding-left: none !important;
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 192, ../../sass/_shared_style.scss */
+/* line 191, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav li a {
   color: #378cd4 !important;
 }
-/* line 193, ../../sass/_shared_style.scss */
+/* line 192, ../../sass/_shared_style.scss */
 #moz-nav-header ul.sub-subnav li.active a {
   background: #dfedf8 !important;
   padding: 3px !important;
 }
 
-/* line 199, ../../sass/_shared_style.scss */
+/* line 198, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social {
   margin: 0 !important;
   padding: 0 !important;
@@ -884,22 +884,22 @@ body {
 #moz-nav-footer ul.social li:last-child, #moz-nav-footer ul.social li.last {
   padding-right: 0 !important;
 }
-/* line 202, ../../sass/_shared_style.scss */
+/* line 201, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li {
   margin: 0 !important;
   padding: 0 0 0 3px !important;
 }
-/* line 206, ../../sass/_shared_style.scss */
+/* line 205, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li:first-child {
   padding-left: 0 !important;
 }
-/* line 208, ../../sass/_shared_style.scss */
+/* line 207, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a {
   display: block !important;
   width: 14px !important;
   height: 15px !important;
 }
-/* line 209, ../../sass/_shared_style.scss */
+/* line 208, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.rss {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -908,7 +908,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 210, ../../sass/_shared_style.scss */
+/* line 209, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.facebook {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -917,7 +917,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 211, ../../sass/_shared_style.scss */
+/* line 210, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.twitter {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -926,7 +926,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 212, ../../sass/_shared_style.scss */
+/* line 211, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.linkedin {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -936,7 +936,7 @@ body {
   background-position: 50% 50% !important;
 }
 
-/* line 217, ../../sass/_shared_style.scss */
+/* line 216, ../../sass/_shared_style.scss */
 #moz-nav-body {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1073,12 +1073,8 @@ body {
   border-top: 1px solid white !important;
   border-bottom: 1px solid white !important;
 }
-/* line 90, ../../sass/_basic.scss */
-#moz-nav-header.basic .page-specifics {
-  margin-bottom: 10px !important;
-}
 
-/* line 93, ../../sass/_basic.scss */
+/* line 91, ../../sass/_basic.scss */
 #moz-nav-footer.basic {
   overflow: hidden !important;
   *zoom: 1 !important;
@@ -1086,7 +1082,7 @@ body {
   font-size: 11px !important;
   margin-top: 10px !important;
 }
-/* line 100, ../../sass/_basic.scss */
+/* line 98, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1094,7 +1090,7 @@ body {
   *zoom: 1 !important;
   padding: 20px 0 !important;
 }
-/* line 106, ../../sass/_basic.scss */
+/* line 104, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div {
   display: inline !important;
   float: left !important;
@@ -1106,42 +1102,42 @@ body {
   margin-left: 15px !important;
   padding-left: 15px !important;
 }
-/* line 115, ../../sass/_basic.scss */
+/* line 113, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try {
   border-left: 0 !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
   width: 210px !important;
 }
-/* line 121, ../../sass/_basic.scss */
+/* line 119, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try h2 {
   font-size: 120% !important;
 }
-/* line 122, ../../sass/_basic.scss */
+/* line 120, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try h2, #moz-nav-footer.basic .container > div.try h3 {
   margin-left: 0 !important;
 }
-/* line 123, ../../sass/_basic.scss */
+/* line 121, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try a.free-trial {
   margin-bottom: 1em !important;
   display: block !important;
 }
-/* line 124, ../../sass/_basic.scss */
+/* line 122, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting {
   margin-bottom: 1em !important;
 }
-/* line 126, ../../sass/_basic.scss */
+/* line 124, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting a {
   color: #1d5788 !important;
   text-decoration: underline !important;
 }
-/* line 130, ../../sass/_basic.scss */
+/* line 128, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul {
   list-style-image: none !important;
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 132, ../../sass/_basic.scss */
+/* line 130, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1152,23 +1148,23 @@ body {
   border-top: 1px solid #4f96d2 !important;
   padding: 5px 10px !important;
 }
-/* line 137, ../../sass/_basic.scss */
+/* line 135, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li:hover {
   background-color: #78aedc !important;
   border-top: 1px solid #307dbe !important;
 }
-/* line 141, ../../sass/_basic.scss */
+/* line 139, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li a {
   color: #d1e4f3 !important;
   display: block !important;
 }
-/* line 144, ../../sass/_basic.scss */
+/* line 142, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   text-shadow: #1d5788 1px 1px 1px !important;
   font-weight: bold !important;
   margin: 0 0 1em 10px !important;
 }
-/* line 149, ../../sass/_basic.scss */
+/* line 147, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div a, #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   color: white !important;
 }
