@@ -504,11 +504,11 @@ body {
 #moz-nav-header .oversight div.user-links > ul > li:first-child {
   margin-left: 0 !important;
 }
-/* line 45, ../../sass/_shared_style.scss */
+/* line 44, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li:hover > ul {
   display: none !important;
 }
-/* line 46, ../../sass/_shared_style.scss */
+/* line 45, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.focused > ul {
   display: block !important;
 }
@@ -528,7 +528,7 @@ body {
 /* line 58, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended {
   cursor: pointer !important;
-  background: transparent url('/images/moz_nav/dropdown-arrow.gif?1296595599') no-repeat 2px right !important;
+  background: url('/images/moz_nav/dropdown-arrow.gif?1296595599') no-repeat right 1px !important;
   padding-right: 15px !important;
 }
 /* line 67, ../../sass/_setup.scss */

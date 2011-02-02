@@ -41,9 +41,9 @@ body { background-color: $mn-body-bg; margin: 0; }
           padding: 0 0 5px 0;
           
           &:first-child { margin-left: 0; }
-          
           &:hover > ul { display: none; }
           &.focused > ul { display: block; }
+          
           > ul {
             @include min-width(130px);
 
@@ -57,8 +57,8 @@ body { background-color: $mn-body-bg; margin: 0; }
         }
         > li.extended {
           @include mn-click-to-expand;
-          
-          background: transparent image-url("dropdown-arrow.gif") no-repeat 2px right;
+
+          background: image-url("dropdown-arrow.gif") no-repeat right 1px;
           padding-right: 15px;
           
           &:hover { background-image: image-url("dropdown-arrow-hover.gif") }
