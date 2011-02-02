@@ -62,7 +62,7 @@ check the [Github README](https://github.com/jnicklas/capybara).
 
 Terminology reference image:
 
-![Terminology reference image](terminology.png "Terminology reference image")
+![Terminology reference image](https://github.com/seomoz/MozNav/raw/master/terminology.png "Terminology reference image")
 
 You may want to review [a commit](https://github.com/seomoz/cmoz/commit/25485a1d2935e817f9bcaba4d154299bcc26dc02)
 demonstrating these steps for turbo.
