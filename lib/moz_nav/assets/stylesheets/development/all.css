@@ -1401,13 +1401,15 @@ body {
   -ms-border-radius: 5px !important;
   -khtml-border-radius: 5px !important;
   border-radius: 5px !important;
+  display: inline !important;
+  float: right !important;
   border-top: 1px solid #cbcbcb !important;
   border-left: 1px solid #d7d7d7 !important;
   background: #fefefe !important;
-  margin: 10px 0 10px 20px !important;
   padding: 3px 5px !important;
+  margin: 10px !important;
 }
-/* line 99, ../../sass/_advanced.scss */
+/* line 100, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;
@@ -1417,8 +1419,23 @@ body {
   padding: 15px 10px 15px 40px !important;
 }
 
-/* line 109, ../../sass/_advanced.scss */
-#moz-nav-body.advanced {
+/* line 111, ../../sass/_advanced.scss */
+#moz-nav-body.advanced .page-header {
+  -moz-border-radius-topleft: 5px !important;
+  -webkit-border-top-left-radius: 5px !important;
+  -o-border-top-left-radius: 5px !important;
+  -ms-border-top-left-radius: 5px !important;
+  -khtml-border-top-left-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  -moz-border-radius-topright: 5px !important;
+  -webkit-border-top-right-radius: 5px !important;
+  -o-border-top-right-radius: 5px !important;
+  -ms-border-top-right-radius: 5px !important;
+  -khtml-border-top-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+/* line 112, ../../sass/_advanced.scss */
+#moz-nav-body.advanced .content {
   -moz-border-radius-bottomleft: 5px !important;
   -webkit-border-bottom-left-radius: 5px !important;
   -o-border-bottom-left-radius: 5px !important;
