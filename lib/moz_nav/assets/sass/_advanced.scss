@@ -17,7 +17,7 @@
     > ul > li {
       
       background: transparent image-url("separator.png") no-repeat center left;
-      padding: 0 10px;
+      padding: 0px;
       
       &.dashboard > a { background-image: image-url("dashboard.png"); }
       &.campaigns > a { background-image: image-url("campaigns.png"); }
@@ -26,20 +26,23 @@
       &.community > a { background-image: image-url("community.png"); }
       &.learn-seo > a { background-image: image-url("learn-seo.png"); }
       
-      &:first-child { 
+      &:first-child {         
         @include border-left-radius($mn-border-radius);
-        
         background: none;
-        > a { border-left: none; }
+        > a { 
+          @include border-left-radius($mn-border-radius);
+          border-left: none;
+        }
       }
-      &:hover { background-color: lighten($mn-gray, 10%); }
+      &:hover > a { background-color: lighten($mn-gray, 10%); }
       
       > a {
         @include text-shadow(white);
         
-        background-position: left center;
+        background-position: 10px center;
         background-repeat: no-repeat;
-        padding: 13px 0 13px 30px;
+        margin-left: 1px;
+        padding: 13px 13px 13px 38px;
         color: lighten($mn-dark-gray, 12%);
         display: block;
         font-weight: bold;

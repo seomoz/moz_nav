@@ -459,7 +459,7 @@ body {
   padding: 1px !important;
   position: absolute !important;
   background: white !important;
-  left: 2px !important;
+  left: 1px !important;
   z-index: 9999 !important;
 }
 /* line 11, /Users/jeff/.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
@@ -600,7 +600,7 @@ body {
   padding: 1px !important;
   position: absolute !important;
   background: white !important;
-  left: 2px !important;
+  left: 1px !important;
   z-index: 9999 !important;
 }
 /* line 11, /Users/jeff/.rvm/gems/ruby-1.9.2-p0@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
@@ -681,7 +681,7 @@ body {
   padding: 1px !important;
   position: absolute !important;
   background: white !important;
-  left: 2px !important;
+  left: 1px !important;
   z-index: 9999 !important;
   display: none !important;
   left: auto !important;
@@ -1211,8 +1211,8 @@ body {
 }
 /* line 17, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li {
-  background: transparent url('/images/moz_nav/separator.png?1295052575') no-repeat center left !important;
-  padding: 0 10px !important;
+  background: transparent url('/images/moz_nav/separator.png?1296668969') no-repeat center left !important;
+  padding: 0px !important;
 }
 /* line 22, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.dashboard > a {
@@ -1254,30 +1254,43 @@ body {
   border-bottom-left-radius: 5px !important;
   background: none !important;
 }
-/* line 33, ../../sass/_advanced.scss */
+/* line 32, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li:first-child > a {
+  -moz-border-radius-topleft: 5px !important;
+  -webkit-border-top-left-radius: 5px !important;
+  -o-border-top-left-radius: 5px !important;
+  -ms-border-top-left-radius: 5px !important;
+  -khtml-border-top-left-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  -moz-border-radius-bottomleft: 5px !important;
+  -webkit-border-bottom-left-radius: 5px !important;
+  -o-border-bottom-left-radius: 5px !important;
+  -ms-border-bottom-left-radius: 5px !important;
+  -khtml-border-bottom-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
   border-left: none !important;
 }
-/* line 35, ../../sass/_advanced.scss */
-#moz-nav-header.advanced .navigation > ul > li:hover {
+/* line 37, ../../sass/_advanced.scss */
+#moz-nav-header.advanced .navigation > ul > li:hover > a {
   background-color: #fefefe !important;
 }
-/* line 37, ../../sass/_advanced.scss */
+/* line 39, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li > a {
   text-shadow: white 1px 1px 1px !important;
-  background-position: left center !important;
+  background-position: 10px center !important;
   background-repeat: no-repeat !important;
-  padding: 13px 0 13px 30px !important;
+  margin-left: 1px !important;
+  padding: 13px 13px 13px 38px !important;
   color: #7f7f7f !important;
   display: block !important;
   font-weight: bold !important;
 }
-/* line 47, ../../sass/_advanced.scss */
+/* line 50, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li > a:hover {
   color: #606060 !important;
 }
 
-/* line 53, ../../sass/_advanced.scss */
+/* line 56, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1299,7 +1312,7 @@ body {
   font-size: 70% !important;
   margin-bottom: 10px !important;
 }
-/* line 62, ../../sass/_advanced.scss */
+/* line 65, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul {
   display: inline !important;
   float: left !important;
@@ -1319,25 +1332,25 @@ body {
   display: inline !important;
   float: left !important;
 }
-/* line 67, ../../sass/_advanced.scss */
+/* line 70, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul li a {
   display: block !important;
 }
-/* line 72, ../../sass/_advanced.scss */
+/* line 75, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li {
   padding: 15px 7px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 76, ../../sass/_advanced.scss */
+/* line 79, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:hover {
   background-color: #fefefe !important;
 }
-/* line 77, ../../sass/_advanced.scss */
+/* line 80, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:first-child {
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 81, ../../sass/_advanced.scss */
+/* line 84, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.social {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1351,7 +1364,7 @@ body {
   margin: 10px 0 10px 24px !important;
   padding: 3px 5px !important;
 }
-/* line 91, ../../sass/_advanced.scss */
+/* line 94, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;
