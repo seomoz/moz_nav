@@ -11,7 +11,7 @@
   </head>
   <body>
     <%=
-      render_nav_header do |h|
+      render_nav_wrapped(yield) do |h|
         if current_campaign
           h.page_title current_campaign.name
           h.page_subtitle current_campaign.domain_host
@@ -35,8 +35,7 @@
         end
       end
     %>
-    <%= yield %>
-    <%= render_nav_footer %>
+    
     <%= nav_footer_includes(:jquery => true) %>
   </body>
 </html>
