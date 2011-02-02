@@ -54,8 +54,8 @@ body { background-color: $mn-body-bg; margin: 0; }
           }
         }
         > li.extended {
-          background: transparent image-url("dropdown-arrow.gif") no-repeat center right;
-          padding-right: 14px;
+          background: transparent image-url("dropdown-arrow.gif") no-repeat 2px right;
+          padding-right: 15px;
           
           &:hover { background-image: image-url("dropdown-arrow-hover.gif") }
         }
