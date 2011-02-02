@@ -1128,24 +1128,26 @@ body {
   -ms-border-radius: 5px !important;
   -khtml-border-radius: 5px !important;
   border-radius: 5px !important;
+  border-top: 1px solid #4f96d2 !important;
   padding: 5px 10px !important;
 }
-/* line 132, ../../sass/_basic.scss */
+/* line 134, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li:hover {
   background-color: #78aedc !important;
+  border-top: 1px solid #307dbe !important;
 }
-/* line 133, ../../sass/_basic.scss */
+/* line 138, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li a {
   color: #d1e4f3 !important;
   display: block !important;
 }
-/* line 136, ../../sass/_basic.scss */
+/* line 141, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   text-shadow: #1d5788 1px 1px 1px !important;
   font-weight: bold !important;
   margin: 0 0 1em 10px !important;
 }
-/* line 141, ../../sass/_basic.scss */
+/* line 146, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div a, #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   color: white !important;
 }

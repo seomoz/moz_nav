@@ -128,8 +128,13 @@ $mn-footer-blue: #4F96D2;
         @include no-bullet;
         > li { 
           @include border-radius($mn-border-radius);
+          border-top: 1px solid $mn-footer-blue;
           padding: 5px 10px;
-          &:hover { background-color: lighten($mn-footer-blue, 10%); }
+          
+          &:hover { 
+            background-color: lighten($mn-footer-blue, 10%);
+            border-top: 1px solid darken($mn-footer-blue, 10%);
+          }
           a { color: lighten($mn-footer-blue, 32%); display: block; }
         }
       }
