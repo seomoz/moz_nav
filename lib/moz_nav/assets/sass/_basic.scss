@@ -34,9 +34,9 @@ $mn-footer-blue: #4F96D2;
   .navigation {
     > ul > li {
       background: transparent image-url("separator-yellow.png") no-repeat center left;
-      padding: 10px 20px;
+      padding: 0;
       
-      &.active, &:hover { background-color: #FBEBBD; }
+      &.active > a, &:hover > a { background-color: #FBEBBD; }
       > ul {    
         top: 34px;
         a {
@@ -52,6 +52,8 @@ $mn-footer-blue: #4F96D2;
         
         color: $mn-basic-dark-brown;
         font-size: 120%;
+        margin-left: 2px;
+        padding: 10px 20px;
         text-transform: uppercase;
       } 
     }
