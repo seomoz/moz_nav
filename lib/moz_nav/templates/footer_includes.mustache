@@ -3,26 +3,19 @@
 {{/ include_jquery? }}
 
 <script type="text/javascript"><!--//<![CDATA[
-  // TODO: unify these.
   $(function(){
-    $('.dropdown').click(function(){
-      $this = $(this);
-      $this.siblings().removeClass('show-menu');
-      if($this.hasClass('show-menu')){
-        $this.removeClass('show-menu');
-      }else{
-        $this.addClass('show-menu');
-      }
+    var menu_elements = $('#moz-nav-header .extended, #moz-nav-body .extended');
+    
+    $(menu_elements).click(function(){
+      $(menu_elements).removeClass('focused');
+      $(this).addClass('focused');
+      return false;
     });
-
-    $('.heading-dropdown').click(function(){
-      $this = $(this);
-      if($this.hasClass('show-menu')){
-        $this.removeClass('show-menu');
-      }else{
-        $this.addClass('show-menu');
-      }
+    
+    $('body').click(function() {
+      $(menu_elements).removeClass('focused');
     });
+      
   });
 //]]>--></script>
 

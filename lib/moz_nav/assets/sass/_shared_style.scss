@@ -42,6 +42,8 @@ body { background-color: $mn-body-bg; margin: 0; }
           
           &:first-child { margin-left: 0; }
           
+          &:hover > ul { display: none; }
+          &.focused > ul { display: block; }
           > ul {
             @include min-width(130px);
 
@@ -54,6 +56,8 @@ body { background-color: $mn-body-bg; margin: 0; }
           }
         }
         > li.extended {
+          @include mn-click-to-expand;
+          
           background: transparent image-url("dropdown-arrow.gif") no-repeat 2px right;
           padding-right: 15px;
           
@@ -144,6 +148,8 @@ body { background-color: $mn-body-bg; margin: 0; }
         margin-bottom: 0.5em;
       }
       .campaign {
+        @include mn-click-to-expand;
+        
         display: inline-block;
 
         h1 {
@@ -152,7 +158,6 @@ body { background-color: $mn-body-bg; margin: 0; }
         }
 
         position: relative;
-        &:hover ul { display: block; }
       }
     }    
   }

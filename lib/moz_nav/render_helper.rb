@@ -2,7 +2,9 @@ module MozNav
   module RenderHelper
     
     def render_nav_wrapped(content, &block)
-      render_nav_header(&block) + render_nav_body(content, &block) + render_nav_footer
+      render_nav_header(&block) + 
+      render_nav_body(content, &block) + 
+      render_nav_footer
     end
     
     def render_nav_header
