@@ -110,7 +110,7 @@ demonstrating these steps for turbo.
    For most applications, you only need to use the following
     * `nav_header_includes` should be called from the `<head>` of the
       page.
-    * `render_nav_wrapper(page_content_string)` wraps the correct global
+    * `render_nav_wrapped(page_content_string)` wraps the correct global
        header, page header and footer around your page body automatically.
        Usually, you can put pass this method `yield` call from your layout.
        content passed as a string 
@@ -118,7 +118,7 @@ demonstrating these steps for turbo.
       `</body>` tag.
 
    If you desire some finer control over what elements render when, you 
-   may use the following instead of `render_nav_wrapper` above.
+   may use the following instead of `render_nav_wrapped` above.
    
    * `render_nav_header` should be called where you want the global header
      to be.  It yields an object that allows you to configure the
@@ -131,6 +131,6 @@ demonstrating these steps for turbo.
    * `render_nav_footer` should be called where you want the footer
      to be.
      
-   To put things another way, `render_nav_wrapper` calls `render_nav_header`,
+   To put things another way, `render_nav_wrapped` calls `render_nav_header`,
    `render_nav_body` and `render_nav_footer` for you.
    
