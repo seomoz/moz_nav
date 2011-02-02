@@ -34,10 +34,6 @@ module MozNavSpecSelectors
     find("##{HEADER_ID} .subnav")
   end
   
-  def header_user_welcome_bar
-    find("##{HEADER_ID} .user-welcome")
-  end
-
   def header_sub_sub_nav_bar
     find("##{HEADER_ID} ul.sub-subnav")
   end

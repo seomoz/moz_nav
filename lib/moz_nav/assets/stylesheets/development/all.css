@@ -936,17 +936,12 @@ body {
   background-position: 50% 50% !important;
 }
 
-/* line 7, ../../sass/_basic.scss */
-#moz-nav-header.basic {
-  background-color: #fff4d6 !important;
-  border-bottom: 1px solid #F2E4C2 !important;
-}
-/* line 11, ../../sass/_basic.scss */
+/* line 8, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight {
   padding-top: 10px !important;
   margin-top: 0 !important;
 }
-/* line 15, ../../sass/_basic.scss */
+/* line 12, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul {
   -moz-border-radius-topleft: 5px !important;
   -webkit-border-top-left-radius: 5px !important;
@@ -968,52 +963,52 @@ body {
   border: 1px solid #ecc590 !important;
   border-bottom: none !important;
 }
-/* line 23, ../../sass/_basic.scss */
+/* line 20, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul a {
   color: #96611a !important;
 }
-/* line 25, ../../sass/_basic.scss */
+/* line 22, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul a:hover {
   color: #3f290b !important;
 }
-/* line 27, ../../sass/_basic.scss */
+/* line 24, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended {
   background-image: url('/images/moz_nav/dropdown-yellow.gif?1296595884') !important;
 }
-/* line 30, ../../sass/_basic.scss */
+/* line 27, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended:hover {
   background-image: url('/images/moz_nav/dropdown-brown-hover.gif?1296595903') !important;
 }
-/* line 32, ../../sass/_basic.scss */
+/* line 29, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended ul li:hover {
   background-color: #fff4d6 !important;
 }
-/* line 38, ../../sass/_basic.scss */
+/* line 35, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li {
   background: transparent url('/images/moz_nav/separator-yellow.png?1295052575') no-repeat center left !important;
   padding: 10px 20px !important;
 }
-/* line 42, ../../sass/_basic.scss */
+/* line 39, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li.active, #moz-nav-header.basic .navigation > ul > li:hover {
   background-color: #FBEBBD !important;
 }
-/* line 43, ../../sass/_basic.scss */
+/* line 40, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li > ul {
   top: 34px !important;
 }
-/* line 45, ../../sass/_basic.scss */
+/* line 42, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li > ul a {
   color: #96611a !important;
 }
-/* line 47, ../../sass/_basic.scss */
+/* line 44, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li > ul a:hover {
   color: #3f290b !important;
 }
-/* line 49, ../../sass/_basic.scss */
+/* line 46, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li > ul li:hover {
   background-color: #fff4d6 !important;
 }
-/* line 52, ../../sass/_basic.scss */
+/* line 49, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li > a {
   text-shadow: white 1px 1px 1px !important;
   color: inherit !important;
@@ -1027,15 +1022,15 @@ body {
 #moz-nav-header.basic .navigation > ul > li > a:active, #moz-nav-header.basic .navigation > ul > li > a:focus {
   outline: none !important;
 }
-/* line 62, ../../sass/_basic.scss */
+/* line 59, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation form.search {
   padding-top: 6px !important;
 }
-/* line 63, ../../sass/_basic.scss */
+/* line 60, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation form.search input {
   border-color: #ecc590 !important;
 }
-/* line 64, ../../sass/_basic.scss */
+/* line 61, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation form.search input[type=submit] {
   text-shadow: white 1px 1px 1px !important;
   background-color: #fff4d6 !important;
@@ -1045,8 +1040,13 @@ body {
   height: 14px !important;
   padding: 3px 5px !important;
 }
-/* line 78, ../../sass/_basic.scss */
+/* line 75, ../../sass/_basic.scss */
 #moz-nav-header.basic .wrapper {
+  background-color: #fff4d6 !important;
+  border-bottom: 1px solid #F2E4C2 !important;
+}
+/* line 79, ../../sass/_basic.scss */
+#moz-nav-header.basic .wrapper > .wrapper {
   -moz-box-shadow: #ffe9ad 0 -2px 3px 0 !important;
   -webkit-box-shadow: #ffe9ad 0 -2px 3px 0 !important;
   -o-box-shadow: #ffe9ad 0 -2px 3px 0 !important;
@@ -1056,14 +1056,14 @@ body {
   border-bottom: 1px solid white !important;
 }
 
-/* line 87, ../../sass/_basic.scss */
+/* line 89, ../../sass/_basic.scss */
 #moz-nav-footer.basic {
   overflow: hidden !important;
   *zoom: 1 !important;
   background: #4f96d2 url('/images/moz_nav/footer-top.png?1295052575') repeat-x top !important;
   font-size: 11px !important;
 }
-/* line 93, ../../sass/_basic.scss */
+/* line 95, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1071,7 +1071,7 @@ body {
   *zoom: 1 !important;
   padding: 20px 0 !important;
 }
-/* line 99, ../../sass/_basic.scss */
+/* line 101, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div {
   display: inline !important;
   float: left !important;
@@ -1083,42 +1083,42 @@ body {
   margin-left: 15px !important;
   padding-left: 15px !important;
 }
-/* line 108, ../../sass/_basic.scss */
+/* line 110, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try {
   border-left: 0 !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
   width: 210px !important;
 }
-/* line 114, ../../sass/_basic.scss */
+/* line 116, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try h2 {
   font-size: 120% !important;
 }
-/* line 115, ../../sass/_basic.scss */
+/* line 117, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try h2, #moz-nav-footer.basic .container > div.try h3 {
   margin-left: 0 !important;
 }
-/* line 116, ../../sass/_basic.scss */
+/* line 118, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try a.free-trial {
   margin-bottom: 1em !important;
   display: block !important;
 }
-/* line 117, ../../sass/_basic.scss */
+/* line 119, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting {
   margin-bottom: 1em !important;
 }
-/* line 119, ../../sass/_basic.scss */
+/* line 121, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting a {
   color: #1d5788 !important;
   text-decoration: underline !important;
 }
-/* line 123, ../../sass/_basic.scss */
+/* line 125, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul {
   list-style-image: none !important;
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 125, ../../sass/_basic.scss */
+/* line 127, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1128,22 +1128,22 @@ body {
   border-radius: 5px !important;
   padding: 5px 10px !important;
 }
-/* line 128, ../../sass/_basic.scss */
+/* line 130, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li:hover {
   background-color: #78aedc !important;
 }
-/* line 129, ../../sass/_basic.scss */
+/* line 131, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li a {
   color: #d1e4f3 !important;
   display: block !important;
 }
-/* line 132, ../../sass/_basic.scss */
+/* line 134, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   text-shadow: #1d5788 1px 1px 1px !important;
   font-weight: bold !important;
   margin: 0 0 1em 10px !important;
 }
-/* line 137, ../../sass/_basic.scss */
+/* line 139, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div a, #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   color: white !important;
 }
@@ -1276,23 +1276,8 @@ body {
 #moz-nav-header.advanced .navigation > ul > li > a:hover {
   color: #606060 !important;
 }
-/* line 53, ../../sass/_advanced.scss */
-#moz-nav-header.advanced h3.user-welcome {
-  background: #e4e4e4 url('/images/moz_nav/gray-grad.gif?1296596036') repeat-x top !important;
-  color: #606060 !important;
-  font-size: 170% !important;
-  font-weight: bold !important;
-  padding: 10px 0 10px 70px !important;
-  position: relative !important;
-}
-/* line 62, ../../sass/_advanced.scss */
-#moz-nav-header.advanced h3.user-welcome img.user-thumb {
-  bottom: 10px !important;
-  left: 20px !important;
-  position: absolute !important;
-}
 
-/* line 70, ../../sass/_advanced.scss */
+/* line 53, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1314,7 +1299,7 @@ body {
   font-size: 70% !important;
   margin-bottom: 10px !important;
 }
-/* line 79, ../../sass/_advanced.scss */
+/* line 62, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul {
   display: inline !important;
   float: left !important;
@@ -1334,25 +1319,25 @@ body {
   display: inline !important;
   float: left !important;
 }
-/* line 84, ../../sass/_advanced.scss */
+/* line 67, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul li a {
   display: block !important;
 }
-/* line 89, ../../sass/_advanced.scss */
+/* line 72, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li {
   padding: 15px 7px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 93, ../../sass/_advanced.scss */
+/* line 76, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:hover {
   background-color: #fefefe !important;
 }
-/* line 94, ../../sass/_advanced.scss */
+/* line 77, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:first-child {
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 98, ../../sass/_advanced.scss */
+/* line 81, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.social {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1366,7 +1351,7 @@ body {
   margin: 10px 0 10px 24px !important;
   padding: 3px 5px !important;
 }
-/* line 108, ../../sass/_advanced.scss */
+/* line 91, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;

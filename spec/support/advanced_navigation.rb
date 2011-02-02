@@ -77,10 +77,6 @@ shared_examples_for "the blue box header and sub nav" do |*options|
             end
           end
         end
-      else
-        it 'renders an appropriate greeting for the user' do
-          header_user_welcome_bar.text.should include("Aloha John Doe, lookin' good")
-        end
       end
     end
 

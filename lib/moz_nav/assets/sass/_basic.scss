@@ -5,9 +5,6 @@ $mn-dark-brown-lightened: lighten($mn-basic-dark-brown, 40%);
 $mn-footer-blue: #4F96D2;
 
 #moz-nav-header.basic {
-  background-color: $mn-basic-light-brown;
-  border-bottom: 1px solid #F2E4C2;
-
   .oversight {
     padding-top: 10px;
     margin-top: 0;
@@ -76,11 +73,16 @@ $mn-footer-blue: #4F96D2;
   }
 
   .wrapper {
-    @include box-shadow(darken($mn-basic-light-brown, 8%), 0, -2px, 3px);
+    background-color: $mn-basic-light-brown;
+    border-bottom: 1px solid #F2E4C2;
     
-    background: $mn-basic-mid-brown image-url("nav-yellow-wrap.gif") repeat-x top;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    > .wrapper {
+      @include box-shadow(darken($mn-basic-light-brown, 8%), 0, -2px, 3px);
+    
+      background: $mn-basic-mid-brown image-url("nav-yellow-wrap.gif") repeat-x top;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
   }
 }
 
