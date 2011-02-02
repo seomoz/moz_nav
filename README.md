@@ -58,7 +58,11 @@ For SASS (the CSS precompiler), check:
 For Capybara (the browser simulator used by the acceptance specs),
 check the [Github README](https://github.com/jnicklas/capybara).
 
-## Usage from an SEO Moz application
+## Usage from an SEOMoz application
+
+Terminology reference image:
+
+![Terminology reference image](terminology.png "Terminology reference image")
 
 You may want to review [a commit](https://github.com/seomoz/cmoz/commit/25485a1d2935e817f9bcaba4d154299bcc26dc02)
 demonstrating these steps for turbo.
@@ -73,12 +77,10 @@ demonstrating these steps for turbo.
 3. Configure MozNav.  In rails, you'll probably want to do this in
    `config/initializers/moz_nav.rb`.  Example code:
 
-   <pre>
-   MozNav.configure do |c|
-     c.seomoz_host = 'www.seomoz.org'
-     c.environment = 'development'
-   end
-   </pre>
+         MozNav.configure do |c|
+           c.seomoz_host = 'www.seomoz.org'
+           c.environment = 'development'
+         end
 
    (Note that both of these settings are optional as MozNav uses
    appropriate defaults for both, but this demonstrates configuration).
@@ -86,18 +88,16 @@ demonstrating these steps for turbo.
 4. Use the provided RSpec shared example group to test compliance with
    the MozNav gem.  Example:
 
-   <pre>
-   require 'spec_helper'
-   require 'moz_nav/rspec'
+         require 'spec_helper'
+         require 'moz_nav/rspec'
 
-   describe ApplicationController do
-     it_behaves_like "the MozNav rendering context" do
-       let(:render_context) do
-         described_class.new.tap { |c| c.instance_eval { @current_user = Factory.create(:pro_user) } }
-       end
-     end
-   end
-   </pre>
+         describe ApplicationController do
+           it_behaves_like "the MozNav rendering context" do
+             let(:render_context) do
+               described_class.new.tap { |c| c.instance_eval { @current_user = Factory.create(:pro_user) } }
+             end
+           end
+         end
 
    Basically, this tests that the rendering context has access to a
    `current_user` helper method, and that the user object returned by
@@ -107,13 +107,30 @@ demonstrating these steps for turbo.
    `include MozNav::RenderHelper` to the `ApplicationHelper` module;
    in sinatra you can just use `helpers MozNav::RenderHelper`.
 6. Call the appropriate rendering helpers from your application layout.
+   For most applications, you only need to use the following
     * `nav_header_includes` should be called from the `<head>` of the
       page.
-    * `render_nav_header` should be called where you want the header
-      to be.  It yields an object that allows you to configure the
-      header.
-    * `render_nav_footer` should be called where you want the footer
-      to be.
+    * `render_nav_wrapper(page_content_string)` wraps the correct global
+       header, page header and footer around your page body automatically.
+       Usually, you can put pass this method `yield` call from your layout.
+       content passed as a string 
     * `nav_footer_includes` should be called just before the closing
       `</body>` tag.
 
+   If you desire some finer control over what elements render when, you 
+   may use the following instead of `render_nav_wrapper` above.
+   
+   * `render_nav_header` should be called where you want the global header
+     to be.  It yields an object that allows you to configure the
+     header.
+   * `render_nav_body(page_content_string)` should be called where you
+     want the navigation to wrap your page content with the blue page
+     title section and optional subnav.  For pages not needing a blue
+     page title, such as home pages, you may omit using this method and
+     instead `yield` in your layout like normal.
+   * `render_nav_footer` should be called where you want the footer
+     to be.
+     
+   To put things another way, `render_nav_wrapper` calls `render_nav_header`,
+   `render_nav_body` and `render_nav_footer` for you.
+   
