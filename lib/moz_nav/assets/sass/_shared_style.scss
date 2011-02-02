@@ -213,3 +213,15 @@ body { background-color: $mn-body-bg; margin: 0; }
     }
   }
 }
+
+#moz-nav-body {
+  @include mn-center-aligned;
+  @include mn-container-shadow;
+  
+  margin: 0px auto;
+  width: $mn-nav-width - 2; /*Accounts for the border*/
+  
+  background-color: white;
+  border: 1px solid darken($mn-gray, 15%);
+  border-top: 0;
+}

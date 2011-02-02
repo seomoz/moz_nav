@@ -9,13 +9,17 @@ $mn-dropdow-highlight-blue: #B9E1FF;
 
 $mn-border-radius: 5px;
 
+@mixin mn-container-shadow {
+  @include box-shadow(darken($mn-body-bg, 5%), 0px, 3px, 2px);
+}
+
 @mixin mn-center-aligned {
   width: $mn-nav-width;
   margin: 0px auto;
 }
 
 @mixin mn-hover-menu {
-  @include box-shadow(#BBB, 0, 2px);
+  @include mn-container-shadow;
   @include min-width(180px);
   @include no-bullets;
   
@@ -65,6 +69,6 @@ $mn-border-radius: 5px;
 @mixin mn-gray-rounded-bar {
   @include mn-gray-gradient;
   @include border-radius($mn-border-radius);
-  @include box-shadow(#BBB, 0, 1px, 1px);
+  @include mn-container-shadow;
   border: 1px solid darken($mn-gray, 15%);
 }

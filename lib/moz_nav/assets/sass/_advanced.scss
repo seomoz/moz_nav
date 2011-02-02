@@ -60,6 +60,7 @@
   
   color: $mn-dark-gray;
   font-size: 70%;
+  margin-top: $mn-nav-element-spacing;
   margin-bottom: $mn-nav-element-spacing;
   
   ul {     
@@ -73,11 +74,15 @@
   
   ul.links {
     li {
-      padding: 15px 7px;
-      border-left: 1px solid $mn-gray;
+      padding: 15px 0;
+      
+      a {
+        border-left: 1px solid $mn-gray;
+        padding: 0 7px;
+      }
       
       &:hover { background-color: lighten($mn-gray, 10%); }
-      &:first-child { border-left: none; margin-left: 0; }
+      &:first-child a { border-left: none; margin-left: 0; }
     }
   }
   
@@ -87,7 +92,7 @@
     border-top: 1px solid darken($mn-gray, 10%);
     border-left: 1px solid darken($mn-gray, 5%);
     background: lighten($mn-gray, 10%);
-    margin: 10px 0 10px 24px;
+    margin: 10px 0 10px 20px;
     padding: 3px 5px;    
   }
   
@@ -99,4 +104,8 @@
     margin-left: 10px;
     padding: 15px 10px 15px 40px;
   }
+}
+
+#moz-nav-body.advanced {
+  @include border-bottom-radius($mn-border-radius);
 }

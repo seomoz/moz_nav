@@ -86,6 +86,8 @@ $mn-footer-blue: #4F96D2;
       border-bottom: 1px solid white;
     }
   }
+  
+  .page-specifics { margin-bottom: $mn-nav-element-spacing; }
 }
 
 #moz-nav-footer.basic {
@@ -93,6 +95,7 @@ $mn-footer-blue: #4F96D2;
   
   background: $mn-footer-blue image-url("footer-top.png") repeat-x top;
   font-size: 11px;
+  margin-top: $mn-nav-element-spacing;
   
   .container {
     @include mn-center-aligned;
