@@ -12,25 +12,15 @@ namespace :example_app do
   end
 end
 
-namespace :sass do
-  def sass(*options)
-    command = %w[
-      sass
-      --cache-location tmp/sass_cache
-      --require ./lib/moz_nav/extensions/sass.rb
-    ] + options
-
-    sh command.join(' ')
-  end
-
+namespace :compass do
   desc "Starts a process that watches changes to the sass files and compiles them to css."
   task :watch do
-    sass %w[ --watch lib/moz_nav/assets/sass:lib/moz_nav/assets/stylesheets/development ]
+    sh "compass watch"
   end
-
+  
   desc "Compile the SASS as minified CSS for production"
   task :compile_for_prod do
-    sass %w[ --update lib/moz_nav/assets/sass:lib/moz_nav/assets/stylesheets/production --style compressed ]
+    sh "compass compile --css-dir stylesheets/production/ --environment production --force --output-style compressed"
   end
 end
 
