@@ -31,7 +31,7 @@ Bundler::GemHelper.class_eval do
   def release_gem
     guard_clean
 
-    Rake::Task['sass:compile_for_prod'].invoke
+    Rake::Task['compass:compile_for_prod'].invoke
     sh "git add lib/moz_nav/assets/stylesheets/production/*"
     unless `git status` =~ /nothing to commit/
       sh "git commit -m 'Updated production stylesheet'"
