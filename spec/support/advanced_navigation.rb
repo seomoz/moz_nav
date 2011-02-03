@@ -2,10 +2,10 @@ shared_examples_for "advanced main nav bar" do
   describe 'the nav bar' do
     {
       'PRO Dashboard'  => "http://#{SEOMOZ_HOST}/users/pro",
-      'Campaigns'      => '#',
+      'Campaigns'      => "http://#{SEOMOZ_HOST}/campaigns",
       'Research Tools' => "http://#{SEOMOZ_HOST}/tools",
-      'Q&A'          => "#",
-      'Community'      => "http://#{SEOMOZ_HOST}/blog",
+      'Q&A'            => "http://#{SEOMOZ_HOST}/q",
+      'Community'      => "http://#{SEOMOZ_HOST}/community",
       'Learn SEO'      => "http://#{SEOMOZ_HOST}/learn-seo"
     }.each do |text, url|
       it "contains a '#{text}' link to #{url}" do
@@ -36,6 +36,7 @@ shared_examples_for "advanced main nav bar" do
         "Beginner's Guide"      => 'http://guides.seomoz.org/beginners-guide-to-search-engine-optimization',
         'Articles & Guides'     => "http://#{SEOMOZ_HOST}/learn-seo",
         'Videos'                => "http://#{SEOMOZ_HOST}/blog/category/37",
+        'Q&A'                   => "http://#{SEOMOZ_HOST}/q"
       }.each do |text, url|
         it "contains a '#{text}' link to #{url}" do
           header_sub_nav_for('learn-seo').should have_link(text, url)
