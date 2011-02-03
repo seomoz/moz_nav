@@ -49,7 +49,7 @@ end
 shared_examples_for "advanced navigation footer" do
   describe 'the footer' do
     {
-      'Campaign Manager'      => '#',
+      'Campaign Manager'      => "http://#{SEOMOZ_HOST}/campaigns",
       'Research Tools'        => "http://#{SEOMOZ_HOST}/tools",
       'SEOmoz API'            => "http://#{SEOMOZ_HOST}/api",
       'Contact Us'            => "http://#{SEOMOZ_HOST}/about/contact",
