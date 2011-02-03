@@ -24,6 +24,23 @@ namespace :compass do
   end
 end
 
+namespace :pack do
+
+  desc "Pack assets for use in www.seomoz.org"
+  task :assets_for_seomoz do
+    Rake::Task['compass:compile_for_prod'].invoke
+    FileUtils.rm_rf('assets_for_seomoz')
+
+    { 'stylesheets/production' => 'css', 'images' => 'images', 'javascripts' => 'js'}.each do |ours, theirs|
+        FileUtils.mkdir_p("assets_for_seomoz/#{theirs}")
+        FileUtils.cp_r("lib/moz_nav/assets/#{ours}", "assets_for_seomoz/#{theirs}/moz_nav")
+    end
+
+    sh "tar -cvf moznav_assets.#{MozNav::VERSION}.tar assets_for_seomoz/"
+    FileUtils.rm_rf('assets_for_seomoz')
+  end
+end
+
 task :default => :spec
 
 # Make sure we never push to rubygems.org
