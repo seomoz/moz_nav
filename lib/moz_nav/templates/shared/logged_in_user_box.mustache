@@ -1,46 +1,47 @@
-<div class="user-links">
+ <div class="user-links">
   <ul>
-    <li class="extended">
-      <a href="#">Help</a>
-      <ul>
-        <li>
-          <a href="#">Support</a>
-        </li>
-        <li>
-          <a href="#">Feedback</a>
-        </li>
-        <li>
-          <a href="#">Request a Feature</a>
-        </li>
-        <li>
-          <a href="#">Contact us</a>
-        </li>
-      </ul>
-    </li>
     <li class="extended" id="my-account">
       {{# user }}
       <a href="http://{{ seomoz_host }}/users/view/{{ id }}">My Account</a>
-      {{/ user }}
       <ul>
         <li>
-          <a href="#">View Profile</a>
+          <a href="http://{{ seomoz_host }}/users/profile/{{ id }}">View Profile</a>
         </li>
         <li>
-          <a href="#">Edit Profile</a>
+          <a href="http://{{ seomoz_host }}/users/profile/edit">Edit Profile</a>
         </li>
         <li>
-          <a href="#">Private Messages(3)</a>
+          <a href="http://{{ seomoz_host }}/users/settings">Edit Profile</a>
         </li>
         <li>
-          <a href="#">Top Users</a>
+          <a href="http://{{ seomoz_host }}/messages">Private Messages(TODO)</a>
         </li>
         <li>
-          <a href="#">Account Information</a>
+          <a href="http://{{ seomoz_host }}/users/my">Account Information</a>
         </li>
         <li>
-          <a href="#">Logout</a>
+          <a href="https://{{ seomoz_host }}/users/logout">Logout</a>
+        </li>
+      </ul>
+      {{/ user }}
+    </li>
+    <li class="extended">
+      <a href="http://{{ seomoz_host }}/about/contact">Help</a>
+      <ul>
+        <li>
+          <a href="#">Feedback (TODO)</a>
+        </li>
+        <li>
+          <a href="http://seomoz.zendesk.com/forums/293194-seomoz-PRO-feature-requests">Request a Feature</a>
+        </li>
+        <li>
+          <a href="http://{{ q_and_a_host }}/q/">Q &amp; A</a>
+        </li>
+        <li class="last">
+          <a href="http://{{ seomoz_host }}/about/contact">Contact us</a>
         </li>
       </ul>
     </li>
+    
   </ul>
 </div>
