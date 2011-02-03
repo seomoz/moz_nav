@@ -10,8 +10,8 @@ shared_examples_for "basic navigation" do
     {
       'Features'        => "http://#{SEOMOZ_HOST}/pro",
       'Pricing & Plans' => "http://#{SEOMOZ_HOST}/gopro",
-      'Community'       => "http://#{SEOMOZ_HOST}/blog",
-      'Learn SEO'       => "http://#{SEOMOZ_HOST}/learn-seo",
+      'Community'       => "http://#{SEOMOZ_HOST}/community",
+      'Resources'       => "http://#{SEOMOZ_HOST}/resources",
       'About'           => "http://#{SEOMOZ_HOST}/about"
     }.each do |text, url|
       it "contains a '#{text}' link to #{url}" do
