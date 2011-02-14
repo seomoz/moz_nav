@@ -1,3 +1,5 @@
+$mn-nav-bar-text-color: lighten($mn-dark-gray, 12%);
+
 #moz-nav-header.advanced {
   @include mn-center-aligned;
   
@@ -7,6 +9,9 @@
       @include border-right-radius(5px);
       @include replace-text("magnifier.png");
       width: 23px;
+    }
+    input[type=text] {
+      color: $mn-nav-bar-text-color;
     }
     padding: 9px 8px 0 0;
   }
@@ -46,7 +51,7 @@
         background-repeat: no-repeat;
         margin-left: 1px;
         padding: 13px 13px 13px 38px;
-        color: lighten($mn-dark-gray, 12%);
+        color: $mn-nav-bar-text-color;
         display: block;
         font-weight: bold;
         
