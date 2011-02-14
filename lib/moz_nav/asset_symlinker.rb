@@ -5,7 +5,7 @@ module MozNav
   class AssetSymlinker
     class PermissionsError < StandardError; end
 
-    EXCLUDE_ASSET_DIRS = %w[markup sass]
+    EXCLUDE_ASSET_DIRS = %w[sass]
 
     def initialize(host_app_asset_root)
       unless File.directory?(host_app_asset_root)
