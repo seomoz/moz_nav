@@ -34,7 +34,10 @@
           border-left: none;
         }
       }
-      &:hover > a { background-color: lighten($mn-gray, 10%); }
+      &:hover > a { 
+        background-color: lighten($mn-gray, 10%);
+        text-decoration: none;
+      }
       
       > a {
         @include text-shadow(white);
