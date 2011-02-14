@@ -717,7 +717,8 @@ body {
   z-index: 9999 !important;
   display: none !important;
   left: auto !important;
-  right: -180px !important;
+  right: -172px !important;
+  top: 22px !important;
 }
 /* line 11, /Users/myron/.rvm/gems/ruby-1.9.2-p136@moz_nav/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
 #moz-nav-body .page-specifics .page-header ul li {
@@ -743,7 +744,7 @@ body {
 #moz-nav-body .page-specifics .page-header ul > li:hover a {
   color: #1d5788 !important;
 }
-/* line 137, ../../sass/_shared_style.scss */
+/* line 138, ../../sass/_shared_style.scss */
 #moz-nav-body .page-specifics .page-header ul li.campaign-manager {
   background-image: url('/images/moz_nav/campaign-manager.png?1294964304') !important;
   background-position: 7px center !important;
@@ -751,17 +752,17 @@ body {
   border-top: 1px dotted #C4C4C4 !important;
   padding-left: 16px !important;
 }
-/* line 147, ../../sass/_shared_style.scss */
+/* line 148, ../../sass/_shared_style.scss */
 #moz-nav-body .page-specifics .page-header ul.campaigns a:hover {
   font-weight: bold !important;
   text-decoration: none !important;
 }
-/* line 153, ../../sass/_shared_style.scss */
+/* line 154, ../../sass/_shared_style.scss */
 #moz-nav-body .page-specifics .page-header h1 {
   font-size: 200% !important;
   margin-bottom: 0.5em !important;
 }
-/* line 157, ../../sass/_shared_style.scss */
+/* line 158, ../../sass/_shared_style.scss */
 #moz-nav-body .page-specifics .page-header .campaign {
   cursor: pointer !important;
   display: inline-block !important;
@@ -771,12 +772,12 @@ body {
 #moz-nav-body .page-specifics .page-header .campaign.focused ul {
   display: block !important;
 }
-/* line 162, ../../sass/_shared_style.scss */
+/* line 163, ../../sass/_shared_style.scss */
 #moz-nav-body .page-specifics .page-header .campaign h1 {
   background: transparent url('/images/moz_nav/arrow-blue-down.png?1297706287') no-repeat center right !important;
   padding-right: 17px !important;
 }
-/* line 173, ../../sass/_shared_style.scss */
+/* line 174, ../../sass/_shared_style.scss */
 #moz-nav-body ul.subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -809,7 +810,7 @@ body {
 #moz-nav-body ul.subnav li:last-child, #moz-nav-body ul.subnav li.last {
   padding-right: 0 !important;
 }
-/* line 183, ../../sass/_shared_style.scss */
+/* line 184, ../../sass/_shared_style.scss */
 #moz-nav-body ul.subnav li a {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -825,22 +826,22 @@ body {
   color: #606060 !important;
   text-decoration: none !important;
 }
-/* line 193, ../../sass/_shared_style.scss */
+/* line 194, ../../sass/_shared_style.scss */
 #moz-nav-body ul.subnav li a:hover {
   background: #d7d7d7 !important;
   border-bottom: 1px solid white !important;
   border-right: 1px solid white !important;
   text-decoration: none !important;
 }
-/* line 199, ../../sass/_shared_style.scss */
+/* line 200, ../../sass/_shared_style.scss */
 #moz-nav-body ul.subnav li a:first-child a {
   padding-left: 0 !important;
 }
-/* line 202, ../../sass/_shared_style.scss */
+/* line 203, ../../sass/_shared_style.scss */
 #moz-nav-body ul.subnav li.active {
   font-weight: bold !important;
 }
-/* line 207, ../../sass/_shared_style.scss */
+/* line 208, ../../sass/_shared_style.scss */
 #moz-nav-body ul.sub-subnav {
   margin: 0 !important;
   padding: 0 !important;
@@ -873,29 +874,29 @@ body {
 #moz-nav-body ul.sub-subnav li:last-child, #moz-nav-body ul.sub-subnav li.last {
   padding-right: 0 !important;
 }
-/* line 215, ../../sass/_shared_style.scss */
+/* line 216, ../../sass/_shared_style.scss */
 #moz-nav-body ul.sub-subnav li {
   margin: 15px 0 15px 8px !important;
   padding-left: 8px !important;
   border-left: 1px solid #e4e4e4 !important;
 }
-/* line 220, ../../sass/_shared_style.scss */
+/* line 221, ../../sass/_shared_style.scss */
 #moz-nav-body ul.sub-subnav li:first-child {
   padding-left: none !important;
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 221, ../../sass/_shared_style.scss */
+/* line 222, ../../sass/_shared_style.scss */
 #moz-nav-body ul.sub-subnav li a {
   color: #378cd4 !important;
 }
-/* line 222, ../../sass/_shared_style.scss */
+/* line 223, ../../sass/_shared_style.scss */
 #moz-nav-body ul.sub-subnav li.active a {
   background: #dfedf8 !important;
   padding: 3px !important;
 }
 
-/* line 230, ../../sass/_shared_style.scss */
+/* line 231, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social {
   margin: 0 !important;
   padding: 0 !important;
@@ -923,22 +924,22 @@ body {
 #moz-nav-footer ul.social li:last-child, #moz-nav-footer ul.social li.last {
   padding-right: 0 !important;
 }
-/* line 233, ../../sass/_shared_style.scss */
+/* line 234, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li {
   margin: 0 !important;
   padding: 0 0 0 3px !important;
 }
-/* line 237, ../../sass/_shared_style.scss */
+/* line 238, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li:first-child {
   padding-left: 0 !important;
 }
-/* line 239, ../../sass/_shared_style.scss */
+/* line 240, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a {
   display: block !important;
   width: 14px !important;
   height: 15px !important;
 }
-/* line 240, ../../sass/_shared_style.scss */
+/* line 241, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.rss {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -947,7 +948,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 241, ../../sass/_shared_style.scss */
+/* line 242, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.facebook {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -956,7 +957,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 242, ../../sass/_shared_style.scss */
+/* line 243, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.twitter {
   text-indent: -119988px !important;
   overflow: hidden !important;
@@ -965,7 +966,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
 }
-/* line 243, ../../sass/_shared_style.scss */
+/* line 244, ../../sass/_shared_style.scss */
 #moz-nav-footer ul.social li a.linkedin {
   text-indent: -119988px !important;
   overflow: hidden !important;

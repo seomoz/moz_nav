@@ -132,7 +132,8 @@ body { background-color: $mn-body-bg; margin: 0; }
         @include mn-hover-menu;
         display: none;
         left: auto;
-        right: -180px;
+        right: -172px;
+        top: 22px;
 
         li.campaign-manager {
           background-image: image-url("campaign-manager.png");
