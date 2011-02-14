@@ -1259,27 +1259,27 @@ body {
 }
 /* line 22, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.dashboard > a {
-  background-image: url('/images/moz_nav/dashboard.png?1297706287') !important;
+  background-image: url('/images/moz_nav/dashboard.png?1296845352') !important;
 }
 /* line 23, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.campaigns > a {
-  background-image: url('/images/moz_nav/campaigns.png?1297706287') !important;
+  background-image: url('/images/moz_nav/campaigns.png?1296845372') !important;
 }
 /* line 24, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.research > a {
-  background-image: url('/images/moz_nav/research.png?1297706287') !important;
+  background-image: url('/images/moz_nav/research.png?1296845388') !important;
 }
 /* line 25, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.pro-qa > a {
-  background-image: url('/images/moz_nav/pro-qa.png?1294963654') !important;
+  background-image: url('/images/moz_nav/pro-qa.png?1296845416') !important;
 }
 /* line 26, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.community > a {
-  background-image: url('/images/moz_nav/community.png?1297706287') !important;
+  background-image: url('/images/moz_nav/community.png?1296845436') !important;
 }
 /* line 27, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li.learn-seo > a {
-  background-image: url('/images/moz_nav/learn-seo.png?1297706287') !important;
+  background-image: url('/images/moz_nav/learn-seo.png?1296845454') !important;
 }
 /* line 29, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li:first-child {
@@ -1418,7 +1418,7 @@ body {
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;
-  background: transparent url('/images/moz_nav/rights.png?1294963654') no-repeat center left !important;
+  background: transparent url('/images/moz_nav/rights.png?1296846040') no-repeat center left !important;
   border-right: 1px solid #cbcbcb !important;
   margin-left: 10px !important;
   padding: 15px 10px 15px 40px !important;
