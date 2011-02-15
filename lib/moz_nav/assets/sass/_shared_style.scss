@@ -1,4 +1,4 @@
-body { background-color: $mn-body-bg; margin: 0; }
+body { margin: 0; }
 
 #moz-nav-footer, #moz-nav-header, #moz-nav-body .page-specifics {
   @include mn-cleanslate;
@@ -99,6 +99,7 @@ body { background-color: $mn-body-bg; margin: 0; }
 }
 
 #moz-nav-body {
+  padding: $mn-nav-element-spacing 0px;
   
   .content {
     @include mn-center-aligned;
@@ -115,7 +116,6 @@ body { background-color: $mn-body-bg; margin: 0; }
   /*Wrapper for all page-specific items*/
   .page-specifics {
     @include mn-center-aligned;
-    margin-top: $mn-nav-element-spacing;
     
     /*Section with the page title (blue) and supporting objects*/
     .page-header {

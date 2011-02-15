@@ -4,6 +4,10 @@ $mn-basic-light-brown: #FFF4D6;
 $mn-dark-brown-lightened: lighten($mn-basic-dark-brown, 40%);
 $mn-footer-blue: #3382CA;
 
+body.moz-nav-basic {
+  background-color: $mn-footer-blue;
+}
+
 #moz-nav-header.basic {
   .oversight {
     padding-top: 10px;
@@ -92,12 +96,15 @@ $mn-footer-blue: #3382CA;
   }
 }
 
+#moz-nav-body.basic {
+  background-color: $mn-body-bg;
+}
+
 #moz-nav-footer.basic {
   @include clearfix;
   
   background: $mn-footer-blue sprite($icons, footer-top) repeat-x;
   font-size: 11px;
-  margin-top: $mn-nav-element-spacing;
   
   .container {
     @include mn-center-aligned;
