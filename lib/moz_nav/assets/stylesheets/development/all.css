@@ -476,7 +476,7 @@ body {
 }
 /* line 38, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul > li.new {
-  background: transparent url('/images/moz_nav/new-icon.gif?1297706287') no-repeat 93% center !important;
+  background: transparent url('/images/moz_nav/new-icon.png?1297800697') no-repeat 93% center !important;
 }
 /* line 41, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul > li:hover {
@@ -532,7 +532,7 @@ body {
 /* line 58, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended {
   cursor: pointer !important;
-  background: url('/images/moz_nav/dropdown-arrow.gif?1297706287') no-repeat right 1px !important;
+  background: url('/images/moz_nav/dropdown-arrow.png?1297800696') no-repeat right 1px !important;
   padding-right: 15px !important;
 }
 /* line 67, ../../sass/_setup.scss */
@@ -541,7 +541,7 @@ body {
 }
 /* line 64, ../../sass/_shared_style.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended:hover {
-  background-image: url('/images/moz_nav/dropdown-arrow-hover.gif?1297706287') !important;
+  background-image: url('/images/moz_nav/dropdown-arrow-hover.png?1297800696') !important;
 }
 /* line 74, ../../sass/_shared_style.scss */
 #moz-nav-header .navigation {
@@ -629,7 +629,7 @@ body {
 }
 /* line 38, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul > li.new {
-  background: transparent url('/images/moz_nav/new-icon.gif?1297706287') no-repeat 93% center !important;
+  background: transparent url('/images/moz_nav/new-icon.png?1297800697') no-repeat 93% center !important;
 }
 /* line 41, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul > li:hover {
@@ -742,7 +742,7 @@ body {
 }
 /* line 38, ../../sass/_setup.scss */
 #moz-nav-body .page-specifics .page-header ul > li.new {
-  background: transparent url('/images/moz_nav/new-icon.gif?1297706287') no-repeat 93% center !important;
+  background: transparent url('/images/moz_nav/new-icon.png?1297800697') no-repeat 93% center !important;
 }
 /* line 41, ../../sass/_setup.scss */
 #moz-nav-body .page-specifics .page-header ul > li:hover {
@@ -793,7 +793,7 @@ body {
   outline: 0 !important;
   overflow: hidden !important;
   *zoom: 1 !important;
-  background: #e4e4e4 url('/images/moz_nav/gray-grad.gif?1297706287') repeat-x top !important;
+  background: #e4e4e4 url('/images/moz_nav/gray-grad.png?1297800696') repeat-x top !important;
   border: 1px solid #bebebe !important;
   border-top: none !important;
   font-size: 110% !important;
@@ -1033,11 +1033,11 @@ body {
 }
 /* line 24, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended {
-  background-image: url('/images/moz_nav/dropdown-yellow.gif?1297706287') !important;
+  background-image: url('/images/moz_nav/dropdown-yellow.png?1297800696') !important;
 }
 /* line 27, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended:hover {
-  background-image: url('/images/moz_nav/dropdown-brown-hover.gif?1297706287') !important;
+  background-image: url('/images/moz_nav/dropdown-brown-hover.png?1297800696') !important;
 }
 /* line 29, ../../sass/_basic.scss */
 #moz-nav-header.basic .oversight div.user-links > ul > li.extended ul li:hover {
@@ -1117,7 +1117,7 @@ body {
   -webkit-box-shadow: 0 -2px 3px #ffe9ad !important;
   -o-box-shadow: 0 -2px 3px #ffe9ad !important;
   box-shadow: 0 -2px 3px #ffe9ad !important;
-  background: #fde7ad url('/images/moz_nav/nav-yellow-wrap.gif?1297706287') repeat-x top !important;
+  background: #fde7ad url('/images/moz_nav/nav-yellow-wrap.png?1297800696') repeat-x top !important;
   border-top: 1px solid white !important;
   border-bottom: 1px solid white !important;
 }
@@ -1274,7 +1274,7 @@ body {
 }
 /* line 19, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation {
-  background: #e4e4e4 url('/images/moz_nav/gray-grad.gif?1297706287') repeat-x top !important;
+  background: #e4e4e4 url('/images/moz_nav/gray-grad.png?1297800696') repeat-x top !important;
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
   -o-border-radius: 5px !important;
@@ -1373,7 +1373,7 @@ body {
 #moz-nav-footer.advanced {
   width: 950px !important;
   margin: 0px auto !important;
-  background: #e4e4e4 url('/images/moz_nav/gray-grad.gif?1297706287') repeat-x top !important;
+  background: #e4e4e4 url('/images/moz_nav/gray-grad.png?1297800696') repeat-x top !important;
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
   -o-border-radius: 5px !important;

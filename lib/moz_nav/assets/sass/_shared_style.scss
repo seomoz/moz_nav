@@ -58,10 +58,10 @@ body { background-color: $mn-body-bg; margin: 0; }
         > li.extended {
           @include mn-click-to-expand;
 
-          background: image-url("dropdown-arrow.gif") no-repeat right 1px;
+          background: image-url("dropdown-arrow.png") no-repeat right 1px;
           padding-right: 15px;
           
-          &:hover { background-image: image-url("dropdown-arrow-hover.gif") }
+          &:hover { background-image: image-url("dropdown-arrow-hover.png") }
         }
       }
     }

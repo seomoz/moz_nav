@@ -36,7 +36,7 @@ $mn-border-radius: 5px;
   }
   > li {
     &.new {
-      background: transparent image-url("new-icon.gif") no-repeat 93% center;
+      background: transparent image-url("new-icon.png") no-repeat 93% center;
     }
     &:hover { 
       background-color: $mn-dropdow-highlight-blue;
@@ -68,7 +68,7 @@ $mn-border-radius: 5px;
 }
 
 @mixin mn-gray-gradient {
-  background: $mn-gray image-url("gray-grad.gif") repeat-x top;
+  background: $mn-gray image-url("gray-grad.png") repeat-x top;
 }
 
 @mixin mn-gray-rounded-bar {

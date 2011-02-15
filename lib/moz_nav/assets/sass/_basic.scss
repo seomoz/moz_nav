@@ -22,9 +22,9 @@ $mn-footer-blue: #4F96D2;
         &:hover { color: darken($mn-basic-dark-brown, 20%); }
       };
       > li.extended {
-        background-image: image-url("dropdown-yellow.gif");
+        background-image: image-url("dropdown-yellow.png");
         
-        &:hover { background-image: image-url("dropdown-brown-hover.gif") }
+        &:hover { background-image: image-url("dropdown-brown-hover.png") }
         
         ul li:hover { background-color: $mn-basic-light-brown;}
       }
@@ -84,7 +84,7 @@ $mn-footer-blue: #4F96D2;
     > .wrapper {
       @include single-box-shadow(darken($mn-basic-light-brown, 8%), 0, -2px, 3px);
     
-      background: $mn-basic-mid-brown image-url("nav-yellow-wrap.gif") repeat-x top;
+      background: $mn-basic-mid-brown image-url("nav-yellow-wrap.png") repeat-x top;
       border-top: 1px solid white;
       border-bottom: 1px solid white;
     }
