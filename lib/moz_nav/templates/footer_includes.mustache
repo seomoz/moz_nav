@@ -3,17 +3,25 @@
 {{/ include_jquery? }}
 
 <script type="text/javascript"><!--//<![CDATA[
-  $(function(){
+  $(function() {
     var menu_elements = $('#moz-nav-header .extended, #moz-nav-body .extended');
-    
-    $(menu_elements).click(function(){
+
+    $(menu_elements).click(function(e) {
+      var $target = $(e.target);
+      var $this = $(this);
+      var originally_focused = $this.hasClass('focused');
       $(menu_elements).removeClass('focused');
-      $(this).addClass('focused');
-      return false;
+
+      if (!originally_focused) {
+        $this.addClass('focused');
+      }
     });
     
-    $('body').click(function() {
-      $(menu_elements).removeClass('focused');
+    $('body').click(function(e) {
+      var $target = $(e.target);
+      if (menu_elements.has($target).length === 0) {
+        $(menu_elements).removeClass('focused');
+      }
     });
       
   });
