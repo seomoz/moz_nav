@@ -10,7 +10,7 @@ $mn-dropdow-highlight-blue: #B9E1FF;
 $mn-border-radius: 5px;
 
 @mixin mn-container-shadow {
-  @include box-shadow(darken($mn-body-bg, 5%), 0px, 3px, 2px);
+  @include single-box-shadow(darken($mn-body-bg, 5%), 0px, 3px, 2px);
 }
 
 @mixin mn-center-aligned {
