@@ -1,17 +1,24 @@
 require 'sass'
 
-Sass::Tree::PropNode.class_eval do
-  def _to_s_with_important(*args)
-    css = _to_s_without_important(*args)
+module MozNav
+  module Extensions
+    module SassToCss
+      def new(*args)
+        super.extend Extension
+      end
 
-    # force all properties to have !important to work with the cleanslate styles.
-    unless css =~ /!important;$/
-      css = css.gsub(/;$/, ' !important;')
+      module Extension
+        protected
+
+        def visit_prop(node)
+          super.tap do |css|
+            # force all properties to have !important to work with the cleanslate styles.
+            css.sub!(/(;?)$/, ' !important\1') unless css =~ /!important;?$/
+          end
+        end
+      end
     end
-
-    css
   end
-
-  alias _to_s_without_important _to_s
-  alias _to_s _to_s_with_important
 end
+
+Sass::Tree::Visitors::ToCss.extend MozNav::Extensions::SassToCss
