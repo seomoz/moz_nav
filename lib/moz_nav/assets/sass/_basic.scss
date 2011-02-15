@@ -22,9 +22,9 @@ $mn-footer-blue: #4F96D2;
         &:hover { color: darken($mn-basic-dark-brown, 20%); }
       };
       > li.extended {
-        background-image: image-url("dropdown-yellow.png");
+        background: sprite($icons, dropdown-yellow, 99%, 1px) no-repeat;
         
-        &:hover { background-image: image-url("dropdown-brown-hover.png") }
+        &:hover { background: sprite($icons, dropdown-brown-hover, 99%, 1px) no-repeat; }
         
         ul li:hover { background-color: $mn-basic-light-brown;}
       }
@@ -33,7 +33,7 @@ $mn-footer-blue: #4F96D2;
   
   .navigation {
     > ul > li {
-      background: transparent image-url("separator-yellow.png") no-repeat center left;
+      background: sprite($icons, separator-yellow, 0px, 4px) no-repeat;
       padding: 0;
       
       &.active > a, &:hover > a { background-color: #FBEBBD; }
@@ -84,7 +84,8 @@ $mn-footer-blue: #4F96D2;
     > .wrapper {
       @include single-box-shadow(darken($mn-basic-light-brown, 8%), 0, -2px, 3px);
     
-      background: $mn-basic-mid-brown image-url("nav-yellow-wrap.png") repeat-x top;
+      background-color: $mn-basic-mid-brown;
+      background: sprite($icons, nav-yellow-wrap) repeat-x;
       border-top: 1px solid white;
       border-bottom: 1px solid white;
     }
@@ -94,7 +95,8 @@ $mn-footer-blue: #4F96D2;
 #moz-nav-footer.basic {
   @include clearfix;
   
-  background: $mn-footer-blue image-url("footer-top.png") repeat-x top;
+  background: $mn-footer-blue sprite($icons, footer-top) repeat-x;
+  //background: $mn-footer-blue image-url("footer-top.png") repeat-x top;
   font-size: 11px;
   margin-top: $mn-nav-element-spacing;
   

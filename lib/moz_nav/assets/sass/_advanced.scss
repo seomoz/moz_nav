@@ -7,7 +7,7 @@ $mn-nav-bar-text-color: lighten($mn-dark-gray, 12%);
   form.search { 
     input[type=submit] {
       @include border-right-radius(5px);
-      @include replace-text("magnifier.png");
+      @include replace-text-with-sprite(magnifier, 6px, 4px);
       width: 23px;
     }
     input[type=text] {
@@ -15,21 +15,20 @@ $mn-nav-bar-text-color: lighten($mn-dark-gray, 12%);
     }
     padding: 8px 8px 0 0;
   }
-  
+
   .navigation {
     @include mn-gray-rounded-bar;
     
     > ul > li {
-      
-      background: transparent image-url("separator.png") no-repeat center left;
+      background: sprite($icons, separator, 0px, 5px) no-repeat;
       padding: 0px;
       
-      &.dashboard > a { background-image: image-url("dashboard.png"); }
-      &.campaigns > a { background-image: image-url("campaigns.png"); }
-      &.research > a { background-image: image-url("research.png"); }
-      &.pro-qa > a { background-image: image-url("pro-qa.png"); }
-      &.community > a { background-image: image-url("community.png"); }
-      &.learn-seo > a { background-image: image-url("learn-seo.png"); }
+      &.dashboard > a { @include advanced-nav-item(dashboard); }
+      &.campaigns > a { @include advanced-nav-item(campaigns); }
+      &.research > a { @include advanced-nav-item(research); }
+      &.pro-qa > a { @include advanced-nav-item(pro-qa); }
+      &.community > a { @include advanced-nav-item(community); }
+      &.learn-seo > a { @include advanced-nav-item(learn-seo); }
       
       &:first-child {         
         @include border-left-radius($mn-border-radius);
@@ -47,8 +46,6 @@ $mn-nav-bar-text-color: lighten($mn-dark-gray, 12%);
       > a {
         @include text-shadow(white);
         
-        background-position: 10px center;
-        background-repeat: no-repeat;
         margin-left: 1px;
         padding: 13px 13px 13px 38px;
         color: $mn-nav-bar-text-color;
@@ -108,7 +105,7 @@ $mn-nav-bar-text-color: lighten($mn-dark-gray, 12%);
   p.copyrights { 
     @include float-left;
     
-    background: transparent image-url("rights.png") no-repeat center left;
+    background: sprite($icons, rights, 0px, 10px) no-repeat;
     border-right: 1px solid darken($mn-gray, 10%);
     margin-left: 10px;
     padding: 15px 10px 15px 40px;

@@ -1,0 +1,20 @@
+$icons: sprite-map("icon/*.png", 
+  $position: 100%,
+  $spacing: 15px,
+  $repeat: no-repeat,
+  $gray-grad-repeat: repeat-x,
+  $z_blue_header_bg_repeat: repeat-x,
+  $nav-yellow-wrap-repeat: repeat-x,
+  $footer-top-repeat: repeat-x,
+  $footer-top-spacing: 250px
+);
+
+@mixin replace-text-with-sprite($icon-name, $x: 0px, $y: 0px) {
+  @include hide-text;
+  background: sprite($icons, $icon-name, $x, $y);
+}
+
+@mixin advanced-nav-item($icon-name) {
+  background: sprite($icons, $icon-name, 10px, 12px) no-repeat;
+}
+
