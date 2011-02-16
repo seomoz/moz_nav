@@ -116,6 +116,7 @@
   	-webkit-nbsp-mode: normal !important;
   	-webkit-rtl-ordering: logical !important;
   	-webkit-text-decorations-in-effect: none !important;
+    // Commented out so we can specify element colors without also setting this property.
 /*    -webkit-text-fill-color: rgb(0, 0, 0) !important;*/
   	-webkit-text-security: none !important;
   	-webkit-text-stroke-color: rgb(0, 0, 0) !important;

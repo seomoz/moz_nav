@@ -19,7 +19,9 @@
   	border-width:medium !important;
   	bottom:auto !important;
   	clear:none !important;
-  	clip:auto !important;
+    // This is commented out because it prevents the box-shadow from showing on webkit
+    // for the drop-down menus.
+    // clip:auto !important;
   	color:inherit !important;
   	counter-increment:none !important;
   	counter-reset:none !important;
