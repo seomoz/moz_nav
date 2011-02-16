@@ -16,6 +16,10 @@ class User
     @account_type == :pro
   end
 
+  def pm_unread_count
+    rand(10)
+  end
+
   def display_name
     "John Doe"
   end

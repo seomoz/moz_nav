@@ -20,6 +20,7 @@ shared_examples_for 'the MozNav rendering context' do
     it { should respond_to(:pro?) }
     its(:id) { should be_an(Integer) }
     its(:display_name) { should be_a(String) }
+    its(:pm_unread_count){ should be_a(Integer) }
   end
 end
 
