@@ -92,8 +92,12 @@ $mn-footer-blue: #4F96D2;
   }
 }
 
+$mn-basic-footer-height: 220px;
+@include sticky-footer($mn-basic-footer-height, "#moz-nav-body.basic", "#moz-nav-body.basic #moz-nav-body-footer", "#moz-nav-footer.basic");
+
 #moz-nav-footer.basic {
   @include clearfix;
+  height: $mn-basic-footer-height;
   
   background: $mn-footer-blue sprite($icons, footer-top) repeat-x;
   //background: $mn-footer-blue image-url("footer-top.png") repeat-x top;
