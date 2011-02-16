@@ -1143,7 +1143,7 @@ html, body {
   overflow: hidden !important;
   *zoom: 1 !important;
   height: 220px !important;
-  background: #4f96d2 url('/images/moz_nav/icon-f6ad3cd5b4.png') -27px -501px repeat-x !important;
+  background: #3382ca url('/images/moz_nav/icon-f6ad3cd5b4.png') -27px -501px repeat-x !important;
   font-size: 11px !important;
   margin-top: 10px !important;
 }
@@ -1162,8 +1162,8 @@ html, body {
   min-height: 180px !important;
   height: auto !important;
   height: 180px !important;
-  border-left: 1px solid #61a4dd !important;
-  color: #1d5788 !important;
+  border-left: 1px solid #428ccf !important;
+  color: #1e4e79 !important;
   margin-left: 15px !important;
   padding-left: 15px !important;
 }
@@ -1193,7 +1193,7 @@ html, body {
 }
 /* line 133, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting a {
-  color: #1d5788 !important;
+  color: #1e4e79 !important;
   text-decoration: underline !important;
 }
 /* line 137, ../../sass/_basic.scss */
@@ -1210,27 +1210,27 @@ html, body {
   -ms-border-radius: 5px !important;
   -khtml-border-radius: 5px !important;
   border-radius: 5px !important;
-  border-top: 1px solid #4f96d2 !important;
+  border-top: 1px solid #3382ca !important;
   padding: 5px 10px !important;
 }
 /* line 144, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li:hover {
-  background-color: #78aedc !important;
-  border-top: 1px solid #307dbe !important;
+  background-color: #5b9bd5 !important;
+  border-top: 1px solid #2968a1 !important;
 }
 /* line 148, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li a {
-  color: #d1e4f3 !important;
+  color: #b4d1ec !important;
   display: block !important;
 }
 /* line 151, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li.no-hover:hover {
-  background-color: #4f96d2 !important;
-  border-top: 1px solid #4f96d2 !important;
+  background-color: #3382ca !important;
+  border-top: 1px solid #3382ca !important;
 }
 /* line 157, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
-  text-shadow: #1d5788 1px 1px 1px !important;
+  text-shadow: #1e4e79 1px 1px 1px !important;
   font-weight: bold !important;
   margin: 0 0 1em 10px !important;
 }

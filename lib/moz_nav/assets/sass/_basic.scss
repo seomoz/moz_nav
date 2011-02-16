@@ -2,7 +2,7 @@ $mn-basic-dark-brown: #96611A;
 $mn-basic-mid-brown: #FDE7AD;
 $mn-basic-light-brown: #FFF4D6;
 $mn-dark-brown-lightened: lighten($mn-basic-dark-brown, 40%);
-$mn-footer-blue: #4F96D2;
+$mn-footer-blue: #3382CA;
 
 #moz-nav-header.basic {
   .oversight {
@@ -114,8 +114,8 @@ $mn-basic-footer-height: 220px;
       @include float-left;
       @include min-height(180px);
       
-      border-left: 1px solid lighten($mn-blue, 10%);
-      color: darken($mn-blue, 20%);
+      border-left: 1px solid lighten($mn-footer-blue, 4%);
+      color: darken($mn-footer-blue, 20%);
       margin-left: 15px;
       padding-left: 15px;
       
@@ -130,7 +130,7 @@ $mn-basic-footer-height: 220px;
         a.free-trial { margin-bottom: 1em; display: block; }
         p.consulting {
           margin-bottom: 1em;
-          a { color: darken($mn-blue, 20%); text-decoration: underline; }
+          a { color: darken($mn-footer-blue, 20%); text-decoration: underline; }
         }
       }
 
@@ -155,7 +155,7 @@ $mn-basic-footer-height: 220px;
         }
       }
       h2, h3 { 
-        @include single-text-shadow(darken($mn-blue, 20%));
+        @include single-text-shadow(darken($mn-footer-blue, 20%));
         font-weight: bold;
         margin: 0 0 1em 10px;
       }
