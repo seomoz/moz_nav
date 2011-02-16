@@ -15,6 +15,6 @@ $icons: sprite-map("icon/*.png",
 }
 
 @mixin advanced-nav-item($icon-name) {
-  background: sprite($icons, $icon-name, 10px, 12px) no-repeat;
+  background: sprite($icons, $icon-name, 15px, 11px) no-repeat;
 }
 
