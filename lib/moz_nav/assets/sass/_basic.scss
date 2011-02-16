@@ -47,7 +47,7 @@ $mn-footer-blue: #4F96D2;
       }
       
       > a {
-        @include text-shadow(white);
+        @include single-text-shadow(white);
         @include unstyled-link;
         
         color: $mn-basic-dark-brown;
@@ -64,7 +64,7 @@ $mn-footer-blue: #4F96D2;
         color: $mn-basic-dark-brown;
       }
       input[type=submit] { 
-        @include text-shadow(white);
+        @include single-text-shadow(white);
         
         background-color: $mn-basic-light-brown;
         color: $mn-basic-dark-brown;
@@ -155,7 +155,7 @@ $mn-basic-footer-height: 220px;
         }
       }
       h2, h3 { 
-        @include text-shadow(darken($mn-blue, 20%));
+        @include single-text-shadow(darken($mn-blue, 20%));
         font-weight: bold;
         margin: 0 0 1em 10px;
       }

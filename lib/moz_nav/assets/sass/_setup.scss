@@ -9,6 +9,9 @@ $mn-dropdow-highlight-blue: #B9E1FF;
 
 $mn-border-radius: 5px;
 
+$default-text-shadow-h-offset: 1px;
+$default-text-shadow-v-offset: 1px;
+
 @mixin mn-container-shadow {
   @include single-box-shadow(darken($mn-body-bg, 5%), 0px, 3px, 2px);
 }

@@ -44,7 +44,7 @@ $mn-nav-bar-text-color: lighten($mn-dark-gray, 12%);
       }
       
       > a {
-        @include text-shadow(white);
+        @include single-text-shadow(white);
         
         margin-left: 1px;
         padding: 13px 13px 13px 38px;

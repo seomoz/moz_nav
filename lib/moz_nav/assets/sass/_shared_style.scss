@@ -28,7 +28,7 @@ body { background-color: $mn-body-bg; margin: 0; }
       width: 50%;
       padding-top: 8px;
       
-      a { color: darken($mn-blue, 15%); @include text-shadow(white); }
+      a { color: darken($mn-blue, 15%); @include single-text-shadow(white); }
       > ul { 
         @include mn-two-level-hover-menu;
         @include float-right;
@@ -126,7 +126,7 @@ body { background-color: $mn-body-bg; margin: 0; }
       padding: 20px 20px 30px 20px;
 
       h1 { font-weight: bold; }
-      h1, p { @include text-shadow(darken($mn-blue, 20%)); }
+      h1, p { @include single-text-shadow(darken($mn-blue, 20%)); }
 
       ul { 
         @include mn-hover-menu;
