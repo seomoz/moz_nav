@@ -754,7 +754,7 @@ body {
 }
 /* line 138, ../../sass/_shared_style.scss */
 #moz-nav-body .page-specifics .page-header ul li.campaign-manager {
-  background: url('/images/moz_nav/icon-f6ad3cd5b4.png') -13px -15px !important;
+  background: url('/images/moz_nav/icon-f6ad3cd5b4.png') -13px -15px no-repeat !important;
   border-top: 1px dotted #C4C4C4 !important;
   padding-left: 16px !important;
 }

@@ -136,7 +136,7 @@ body { background-color: $mn-body-bg; margin: 0; }
         top: 22px;
 
         li.campaign-manager {
-          background: sprite($icons, campaign-manager, 7px, 7px);
+          background: sprite($icons, campaign-manager, 7px, 7px) no-repeat;
           border-top: 1px dotted #C4C4C4; 
           padding-left: 16px;
         }
