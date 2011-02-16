@@ -11,9 +11,11 @@ $mn-border-radius: 5px;
 
 $default-text-shadow-h-offset: 1px;
 $default-text-shadow-v-offset: 1px;
+$default-box-shadow-h-offset: 1px;
+$default-box-shadow-v-offset: 1px;
 
 @mixin mn-container-shadow {
-  @include single-box-shadow(darken($mn-body-bg, 5%), 0px, 3px, 2px);
+  @include single-box-shadow(rgba(black, 0.2), 0px, 3px, 2px);
 }
 
 @mixin mn-center-aligned {
