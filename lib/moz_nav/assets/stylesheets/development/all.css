@@ -1113,41 +1113,15 @@ body {
   border-bottom: 1px solid white !important;
 }
 
-/* line 10, /Users/myron/.rvm/gems/ruby-1.9.2-p136@moz_nav/gems/compass-0.11.beta.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-html, body {
-  height: 100% !important;
-}
-
-/* line 12, /Users/myron/.rvm/gems/ruby-1.9.2-p136@moz_nav/gems/compass-0.11.beta.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#moz-nav-body.basic {
-  clear: both !important;
-  min-height: 100% !important;
-  height: auto !important;
-  height: 100% !important;
-  margin-bottom: -220px !important;
-}
-/* line 18, /Users/myron/.rvm/gems/ruby-1.9.2-p136@moz_nav/gems/compass-0.11.beta.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#moz-nav-body.basic #moz-nav-body.basic #moz-nav-body-footer {
-  height: 220px !important;
-}
-
-/* line 20, /Users/myron/.rvm/gems/ruby-1.9.2-p136@moz_nav/gems/compass-0.11.beta.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#moz-nav-footer.basic {
-  clear: both !important;
-  position: relative !important;
-  height: 220px !important;
-}
-
-/* line 98, ../../sass/_basic.scss */
+/* line 95, ../../sass/_basic.scss */
 #moz-nav-footer.basic {
   overflow: hidden !important;
   *zoom: 1 !important;
-  height: 220px !important;
   background: #3382ca url('/images/moz_nav/icon-f6ad3cd5b4.png') -27px -501px repeat-x !important;
   font-size: 11px !important;
   margin-top: 10px !important;
 }
-/* line 106, ../../sass/_basic.scss */
+/* line 102, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container {
   width: 950px !important;
   margin: 0px auto !important;
@@ -1155,7 +1129,7 @@ html, body {
   *zoom: 1 !important;
   padding: 20px 0 !important;
 }
-/* line 112, ../../sass/_basic.scss */
+/* line 108, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div {
   display: inline !important;
   float: left !important;
@@ -1167,42 +1141,42 @@ html, body {
   margin-left: 15px !important;
   padding-left: 15px !important;
 }
-/* line 121, ../../sass/_basic.scss */
+/* line 117, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try {
   border-left: 0 !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
   width: 210px !important;
 }
-/* line 127, ../../sass/_basic.scss */
+/* line 123, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try h2 {
   font-size: 120% !important;
 }
-/* line 128, ../../sass/_basic.scss */
+/* line 124, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try h2, #moz-nav-footer.basic .container > div.try h3 {
   margin-left: 0 !important;
 }
-/* line 129, ../../sass/_basic.scss */
+/* line 125, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try a.free-trial {
   margin-bottom: 1em !important;
   display: block !important;
 }
-/* line 130, ../../sass/_basic.scss */
+/* line 126, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting {
   margin-bottom: 1em !important;
 }
-/* line 132, ../../sass/_basic.scss */
+/* line 128, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div.try p.consulting a {
   color: #1e4e79 !important;
   text-decoration: underline !important;
 }
-/* line 136, ../../sass/_basic.scss */
+/* line 132, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul {
   list-style-image: none !important;
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 138, ../../sass/_basic.scss */
+/* line 134, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1213,28 +1187,28 @@ html, body {
   border-top: 1px solid #3382ca !important;
   padding: 5px 10px !important;
 }
-/* line 143, ../../sass/_basic.scss */
+/* line 139, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li:hover {
   background-color: #5b9bd5 !important;
   border-top: 1px solid #2968a1 !important;
 }
-/* line 147, ../../sass/_basic.scss */
+/* line 143, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li a {
   color: #b4d1ec !important;
   display: block !important;
 }
-/* line 150, ../../sass/_basic.scss */
+/* line 146, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div > ul > li.no-hover:hover {
   background-color: #3382ca !important;
   border-top: 1px solid #3382ca !important;
 }
-/* line 156, ../../sass/_basic.scss */
+/* line 152, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   text-shadow: #1e4e79 1px 1px 1px !important;
   font-weight: bold !important;
   margin: 0 0 1em 10px !important;
 }
-/* line 161, ../../sass/_basic.scss */
+/* line 157, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div a, #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
   color: white !important;
 }
