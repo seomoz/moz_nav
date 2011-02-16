@@ -46,10 +46,6 @@ shared_examples_for "the blue box header and sub nav" do |*options|
         it 'renders the configured page title' do
           header_blue_box_page_title.text.should include("An Example Sinatra App")
         end
-
-        it 'renders the configured page subtitle' do
-          header_blue_box_page_subtitle.text.should include("This demonstrates how the MozNav gem works.")
-        end
       end
 
       describe 'the campaigns drop down' do
