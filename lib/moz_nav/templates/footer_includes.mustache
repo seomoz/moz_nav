@@ -23,6 +23,13 @@
         $(menu_elements).removeClass('focused');
       }
     });
+
+    $('#moz-nav-header .feedback').click(function(e) {
+      if (typeof Zenbox !== "undefined") {
+        Zenbox.show();
+        return false;
+      }
+    });
       
   });
 //]]>--></script>

@@ -28,8 +28,8 @@ shared_examples_for 'a cache buster' do
     page.all(:xpath, '//img/@src').should use_cache_buster
   end
 
-  it 'uses the cache buster for javascript files (except jquery)' do
-    page.all(:xpath, '//script/@src').reject { |s| s.text =~ /jquery/ }.should use_cache_buster
+  it 'uses the cache buster for javascript files (except jquery and zendesk)' do
+    page.all(:xpath, '//script/@src').reject { |s| s.text =~ /jquery|zendesk/ }.should use_cache_buster
   end
 
   it 'uses the cache buster for stylesheets' do
