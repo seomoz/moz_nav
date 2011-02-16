@@ -1386,6 +1386,7 @@ html, body {
 #moz-nav-footer.advanced {
   width: 950px !important;
   margin: 0px auto !important;
+  width: 948px !important;
   background: #e4e4e4 url('/images/moz_nav/icon-f6ad3cd5b4.png') -27px -754px !important;
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1405,7 +1406,7 @@ html, body {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
 }
-/* line 71, ../../sass/_advanced.scss */
+/* line 72, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul {
   display: inline !important;
   float: left !important;
@@ -1425,29 +1426,29 @@ html, body {
   display: inline !important;
   float: left !important;
 }
-/* line 76, ../../sass/_advanced.scss */
+/* line 77, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul li a {
   display: block !important;
 }
-/* line 81, ../../sass/_advanced.scss */
+/* line 82, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li {
   padding: 15px 0 !important;
 }
-/* line 84, ../../sass/_advanced.scss */
+/* line 85, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li a {
   border-left: 1px solid #e4e4e4 !important;
   padding: 0 7px !important;
 }
-/* line 89, ../../sass/_advanced.scss */
+/* line 90, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:hover {
   background-color: #fefefe !important;
 }
-/* line 90, ../../sass/_advanced.scss */
+/* line 91, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.links li:first-child a {
   border-left: none !important;
   margin-left: 0 !important;
 }
-/* line 94, ../../sass/_advanced.scss */
+/* line 95, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced ul.social {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
@@ -1463,17 +1464,17 @@ html, body {
   padding: 3px 5px !important;
   margin: 10px !important;
 }
-/* line 105, ../../sass/_advanced.scss */
+/* line 106, ../../sass/_advanced.scss */
 #moz-nav-footer.advanced p.copyrights {
   display: inline !important;
   float: left !important;
   background: url('/images/moz_nav/icon-f6ad3cd5b4.png') -8px -1057px no-repeat !important;
   border-right: 1px solid #cbcbcb !important;
   margin-left: 10px !important;
-  padding: 15px 10px 15px 40px !important;
+  padding: 15px 10px 15px 35px !important;
 }
 
-/* line 116, ../../sass/_advanced.scss */
+/* line 117, ../../sass/_advanced.scss */
 #moz-nav-body.advanced .page-header {
   -moz-border-radius-topleft: 5px !important;
   -webkit-border-top-left-radius: 5px !important;
@@ -1488,7 +1489,7 @@ html, body {
   -khtml-border-top-right-radius: 5px !important;
   border-top-right-radius: 5px !important;
 }
-/* line 117, ../../sass/_advanced.scss */
+/* line 118, ../../sass/_advanced.scss */
 #moz-nav-body.advanced .content {
   -moz-border-radius-bottomleft: 5px !important;
   -webkit-border-bottom-left-radius: 5px !important;

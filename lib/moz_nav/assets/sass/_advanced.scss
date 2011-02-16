@@ -60,6 +60,7 @@ $mn-nav-bar-text-color: lighten($mn-dark-gray, 12%);
 
 #moz-nav-footer.advanced {
   @include mn-center-aligned;
+  width: $mn-nav-width - 2;
   @include mn-gray-rounded-bar;
   @include clearfix;
   
@@ -108,7 +109,7 @@ $mn-nav-bar-text-color: lighten($mn-dark-gray, 12%);
     background: sprite($icons, rights, 0px, 10px) no-repeat;
     border-right: 1px solid darken($mn-gray, 10%);
     margin-left: 10px;
-    padding: 15px 10px 15px 40px;
+    padding: 15px 10px 15px 35px;
   }
 }
 
