@@ -14,8 +14,12 @@ $default-text-shadow-v-offset: 1px;
 $default-box-shadow-h-offset: 1px;
 $default-box-shadow-v-offset: 1px;
 
-@mixin mn-container-shadow {
+@mixin mn-drop-down-shadow {
   @include single-box-shadow(rgba(black, 0.2), 0px, 3px, 2px);
+}
+
+@mixin mn-container-shadow {
+  @include single-box-shadow(darken($mn-body-bg, 5%), 0px, 3px, 2px);
 }
 
 @mixin mn-center-aligned {
@@ -24,7 +28,7 @@ $default-box-shadow-v-offset: 1px;
 }
 
 @mixin mn-hover-menu {
-  @include mn-container-shadow;
+  @include mn-drop-down-shadow;
   @include min-width(180px);
   @include no-bullets;
   

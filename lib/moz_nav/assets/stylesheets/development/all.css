@@ -415,7 +415,7 @@ body {
   *zoom: 1 !important;
   padding: 0 10px !important;
 }
-/* line 57, ../../sass/_setup.scss */
+/* line 61, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -439,11 +439,11 @@ body {
 #moz-nav-header .oversight div.user-links > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 61, ../../sass/_setup.scss */
+/* line 65, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > a {
   display: block !important;
 }
-/* line 62, ../../sass/_setup.scss */
+/* line 66, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul {
   display: none !important;
   -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
@@ -466,25 +466,25 @@ body {
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 37, ../../sass/_setup.scss */
+/* line 41, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul a {
   color: #378cd4 !important;
   display: block !important;
   padding: 7px 8px !important;
 }
-/* line 43, ../../sass/_setup.scss */
+/* line 47, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul > li.new {
   background: transparent url('/images/moz_nav/icon-d1505d5e53.png') 95% -974px no-repeat !important;
 }
-/* line 46, ../../sass/_setup.scss */
+/* line 50, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul > li:hover {
   background-color: #b9e1ff !important;
 }
-/* line 48, ../../sass/_setup.scss */
+/* line 52, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li > ul > li:hover a {
   color: #1d5788 !important;
 }
-/* line 66, ../../sass/_setup.scss */
+/* line 70, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li:hover > ul {
   display: block !important;
 }
@@ -533,7 +533,7 @@ body {
   background: url('/images/moz_nav/icon-d1505d5e53.png') 99% -166px no-repeat !important;
   padding-right: 15px !important;
 }
-/* line 72, ../../sass/_setup.scss */
+/* line 76, ../../sass/_setup.scss */
 #moz-nav-header .oversight div.user-links > ul > li.extended.focused ul {
   display: block !important;
 }
@@ -568,7 +568,7 @@ body {
   *zoom: 1 !important;
   overflow: visible !important;
 }
-/* line 57, ../../sass/_setup.scss */
+/* line 61, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li {
   list-style-image: none !important;
   list-style-type: none !important;
@@ -592,11 +592,11 @@ body {
 #moz-nav-header .navigation > ul > li.last {
   padding-right: 0 !important;
 }
-/* line 61, ../../sass/_setup.scss */
+/* line 65, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > a {
   display: block !important;
 }
-/* line 62, ../../sass/_setup.scss */
+/* line 66, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul {
   display: none !important;
   -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
@@ -619,25 +619,25 @@ body {
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 37, ../../sass/_setup.scss */
+/* line 41, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul a {
   color: #378cd4 !important;
   display: block !important;
   padding: 7px 8px !important;
 }
-/* line 43, ../../sass/_setup.scss */
+/* line 47, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul > li.new {
   background: transparent url('/images/moz_nav/icon-d1505d5e53.png') 95% -974px no-repeat !important;
 }
-/* line 46, ../../sass/_setup.scss */
+/* line 50, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul > li:hover {
   background-color: #b9e1ff !important;
 }
-/* line 48, ../../sass/_setup.scss */
+/* line 52, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li > ul > li:hover a {
   color: #1d5788 !important;
 }
-/* line 66, ../../sass/_setup.scss */
+/* line 70, ../../sass/_setup.scss */
 #moz-nav-header .navigation > ul > li:hover > ul {
   display: block !important;
 }
@@ -673,10 +673,10 @@ body {
 #moz-nav-body .content {
   width: 950px !important;
   margin: 0px auto !important;
-  -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
-  -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
-  -o-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
+  -moz-box-shadow: 0px 3px 2px #c1daef !important;
+  -webkit-box-shadow: 0px 3px 2px #c1daef !important;
+  -o-box-shadow: 0px 3px 2px #c1daef !important;
+  box-shadow: 0px 3px 2px #c1daef !important;
   margin: 0px auto !important;
   width: 948px !important;
   /*Accounts for the border*/
@@ -732,21 +732,21 @@ body {
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 37, ../../sass/_setup.scss */
+/* line 41, ../../sass/_setup.scss */
 #moz-nav-body .page-specifics .page-header ul a {
   color: #378cd4 !important;
   display: block !important;
   padding: 7px 8px !important;
 }
-/* line 43, ../../sass/_setup.scss */
+/* line 47, ../../sass/_setup.scss */
 #moz-nav-body .page-specifics .page-header ul > li.new {
   background: transparent url('/images/moz_nav/icon-d1505d5e53.png') 95% -974px no-repeat !important;
 }
-/* line 46, ../../sass/_setup.scss */
+/* line 50, ../../sass/_setup.scss */
 #moz-nav-body .page-specifics .page-header ul > li:hover {
   background-color: #b9e1ff !important;
 }
-/* line 48, ../../sass/_setup.scss */
+/* line 52, ../../sass/_setup.scss */
 #moz-nav-body .page-specifics .page-header ul > li:hover a {
   color: #1d5788 !important;
 }
@@ -772,7 +772,7 @@ body {
   display: inline-block !important;
   position: relative !important;
 }
-/* line 72, ../../sass/_setup.scss */
+/* line 76, ../../sass/_setup.scss */
 #moz-nav-body .page-specifics .page-header .campaign.focused ul {
   display: block !important;
 }
@@ -1282,10 +1282,10 @@ body.moz-nav-advanced {
   -ms-border-radius: 5px !important;
   -khtml-border-radius: 5px !important;
   border-radius: 5px !important;
-  -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
-  -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
-  -o-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
+  -moz-box-shadow: 0px 3px 2px #c1daef !important;
+  -webkit-box-shadow: 0px 3px 2px #c1daef !important;
+  -o-box-shadow: 0px 3px 2px #c1daef !important;
+  box-shadow: 0px 3px 2px #c1daef !important;
   border: 1px solid #bebebe !important;
 }
 /* line 26, ../../sass/_advanced.scss */
@@ -1380,10 +1380,10 @@ body.moz-nav-advanced {
   -ms-border-radius: 5px !important;
   -khtml-border-radius: 5px !important;
   border-radius: 5px !important;
-  -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
-  -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
-  -o-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2) !important;
+  -moz-box-shadow: 0px 3px 2px #c1daef !important;
+  -webkit-box-shadow: 0px 3px 2px #c1daef !important;
+  -o-box-shadow: 0px 3px 2px #c1daef !important;
+  box-shadow: 0px 3px 2px #c1daef !important;
   border: 1px solid #bebebe !important;
   overflow: hidden !important;
   *zoom: 1 !important;
