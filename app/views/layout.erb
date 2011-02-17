@@ -22,13 +22,19 @@
         end
 
         if current_campaign
+          h.sub_nav_item 'A really, really long sub-nav item', "/foo"
           h.sub_nav_item 'Campaign', "/campaigns/#{current_campaign.id}"
           h.sub_nav_item 'Rankings', "/campaigns/#{current_campaign.id}/rankings"
+          h.sub_nav_item 'Another really, really long sub-nav item', "/foo"
           h.sub_nav_item 'Issues',   "/campaigns/#{current_campaign.id}/issues", :active => true do |i|
+            i.sub_sub_nav_item 'A really, really long sub-sub-nav item', "/foo"
             i.sub_sub_nav_item 'Overview',  "/campaigns/#{current_campaign.id}/issues/overview"
             i.sub_sub_nav_item 'Summary',   "/campaigns/#{current_campaign.id}/issues/summary", :active => true
+            i.sub_sub_nav_item 'Another really, really long sub-sub-nav item', "/foo"
             i.sub_sub_nav_item 'Dashboard', "/campaigns/#{current_campaign.id}/issues/dashboard"
+            i.sub_sub_nav_item 'A final really, really long sub-sub-nav item', "/foo"
           end
+          h.sub_nav_item 'A final really, really long sub-nav item', "/foo"
         end
       end
     %>
@@ -41,4 +47,5 @@
   <script type='text/javascript' src='http://assets0.zendesk.com/external/zenbox/overlay.js'></script>
   </body>
 </html>
+
 
