@@ -86,7 +86,10 @@ body.moz-nav-basic {
     border-bottom: 1px solid #F2E4C2;
     
     > .wrapper {
-      @include single-box-shadow(darken($mn-basic-light-brown, 8%), 0, -2px, 3px);
+      // We must have a negative value for the horizontal offset that matches the blur
+      // to prevent Firefox from showing a horizontal scroll bar.  SO has more info:
+      // http://stackoverflow.com/questions/2344056/firefox-css3-using-overflow-hidden-and-box-shadow
+      @include single-box-shadow(darken($mn-basic-light-brown, 8%), -3px, -2px, 3px);
     
       background-color: $mn-basic-mid-brown;
       background: sprite($icons, nav-yellow-wrap) repeat-x;
