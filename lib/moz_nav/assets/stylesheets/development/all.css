@@ -1066,7 +1066,7 @@ body.moz-nav-basic {
 }
 /* line 54, ../../sass/_basic.scss */
 #moz-nav-header.basic .navigation > ul > li > a {
-  text-shadow: white 1px 1px 1px !important;
+  text-shadow: white 1px 1px 0 !important;
   color: inherit !important;
   text-decoration: inherit !important;
   cursor: inherit !important;
@@ -1364,7 +1364,7 @@ body.moz-nav-advanced {
 /* line 52, ../../sass/_advanced.scss */
 #moz-nav-header.advanced .navigation > ul > li > a {
   cursor: pointer !important;
-  text-shadow: white 1px 1px 1px !important;
+  text-shadow: white 1px 1px 0 !important;
   margin-left: 1px !important;
   padding: 14px 13px 12px 38px !important;
   color: #7f7f7f !important;

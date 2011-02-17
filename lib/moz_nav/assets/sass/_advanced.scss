@@ -51,7 +51,7 @@ body.moz-nav-advanced {
       
       > a {
         cursor: pointer;
-        @include single-text-shadow(white);
+        @include single-text-shadow(white, 1px, 1px, 0);
         
         margin-left: 1px;
         padding: 14px 13px 12px 38px;

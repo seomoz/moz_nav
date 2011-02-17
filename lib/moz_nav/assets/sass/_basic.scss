@@ -52,7 +52,7 @@ body.moz-nav-basic {
       }
       
       > a {
-        @include single-text-shadow(white);
+        @include single-text-shadow(white, 1px, 1px, 0);
         @include unstyled-link;
         
         cursor: pointer;
