@@ -1,5 +1,9 @@
 <link type="text/css" rel="stylesheet" href="/stylesheets/moz_nav/{{ environment }}/all.css?{{ cache_buster }}" />
 
 <!--[if lte IE 8]>
-<link type="text/css" rel="stylesheet" href="/stylesheets/moz_nav/{{ environment }}/ie.css?{{ cache_buster }}" />
+<style type="text/css">
+  #moz-nav-header.basic .navigation form.search input[type="submit"] {
+    height: 22px !important;
+  }
+</style>
 <![endif]-->
