@@ -25,6 +25,7 @@ body.moz-nav-advanced {
     @include mn-gray-rounded-bar;
     
     > ul > li {
+      cursor: pointer;
       background: sprite($icons, separator, 0px, 5px) no-repeat;
       padding: 0px;
       
@@ -49,6 +50,7 @@ body.moz-nav-advanced {
       }
       
       > a {
+        cursor: pointer;
         @include single-text-shadow(white);
         
         margin-left: 1px;

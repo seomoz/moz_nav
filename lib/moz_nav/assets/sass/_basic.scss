@@ -39,6 +39,7 @@ body.moz-nav-basic {
     > ul > li {
       background: sprite($icons, separator-yellow, 0px, 4px) no-repeat;
       padding: 0;
+      cursor: pointer;
       
       &.active > a, &:hover > a { background-color: #FBEBBD; }
       > ul {    
@@ -54,6 +55,7 @@ body.moz-nav-basic {
         @include single-text-shadow(white);
         @include unstyled-link;
         
+        cursor: pointer;
         color: $mn-basic-dark-brown;
         font-size: 120%;
         margin-left: 2px;

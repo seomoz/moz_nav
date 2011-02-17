@@ -19,13 +19,11 @@ body { margin: 0; }
     
     a.logo { 
       @include float-left;
-      width: 50%;
     }
     
     div.user-links { 
       @include float-right;
       font-size: 90%;
-      width: 50%;
       padding-top: 8px;
       
       a { color: darken($mn-blue, 15%); @include single-text-shadow(white); }
