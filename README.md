@@ -18,7 +18,9 @@ You may want to review [a commit](https://github.com/seomoz/cmoz/commit/25485a1d
 demonstrating these steps for turbo.
 
 1. Add the MozNav gem to the Gemfile, using a `:git` source.  Run `bundle
-   install` to install the gem.
+   install` to install the gem.  You should use the `:tag` option to
+   lock to a specific version (this is quite important, as the
+   production, minified css file is just compiled for every release).
 2. Ensure the assets can be symlinked properly.  In a rails 3 app, the
    railtie takes care of this for you.  For other apps, you will need to
    add code like `MozNav.ensure_assets_symlinked_from(File.expand_path('../public', __FILE__))`
@@ -62,8 +64,7 @@ demonstrating these steps for turbo.
       page.
     * `render_nav_wrapped(page_content_string)` wraps the correct global
        header, page header and footer around your page body automatically.
-       Usually, you can put pass this method `yield` call from your layout.
-       content passed as a string 
+       Usually, you can just pass this method `yield` from your layout.
     * `nav_footer_includes` should be called just before the closing
       `</body>` tag.
 
@@ -114,8 +115,8 @@ Visit it in your browser at [http://localhost:3000](http://localhost:3000).
 
 ## SASS
 
-We're using SASS for the CSS.  You __should not__ edit the CSS files
-manually.  Instead, edit the SASS files and run `rake sass:watch` to
+We're using Compass/SASS for the CSS.  You __should not__ edit the CSS files
+manually.  Instead, edit the SASS files and run `rake compass:watch` to
 have it automatically compile your SASS files to CSS as you save changes
 to the SASS files.
 
