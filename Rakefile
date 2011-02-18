@@ -36,7 +36,7 @@ namespace :pack do
         FileUtils.cp_r("lib/moz_nav/assets/#{ours}", "assets_for_seomoz/#{theirs}/moz_nav")
     end
 
-    sh "tar -cvf moznav_assets.#{MozNav::VERSION}.tar assets_for_seomoz/"
+    sh "tar -cvf pkg/moznav_assets.#{MozNav::VERSION}.tar assets_for_seomoz/"
     FileUtils.rm_rf('assets_for_seomoz')
   end
 end
