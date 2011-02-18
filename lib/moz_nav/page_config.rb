@@ -40,6 +40,12 @@ module MozNav
       active.first
     end
 
+    def has_blue_header_content?
+      page_title.to_s != '' ||
+      page_subtitle.to_s != '' ||
+      has_campaigns?
+    end
+
     def has_sub_nav_items?
       !sub_nav_items.empty?
     end

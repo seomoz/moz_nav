@@ -1,6 +1,7 @@
 shared_examples_for "the blue box header and sub nav" do |*options|
   options = options.last || {}
   campaign = options[:campaign]
+  user_id = options[:user_id]
 
   describe 'the header' do
     describe 'the sub nav bar' do
@@ -42,13 +43,17 @@ shared_examples_for "the blue box header and sub nav" do |*options|
         it "renders the campaign domain host (#{campaign.domain_host})" do
           header_blue_box_page_subtitle.text.should == campaign.domain_host
         end
-      else
+      elsif user_id
         it 'renders the configured page title' do
           header_blue_box_page_title.text.should include("An Example Sinatra App")
         end
+      else
+        it 'does not include the blue header since there is no content for it' do
+          expect { blue_header }.to raise_error(/unable to find/i)
+        end
       end
 
-      describe 'the campaigns drop down' do
+      describe 'the campaigns drop down', :if => user_id do
         it "contains a 'Campaign Manager' link to #" do
           campaign_drop_down.should have_link("Campaign Manager", "#")
         end

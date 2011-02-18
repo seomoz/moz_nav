@@ -14,11 +14,15 @@
           h.page_title current_campaign.name
           h.page_subtitle current_campaign.domain_host
         else
-          h.page_title 'An Example Sinatra App'
+          if current_user
+            h.page_title 'An Example Sinatra App'
+          end
         end
 
-        Campaign.all.each do |c|
-          h.add_campaign c.name, "/campaigns/#{c.id}"
+        if current_user
+          Campaign.all.each do |c|
+            h.add_campaign c.name, "/campaigns/#{c.id}"
+          end
         end
 
         if current_campaign
@@ -47,5 +51,6 @@
   <script type='text/javascript' src='http://assets0.zendesk.com/external/zenbox/overlay.js'></script>
   </body>
 </html>
+
 
 

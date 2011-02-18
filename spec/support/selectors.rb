@@ -50,4 +50,8 @@ module MozNavSpecSelectors
   def campaign_drop_down
     find("##{BODY_ID} ul.campaigns")
   end
+
+  def blue_header
+    find("##{BODY_ID} .page-header")
+  end
 end
