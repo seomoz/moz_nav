@@ -1392,7 +1392,7 @@ body.moz-nav-advanced {
   overflow: hidden !important;
   *zoom: 1 !important;
   color: #606060 !important;
-  font-size: 70% !important;
+  font-size: 11px !important;
   margin-bottom: 10px !important;
 }
 /* line 78, ../../sass/_advanced.scss */
