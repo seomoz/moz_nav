@@ -31,11 +31,22 @@ demonstrating these steps for turbo.
 
          MozNav.configure do |c|
            c.seomoz_host = 'www.seomoz.org'
+           c.q_and_a_host = 'www.seomoz.org'
            c.environment = 'development'
          end
 
-   (Note that both of these settings are optional as MozNav uses
-   appropriate defaults for both, but this demonstrates configuration).
+   * `seomoz_host`: The host used for links to the PHP www.seomoz.org
+     web app.  Defaults to `"www.seomoz.org"`.
+   * `q_and_a_host`: The host used for links to the Q&A app.
+     Defaults to `"www.seomoz.org"` as well.  In that code base, you'd
+     probably want to set this to the appropriate host of the rails env
+     (i.e. localhost in development) so that links remain in the same
+     app and environment.
+   * `environment`: Determines which stylesheet is used.  If set to
+     `production`, a minified stylesheet will be used.  If set to
+     `development`, a non-minified stylesheet will be used.  Note that
+     in a rails context, you shouldn't have to set this; MozNav smartly
+     figures it out based on the value of `Rails.env`.
 
 4. Use the provided RSpec shared example group to test compliance with
    the MozNav gem.  Example:
@@ -62,6 +73,8 @@ demonstrating these steps for turbo.
    For most applications, you only need to use the following
     * `nav_header_includes` should be called from the `<head>` of the
       page.
+    * `nav_body_class` returns a string that should be used as the class
+      on the body element.
     * `render_nav_wrapped(page_content_string)` wraps the correct global
        header, page header and footer around your page body automatically.
        Usually, you can just pass this method `yield` from your layout.
