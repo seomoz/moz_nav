@@ -1,4 +1,5 @@
 # Require any additional compass plugins here.
+$LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
 require "moz_nav/extensions/sass"
 
 # Set this to the root of your project when deployed:
