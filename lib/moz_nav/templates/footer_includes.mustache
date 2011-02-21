@@ -4,7 +4,9 @@
 
 <script type="text/javascript"><!--//<![CDATA[
   $(function() {
-    var menu_elements = $('#moz-nav-header .extended, #moz-nav-body .extended');
+    var menu_elements_selector = '#moz-nav-header .extended, #moz-nav-body .extended';
+    var menu_elements = $(menu_elements_selector);
+    var menu_element_descendent_selector = menu_elements_selector.replace(/extended/g, 'extended *');
 
     $(menu_elements).click(function(e) {
       var $target = $(e.target);
@@ -20,7 +22,7 @@
     
     $('body').click(function(e) {
       var $target = $(e.target);
-      if (menu_elements.has($target).length === 0) {
+      if (!$target.is(menu_element_descendent_selector)) {
         $(menu_elements).removeClass('focused');
       }
     });
