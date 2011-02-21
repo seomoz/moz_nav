@@ -8,7 +8,8 @@ module MozNav
     end
     
     def render_nav_header
-      yield page_config = PageConfig.new
+      page_config = PageConfig.new
+      yield page_config if block_given?
 
       if nav_type == :advanced
         MozNav::Views::AdvancedHeader.new(current_user, page_config).render
@@ -18,7 +19,8 @@ module MozNav
     end
     
     def render_nav_body(content)
-      yield page_config = PageConfig.new
+      page_config = PageConfig.new
+      yield page_config if block_given?
       
       if nav_type == :advanced
         MozNav::Views::AdvancedBody.new(content, page_config).render

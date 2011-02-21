@@ -126,6 +126,24 @@ body { margin: 0; }
       h1 { font-weight: bold; }
       h1, p { @include single-text-shadow(darken($mn-blue, 20%)); }
       p { padding-bottom: 6px; }
+      
+      div.page_icon {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        margin: -1px 10px 35px 0;
+        @include mn-gray-gradient;
+        @include border-radius($mn-border-radius);
+        @include box-shadow(darken($mn-blue, 50%), 0px, 0px, 6px);
+        
+        img {
+          max-width: 20px;
+          max-height: 20px;
+          vertical-align: middle;
+        }
+      }
 
       ul { 
         @include mn-hover-menu;

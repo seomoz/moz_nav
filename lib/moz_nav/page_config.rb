@@ -9,6 +9,15 @@ module MozNav
       @page_subtitle = val if val
       @page_subtitle
     end
+    
+    def page_icon(val = nil)
+      @page_icon = val if val
+      @page_icon
+    end
+
+    def has_icon?
+      @page_icon && !@page_icon.empty?
+    end
 
     def add_campaign(*args)
       campaigns << Campaign.new(*args)

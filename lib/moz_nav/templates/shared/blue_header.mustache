@@ -2,6 +2,10 @@
 {{# has_blue_header_content? }}
 <div class="page-header">
   
+  {{# has_icon? }}
+  <div class="page_icon"><img src="{{ page_icon }}" /></div>
+  {{/ has_icon? }}
+  
   {{# has_campaigns? }}
   <div class="campaign extended">
     <h1>{{ page_title }}</h1>
