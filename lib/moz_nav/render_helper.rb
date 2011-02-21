@@ -47,7 +47,7 @@ module MozNav
       current_user && current_user.pro? ? :advanced : :basic
     end
 
-    def moz_nav_body_class
+    def nav_body_class
       "moz-nav-#{nav_type}"
     end
   end
