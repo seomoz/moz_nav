@@ -8,7 +8,7 @@ module MozNav
 
       attr_writer :q_and_a_host
       def q_and_a_host
-        @a_and_a_host ||= 'www.seomoz.org'
+        @q_and_a_host ||= 'www.seomoz.org'
       end
 
       attr_writer :environment

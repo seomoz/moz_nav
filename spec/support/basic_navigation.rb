@@ -19,4 +19,16 @@ shared_examples_for "basic navigation" do
       end
     end
   end
+
+  describe 'resources drop-down' do
+    {
+      'Learn SEO' => "http://#{SEOMOZ_HOST}/learn-seo",
+      'SEO Tools' => "http://#{SEOMOZ_HOST}/tools",
+      'Q&A'       => "http://#{Q_AND_A_HOST}/q"
+    }.each do |text, url|
+      it "contains a '#{text}' link to #{url}" do
+        header_sub_nav_for('resources').should have_link(text, url)
+      end
+    end
+  end
 end

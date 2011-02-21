@@ -39,6 +39,7 @@ RSpec.configure do |config|
   config.before(:each, :type => :acceptance) do
     MozNav.configure do |c|
       c.seomoz_host = SEOMOZ_HOST
+      c.q_and_a_host = Q_AND_A_HOST
     end
 
     visit scenario_url
@@ -46,6 +47,7 @@ RSpec.configure do |config|
 end
 
 SEOMOZ_HOST = 'seomoz.local'
+Q_AND_A_HOST = 'q-and-a.local'
 
 module Spec
   module Matchers
