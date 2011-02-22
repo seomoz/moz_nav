@@ -12,10 +12,10 @@
       render_nav_wrapped(yield) do |h|
         if current_campaign
           h.page_title current_campaign.name
-          h.page_subtitle current_campaign.domain_host
+          h.page_subtitle '&lt;' + current_campaign.domain_host + '&gt;'
         else
           if current_user
-            h.page_title 'An Example Sinatra App'
+            h.page_title 'An Example &lt;Sinatra&gt; App'
           end
         end
 

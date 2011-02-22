@@ -6,17 +6,17 @@
   
   {{# has_campaigns? }}
   <div class="campaign extended">
-    <h1>{{ page_title }}</h1>
+    <h1>{{{ page_title }}}</h1>
     {{> advanced_header/campaign_drop_down }}
   </div>
   {{/ has_campaigns? }}
   
   {{^ has_campaigns? }}
-  <h1>{{ page_title }}</h1>
+  <h1>{{{ page_title }}}</h1>
   {{/ has_campaigns? }}
   
     
   {{# page_subtitle }}
-  <p>{{ page_subtitle }}</p>
+  <p>{{{ page_subtitle }}}</p>
   {{/ page_subtitle }}
 </div>

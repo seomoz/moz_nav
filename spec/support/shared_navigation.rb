@@ -41,11 +41,11 @@ shared_examples_for "the blue box header and sub nav" do |*options|
         end
 
         it "renders the campaign domain host (#{campaign.domain_host})" do
-          header_blue_box_page_subtitle.text.should == campaign.domain_host
+          header_blue_box_page_subtitle.text.should == "<#{campaign.domain_host}>"
         end
       elsif user_id
         it 'renders the configured page title' do
-          header_blue_box_page_title.text.should include("An Example Sinatra App")
+          header_blue_box_page_title.text.should include("An Example <Sinatra> App")
         end
       else
         it 'does not include the blue header since there is no content for it' do
