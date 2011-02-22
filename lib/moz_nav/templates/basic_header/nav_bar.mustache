@@ -1,13 +1,13 @@
 <div class="navigation">
-    
+  {{# page_config }}
   <ul>
-    <li class="active">
+    <li class="{{# nav_item_class }}features{{/ nav_item_class }}">
       <a href="http://{{ seomoz_host }}/pro">Features</a>
     </li>
-    <li>
+    <li class="{{# nav_item_class }}pricing-plans{{/ nav_item_class }}">
       <a href="http://{{ seomoz_host }}/gopro">Pricing &amp; Plans</a>
     </li>
-    <li>
+    <li class="{{# nav_item_class }}community{{/ nav_item_class }}">
       <a href="http://{{ seomoz_host }}/community">Community</a>
       <ul>
         <li>
@@ -27,7 +27,7 @@
         </li>
       </ul>
     </li>
-    <li class="resources">
+    <li class="{{# nav_item_class }}resources{{/ nav_item_class }}">
       <a href="http://{{ seomoz_host }}/resources">Resources</a>
       <ul>
         <li>
@@ -41,7 +41,7 @@
         </li>
       </ul>
     </li>
-    <li>
+    <li class="{{# nav_item_class }}blog{{/ nav_item_class }}">
       <a href="http://{{ seomoz_host }}/blog">Blog</a>
       <ul>
         <li>
@@ -52,7 +52,7 @@
         </li>
       </ul>
     </li>
-    <li>
+    <li class="{{# nav_item_class }}about{{/ nav_item_class }}">
       <a href="http://{{ seomoz_host }}/about">About</a>
       <ul>
         <li>
@@ -73,6 +73,7 @@
       </ul>
     </li>
   </ul>
+  {{/ page_config }}
 
   {{> shared/search_form }}
     

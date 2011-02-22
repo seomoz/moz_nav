@@ -39,6 +39,10 @@ module MozNavSpecSelectors
     find("##{BODY_ID} ul.sub-subnav")
   end
 
+  def active_header_nav_item
+    find("##{HEADER_ID} .navigation li.active")
+  end
+
   def active_header_sub_nav_item
     find("##{BODY_ID} ul.subnav li.active")
   end

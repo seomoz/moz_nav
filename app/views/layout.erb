@@ -19,6 +19,8 @@
           end
         end
 
+        h.active_nav_item :community
+
         if current_user
           Campaign.all.each do |c|
             h.add_campaign c.name, "/campaigns/#{c.id}"

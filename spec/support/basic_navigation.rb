@@ -18,6 +18,10 @@ shared_examples_for "basic navigation" do
         header_nav_bar.should have_link(text, url)
       end
     end
+
+    it 'has "Community" as the active nav item' do
+      active_header_nav_item.text.strip.split("\n").first.strip.should == "Community"
+    end
   end
 
   describe 'resources drop-down' do

@@ -2,6 +2,43 @@ require 'spec_helper'
 
 module MozNav
   describe PageConfig do
+    describe '#active_nav_item' do
+      it 'raises an error for an invalid nav item' do
+        expect {
+          subject.active_nav_item :foobar
+        }.to raise_error(ArgumentError)
+      end
+
+      described_class::VALID_NAV_ITEM_NAMES.each do |i|
+        it "does not raise an error for #{i.inspect}" do
+          subject.active_nav_item i
+        end
+      end
+    end
+
+    describe '#nav_item_class' do
+      it 'raises an error when called with an invalid nav item' do
+        expect {
+          subject.nav_item_class['foobar']
+        }.to raise_error(ArgumentError)
+      end
+
+      described_class::VALID_NAV_ITEM_NAMES.each do |i|
+        context "when called with '#{i}'" do
+          it "returns '#{i} active' when it is the active item" do
+            subject.active_nav_item i
+            subject.nav_item_class[i.to_s].should == "#{i} active"
+          end
+
+          it "returns '#{i}' when it is not the active item" do
+            other = (described_class::VALID_NAV_ITEM_NAMES - [i]).first
+            subject.active_nav_item other
+            subject.nav_item_class[i.to_s].should == i.to_s
+          end
+        end
+      end
+    end
+
     describe '#active_sub_nav_item' do
       def instance
         described_class.new.tap { |i| yield i if block_given? }

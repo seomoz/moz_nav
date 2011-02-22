@@ -13,6 +13,10 @@ shared_examples_for "advanced main nav bar" do
       end
     end
 
+    it 'has "Community" as the active nav item' do
+      active_header_nav_item.text.strip.split("\n").first.strip.should == "Community"
+    end
+
     describe 'community drop-down' do
       {
         'SEO Blog'          => "http://#{SEOMOZ_HOST}/blog",
