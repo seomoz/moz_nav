@@ -1,4 +1,5 @@
 require 'bundler'
+require 'bundler/setup'
 Bundler::GemHelper.install_tasks
 
 require "rspec/core/rake_task"
@@ -22,6 +23,13 @@ namespace :compass do
   task :compile_for_prod do
     sh "compass compile --css-dir stylesheets/production/ --environment production --force --output-style compressed"
   end
+
+  task :compile_and_commit_prod => :compile_for_prod do
+    sh "git add lib/moz_nav/assets/stylesheets/production/*"
+    unless `git status` =~ /nothing to commit/
+      sh "git commit -m 'Updated production stylesheet'"
+    end
+  end
 end
 
 namespace :pack do
@@ -43,19 +51,46 @@ end
 
 task :default => :spec
 
-# Make sure we never push to rubygems.org
+desc "Sends a notification email about a MozNav release"
+task :send_release_notification do
+  require 'mail'
+  require 'postmark'
+  require 'json'
+
+  prev_tag, new_tag = *`git tag`.split("\n").last(2)
+  changelog_url = "https://github.com/seomoz/MozNav/compare/#{prev_tag}...#{new_tag}"
+  email = 'moznav@seomoz.org'
+
+  message = Mail.new do
+            from 'dev@seomoz.org'
+        reply_to email
+              to email
+         subject "New MozNav release: #{new_tag}"
+    content_type 'text/plain'
+            body <<-BODY
+Version #{new_tag.sub(/^v/, '')} of the MozNav gem has been released.
+
+Changelog:
+
+  #{changelog_url}
+BODY
+  end
+
+  message.delivery_method Mail::Postmark, :api_key => "<REDACTED>"
+  message.deliver
+end
+
+# Make sure we never push to rubygems.org,
+# And add our own release processing:
+#   - re-compile production stylesheet
+#   - send notification email to moznav@seomoz.org
 Bundler::GemHelper.class_eval do
   def release_gem
     guard_clean
-
-    Rake::Task['compass:compile_for_prod'].invoke
-    sh "git add lib/moz_nav/assets/stylesheets/production/*"
-    unless `git status` =~ /nothing to commit/
-      sh "git commit -m 'Updated production stylesheet'"
-    end
-
+    Rake::Task['compass:compile_and_commit_prod'].invoke
     guard_already_tagged
     tag_version { git_push }
+    Rake::Task['send_release_notification'].invoke
   end
 end
 

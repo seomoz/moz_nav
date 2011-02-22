@@ -27,4 +27,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'shotgun'
   s.add_development_dependency 'compass', '~> 0.11.beta.2'
   s.add_development_dependency 'oily_png'
+  s.add_development_dependency 'postmark'
+  s.add_development_dependency 'mail'
 end
