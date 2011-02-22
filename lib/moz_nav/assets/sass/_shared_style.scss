@@ -99,7 +99,7 @@ body { margin: 0; }
 #moz-nav-body {
   padding: $mn-nav-element-spacing 0px;
   
-  .content {
+  .moz-nav-content {
     @include mn-center-aligned;
     @include mn-container-shadow;
 

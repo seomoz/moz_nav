@@ -121,5 +121,5 @@ body.moz-nav-advanced {
 
 #moz-nav-body.advanced {
   .page-header { @include border-top-radius($mn-border-radius); }
-  .content { @include border-bottom-radius($mn-border-radius); }
+  .moz-nav-content { @include border-bottom-radius($mn-border-radius); }
 }
