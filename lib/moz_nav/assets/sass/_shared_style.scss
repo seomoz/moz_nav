@@ -108,6 +108,10 @@ body { margin: 0; }
 
     background-color: white;
     border: 1px solid darken($mn-gray, 15%);
+  }
+
+  /* For when there is a blue header */
+  .page-specifics + .moz-nav-content {
     border-top: 0;
   }
 

@@ -1,9 +1,11 @@
-<div class="page-specifics">
-  {{> shared/blue_header }}
+{{# page_config }}
+  {{# has_blue_header_content? }}
+  <div class="page-specifics">
+    {{> shared/blue_header }}
 
-  {{# page_config }}
     {{# has_sub_nav_items? }}
       {{> advanced_header/sub_nav_bar }}
     {{/ has_sub_nav_items? }}
-  {{/ page_config }}
-</div>
+  </div>
+  {{/ has_blue_header_content? }}
+{{/ page_config }}
