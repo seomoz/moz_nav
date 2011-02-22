@@ -1383,7 +1383,7 @@ body.moz-nav-advanced {
   border-left: none !important;
 }
 /* line 47, ../../sass/_advanced.scss */
-#moz-nav-header.advanced .navigation > ul > li:hover > a {
+#moz-nav-header.advanced .navigation > ul > li:hover > a, #moz-nav-header.advanced .navigation > ul > li.active {
   background-color: #fefefe !important;
   text-decoration: none !important;
 }

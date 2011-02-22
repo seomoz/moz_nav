@@ -44,7 +44,7 @@ body.moz-nav-advanced {
           border-left: none;
         }
       }
-      &:hover > a { 
+      &:hover > a, &.active {
         background-color: lighten($mn-gray, 10%);
         text-decoration: none;
       }
