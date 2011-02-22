@@ -136,7 +136,7 @@ body { margin: 0; }
         margin: -1px 10px 35px 0;
         @include mn-gray-gradient;
         @include border-radius($mn-border-radius);
-        @include box-shadow(darken($mn-blue, 50%), 0px, 0px, 6px);
+        @include single-box-shadow(darken($mn-blue, 50%), 0px, 0px, 6px);
         
         img {
           max-width: 20px;
