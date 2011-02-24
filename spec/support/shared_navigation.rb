@@ -54,8 +54,8 @@ shared_examples_for "the blue box header and sub nav" do |*options|
       end
 
       describe 'the campaigns drop down', :if => user_id do
-        it "contains a 'Campaign Manager' link to #" do
-          campaign_drop_down.should have_link("Campaign Manager", "#")
+        it "contains a 'Campaign Manager' link to http://#{SEOMOZ_HOST}/campaigns" do
+          campaign_drop_down.should have_link("Campaign Manager", "http://#{SEOMOZ_HOST}/campaigns")
         end
 
         Campaign.all.each do |camp|
