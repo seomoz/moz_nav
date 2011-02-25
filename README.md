@@ -103,17 +103,23 @@ demonstrating these steps for turbo.
 Use [RVM](http://rvm.beginrescueend.com/) to install MRI 1.8.7 and
 1.9.2. Then setup the necessary gems:
 
-   rvm use 1.9.2
-   rvm gemset create moz_nav
-   rvm gemset use moz_nav
-   gem install bundler -v=1.0.7
-   bundle install
+    rvm use 1.9.2
+    rvm gemset create moz_nav
+    rvm gemset use moz_nav
+    gem install bundler
+    bundle install
 
-   rvm use 1.8.7
-   rvm gemset create moz_nav
-   rvm gemset use moz_nav
-   gem install bundler -v=1.0.7
-   bundle install
+    rvm use 1.8.7
+    rvm gemset create moz_nav
+    rvm gemset use moz_nav
+    gem install bundler
+    bundle install
+
+Then you can run terminitor to have it launch all the necessary
+processes:
+
+    terminitor start
+
 
 ## Testing
 
