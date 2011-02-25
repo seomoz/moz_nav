@@ -1,5 +1,5 @@
 require 'pathname'
-require 'moz_nav/railtie' if defined?(Rails)
+require 'moz_nav/railtie' if defined?(Rails::VERSION::MAJOR) && Rails::VERSION::MAJOR > 2
 
 module MozNav
   extend self
