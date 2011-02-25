@@ -1,1 +1,3 @@
-<a class="logo" href="http://{{ seomoz_host }}/"><img alt="" src="/images/moz_nav/logo.png?{{ cache_buster }}" /></a>
+<a class="logo" href="http://{{ seomoz_host }}/{{# user }}{{# pro? }}users/pro{{/ pro?}}{{/ user }}">
+  <img alt="" src="/images/moz_nav/logo.png?{{ cache_buster }}" />
+</a>
