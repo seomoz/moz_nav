@@ -1,0 +1,20 @@
+tab do
+  %w[ 1.8.7 1.9.2 ].each do |ruby|
+    run "rvm use #{ruby}@moz_nav"
+    run "bundle install"
+  end
+  run "bundle exec infinity_test"
+end
+
+tab do
+  run "bundle exec rake example_app:serve"
+end
+
+tab do
+  run "bundle exec rake compass:watch"
+end
+
+tab do
+  run "open http://localhost:3000/"
+end
+

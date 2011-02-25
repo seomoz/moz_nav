@@ -8,6 +8,7 @@ gem 'mustache', '~> 0.12.0'
 group :development do
   gem 'launchy'
   gem 'infinity_test'
+  gem 'terminitor'
 
   platform :mri_18 do
     gem 'ruby-debug'
