@@ -1,26 +1,28 @@
 <div class="navigation">
   <ul>
   {{# page_config }}
-    <li class="{{# nav_item_class }}dashboard{{/ nav_item_class }}">
+  {{# active_nav_item }}
+    <li class="dashboard{{# dashboard? }} active{{/ dashboard? }}">
       <a href="http://{{ seomoz_host }}/users/pro">PRO Dashboard</a>
     </li>
-    <li class="{{# nav_item_class }}campaigns{{/ nav_item_class }}">
+    <li class="campaigns{{# campaigns? }} active{{/ campaigns? }}">
       <a href="http://{{ seomoz_host }}/campaigns">Campaigns</a>
     </li>
-    <li class="{{# nav_item_class }}research{{/ nav_item_class }}">
+    <li class="research{{# research? }} active{{/ research? }}">
       <a href="http://{{ seomoz_host }}/tools">Research Tools</a>
     </li>
-    <li class="{{# nav_item_class }}pro-qa{{/ nav_item_class }}">
+    <li class="pro-qa{{# pro_qa? }} active{{/ pro_qa? }}">
       <a href="http://{{ q_and_a_host }}/q">PRO Q&amp;A</a>
     </li>
-    <li class="{{# nav_item_class }}community{{/ nav_item_class }}">
+    <li class="community{{# community? }} active{{/ community? }}">
       <a href="http://{{ seomoz_host }}/community">Community</a>
       {{> advanced_header/sub_navs/community }}
     </li>
-    <li class="{{# nav_item_class }}learn-seo{{/ nav_item_class }}">
+    <li class="learn-seo{{# learn_seo? }} active{{/ learn_seo? }}">
       <a href="http://{{ seomoz_host }}/learn-seo">Learn SEO</a>
       {{> advanced_header/sub_navs/learn_seo }}
     </li>
+  {{/ active_nav_item }}
   {{/ page_config }}
   </ul>
   {{> shared/search_form }}

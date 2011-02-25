@@ -9,32 +9,25 @@ module MozNav
         }.to raise_error(ArgumentError)
       end
 
-      described_class::VALID_NAV_ITEM_NAMES.each do |i|
+      ActiveNavItem::VALID_NAV_ITEM_NAMES.each do |i|
         it "does not raise an error for #{i.inspect}" do
           subject.active_nav_item i
         end
       end
     end
 
-    describe '#nav_item_class' do
-      it 'raises an error when called with an invalid nav item' do
-        expect {
-          subject.nav_item_class['foobar']
-        }.to raise_error(ArgumentError)
-      end
+    ActiveNavItem::VALID_NAV_ITEM_NAMES.each do |i|
+      describe ".#{i}?" do
+        let(:other) { (ActiveNavItem::VALID_NAV_ITEM_NAMES - [i]).first }
 
-      described_class::VALID_NAV_ITEM_NAMES.each do |i|
-        context "when called with '#{i}'" do
-          it "returns '#{i} active' when it is the active item" do
-            subject.active_nav_item i
-            subject.nav_item_class[i.to_s].should == "#{i} active"
-          end
+        it "returns true when #{i} is the active nav item" do
+          subject.active_nav_item i
+          subject.active_nav_item.send(:"#{i}?").should be_true
+        end
 
-          it "returns '#{i}' when it is not the active item" do
-            other = (described_class::VALID_NAV_ITEM_NAMES - [i]).first
-            subject.active_nav_item other
-            subject.nav_item_class[i.to_s].should == i.to_s
-          end
+        it "returns false when #{i} is not the active nav item" do
+          subject.active_nav_item other
+          subject.active_nav_item.send(:"#{i}?").should be_false
         end
       end
     end

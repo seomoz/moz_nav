@@ -15,6 +15,7 @@ module MozNav
     AssetSymlinker.new(host_app_dir).symlink_assets
   end
 
+  autoload :ActiveNavItem,  'moz_nav/active_nav_item'
   autoload :AssetSymlinker, 'moz_nav/asset_symlinker'
   autoload :Campaign,       'moz_nav/campaign'
   autoload :Config,         'moz_nav/config'

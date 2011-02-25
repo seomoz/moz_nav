@@ -10,27 +10,8 @@ module MozNav
       @page_subtitle
     end
 
-    VALID_NAV_ITEM_NAMES = [
-      :about,
-      :blog,
-      :campaigns,
-      :community,
-      :dashboard,
-      :features,
-      :"learn-seo",
-      :"pricing-plans",
-      :"pro-qa",
-      :research,
-      :resources,
-    ]
-
     def active_nav_item(val = nil)
-      if val
-        unless VALID_NAV_ITEM_NAMES.include?(val)
-          raise ArgumentError.new("#{val.inspect} is not a valid nav item name.  Valid values are: #{VALID_NAV_ITEM_NAMES.inspect}")
-        end
-        @active_nav_item = val
-      end
+      @active_nav_item = ActiveNavItem.new(val.to_sym) if val
       @active_nav_item
     end
     
@@ -81,20 +62,6 @@ module MozNav
 
     def has_sub_nav_items?
       !sub_nav_items.empty?
-    end
-
-    def nav_item_class
-      lambda do |item|
-        klass = item
-        item = item.to_sym
-
-        unless VALID_NAV_ITEM_NAMES.include?(item)
-          raise ArgumentError.new("#{item} is not a valid nav item name.  Valid values are: #{VALID_NAV_ITEM_NAMES.inspect}")
-        end
-
-        klass << " active" if item == active_nav_item
-        klass
-      end
     end
   end
 end

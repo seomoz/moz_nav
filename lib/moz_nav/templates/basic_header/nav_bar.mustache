@@ -1,13 +1,14 @@
 <div class="navigation">
   {{# page_config }}
+  {{# active_nav_item }}
   <ul>
-    <li class="{{# nav_item_class }}features{{/ nav_item_class }}">
+    <li class="features{{# features? }} active{{/ features? }}">
       <a href="http://{{ seomoz_host }}/pro">Features</a>
     </li>
-    <li class="{{# nav_item_class }}pricing-plans{{/ nav_item_class }}">
+    <li class="pricing-plans{{# pricing_plans? }} active{{/ pricing_plans? }}">
       <a href="http://{{ seomoz_host }}/gopro">Pricing &amp; Plans</a>
     </li>
-    <li class="{{# nav_item_class }}community{{/ nav_item_class }}">
+    <li class="community{{# community? }} active{{/ community? }}">
       <a href="http://{{ seomoz_host }}/community">Community</a>
       <ul>
         <li>
@@ -27,7 +28,7 @@
         </li>
       </ul>
     </li>
-    <li class="{{# nav_item_class }}resources{{/ nav_item_class }}">
+    <li class="resources{{# resources? }} active{{/ resources? }}">
       <a href="http://{{ seomoz_host }}/resources">Resources</a>
       <ul>
         <li>
@@ -41,7 +42,7 @@
         </li>
       </ul>
     </li>
-    <li class="{{# nav_item_class }}blog{{/ nav_item_class }}">
+    <li class="blog{{# blog? }} active{{/ blog? }}">
       <a href="http://{{ seomoz_host }}/blog">Blog</a>
       <ul>
         <li>
@@ -52,7 +53,7 @@
         </li>
       </ul>
     </li>
-    <li class="{{# nav_item_class }}about{{/ nav_item_class }}">
+    <li class="about{{# about? }} active{{/ about? }}">
       <a href="http://{{ seomoz_host }}/about">About</a>
       <ul>
         <li>
@@ -73,6 +74,7 @@
       </ul>
     </li>
   </ul>
+  {{/ active_nav_item }}
   {{/ page_config }}
 
   {{> shared/search_form }}
