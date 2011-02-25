@@ -25,12 +25,12 @@ module MozNav
   autoload :Version,        'moz_nav/version'
 
   module Views
+    autoload :AdvancedBody,   'moz_nav/views/advanced_body'
     autoload :AdvancedFooter, 'moz_nav/views/advanced_footer'
     autoload :AdvancedHeader, 'moz_nav/views/advanced_header'
-    autoload :AdvancedBody,   'moz_nav/views/advanced_body'
+    autoload :BasicBody,      'moz_nav/views/basic_body'
     autoload :BasicFooter,    'moz_nav/views/basic_footer'
     autoload :BasicHeader,    'moz_nav/views/basic_header'
-    autoload :BasicBody,      'moz_nav/views/basic_body'
     autoload :Common,         'moz_nav/views/common'
     autoload :FooterIncludes, 'moz_nav/views/footer_includes'
     autoload :HeaderIncludes, 'moz_nav/views/header_includes'
