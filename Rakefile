@@ -11,6 +11,11 @@ namespace :example_app do
   task :serve do
     sh "bundle exec shotgun config.ru -p 3000"
   end
+
+  desc "Serves the app under '/q' like the Q&A app is."
+  task :q_and_a do
+    sh "bundle exec thin -R config.ru --prefix=/q start"
+  end
 end
 
 namespace :compass do
