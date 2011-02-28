@@ -29,6 +29,10 @@ module MozNav
           subject.active_nav_item other
           subject.active_nav_item.send(:"#{i}?").should be_false
         end
+
+        it "returns false when active_nav_item has not been configured" do
+          subject.active_nav_item.send(:"#{i}?").should be_false
+        end
       end
     end
 

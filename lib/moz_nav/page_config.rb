@@ -1,5 +1,10 @@
 module MozNav
   class PageConfig
+    def initialize
+      # ensure #active_nav_item always returns something
+      @active_nav_item = ActiveNavItem.new(nil)
+    end
+
     def page_title(val = nil)
       @page_title = val if val
       @page_title

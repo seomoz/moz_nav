@@ -15,7 +15,7 @@ module MozNav
     ]
 
     def initialize(item)
-      unless VALID_NAV_ITEM_NAMES.include?(item)
+      if item && !VALID_NAV_ITEM_NAMES.include?(item)
         raise ArgumentError.new("#{item.inspect} is not a valid nav item name.  Valid values are: #{VALID_NAV_ITEM_NAMES.inspect}")
       end
 

@@ -19,7 +19,7 @@
           end
         end
 
-        h.active_nav_item :community
+        h.active_nav_item :community unless current_campaign && current_campaign.id == 2
 
         if current_user
           Campaign.all.each do |c|
