@@ -27,7 +27,7 @@
       }
     });
 
-    $('#moz-nav-header .feedback').click(function(e) {
+    $('a.zenbox-popup').click(function(e) {
       if (typeof Zenbox !== "undefined") {
         Zenbox.show();
         return false;
