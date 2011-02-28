@@ -23,7 +23,7 @@ module MozNav
   autoload :PageConfig,     'moz_nav/page_config'
   autoload :RenderHelper,   'moz_nav/render_helper'
   autoload :SubNavItem,     'moz_nav/sub_nav_item'
-  autoload :Version,        'moz_nav/version'
+  autoload :VERSION,        'moz_nav/version'
 
   module Views
     autoload :AdvancedBody,   'moz_nav/views/advanced_body'
