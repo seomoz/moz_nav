@@ -6,4 +6,4 @@ pkg/*
 .sass-cache
 
 tmp
-app/public/**/moz_nav
+app/public/moz_nav_assets

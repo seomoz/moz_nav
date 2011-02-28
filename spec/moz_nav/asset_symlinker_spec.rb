@@ -3,23 +3,10 @@ require 'spec_helper'
 shared_examples_for "asset symlinking" do
   subject { described_class.new(directory) }
   before(:each) { subject.symlink_assets }
+  let(:host_app_path) { File.join(directory, "moz_nav_assets") }
 
-  MozNav::ASSET_ROOT.children(:full_path).each do |c|
-    base = File.basename(c)
-
-    describe base do
-      let(:host_app_path) { File.join(directory, base, 'moz_nav') }
-
-      if MozNav::AssetSymlinker::EXCLUDE_ASSET_DIRS.include?(base)
-        it "is not symlinked to the asset root" do
-          host_app_path.should_not be_symlinked_to(c)
-        end
-      else
-        it "is symlinked to the asset root" do
-          host_app_path.should be_symlinked_to(c)
-        end
-      end
-    end
+  it 'symlinks the asset root to "moz_nav_assets" in the host app' do
+    host_app_path.should be_symlinked_to(MozNav::ASSET_ROOT)
   end
 end
 
@@ -74,13 +61,7 @@ module MozNav
         around(:each) do |example|
           Dir.mktmpdir do |dir|
             described_class.new(tmpdir).instance_eval do
-              MozNav::ASSET_ROOT.children(:full_path).each do |moz_nav_path|
-                next unless moz_nav_path.directory?
-
-                # symlink each to a different directory
-                moz_nav_path = File.join(dir, File.basename(moz_nav_path))
-                symlink_dir(moz_nav_path)
-              end
+              symlink_dir(dir)
             end
 
             example.run
