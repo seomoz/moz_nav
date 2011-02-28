@@ -57,7 +57,11 @@ task :send_release_notification do
   require 'postmark'
   require 'json'
 
-  prev_tag, new_tag = *`git tag`.split("\n").last(2)
+  def sortable_tag(tag)
+    Gem::Version.new(tag.sub('v', ''))
+  end
+
+  prev_tag, new_tag = `git tag`.split.sort { |a, b| sortable_tag(a) <=> sortable_tag(b) }.last(2)
   changelog_url = "https://github.com/seomoz/MozNav/compare/#{prev_tag}...#{new_tag}"
   email = 'moznav@seomoz.org'
 
