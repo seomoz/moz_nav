@@ -8,9 +8,9 @@ project_path = "lib/moz_nav/assets"
 sass_dir = "sass"
 
 css_dir = "stylesheets/development"
-http_stylesheets_path = "/stylesheets/moz_nav"
+http_stylesheets_path = "/moz_nav_assets/stylesheets"
 
-http_images_path = "/images/moz_nav"
+http_images_path = "../../images"
 
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
