@@ -8,8 +8,8 @@ shared_examples_for "basic navigation" do
 
   describe 'the header nav bar' do
     {
-      'Features'        => "http://#{SEOMOZ_HOST}/pro",
-      'Pricing & Plans' => "http://#{SEOMOZ_HOST}/gopro",
+      'Features'        => "http://#{SEOMOZ_HOST}/features",
+      'Pricing & Plans' => "http://#{SEOMOZ_HOST}/plans",
       'Community'       => "http://#{SEOMOZ_HOST}/community",
       'Resources'       => "http://#{SEOMOZ_HOST}/resources",
       'About'           => "http://#{SEOMOZ_HOST}/about"
