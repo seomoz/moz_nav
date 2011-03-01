@@ -24,7 +24,7 @@ body { margin: 0; }
     div.user-links { 
       @include float-right;
       font-size: 90%;
-      padding-top: 8px;
+      padding-top: 6px;
       
       a { color: darken($mn-blue, 15%); @include single-text-shadow(white); }
       > ul { 
@@ -36,7 +36,7 @@ body { margin: 0; }
         
         > li {
           margin: 5px 0 0 15px;
-          padding: 0 0 5px 0;
+          padding: 2px 0 5px 0;
           
           &:first-child { margin-left: 0; }
           &:hover > ul { display: none; }
@@ -52,14 +52,18 @@ body { margin: 0; }
             left: auto;
             right: -10px;
           }
+          &#display_name.is_pro { 
+            background: sprite($icons, pro-medallion, 0, 0) no-repeat;
+            padding-left: 15px;
+          }
         }
         > li.extended {
           @include mn-click-to-expand;
 
-          background: sprite($icons, dropdown-arrow, 99%, 1px) no-repeat;
+          background: sprite($icons, dropdown-arrow, 99%, 3px) no-repeat;
           padding-right: 15px;
           
-          &:hover { background: sprite($icons, dropdown-arrow-hover, 99%, 1px) no-repeat; }
+          &:hover { background: sprite($icons, dropdown-arrow-hover, 99%, 3px) no-repeat; }
         }
       }
     }

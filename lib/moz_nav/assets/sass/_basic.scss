@@ -26,9 +26,9 @@ body.moz-nav-basic {
         &:hover { color: darken($mn-basic-dark-brown, 20%); }
       };
       > li.extended {
-        background: sprite($icons, dropdown-yellow, 99%, 1px) no-repeat;
+        background: sprite($icons, dropdown-yellow, 99%, 3px) no-repeat;
         
-        &:hover { background: sprite($icons, dropdown-brown-hover, 99%, 1px) no-repeat; }
+        &:hover { background: sprite($icons, dropdown-brown-hover, 99%, 3px) no-repeat; }
         
         ul li:hover { background-color: $mn-basic-light-brown;}
       }

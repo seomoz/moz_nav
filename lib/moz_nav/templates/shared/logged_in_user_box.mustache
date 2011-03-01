@@ -1,7 +1,10 @@
  <div class="user-links">
   <ul>
+    {{# user }}
+    <li class="{{#pro?}}is_pro{{/pro?}}" id="display_name">
+      <a href="http://{{ seomoz_host }}/users/profile/">{{display_name}}</a>
+    </li>
     <li class="extended" id="my-account">
-      {{# user }}
       <a href="#">My Account</a>
       <ul>
         <li>
@@ -23,8 +26,8 @@
           <a href="https://{{ seomoz_host }}/users/logout">Logout</a>
         </li>
       </ul>
-      {{/ user }}
     </li>
+    {{/ user }}
     <li class="extended">
       <a href="#">Help</a>
       <ul>
