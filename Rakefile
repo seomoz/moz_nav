@@ -99,6 +99,7 @@ Bundler::GemHelper.class_eval do
     Rake::Task['compass:compile_and_commit_prod'].invoke
     guard_already_tagged
     tag_version { git_push }
+    sh "git push origin HEAD:release"
     Rake::Task['send_release_notification'].invoke
   end
 end
