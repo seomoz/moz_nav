@@ -24,8 +24,8 @@ demonstrating these steps for turbo.
 2. Ensure the assets can be symlinked properly.  In a rails 3 app, the
    railtie takes care of this for you.  For other apps, you will need to
    add code like `MozNav.ensure_assets_symlinked_from(File.expand_path('../public', __FILE__))`
-   to be run during application boot.  You'll probably want to gitignore the symlinked dirs
-   (using a pattern like `public/**/moz_nav`) since the symlinks use absolute paths.
+   to be run during application boot.  You'll probably want to gitignore the symlinked dir
+   (using a pattern like `public/moz_nav_assets`) since the symlink uses absolute paths.
 3. Configure MozNav.  In rails, you'll probably want to do this in
    `config/initializers/moz_nav.rb`.  Example code:
 
@@ -33,6 +33,7 @@ demonstrating these steps for turbo.
            c.seomoz_host = 'www.seomoz.org'
            c.q_and_a_host = 'www.seomoz.org'
            c.environment = 'development'
+           c.asset_path_prefix = '/q'
          end
 
    * `seomoz_host`: The host used for links to the PHP www.seomoz.org
@@ -47,6 +48,8 @@ demonstrating these steps for turbo.
      `development`, a non-minified stylesheet will be used.  Note that
      in a rails context, you shouldn't have to set this; MozNav smartly
      figures it out based on the value of `Rails.env`.
+   * `asset_path_prefix`: Can be set if the app is not served from the
+     root.  Will prefix all assets with this path.
 
 4. Use the provided RSpec shared example group to test compliance with
    the MozNav gem.  Example:
