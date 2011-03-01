@@ -14,7 +14,7 @@ module MozNav
           before(:each) { MozNav.configure { |c| c.environment = env } }
 
           it "uses the #{env} stylesheet" do
-            result.should =~ %r|moz_nav/#{env}/all\.css|
+            result.should =~ %r|moz_nav_assets/stylesheets/#{env}/all\.css|
           end
         end
       end

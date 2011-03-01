@@ -10,6 +10,17 @@ module MozNav
       end
     end
 
+    describe '.asset_path_prefix' do
+      it 'defaults to an empty string' do
+        described_class.asset_path_prefix.should == ""
+      end
+
+      it "can be set to a string" do
+        described_class.asset_path_prefix = '/q'
+        described_class.asset_path_prefix.should == '/q'
+      end
+    end
+
     describe '.environment' do
       subject { described_class.environment }
 

@@ -13,6 +13,10 @@ module MozNav
         MozNav::Config.environment
       end
 
+      def asset_path_prefix
+        MozNav::Config.asset_path_prefix
+      end
+
       def cache_buster
         MozNav::VERSION
       end

@@ -20,6 +20,11 @@ module MozNav
         end
       end
 
+      attr_writer :asset_path_prefix
+      def asset_path_prefix
+        @asset_path_prefix ||= ''
+      end
+
       def reset!
         instance_variables.each do |var|
           remove_instance_variable(var)
