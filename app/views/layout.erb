@@ -23,21 +23,21 @@
 
         if current_user
           Campaign.all.each do |c|
-            h.add_campaign c.name, "/campaigns/#{c.id}"
+            h.add_campaign c.name, "#{asset_path_prefix}/campaigns/#{c.id}"
           end
         end
 
         if current_campaign
           h.sub_nav_item 'A really, really long sub-nav item', "/foo"
-          h.sub_nav_item 'Campaign', "/campaigns/#{current_campaign.id}"
-          h.sub_nav_item 'Rankings', "/campaigns/#{current_campaign.id}/rankings"
+          h.sub_nav_item 'Campaign', "#{asset_path_prefix}/campaigns/#{current_campaign.id}"
+          h.sub_nav_item 'Rankings', "#{asset_path_prefix}/campaigns/#{current_campaign.id}/rankings"
           h.sub_nav_item 'Another really, really long sub-nav item', "/foo"
-          h.sub_nav_item 'Issues',   "/campaigns/#{current_campaign.id}/issues", :active => true do |i|
+          h.sub_nav_item 'Issues',   "#{asset_path_prefix}/campaigns/#{current_campaign.id}/issues", :active => true do |i|
             i.sub_sub_nav_item 'A really, really long sub-sub-nav item', "/foo"
-            i.sub_sub_nav_item 'Overview',  "/campaigns/#{current_campaign.id}/issues/overview"
-            i.sub_sub_nav_item 'Summary',   "/campaigns/#{current_campaign.id}/issues/summary", :active => true
+            i.sub_sub_nav_item 'Overview',  "#{asset_path_prefix}/campaigns/#{current_campaign.id}/issues/overview"
+            i.sub_sub_nav_item 'Summary',   "#{asset_path_prefix}/campaigns/#{current_campaign.id}/issues/summary", :active => true
             i.sub_sub_nav_item 'Another really, really long sub-sub-nav item', "/foo"
-            i.sub_sub_nav_item 'Dashboard', "/campaigns/#{current_campaign.id}/issues/dashboard"
+            i.sub_sub_nav_item 'Dashboard', "#{asset_path_prefix}/campaigns/#{current_campaign.id}/issues/dashboard"
             i.sub_sub_nav_item 'A final really, really long sub-sub-nav item', "/foo"
           end
           h.sub_nav_item 'A final really, really long sub-nav item', "/foo"

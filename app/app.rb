@@ -4,6 +4,12 @@ require 'moz_nav'
 
 MozNav.ensure_assets_symlinked_from(File.expand_path('../public', __FILE__))
 
+if ENV['ASSET_PATH_PREFIX']
+  MozNav.configure do |c|
+    c.asset_path_prefix = ENV['ASSET_PATH_PREFIX']
+  end
+end
+
 # This would be a struct but Mustache doesn't play nicely with nested structs
 class User
   def initialize(id, account_type)
@@ -75,6 +81,10 @@ class ExampleApp < Sinatra::Base
 
     def current_campaign
       @current_campaign
+    end
+
+    def asset_path_prefix
+      MozNav::Config.asset_path_prefix
     end
   end
 

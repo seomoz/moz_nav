@@ -13,8 +13,8 @@ namespace :example_app do
   end
 
   desc "Serves the app under '/q' like the Q&A app is."
-  task :q_and_a do
-    sh "bundle exec thin -R config.ru --prefix=/q start"
+  task :qa do
+    sh "ASSET_PATH_PREFIX='/q' bundle exec thin -R config.ru --prefix=/q start"
   end
 end
 
