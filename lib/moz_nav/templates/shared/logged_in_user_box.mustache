@@ -1,6 +1,9 @@
  <div class="user-links">
   <ul>
     {{# user }}
+    <li id="display_name">
+      <a href="http://{{ seomoz_host }}/users/profile/">{{display_name}}</a>
+    </li>
     <li class="extended" id="my-account">
       <a href="#">My Account</a>
       <ul>
