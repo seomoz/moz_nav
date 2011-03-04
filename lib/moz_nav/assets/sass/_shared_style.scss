@@ -198,6 +198,7 @@ body { margin: 0; }
     
     li {
       a {
+        @include single-text-shadow(white, 1px, 1px, 0);
         @include border-radius($mn-border-radius);
         border-bottom: 1px solid transparent;
         border-right: 1px solid transparent;
