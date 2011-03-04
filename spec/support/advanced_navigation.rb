@@ -36,7 +36,7 @@ shared_examples_for "advanced main nav bar" do
       {
         'PRO Webinars'          => "http://#{SEOMOZ_HOST}/webinars",
         'PRO Training DVDs'     => "http://#{SEOMOZ_HOST}/store/4",
-        'MozCon Seattle Seminar' => "http://#{SEOMOZ_HOST}/seminar/series",
+        'MozCon Seattle Seminar' => "http://#{SEOMOZ_HOST}/mozcon",
         "Beginner's Guide"      => 'http://guides.seomoz.org/beginners-guide-to-search-engine-optimization',
         'Videos'                => "http://#{SEOMOZ_HOST}/blog/category/37",
         'Q&A'                   => "http://#{Q_AND_A_HOST}/q"
