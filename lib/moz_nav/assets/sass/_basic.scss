@@ -119,55 +119,62 @@ body.moz-nav-basic {
     padding: 20px 0;
 
     > div {
-      @include float-left;
-      @include min-height(180px);
-      
-      border-left: 1px solid lighten($mn-footer-blue, 4%);
-      color: darken($mn-footer-blue, 20%);
-      margin-left: 15px;
-      padding-left: 15px;
-      
-      &.try {
-        border-left: 0;
-        margin-left: 0;
-        padding-left: 0;
-        width: 210px;
+      padding: 0 33px;
+      > div {
+        @include float-left;
+        @include min-height(180px);
         
-        h2 { font-size: 120%; }
-        h2, h3 { margin-left: 0; }
-        a.free-trial { margin-bottom: 1em; display: block; }
-        p.consulting {
-          margin-bottom: 1em;
-          a { color: darken($mn-footer-blue, 20%); text-decoration: underline; }
-        }
-      }
+        border-left: 1px solid lighten($mn-footer-blue, 4%);
+        color: darken($mn-footer-blue, 20%);
+        margin-left: 15px;
+        padding-left: 15px;
 
-      > ul { 
-        @include no-bullet;
-        > li { 
-          @include border-radius($mn-border-radius);
-          border-top: 1px solid $mn-footer-blue;
-          padding: 5px 10px;
+        &.products, &.company, &.popular {
+          width: 140px;
+        }
+        
+        &.try {
+          border-left: 0;
+          margin-left: 0;
+          padding-left: 0;
+          width: 210px;
           
-          &:hover { 
-            background-color: lighten($mn-footer-blue, 10%);
-            border-top: 1px solid darken($mn-footer-blue, 10%);
+          h2 { font-size: 120%; }
+          h2, h3 { margin-left: 0; }
+          a.free-trial { margin-bottom: 1em; display: block; }
+          p.consulting {
+            margin-bottom: 1em;
+            a { color: darken($mn-footer-blue, 20%); text-decoration: underline; }
           }
-          a { color: lighten($mn-footer-blue, 32%); display: block; }
         }
-        > li.no-hover {
-          &:hover {
-            background-color: $mn-footer-blue;
+
+        > ul { 
+          @include no-bullet;
+          > li { 
+            @include border-radius($mn-border-radius);
             border-top: 1px solid $mn-footer-blue;
+            padding: 5px 10px;
+            
+            &:hover { 
+              background-color: lighten($mn-footer-blue, 10%);
+              border-top: 1px solid darken($mn-footer-blue, 10%);
+            }
+            a { color: lighten($mn-footer-blue, 32%); display: block; }
+          }
+          > li.no-hover {
+            &:hover {
+              background-color: $mn-footer-blue;
+              border-top: 1px solid $mn-footer-blue;
+            }
           }
         }
+        h2, h3 { 
+          @include single-text-shadow(darken($mn-footer-blue, 20%));
+          font-weight: bold;
+          margin: 0 0 1em 10px;
+        }
+        a, h2, h3 { color: white; }
       }
-      h2, h3 { 
-        @include single-text-shadow(darken($mn-footer-blue, 20%));
-        font-weight: bold;
-        margin: 0 0 1em 10px;
-      }
-      a, h2, h3 { color: white; }
     }
   }
 }

@@ -1175,6 +1175,10 @@ body.moz-nav-basic {
 }
 /* line 121, ../../sass/_basic.scss */
 #moz-nav-footer.basic .container > div {
+  padding: 0 33px !important;
+}
+/* line 123, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div {
   display: inline !important;
   float: left !important;
   min-height: 180px !important;
@@ -1185,43 +1189,47 @@ body.moz-nav-basic {
   margin-left: 15px !important;
   padding-left: 15px !important;
 }
-/* line 130, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div.try {
+/* line 132, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div.products, #moz-nav-footer.basic .container > div > div.company, #moz-nav-footer.basic .container > div > div.popular {
+  width: 140px !important;
+}
+/* line 136, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div.try {
   border-left: 0 !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
   width: 210px !important;
 }
-/* line 136, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div.try h2 {
+/* line 142, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div.try h2 {
   font-size: 120% !important;
 }
-/* line 137, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div.try h2, #moz-nav-footer.basic .container > div.try h3 {
+/* line 143, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div.try h2, #moz-nav-footer.basic .container > div > div.try h3 {
   margin-left: 0 !important;
 }
-/* line 138, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div.try a.free-trial {
+/* line 144, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div.try a.free-trial {
   margin-bottom: 1em !important;
   display: block !important;
 }
-/* line 139, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div.try p.consulting {
+/* line 145, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div.try p.consulting {
   margin-bottom: 1em !important;
 }
-/* line 141, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div.try p.consulting a {
+/* line 147, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div.try p.consulting a {
   color: #1e4e79 !important;
   text-decoration: underline !important;
 }
-/* line 145, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div > ul {
+/* line 151, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div > ul {
   list-style-image: none !important;
   list-style-type: none !important;
   margin-left: 0px !important;
 }
-/* line 147, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div > ul > li {
+/* line 153, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div > ul > li {
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
   -o-border-radius: 5px !important;
@@ -1231,29 +1239,29 @@ body.moz-nav-basic {
   border-top: 1px solid #3382ca !important;
   padding: 5px 10px !important;
 }
-/* line 152, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div > ul > li:hover {
+/* line 158, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div > ul > li:hover {
   background-color: #5b9bd5 !important;
   border-top: 1px solid #2968a1 !important;
 }
-/* line 156, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div > ul > li a {
+/* line 162, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div > ul > li a {
   color: #b4d1ec !important;
   display: block !important;
 }
-/* line 159, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div > ul > li.no-hover:hover {
+/* line 165, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div > ul > li.no-hover:hover {
   background-color: #3382ca !important;
   border-top: 1px solid #3382ca !important;
 }
-/* line 165, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
+/* line 171, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div h2, #moz-nav-footer.basic .container > div > div h3 {
   text-shadow: #1e4e79 1px 1px 1px !important;
   font-weight: bold !important;
   margin: 0 0 1em 10px !important;
 }
-/* line 170, ../../sass/_basic.scss */
-#moz-nav-footer.basic .container > div a, #moz-nav-footer.basic .container > div h2, #moz-nav-footer.basic .container > div h3 {
+/* line 176, ../../sass/_basic.scss */
+#moz-nav-footer.basic .container > div > div a, #moz-nav-footer.basic .container > div > div h2, #moz-nav-footer.basic .container > div > div h3 {
   color: white !important;
 }
 
