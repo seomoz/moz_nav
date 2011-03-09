@@ -69,6 +69,7 @@ body.moz-nav-basic {
       input[type=text] {
         color: $mn-basic-dark-brown;
         height: 14px;
+        overflow : hidden;
       }
       input[type=submit] { 
         @include single-text-shadow(white);
