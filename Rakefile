@@ -6,6 +6,15 @@ require "rspec/core/rake_task"
 
 RSpec::Core::RakeTask.new(:spec)
 
+namespace :cruise do
+  RSpec::Core::RakeTask.new(:spec) do |t|
+    t.rspec_opts = %w[--format progress]
+  end
+end
+
+desc "Build task for cruise control"
+task :cruise => ['cruise:spec']
+
 namespace :example_app do
   desc "Serves the example sinatra app used by the specs so you can use it in your browser"
   task :serve do
