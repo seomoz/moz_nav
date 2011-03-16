@@ -75,6 +75,24 @@ task :send_release_notification do
     Gem::Version.new(tag.sub('v', ''))
   end
 
+  def post_mark_api_key
+    @post_mark_api_key ||= begin
+      home_dir = `echo $HOME`.strip
+      filename = "#{home_dir}/.post_rank_api_key"
+      if File.exist?(filename)
+        File.read(filename)
+      else
+        require 'highline'
+
+        HighLine.new.ask("#{filename} does not exist.  Please enter your post rank API key: ") do |q|
+          q.validate = /\A[a-f0-9]{8}(\-[a-f0-9]{4}){3}\-[a-f0-9]{12}\z/
+        end.tap do |api_key|
+          File.open(filename, 'w') { |f| f.write(api_key) }
+        end
+      end
+    end
+  end
+
   prev_tag, new_tag = `git tag`.split.sort { |a, b| sortable_tag(a) <=> sortable_tag(b) }.last(2)
   changelog_url = "https://github.com/seomoz/MozNav/compare/#{prev_tag}...#{new_tag}"
   email = 'moznav@seomoz.org'
@@ -94,7 +112,7 @@ Changelog:
 BODY
   end
 
-  message.delivery_method Mail::Postmark, :api_key => "<REDACTED>"
+  message.delivery_method Mail::Postmark, :api_key => post_mark_api_key
   message.deliver
 end
 
@@ -112,6 +130,3 @@ Bundler::GemHelper.class_eval do
     Rake::Task['send_release_notification'].invoke
   end
 end
-
-
-

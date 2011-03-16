@@ -143,6 +143,7 @@ DEPENDENCIES
   capybara
   compass (~> 0.11.beta.2)
   fuubar
+  highline
   infinity_test
   launchy
   mail

@@ -9,6 +9,7 @@ group :development do
   gem 'launchy'
   gem 'infinity_test'
   gem 'thin'
+  gem 'highline'
 
   platform :mri_18 do
     gem 'ruby-debug'
