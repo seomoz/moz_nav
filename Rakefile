@@ -78,13 +78,13 @@ task :send_release_notification do
   def post_mark_api_key
     @post_mark_api_key ||= begin
       home_dir = `echo $HOME`.strip
-      filename = "#{home_dir}/.post_rank_api_key"
+      filename = "#{home_dir}/.post_mark_api_key"
       if File.exist?(filename)
         File.read(filename)
       else
         require 'highline'
 
-        HighLine.new.ask("#{filename} does not exist.  Please enter your post rank API key: ") do |q|
+        HighLine.new.ask("#{filename} does not exist.  Please enter your post mark API key: ") do |q|
           q.validate = /\A[a-f0-9]{8}(\-[a-f0-9]{4}){3}\-[a-f0-9]{12}\z/
         end.tap do |api_key|
           File.open(filename, 'w') { |f| f.write(api_key) }
