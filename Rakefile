@@ -93,7 +93,8 @@ task :send_release_notification do
     end
   end
 
-  prev_tag, new_tag = `git tag`.split.sort { |a, b| sortable_tag(a) <=> sortable_tag(b) }.last(2)
+  tags = `git tag`.split.select { |t| t =~ /^v\d+\.\d+\.\d+$/ }
+  prev_tag, new_tag = tags.sort { |a, b| sortable_tag(a) <=> sortable_tag(b) }.last(2)
   changelog_url = "https://github.com/seomoz/MozNav/compare/#{prev_tag}...#{new_tag}"
   email = 'moznav@seomoz.org'
 
