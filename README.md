@@ -156,3 +156,7 @@ For SASS (the CSS precompiler), check:
 
 For Capybara (the browser simulator used by the acceptance specs),
 check the [Github README](https://github.com/jnicklas/capybara).
+
+## Copyright
+
+Copyright 2011 SEOmoz.  See LICENSE for details.
