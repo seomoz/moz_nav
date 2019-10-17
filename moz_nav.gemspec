@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'fuubar'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'markup_validity'
-  s.add_development_dependency 'activesupport', '~> 3.0.3'
+  s.add_development_dependency 'activesupport', '~> 6.0.0'
   s.add_development_dependency 'shotgun'
   s.add_development_dependency 'compass', '~> 0.11.beta.2'
   s.add_development_dependency 'oily_png'
