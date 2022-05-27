@@ -71,7 +71,7 @@ GEM
     polyglot (0.3.1)
     postmark (0.9.5)
       tmail
-    rack (1.2.1)
+    rack (1.6.13)
     rack-test (0.5.7)
       rack (>= 1.0)
     rake (0.8.7)
